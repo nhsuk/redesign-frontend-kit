@@ -53,4 +53,11 @@ router.get('/examples/test-medicine', (req, res) => {
   res.render('examples/test-medicine', {});
 });
 
+<<<<<<< HEAD
+=======
+router.get('/examples/test-medicine-white', (req, res) => {
+  res.render('examples/test-medicine-white', {});
+});
+
+>>>>>>> :loudspeaker: created new test page and added callout boxes to style.scss
 module.exports = router;
