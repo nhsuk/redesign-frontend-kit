@@ -2,6 +2,7 @@
 ==================
 - Improve frontend library folder structure
 - New header styling and markup added to example pages
+- Add breadcrumb component to frontend library
 
 0.0.7 / 2018-05-11
 ==================
