@@ -41,6 +41,7 @@
     }
   }
   &.grey {
+	border-bottom: 4px solid $nhsuk-grey-1;
     .care-card-heading {
       background: $nhsuk-grey-1;
       &:after {
@@ -50,6 +51,7 @@
     }
   }
   &.blue {
+	border-bottom: 4px solid $nhsuk-blue;
     .care-card-heading {
       background: $nhsuk-blue;
       &:after {
@@ -59,7 +61,7 @@
     }
   }
   &.red {
-    border-bottom: 8px solid $nhsuk-red;
+    border-bottom: 4px solid $nhsuk-red;
     .care-card-heading {
       background: $nhsuk-red;
       &:after {
@@ -77,8 +79,14 @@
       }
     }
     .care-card-content {
-      background: $nhsuk-red;
+      background: $nhsuk-black;
       color: $nhsuk-white;
+		a{
+			color: $nhsuk-white;
+		}
+		a:hover{
+			color: $nhsuk-black;
+		}
     }
   }
 }
