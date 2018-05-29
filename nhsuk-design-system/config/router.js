@@ -109,4 +109,8 @@ router.get('/examples/medicines/propranolol/page-3', (req, res) => {
   res.render('examples/medicines/propranolol/page-3', {});
 });
 
+router.get('/examples/test-depression', (req, res) => {
+  res.render('examples/test-depression', {});
+});
+
 module.exports = router;
