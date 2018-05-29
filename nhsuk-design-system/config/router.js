@@ -65,28 +65,36 @@ router.get('/examples/page-5', (req, res) => {
   res.render('examples/page-5', {});
 });
 
-router.get('/examples/test-medicine', (req, res) => {
-  res.render('examples/test-medicine', {});
+router.get('/examples/test-amoxicillin-medicine', (req, res) => {
+  res.render('examples/test-amoxicillin-medicine', {});
 });
 
-router.get('/examples/test-medicine-v2', (req, res) => {
-  res.render('examples/test-medicine-v2', {});
+router.get('/examples/test-medicine-amoxicillin-v2', (req, res) => {
+  res.render('examples/test-medicine-amoxicillin-v2', {});
 });
 
-router.get('/examples/test-medicine-v3', (req, res) => {
-  res.render('examples/test-medicine-v3', {});
+router.get('/examples/test-medicine-amoxicillin-v3', (req, res) => {
+  res.render('examples/test-medicine-amoxicillin-v3', {});
 });
 
 router.get('/styles/breadcrumbs', (req, res) => {
   res.render('styles/breadcrumbs', {});
 });
 
-router.get('/examples/test-gout', (req, res) => {
-  res.render('examples/test-gout', {});
+router.get('/examples/test-conditions-gout', (req, res) => {
+  res.render('examples/test-conditions-gout', {});
 });
 
-router.get('/examples/test-sciatica', (req, res) => {
-  res.render('examples/test-sciatica', {});
+router.get('/examples/test-conditions-sciatica', (req, res) => {
+  res.render('examples/test-conditions-sciatica', {});
+});
+
+router.get('/examples/test-conditions-chestpain', (req, res) => {
+  res.render('examples/test-conditions-chestpain', {});
+});
+
+router.get('/examples/test-conditions-kneepain', (req, res) => {
+  res.render('examples/test-conditions-kneepain', {});
 });
 
 router.get('/examples/medicines', (req, res) => {
