@@ -227,4 +227,8 @@ router.get('/examples/test-general-prescription-costs', (req, res) => {
   res.render('examples/test-general-prescription-costs', {});
 });
 
+router.get('/examples/components', (req, res) => {
+  res.render('examples/components/index', {});
+});
+
 module.exports = router;

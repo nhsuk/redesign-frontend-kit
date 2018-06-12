@@ -1,0 +1,131 @@
+{
+  "id": "backstop_default",
+  "viewports": [
+    {
+      "label": "phone",
+      "width": 320,
+      "height": 480
+    },
+    {
+      "label": "tablet",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "label": "laptop",
+      "width": 1680,
+      "height": 1050
+    }
+  ],
+  "onBeforeScript": "puppet/onBefore.js",
+  "onReadyScript": "puppet/onReady.js",
+  "scenarios": [
+    {
+      "label": "NHS.UK redesign",
+      "cookiePath": "backstop_data/engine_scripts/cookies.json",
+      "url": "http://localhost:3000",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 0,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+      "label": "Redesign Layout",
+      "url": "http://localhost:3000/styles/layout"
+    },
+    {
+      "label": "Redesign Typography",
+      "url": "http://localhost:3000/styles/typography"
+    },
+    {
+      "label": "Redesign Colours",
+      "url": "http://localhost:3000/styles/colours"
+    },
+    {
+      "label": "Redesign components",
+      "url": "http://localhost:3000/examples/components"
+    },
+    {
+      "label": "Header component",
+      "url": "http://localhost:3000/examples/components",
+      "selectors": [
+        ".nhsuk-global-header"
+      ]
+    },
+    {
+      "label": "Navigation component",
+      "url": "http://localhost:3000/examples/components",
+      "selectors": [
+        ".nhsuk-global-nav"
+      ]
+    },
+    {
+      "label": "Header & Navigation components",
+      "url": "http://localhost:3000/examples/components",
+      "selectors": [
+        ".nhsuk-global-header",
+        ".nhsuk-global-nav"
+      ],
+      "clickSelector": ".nhsuk-global-header__menu .menu-toggle"
+    },
+    {
+      "label": "Breadcrumb component",
+      "url": "http://localhost:3000/examples/components",
+      "selectors": [
+        ".nhsuk-breadcrumb"
+      ]
+    },
+    {
+      "label": "Page header element",
+      "url": "http://localhost:3000/examples/components",
+      "selectors": [
+        ".nhsuk-page-heading"
+      ]
+    },
+    {
+      "label": "Page navigation element",
+      "url": "http://localhost:3000/examples/components",
+      "selectors": [
+        ".nhsuk-page-nav"
+      ]
+    },
+    {
+      "label": "Page content element",
+      "url": "http://localhost:3000/examples/components",
+      "selectors": [
+        ".nhsuk-page-content"
+      ]
+    },
+    {
+      "label": "Footer component",
+      "url": "http://localhost:3000/examples/components",
+      "selectors": [
+        ".nhsuk-global-footer"
+      ]
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": ["browser"],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}
