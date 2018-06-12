@@ -281,4 +281,8 @@ router.get('/examples/google-allergies', (req, res) => {
   res.render('examples/google-allergies/index', {});
 });
 
+router.get('/examples/components', (req, res) => {
+  res.render('examples/components/index', {});
+});
+
 module.exports = router;
