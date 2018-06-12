@@ -15,56 +15,6 @@
       "label": "laptop",
       "width": 1680,
       "height": 1050
-    },
-    {
-      "label": "google_analytics_1",
-      "width": 380,
-      "height": 550
-    },
-    {
-      "label": "google_analytics_2",
-      "width": 360,
-      "height": 560
-    },
-    {
-      "label": "google_analytics_3",
-      "width": 320,
-      "height": 450
-    },
-    {
-      "label": "google_analytics_4",
-      "width": 410,
-      "height": 620
-    },
-    {
-      "label": "google_analytics_5",
-      "width": 360,
-      "height": 510
-    },
-    {
-      "label": "google_analytics_6",
-      "width": 380,
-      "height": 540
-    },
-    {
-      "label": "google_analytics_7",
-      "width": 1020,
-      "height": 670
-    },
-    {
-      "label": "google_analytics_8",
-      "width": 320,
-      "height": 460
-    },
-    {
-      "label": "google_analyticsNo9",
-      "width": 380,
-      "height": 560
-    },
-    {
-      "label": "google_analytics_10",
-      "width": 360,
-      "height": 620
     }
   ],
   "onBeforeScript": "puppet/onBefore.js",
@@ -88,6 +38,69 @@
       "expect": 0,
       "misMatchThreshold" : 0.1,
       "requireSameDimensions": true
+      "label": "Redesign Layout",
+      "url": "http://localhost:3000/styles/layout"
+    },
+    {
+      "label": "Redesign Typography",
+      "url": "http://localhost:3000/styles/typography"
+    },
+    {
+      "label": "Redesign Colours",
+      "url": "http://localhost:3000/styles/colours"
+    },
+    {
+      "label": "Redesign components",
+      "url": "http://localhost:3000/examples/components"
+    },
+    {
+      "label": "Header component",
+      "url": "http://localhost:3000/examples/components",
+      "selectors": [
+        ".nhsuk-global-header"
+      ]
+    },
+    {
+      "label": "Navigation component",
+      "url": "http://localhost:3000/examples/components",
+      "selectors": [
+        ".nhsuk-global-nav"
+      ]
+    },
+    {
+      "label": "Breadcrumb component",
+      "url": "http://localhost:3000/examples/components",
+      "selectors": [
+        ".nhsuk-breadcrumb"
+      ]
+    },
+    {
+      "label": "Page header element",
+      "url": "http://localhost:3000/examples/components",
+      "selectors": [
+        ".nhsuk-page-heading"
+      ]
+    },
+    {
+      "label": "Page navigation element",
+      "url": "http://localhost:3000/examples/components",
+      "selectors": [
+        ".nhsuk-page-nav"
+      ]
+    },
+    {
+      "label": "Page content element",
+      "url": "http://localhost:3000/examples/components",
+      "selectors": [
+        ".nhsuk-page-content"
+      ]
+    },
+    {
+      "label": "Footer component",
+      "url": "http://localhost:3000/examples/components",
+      "selectors": [
+        ".nhsuk-global-footer"
+      ]
     }
   ],
   "paths": {
