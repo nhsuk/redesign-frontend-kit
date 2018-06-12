@@ -68,6 +68,15 @@
       ]
     },
     {
+      "label": "Header & Navigation components",
+      "url": "http://localhost:3000/examples/components",
+      "selectors": [
+        ".nhsuk-global-header",
+        ".nhsuk-global-nav"
+      ],
+      "clickSelector": ".nhsuk-global-header__menu .menu-toggle"
+    },
+    {
       "label": "Breadcrumb component",
       "url": "http://localhost:3000/examples/components",
       "selectors": [
