@@ -21,18 +21,6 @@
   "onReadyScript": "puppet/onReady.js",
   "scenarios": [
     {
-      "label": "Redesign Layout",
-      "url": "http://localhost:3000/styles/layout"
-    },
-    {
-      "label": "Redesign Typography",
-      "url": "http://localhost:3000/styles/typography"
-    },
-    {
-      "label": "Redesign Colours",
-      "url": "http://localhost:3000/styles/colours"
-    },
-    {
       "label": "Redesign components",
       "url": "http://localhost:3000/examples/components"
     },
