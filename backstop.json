@@ -98,7 +98,7 @@
     "html_report": "tests/backstop_data/html_report",
     "ci_report": "tests/backstop_data/ci_report"
   },
-  "report": ["browser"],
+  "report": ["cli"],
   "engine": "puppeteer",
   "engineOptions": {
     "args": ["--no-sandbox"]
