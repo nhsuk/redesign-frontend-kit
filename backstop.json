@@ -53,7 +53,7 @@
         ".nhsuk-global-header",
         ".nhsuk-global-nav"
       ],
-      "clickSelector": ".nhsuk-global-header__menu .menu-toggle"
+      "clickSelector": ".nhsuk-global-header__menu .menu-toggle__button"
     },
     {
       "label": "Breadcrumb component",
