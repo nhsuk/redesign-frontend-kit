@@ -72,11 +72,11 @@ $nhsuk-grey-4-tint-50: tint($nhsuk-grey-4, 50%); // used callout backgrounds on 
 // Text colours
 
 $nhsuk-text-colour: $nhsuk-black;
-$nhsuk-secondary-text-colour: $nhsuk-black-tint-15; //used for secondary text colour
+$nhsuk-secondary-text-colour: $nhsuk-black-tint-15;
 
 // Link colours
 
-$nhsuk-link-colour: shade($nhsuk-blue,15%);
+$nhsuk-link-colour: shade($nhsuk-blue, 15%);
 $nhsuk-link-hover-colour: $nhsuk-black;
 $nhsuk-link-focus-colour: $nhsuk-black;
 $nhsuk-link-active-colour: $nhsuk-black-tint-10;
@@ -88,7 +88,7 @@ $nhsuk-link-active-background-colour: $nhsuk-warm-yellow-tint-10;
 // Border colours
 
 $nhsuk-border-colour: $nhsuk-grey-3;
-$nhsuk-secondary-border-colour: rgba(255,255,255,0.25); // used for header and footer dividing line
+$nhsuk-secondary-border-colour: rgba(255, 255, 255, .25);
 
 // Button colours
 
