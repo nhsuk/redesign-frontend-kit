@@ -29,4 +29,9 @@ bower_components
 .DS_Store
 Thumbs.db
 
+# backstopjs
+**/backstop_data/bitmaps_test/
+**/backstop_data/html_report/
+
+# CSS
 dist/css/styles.css
