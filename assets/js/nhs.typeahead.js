@@ -145,4 +145,5 @@ NHSUK.typeahead =
 $(function(){
   NHSUK.typeahead.init();
   $('.c-search__input--shadow').attr('aria-hidden', 'true').addClass('visually-hidden'); // hide the extra input field created by typeahead to screen readers
+  //$('.c-search__input.tt-input').attr('role', 'textbox');
 });
