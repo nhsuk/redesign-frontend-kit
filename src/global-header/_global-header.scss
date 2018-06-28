@@ -170,15 +170,11 @@ $alpha: .5;
         text-indent: -9999px;
         width: 44px;
 
-<<<<<<< HEAD
-        &::-moz-focus-inner { // sass-lint:disable-line prefixes
-=======
         &--dropdown {
           border-bottom-right-radius: 0;
         }
 
         &::-moz-focus-inner { // sass-lint:disable-line no-vendor-prefixes
->>>>>>> :mag: Incorporating funnelback/typeahead search
           border: 0;
         }
 
@@ -429,16 +425,9 @@ $alpha: .5;
 
 }
 
-<<<<<<< HEAD
-// jquery ui autocomplete temporary styling
-.ui-autocomplete {
-  -moz-box-shadow: 0 3px 5px 0 rgba($nhsuk-grey-1-rgb, $alpha); // sass-lint:disable-lines no-color-literals
-  -webkit-box-shadow: 0 3px 5px 0 rgba($nhsuk-grey-1-rgb, $alpha); // sass-lint:disable-line no-color-literals
-=======
 .c-search-menu__list {
   -moz-box-shadow: 0 3px 5px 0 rgba($nhsuk-grey-1-rgb, $alpha); // sass-lint:disable-line no-vendor-prefixes, no-color-literals
   -webkit-box-shadow: 0 3px 5px 0 rgba($nhsuk-grey-1-rgb, $alpha); // sass-lint:disable-line no-vendor-prefixes, no-color-literals
->>>>>>> :mag: Incorporating funnelback/typeahead search
   background: $nhsuk-white;
   border-bottom: 1px solid $nhsuk-grey-4;
   border-bottom-left-radius: 4px;
