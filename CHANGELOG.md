@@ -1,3 +1,7 @@
+0.1.0 / TBC
+==================
+- Enable deployment to Rancher from Travis
+
 0.0.9 / 2018-06-11
 ==================
 - Added updated header and footer to example page to demo to Medicines team

@@ -26,6 +26,4 @@ Follow our [contributing guide](https://github.com/nhsuk/frontend/blob/master/.g
 
 Following a successful pull request and merge, the code will automatically be deployed to <a href="https://nhsuk-redesign.azurewebsites.net">NHS.UK design system</a> pages.
 
-
-
-
+If a Pull Request is builds successfully the application will be deployed into the Rancher environment as configured in Travis.
