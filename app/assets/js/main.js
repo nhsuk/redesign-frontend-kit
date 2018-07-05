@@ -20,6 +20,7 @@
 
 
   // skip link focus fix
+  /*
   $( document ).ready(function() {
     $(".c-skiplink__link").click(function(event){
       var skipTo="#"+this.href.split('#')[1];
@@ -28,5 +29,6 @@
       }).focus();
     });
   });
+  */
 
 })();
