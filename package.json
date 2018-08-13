@@ -8,7 +8,7 @@
     "build": "gulp build",
     "start": "node app.js",
     "prewatch": "gulp build",
-    "watch": "concurrently \"gulp\" \"nodemon app.js --config config/nodemon.json -q\"",
+    "watch": "gulp & nodemon app.js --config config/nodemon.json -q",
     "test": "npm run lint-css && npm run cypress:run",
     "lint-css": "./node_modules/.bin/sass-lint -c ./config/.sass-lint.yml 'src/**/*.scss' -v -q",
     "backstop:ref": "node app.js & ./node_modules/backstopjs/cli/index.js reference --config=config/backstop.json",
@@ -31,7 +31,6 @@
   },
   "devDependencies": {
     "backstopjs": "^3.5.2",
-    "concurrently": "^3.6.1",
     "cypress": "^3.0.3",
     "del": "^3.0.0",
     "nodemon": "^1.18.3",

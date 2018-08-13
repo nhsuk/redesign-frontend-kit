@@ -14,7 +14,7 @@ NHS.UK frontend is in development, it's not quite ready to be used yet.
 
 You will need <a href="https://store.docker.com/search?type=edition&offering=community">Docker</a> to run the application and make changes.
 
-Clone the repository: `git clone https://github.com/AdamChrimes/nodejs-boilerplate.git nodejs-app` and whilst in the project directory `cd nodejs-app`, run the application with Docker `docker-compose up`.
+Clone the repository: `git clone https://github.com/nhsuk/frontend.git frontend` and whilst in the project directory `cd frontend`, run the application with Docker `docker-compose up`.
 
 The application then will be available at <a href="http://localhost:3000">http://localhost:3000</a>.
 
