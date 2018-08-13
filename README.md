@@ -24,8 +24,6 @@ Follow our [contributing guide](https://github.com/nhsuk/frontend/blob/master/.g
 
 ## Deploying
 
+If a pull request builds successfully the application will be deployed to the Rancher environment as configured in Travis.
+
 Following a successful pull request and merge, the code will automatically be deployed to our <a href="https://nhsuk-redesign.azurewebsites.net">NHS.UK prototype and example website</a>.
-
-
-
-

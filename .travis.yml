@@ -4,3 +4,4 @@ cache:
   directories:
     - ~/.npm
     - ~/.cache
+after_success: bash ./config/scripts/deploy.sh
