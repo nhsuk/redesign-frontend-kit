@@ -1,0 +1,9 @@
+node_modules/
+app/assets/css/styles.min.css
+.git/
+README.md
+npm-debug.log
+npm-debug.log.*
+.DS_Store
+*.swp
+.idea/*
