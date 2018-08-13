@@ -1,7 +1,16 @@
-FROM node:8.11.1-alpine
+FROM node:8
 
-COPY package*.json /
+# Copy source code
+COPY . /code
 
+# Change working directory
+WORKDIR /code
+
+# Install dependencies
 RUN npm install
 
-WORKDIR /app
+# Expose port to the outside
+EXPOSE 3000
+
+# Launch application
+CMD [ "node", "app.js" ]

@@ -1,14 +1,13 @@
-version: '3'
+version: '2.1'
 
 services:
   frontend:
-    image: node:8
+    build:
+      context: .
+      args:
+        NODE_ENV: development
+    command: npm run watch
     ports:
       - 3000:3000
     volumes:
-      - .:/app
-    command: >
-      bash -c "cd /app &&
-               npm install && 
-               npm rebuild node-sass &&
-               npm run watch"
+      - .:/code
