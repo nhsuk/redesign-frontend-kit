@@ -27,11 +27,11 @@
   "scenarios": [
     {
       "label": "components",
-      "url": "http://localhost:3000/examples/components"
+      "url": "http://host.docker.internal:3000/examples/components"
     },
     {
       "label": "header & navigation",
-      "url": "http://localhost:3000/examples/header-footer-example",
+      "url": "http://host.docker.internal:3000/examples/header-footer-example",
       "selectors": [
         ".nhsuk-global-header",
         ".nhsuk-global-nav"
@@ -40,7 +40,7 @@
     }, 
     {
       "label": "footer",
-      "url": "http://localhost:3000/examples/header-footer-example",
+      "url": "http://host.docker.internal:3000/examples/header-footer-example",
       "selectors": [
         ".nhsuk-global-footer"
       ]

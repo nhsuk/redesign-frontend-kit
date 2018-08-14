@@ -12,11 +12,11 @@ NHS.UK frontend is in development, it's not quite ready to be used yet.
 
 ## Installation
 
-Install the long-term support (LTS) version of <a href="https://nodejs.org/en/">Node.js</a>, which includes NPM.
+You will need <a href="https://store.docker.com/search?type=edition&offering=community">Docker</a> to run the application and make changes.
 
-Clone the repo: `git clone https://github.com/nhsuk/frontend.git frontend` and whilst in the project directory `cd frontend`, install the required npm packages with: `npm install`
+Clone the repository: `git clone https://github.com/nhsuk/frontend.git frontend` and whilst in the project directory `cd frontend`, run the application with Docker `docker-compose up`.
 
-Run the project in development mode `npm run watch` and visit <a href="http://localhost:3000">http://localhost:3000</a>.
+The application then will be available at <a href="http://localhost:3000">http://localhost:3000</a>.
 
 ## Contributing
 
@@ -24,8 +24,6 @@ Follow our [contributing guide](https://github.com/nhsuk/frontend/blob/master/.g
 
 ## Deploying
 
+If a pull request builds successfully the application will be deployed to the Rancher environment as configured in Travis.
+
 Following a successful pull request and merge, the code will automatically be deployed to our <a href="https://nhsuk-redesign.azurewebsites.net">NHS.UK prototype and example website</a>.
-
-
-
-

@@ -23,7 +23,7 @@ if (app.get('env') === 'production') {
 }
 
 app.listen(app.get('port'), function() {
-  console.log('Listening for changes at http://localhost:' + app.get('port'));
+  console.log('App watching for changes at http://localhost:' + app.get('port'));
 });
 
 module.exports = app;
