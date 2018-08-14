@@ -9,7 +9,7 @@
     "start": "node app.js",
     "prewatch": "gulp build",
     "watch": "gulp & nodemon app.js --config config/nodemon.json -q",
-    "test": "npm run backstop:test",
+    "test": "npm run lint-css && npm run cypress:run",
     "lint-css": "./node_modules/.bin/sass-lint -c ./config/.sass-lint.yml 'src/**/*.scss' -v -q",
     "backstop:ref": "./node_modules/backstopjs/cli/index.js reference --config=config/backstop.json --docker",
     "backstop:test": "./node_modules/backstopjs/cli/index.js test --config=config/backstop.json --docker",

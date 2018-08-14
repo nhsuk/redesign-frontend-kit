@@ -53,7 +53,7 @@
     "html_report": "tests/backstop/backstop_data/html_report",
     "ci_report": "tests/backstop/backstop_data/ci_report"
   },
-  "report": ["browser", "CI"],
+  "report": ["browser"],
   "engine": "puppeteer",
   "engineOptions": {
     "args": ["--no-sandbox"]
