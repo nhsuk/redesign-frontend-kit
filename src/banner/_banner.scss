@@ -7,6 +7,8 @@
   float: left;
   line-height: 28px;
 
+
+
   &--beta {
     background: $nhsuk-light-purple;
   }
@@ -20,6 +22,8 @@
     background: $nhsuk-black;
     color: $nhsuk-yellow;
   }
+
+
 
 }
 
@@ -60,7 +64,7 @@
     }
   }
 
-  // Modifiers
+
 
   &--survey {
     background: $nhsuk-warm-yellow;
@@ -70,6 +74,8 @@
     z-index: 3;
 
     a {
+      color: $nhsuk-black;
+
       &:focus {
         background: $nhsuk-blue-shade-35;
         box-shadow: 0 0 0 4px $nhsuk-blue-shade-35;
@@ -106,4 +112,6 @@
 
   }
 
+
+  
 }
