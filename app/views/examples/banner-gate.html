@@ -4,13 +4,15 @@
 {% from "macros/action-link.html" import actionLink %}
 {% from "macros/care-card.html" import carecard %}
 {% from "macros/keypoint.html" import keypoint %}
+{% from "macros/callout.html" import callout %}
 {% from "macros/image.html" import image %}
 {% from "macros/review-date.html" import reviewdate %}
 {% extends 'includes/site-layout.html' %}
 
 {% block body %}
 
-{% include 'partials/global-alert/global-alert-new-page.html' %}
+  {% include 'partials/global-alert/global-alert-emergency.html' %}
+  {% include 'partials/global-alert/global-alert-new-page.html' %}
 	{% include 'partials/breadcrumb/breadcrumb.html' %}
 
     <div class="nhsuk-o-width-container">
@@ -41,11 +43,7 @@
                             <li>suck ice cubes, ice lollies or hard sweets – but don't give young children anything small and hard to suck because of the risk of choking</li>
                             <li>rest</li>
                             </ul>
-                            
-                            
-                            
-                            
-                                
+
                             <script>
                                     // <details> polyfill
                                     // http://caniuse.com/#feat=details
@@ -546,8 +544,7 @@
                             </section>
 				
 					<div class="nhsuk-page-content">
-										
-				
+
 							{{ reviewdate("12/02/2016", "01/02/2019") }}
 
 					</div>

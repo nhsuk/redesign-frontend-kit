@@ -624,76 +624,7 @@
 // Global Alerts
 //////////////////////
 
-.nhsuk-c-global-alert {
-  background: $nhsuk-white;
 
-  .nhsuk-c-global-alert__content {
-    @include clear();
-    padding: 16px 0;
-
-    .nhsuk-c-global-alert__header,
-    .nhsuk-c-global-alert__message {
-      float: left;
-      font-size: 19px;
-      line-height: 28px;
-      margin: 0;
-      padding: 4px;
-
-      @include mq($until: desktop) {
-        float: none;
-      }
-
-      @include mq($until: tablet) {
-        font-size: 16px;
-        line-height: 24px;
-      }
-
-    }
-
-    .nhsuk-c-global-alert__header {
-      background: #007A72;
-      color: $nhsuk-white;
-      margin: 0 8px 0 0;
-      padding: 4px 12px;
-
-      @include mq($until: desktop) {
-        display: inline-block;
-        padding: 4px 8px;
-      }
-
-    }
-
-    .nhsuk-c-global-alert__message {
-      @include mq($until: desktop) {
-        display: block;
-        padding: 8px 0 0;
-      }
-    }
-  }
-
-  &--notice {
-    border-bottom: 4px solid $nhsuk-grey-5;
-  }
-
-  &--warning {
-    background: $nhsuk-yellow;
-
-    .nhsuk-c-global-alert__content {
-      .nhsuk-c-global-alert__header {
-        background: $nhsuk-black;
-        color: $nhsuk-yellow;
-      }
-    }
-
-    a {
-      &:hover {
-        background: $nhsuk-blue;
-        box-shadow: 0 0 0 4px $nhsuk-blue;
-        color: $nhsuk-white;
-      }
-    }
-  }
-}
 
 //////////////////////
 // Helper Classes
