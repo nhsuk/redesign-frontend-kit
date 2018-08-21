@@ -1,0 +1,85 @@
+.nhsuk-c-tag {
+  background: $nhsuk-blue;
+  color: $nhsuk-white;          
+  margin: 0 16px 0 0;
+  padding: 6px 12px;
+  font-size: 16px;
+  float: left;
+  line-height: 28px;
+
+  &--beta {
+    background: $nhsuk-light-purple;
+  }
+
+  &--survey {
+    background: $nhsuk-black;
+  }
+
+}
+
+.nhsuk-c-banner {
+  background: $nhsuk-white;
+  padding: 24px 0;
+  margin: 0 auto;
+  width: 100%;
+
+  &__content {
+    @include clear();
+  }
+
+  &__message {
+    font-size: 16px;
+    float: left;
+    line-height: 28px;
+    margin: 6px 0;
+
+    @include mq($until:desktop) {
+      display: block;
+      margin: 8px 0 0;
+    }
+
+  }
+
+  &__close {
+    float: right;
+    color: $nhsuk-black;
+    display: block;
+    font-size: 14px;
+    margin: 6px 0 0 0;
+  }
+
+  @media screen and (max-width:480px) {
+    .wrap {
+      white-space: nowrap;
+    }
+  }
+
+  // Modifiers
+
+  &--survey {
+    background: $nhsuk-warm-yellow;
+    bottom: 0;
+    display: none;
+    position: fixed;
+    z-index: 3;
+
+    a {
+      &:focus {
+        background: $nhsuk-blue-shade-35;
+        box-shadow: 0 0 0 4px $nhsuk-blue-shade-35;
+        color: $nhsuk-white;
+      }
+      &:hover {
+        background: $nhsuk-blue;
+        box-shadow: 0 0 0 4px $nhsuk-blue;
+        color: $nhsuk-white;
+      }
+    }
+
+  }
+
+  &--beta {
+    border-bottom:1px solid $nhsuk-grey-4;
+  }
+
+}

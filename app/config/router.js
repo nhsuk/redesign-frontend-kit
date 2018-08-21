@@ -342,4 +342,8 @@ router.get('/examples/test-banner-new-page-v1', (req, res) => {
   res.render('examples/test-banner-new-page-v1', {});
 });
 
+router.get('/examples/banner-gate', (req, res) => {
+  res.render('examples/banner-gate', {});
+});
+
 module.exports = router;
