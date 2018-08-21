@@ -117,24 +117,18 @@
 
     @include mq($until:desktop) {
       float: none;
-      font-size: 16px;
-      line-height: 28px;
-    }
-
-    @include mq($until:tablet) {
-      font-size: 16px;
-      line-height: 24px;
     }
   }
 
   &__header {
     background: $nhsuk-black;
     padding: 6px 12px;
-    margin: 0 16px 0 0;
+    margin: 0 8px 0 0;
     color: $nhsuk-white;
 
     @include mq($until:desktop) {
       display: inline-block;
+      margin: 0 8px 8px 0;
     }
   }
 
