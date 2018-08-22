@@ -6,34 +6,95 @@
 
 {% block header %}
     <h1>Images</h1>
-    <p class="nhsuk-body-s"><span class="nhsuk-tag nhsuk-tag__development">Development</span></p>
+    <p class="nhsuk-body-s"><span class="nhsuk-tag nhsuk-tag__ready">Standards</span></p>
+
 {% endblock %}
 
 {% block sidebar %}
     <h2 class="nhsuk-heading-xs">Page contents</h2>
     <ul>
-        <li><a href="#user-need">User need</a></li>
-        <li><a href="#usage">Where it's currently being used</a></li>
+        <li><a href="#notes">Notes</a></li>
+        <li><a href="#accept">Acceptance criteria</a></li>
+        <li><a href="#need">User need</a></li>
+        <li><a href="#current">What is currently being used (alpha/beta/live)</a></li>
+        <li><a href="#our">Our designs</a></li>
         <li><a href="#hypothesis">Hypothesis</a></li>
         <li><a href="#iterations">Iterations</a></li>
-        <li><a href="#final-version">Final version</a></li>
-        <li><a href="#accessibility">Accessibility</a></li>
-        <li><a href="#rules">Rules</a></li>
-    </ul>
+        <li><a href="#accessibility">Accessibility (how we made this accessible)</a></li>
+        <li><a href="#rules">rules</a></li>
+
+      </ul>
 {% endblock %}
 
 {% block content %}
-  <h3 id="user-need">User need</h3>
-  <ul>
-    <li>As a user I WANT visual context (supporting written information), SO THAT I can help identify my health thing (condition / symptom / medicine).</li>
-    <li>As a user I WANT visual context, SO THAT I'm reassured that I'm on the correct page.</li>
-  </ul>
 
-  <h3 id="usage">Where it's currently being used</h3>
-  <p>...</p>
 
-  <h3 id="hypothesis">Hypothesis</h3>
-  <p>...</p>
+<h2 id="notes">Notes </h2>
+
+<p>Please note: This page only details the presentation of images, not the images themselves (subject, framing, colour, resolution etc.).</p>
+
+<p>Informative images can be essential on health services - especially in cases such as medical conditions where photos can help a user identify specific ailments and seek related treatments. </p>
+
+<p>We've also found users with certain access needs (such as dyslexia) navigate conditions and treatments pages through images, it helps with orientation and separates out the content.</p>
+
+<h3>Unnecessary images</h3>
+
+<p>But having unnecessary images, or decorative images can cause frustration for users especially on information pages ("I just want to find out whats wrong with me!"). If an image is used without a user need it can take away from the content.</p>
+
+<h3>Content team's needs</h3>
+
+<p>Upon investigating our content teams needs for using images they suggested that the images should flow with the text content; not appear too prominent or isolated. They also recommended that captions are as important as the images themselves, so must reflect this in their importance on the page. </p>
+
+<h3>How to present images </h3>
+
+<p>We found gallery views (images side by side) confusing to users - this also jarred with the content teams needs for the images to appear as part of the content. With gallery views, users either missed the images in the right hand column or they didn't know how to interpret the sequence. To simplify this we recommend stacking images (if part of the content).</p>
+
+<p>We also found users clicking images in gallery views - expecting them to appear larger in a pop-up modal. By increasing the size of the images, and having them stacked in one column (not in two) we didn't see anyone clicking on them to expand in testing. </p>
+
+
+<h2 id="accept">Acceptance criteria</h2>
+<p>A user is able to interpret that the image used being related to the surrounding content.</p>
+
+<h2 id="need">User need</h2>
+
+<p>As a user I WANT visual context (supporting written information), SO THAT I can help identify my health thing (condition / symptom / medicine).</p>
+
+<p>As a user I WANT visual context, SO THAT I'm reassured that I'm on the correct page.</p>
+
+<h2 id="current">What is currently being used (alpha/beta/live)</h2>
+
+<p>Images were used sporadically throughout the phases of NHS.uk, many in gallery views (side by side in two columns).</p>
+
+<h2 id="our">Our designs</h2>
+
+<div class="nhsuk-reading-width">
+  <div class="example grey-background">
+      <div class="nhsuk-o-grid">
+      <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds">
+              {{ image("Picture of allergic conjunctivitis", "https://assets.nhs.uk/prod/images/S_1017_allergic-conjunctivitis_M15.2e16d0ba.fill-320x213.jpg", "<p>Itchy, red, watering eyes</p>") }}
+          </div>
+      </div>
+  </div>
+</div>
+
+<h2 id="hypothesis">Hypothesis</h2>
+
+<p>If the images are three quarters the reading space <br />
+Then users will understand their place within the page (read as part of the text), and if multiple images are used, where the image sits in sequence<br />
+Because the images flow with the content</p>
+
+
+<h2 id="iterations">Iterations</h2>
+
+<h3>Research findings</h3>
+
+<p>Images tested well with all users, stating that they helped them understand how symptoms might appear and support written content<br />
+  <strong>(usability lab, Leeds, 20th June 2018)</strong></p>
+
+  <p>Users suggested that they were drawn to the images themselves and may miss the captions that reference the text<br />
+    <strong>(usability lab, Leeds, 20th June 2018)</strong></p>
+
+
 
   <h3 id="final-version">Final version</h3>
 
@@ -62,10 +123,30 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>  
   </div>
 
-  <h3 id="accessibility">Accessibility</h3>
-  <p>...</p>
+  <h2 id="accessibility">Accessibility (how we made this accessible)</h2>
 
-  <h3 id="rules">Rules</h2>
+  <p>We follow w3c's guidance on making images accessible - Images must have text alternatives that describe the information or function represented by them. This ensures that images can be used by people with various disabilities.</p>
+
+
+  <p>When using image (or the img element) specify a text alternative with the alt attribute (alt text). </p>
+  
+  <p>Don't have images that contain words, because this will be unaccessible to screen readers. (<a href="https://www.w3.org/TR/WCAG20-TECHS/H37.html">https://www.w3.org/TR/WCAG20-TECHS/H37.html</a>) </p>
+  
+  <h3>Why is this important?</h3>
+  <p>Images make content easier to understand for many people, and in particular for those with cognitive and learning disabilities. They serve as cues that are used by people with visual impairments, including people with low vision, to orient themselves in the content.</p>
+  
+  <p>However, images are used extensively on websites and can create major barriers when they are not accessible. Accessible images are beneficial in many situations, such as:</p>
+  
+  <ul>
+    <li>People using screen readers: The text alternative can be read aloud or rendered as Braille</li>
+    <li>People using speech input software: Users can put the focus onto a button or linked image with a single voice command</li>
+    <li>People browsing speech-enabled websites: The text alternative can be read aloud</li>
+    <li>Mobile web users: Images can be turned off, especially for data-roaming</li>
+    <li>Search engine optimization: Images become indexable by search engines</li>
+</ul>
+
+
+  <h2 id="rules">Usage (rules)</h2>
   <ul>
     <li>Only use images where it adds to user understanding (e.g pictures of symptoms to aid identification, such as rashes)</li>
     <li>Image sizing - to ensure images flow with content; size 2/3 on larger screens (desktop / tablet) and full width on small screens (mobile)</li>
