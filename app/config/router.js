@@ -322,7 +322,6 @@ router.get('/examples/internalpage', (req, res) => {
   res.render('examples/internalpage', {});
 });
 
-<<<<<<< HEAD
 router.get('/status/error', (req, res) => {
   res.render('status/error', {});
 });
@@ -345,13 +344,14 @@ router.get('/examples/test-banner-feedback-v3', (req, res) => {
 
 router.get('/examples/test-banner-new-page-v1', (req, res) => {
   res.render('examples/test-banner-new-page-v1', {});
-=======
+});
+
 router.get('/examples/generichubpage-b', (req, res) => {
   res.render('examples/generichubpage-b', {});
 });
+
 router.get('/examples/maurotestb', (req, res) => {
   res.render('examples/maurotestb', {});
->>>>>>> Changes
 });
 
 router.get('/examples/maurotestc', (req, res) => {
