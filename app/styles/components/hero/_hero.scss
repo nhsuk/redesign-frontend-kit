@@ -30,6 +30,18 @@
   }
 }
 
+.nhsuk-hero-image.imagetest {
+  background-image: url(/images/hero-1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  position: relative;
+  @include mq($until: tablet) {
+    height: 240px;
+  }
+}
+
 .nhsuk-hero__home-content {
   @include top-and-bottom();
   background: $nhsuk-white;
@@ -58,7 +70,7 @@
   background-color: $nhsuk-blue;
   background-position: right center;
   background-repeat: no-repeat;
-  background-size: 40%;
+  background-size: 30%;
   border-top: 1px solid $nhsuk-secondary-border-colour;
   position: relative;
 

@@ -282,8 +282,8 @@ router.get('/examples/generichubpage-a', (req, res) => {
   res.render('examples/generichubpage-a', {});
 });
 
-router.get('/examples/internalpage', (req, res) => {
-  res.render('examples/internalpage', {});
+router.get('/examples/internalpage-a', (req, res) => {
+  res.render('examples/internalpage-a', {});
 });
 
 router.get('/examples/generichubpage-b', (req, res) => {
@@ -300,4 +300,17 @@ router.get('/examples/maurotestc', (req, res) => {
 router.get('/examples/hubpageweekbyweek', (req, res) => {
   res.render('examples/hubpageweekbyweek', {});
 });
+
+router.get('/examples/internalpage-b', (req, res) => {
+  res.render('examples/internalpage-b', {});
+});
+
+router.get('/examples/landingpage-b', (req, res) => {
+  res.render('examples/landingpage-b', {});
+});
+
+router.get('/examples/landingpage-a', (req, res) => {
+  res.render('examples/landingpage-a', {});
+});
+
 module.exports = router;
