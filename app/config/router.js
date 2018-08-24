@@ -282,12 +282,22 @@ router.get('/examples/generichubpage-a', (req, res) => {
   res.render('examples/generichubpage-a', {});
 });
 
-router.get('/examples/internalpage-a', (req, res) => {
-  res.render('examples/internalpage-a', {});
+router.get('/examples/generichubpage-a2', (req, res) => {
+  res.render('examples/generichubpage-a2', {});
 });
+
+router.get('/examples/antenatal-care-1', (req, res) => {
+  res.render('examples/antenatal-care-1', {});
+});
+
+
 
 router.get('/examples/generichubpage-b', (req, res) => {
   res.render('examples/generichubpage-b', {});
+});
+
+router.get('/examples/generichubpage-b2', (req, res) => {
+  res.render('examples/generichubpage-b2', {});
 });
 router.get('/examples/maurotestb', (req, res) => {
   res.render('examples/maurotestb', {});
@@ -301,8 +311,8 @@ router.get('/examples/hubpageweekbyweek', (req, res) => {
   res.render('examples/hubpageweekbyweek', {});
 });
 
-router.get('/examples/internalpage-b', (req, res) => {
-  res.render('examples/internalpage-b', {});
+router.get('/examples/antenatal-care-2', (req, res) => {
+  res.render('examples/antenatal-care-2', {});
 });
 
 router.get('/examples/landingpage-b', (req, res) => {
@@ -313,4 +323,11 @@ router.get('/examples/landingpage-a', (req, res) => {
   res.render('examples/landingpage-a', {});
 });
 
+router.get('/examples/generic-internal-page-1', (req, res) => {
+  res.render('examples/generic-internal-page-1', {});
+});
+
+router.get('/examples/generic-internal-page-2', (req, res) => {
+  res.render('examples/generic-internal-page-2', {});
+});
 module.exports = router;

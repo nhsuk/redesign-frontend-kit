@@ -1,0 +1,223 @@
+{% set title = 'Allergies' %}
+{% set parent = 'Health A-Z' %}
+{% from "macros/callout.html" import callout %}
+{% from "macros/keypoint.html" import keypoint %}
+{% from "macros/care-card.html" import carecard %}
+{% from "macros/review-date.html" import reviewdate %}
+{% extends "includes/templates/page-v4.html"%}
+
+{% block breadcrumb %}
+<nav class="nhsuk-c-breadcrumb" role="Breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-o-width-container">
+    <ol class="nhsuk-c-breadcrumb__list">
+    <li class="nhsuk-c-breadcrumb__item">
+      <a href="#" class="nhsuk-c-breadcrumb__link">Home</a>
+      <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"/>
+        <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/images/icons/icon-chevron-right-grey-10px.png" xlink:href="">
+      </svg>
+    </li>
+    <li class="nhsuk-c-breadcrumb__item">
+      <a href="#" class="nhsuk-c-breadcrumb__link">Health A-Z</a>
+      <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"/>
+        <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/images/icons/icon-chevron-right-grey-10px.png" xlink:href="">
+      </svg>
+    </li>
+
+    <li class="nhsuk-c-breadcrumb__item">
+      <a href="#" class="nhsuk-c-breadcrumb__link">Your pregnancy and baby guide</a>
+      <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"/>
+        <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/images/icons/icon-chevron-right-grey-10px.png" xlink:href="">
+      </svg>
+    </li>
+
+
+    <li class="nhsuk-c-breadcrumb__item">
+      <a href="#" class="nhsuk-c-breadcrumb__link">Your pregnancy antenatal care</a>
+      <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"/>
+        <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/images/icons/icon-chevron-right-grey-10px.png" xlink:href="">
+      </svg>
+    </li>
+
+
+    <li class="nhsuk-c-breadcrumb__item">
+      <a href="#" class="nhsuk-c-breadcrumb__link">Your antenatal appointments</a>
+      <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"/>
+        <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/images/icons/icon-chevron-right-grey-10px.png" xlink:href="">
+      </svg>
+    </li>
+
+  </ol>
+  <p class="nhsuk-c-breadcrumb__back">
+    <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"/>
+      <image class="nhsuk-icon__chevron-left nhsuk-icon__chevron-left--fallback" src="/images/icons/icon-chevron-left-blue.png" xlink:href="">
+    </svg>
+    <a href="#" class="nhsuk-c-breadcrumb__backlink">Back to Your pregnancy and baby guide</a>
+  </p>
+  </div>
+</nav>
+{% endblock %}
+
+{% block sidebar %}
+<div> <h2 class="nhsuk-page-nav-right">Your pregnancy antenatal care</h2>
+   <ul class="nhsuk-page-nav-right">
+        <li><a href="/examples/allergies/test-condition-allergies-overview">What is your antenatal care</a></li>
+        <li><a href="/examples/allergies/test-condition-allergies-symptoms">Who is who in your antenatal team</a></li>
+        <li><strong><span style="background-color: #fdcc68"> Your antenatal appointments </span></strong></mark></li>
+        <li><a href="/examples/allergies/test-condition-allergies-diagnosis">Tests scans and checks</a></li>
+        <li><a href="/examples/allergies/test-condition-allergies-diagnosis">Your first antenatal appointment</a></li>
+        <li><a href="/examples/allergies/test-condition-allergies-diagnosis">1st scan</a></li>
+        <li><a href="/examples/allergies/test-condition-allergies-prevention">Mid pregnancy scan</a></li>
+        <li><a href="/examples/allergies/test-condition-allergies-prevention">If screenings find something</a></li>
+	</ul> </div>
+{% endblock %}
+
+{% block content %}
+
+    <section class="nhsuk-page-content__section-one">
+
+		<div class="nhsuk-reading-width">
+
+			<div class="nhsuk-page-heading">
+				<h1>Your antenatal appointments </h1>
+				<p class="nhsuk-body-l nhsuk-page-intro">What will happen at your antenatal appointments with the midwife or doctor.
+    </p>
+			</div>
+
+			<div class="nhsuk-c-page-contents">
+
+
+				<div class="nhsuk-c-reveal">
+					<a href="#" class="nhsuk-c-reveal__header">Open page contents</a>
+					<div class="nhsuk-c-reveal__content">
+						<ul>
+							<li><a href="#First-contact">First contact with midwife or doctor</a></li>
+							<li><a href="#8-12-weeks">8-12 weeks: booking appointment</a></li>
+							<li><a href="#8-14-weeks">8-14 weeks: 1st scan</a></li>
+							<li><a href="#16-week">16 week pregnant</a></li>
+							<li><a href="#18-20-weeks">18-20 weeks</a></li>
+              <li><a href="#25-weeks-pregnant">25 weeks pregnant</a></li>
+              <li><a href="#28-weeks">28 weeks</a></li>
+                <li><a href="#31-weeks">31 weeks</a></li>
+                  <li><a href="#34-weeks">34 weeks</a></li>
+                    <li><a href="#36-week">36weeks</a></li>
+                      <li><a href="#38-weeks">38 weeks</a></li>
+                        <li><a href="#40-weeks">40 weeks</a></li>
+                          <li><a href="#41-weeks">41 weeks</a></li>
+                            <li><a href="#42-weeks">42 weeks</a></li>
+                              <li><a href="#time-off">Time off for antenatal appointmens</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<script>
+					$('.nhsuk-c-page-contents .nhsuk-c-reveal__header').click( function() {
+						$(this).next("div").toggle();
+						var txt = $(".nhsuk-c-page-contents .nhsuk-c-reveal__content").is(':visible') ? 'Close page contents' : 'Open page contents';
+						$(this).toggleClass("open").text(txt);
+						return false;
+					});
+				</script>
+
+				<p class="nhsuk-nav-bottom-link"><a href="#nav-bottom">View all pages about Antenatal care</a></p>
+
+			</div>
+
+
+
+
+     <table class="nhsuk-table2">
+     <thead>
+      <tr>
+        <th>Week</th>
+        <th>commitments</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>0-12 weeks</td>
+        <td><a href="/conditions/osteoarthritis/">1 appointment - 2 screenings - 1 flu vaccine</a></td>
+      </tr>
+      <tr>
+        <td>12-20 weeks</td>
+        <td><a href="/conditions/bursitis/">2 appointments - 2 scans - 1 blood test</a></td>
+      </tr>
+      <tr>
+        <td>20-37 Weeks</td>
+        <td><a href="/conditions/gout/">2 appointments - 1 screening - 1 blood test</td></a>
+      </tr>
+      <tr>
+        <td>37 Weeks</td>
+        <td><a href="/conditions/gout/">7 appointmens - 1 scan - 1 induction</a> </td>
+      </tr>
+      </tbody>
+      </table>
+
+
+
+
+
+
+
+			<h2 id="First-contact">First contact with midwife or doctor</h2>
+
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+
+
+
+      <h2 id="8-12-weeks">8-12 weeks: booking appointment </h2>
+
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+
+
+			<h2 id="8-14-weeks">8-14 weeks: 1st scan</h2>
+
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+			<h2 id="16-week">16 week pregnant</h2>
+
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+
+			<h2 id="18-20-weeks">18-20 weeks</h2>
+
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+       <h2 id="25-weeks-pregnant">25 weeks pregnant</h2>
+
+       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+
+       <h2 id="28-weeks">28 weeks</h2>
+       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+       <h2 id="34-weeks">34 weeks</h2>
+       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+       <h2 id="38-weeks">38 weeks</h2>
+       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+       <h2 id="40-weeks">40 weeks</h2>
+       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+       <h2 id="41-weeks">41 weeks</h2>
+       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+       <h2 id="42-weeks">42 weeks</h2>
+       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+       <h2 id="time-off">Time off for antenatal appointmens</h2>
+       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+     </div>
+
+     </section>
+
+{% endblock %}
