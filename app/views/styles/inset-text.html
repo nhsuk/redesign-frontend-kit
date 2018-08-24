@@ -1,0 +1,75 @@
+{% set title = 'Callouts' %}
+{% set navigation = 'transactional' %}
+{% set navigationWidth = 'fluid' %}
+{% from "macros/keypoint.html" import keypoint %}
+{% extends "includes/templates/styles.html"%}
+
+{% block header %}
+    <h1>Inset text</h1>
+    <p class="nhsuk-body-s"><span class="nhsuk-tag nhsuk-tag__ready">Standards</span></p>
+{% endblock %}
+
+{% block sidebar %}
+    <h2 class="nhsuk-heading-xs">Page contents</h2>
+    <ul>
+        <li><a href="#user-need">User need</a></li>
+        <li><a href="#usage">Where it's currently being used</a></li>
+        <li><a href="#hypothesis">Hypothesis</a></li>
+        <li><a href="#iterations">Iterations</a></li>
+        <li><a href="#final-version">Final version</a></li>
+        <li><a href="#accessibility">Accessibility</a></li>
+        <li><a href="#rules">Rules</a></li>
+    </ul>
+{% endblock %}
+
+{% block content %}
+
+	<h2>User need</h2>
+	<p>As a user I need to identify and understand the important content on the page (even if I don't read all the content) so that I get the best outcome for my situation.</p>
+	
+	<h2>Where it's currently being used</h2>
+	<p>...</p>
+
+	<h2>Hypothesis</h2>
+	<p>...</p>
+
+	<h2>Iterations</h2>
+	<div class="example grey-background">
+		<h3 class="nhsuk-heading-xs nhsuk-secondary-text">Version 1</h3>
+		<img class="component-image" src="../images/components/keypoint-v1.png">
+	</div>
+	<div class="example grey-background">
+		<h3 class="nhsuk-heading-xs">Version 2</h3>
+		<img class="component-image" src="../images/components/keypoint-v2.png">
+	</div>
+
+	<h2>Final version</h2>
+
+	<div class="example grey-background">
+		{{ keypoint("<p>If you drive you must tell the <a href='https://www.gov.uk/contact-the-dvla' title='External website'>DVLA</a> about your vertigo. Visit the GOV.UK website for more information on <a href='https://www.gov.uk/dizziness-and-driving' title='External website'>driving with vertigo</a></p>") }}
+	</div>
+
+	<div class="example-snippet">
+		<button class="nhsuk-btn-copy" data-clipboard-target="#clipboard-3">Copy</button>
+<pre class="language-markup" id="clipboard-3"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>nhsuk-c-keypoint<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>If you drive you must tell the <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://www.gov.uk/contact-the-dvla<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>External website<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>DVLA<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span> about your vertigo. Visit the GOV.UK website for more information on <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://www.gov.uk/dizziness-and-driving<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>External website<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>driving with vertigo<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+	</div>
+
+	<h2>Accessibility</h2>
+	<p>...</p>
+
+	<h2>Usage</h2>
+	<p>The key point callout can be used to highlight a significant point, some important information or advice so that the user is more likely to read and remember it over the body copy.</p>
+
+</div>
+<script>
+	$('.nhsuk-c-reveal__header').click( function() {
+		$(this).next("div").toggle();
+		$(this).toggleClass("open");
+		return false;
+	});
+</script>
+{% endblock %}
+
+
