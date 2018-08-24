@@ -330,4 +330,15 @@ router.get('/examples/generic-internal-page-1', (req, res) => {
 router.get('/examples/generic-internal-page-2', (req, res) => {
   res.render('examples/generic-internal-page-2', {});
 });
+
+router.get('/examples/antenatalcare-1', (req, res) => {
+  res.render('examples/antenatalcare-1', {});
+});
+
+
+router.get('/examples/antenatalcare-2', (req, res) => {
+  res.render('examples/antenatalcare-2', {});
+});
+
+
 module.exports = router;
