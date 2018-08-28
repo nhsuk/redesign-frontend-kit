@@ -331,13 +331,13 @@ router.get('/examples/generic-internal-page-2', (req, res) => {
   res.render('examples/generic-internal-page-2', {});
 });
 
-router.get('/examples/antenatalcare-1', (req, res) => {
-  res.render('examples/antenatalcare-1', {});
+router.get('/examples/antenatal-appointments-1', (req, res) => {
+  res.render('examples/antenatal-appointments-1', {});
 });
 
 
-router.get('/examples/antenatalcare-2', (req, res) => {
-  res.render('examples/antenatalcare-2', {});
+router.get('/examples/antenatal-appointments-2', (req, res) => {
+  res.render('examples/antenatal-appointments-2', {});
 });
 
 
