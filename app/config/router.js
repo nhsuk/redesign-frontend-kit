@@ -35,6 +35,10 @@ router.get('/styles/callouts', (req, res) => {
   res.render('styles/callouts', {});
 });
 
+router.get('/styles/inset-text', (req, res) => {
+  res.render('styles/inset-text', {});
+});
+
 router.get('/styles/care-cards', (req, res) => {
   res.render('styles/care-cards', {});
 });
@@ -310,12 +314,16 @@ router.get('/examples/maurotest', (req, res) => {
   res.render('examples/maurotest', {});
 });
 
-router.get('/examples/maurotest2', (req, res) => {
-  res.render('examples/maurotest2', {});
+router.get('/examples/landingpage', (req, res) => {
+  res.render('examples/landingpage', {});
 });
 
-router.get('/examples/maurotest3', (req, res) => {
-  res.render('examples/maurotest3', {});
+router.get('/examples/generichubpage-a', (req, res) => {
+  res.render('examples/generichubpage-a', {});
+});
+
+router.get('/examples/internalpage', (req, res) => {
+  res.render('examples/internalpage', {});
 });
 
 router.get('/status/error', (req, res) => {

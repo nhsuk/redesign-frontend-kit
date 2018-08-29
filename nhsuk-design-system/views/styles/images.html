@@ -1,0 +1,111 @@
+{% set title = 'Images' %}
+{% set navigation = 'transactional' %}
+{% set navigationWidth = 'fluid' %}
+{% extends "includes/templates/styles.html"%}
+
+{% block header %}
+    <h1>Images</h1>
+    <p class="nhsuk-body-s"><span class="nhsuk-tag nhsuk-tag__design">Research &amp; Design</span></p>
+{% endblock %}
+
+{% block sidebar %}
+    <h2 class="nhsuk-heading-xs">Contents</h2>
+    <ul>
+		<li><a href="#usage">Usage</a></li>
+		<li><a href="#user-needs">User needs</a></li>
+    <li><a href="#example">Example</a></li>
+    </ul>
+{% endblock %}
+
+{% block content %}
+
+
+<h2>Notes </h2>
+
+<p>Please note: This page only details the presentation of images, not the images themselves (subject, framing, colour, resolution etc.).</p>
+
+<p>Informative images can be essential on health services - especially in cases such as medical conditions where photos can help a user identify specific ailments and seek related treatments. </p>
+
+<p>We've also found users with certain access needs (such as dyslexia) navigate conditions and treatments pages through images, it helps with orientation and separates out the content.</p>
+
+<h3>Unnecessary images</h3>
+
+<p>But having unnecessary images, or decorative images can cause frustration for users especially on information pages ("I just want to find out whats wrong with me!"). If an image is used without a user need it can take away from the content.</p>
+
+<h3>Content team's needs</h3>
+
+<p>Upon investigating our content teams needs for using images they suggested that the images should flow with the text content; not appear too prominent or isolated. They also recommended that captions are as important as the images themselves, so must reflect this in their importance on the page. </p>
+
+<h3>How to present images </h3>
+
+<p>We found gallery views (images side by side) confusing to users - this also jarred with the content teams needs for the images to appear as part of the content. With gallery views, users either missed the images in the right hand column or they didn't know how to interpret the sequence. To simplify this we recommend stacking images (if part of the content).</p>
+
+<p>We also found users clicking images in gallery views - expecting them to appear larger in a pop-up modal. By increasing the size of the images, and having them stacked in one column (not in two) we didn't see anyone clicking on them to expand in testing. </p>
+
+
+
+  <h2 id="usage">Usage</h2>
+
+
+  <ul>
+      <li>The aspect ratio for photographs should be 3:2</li>
+      <li>Photographs sized to 609px x 406px at 150dpi  - this needs to be reviewed</li>
+    <li>Only use images where it adds to user understanding (e.g pictures of symptoms to aid identification, such as rashes)</li>
+    <li>Image sizing - to ensure images flow with content; size 2/3 on larger screens (desktop / tablet) and full width on small screens (mobile)</li>
+    <li>Captions - we use them to include essential information (not optional information)</li>
+
+
+
+  </ul>
+
+
+  <h2 id="user-needs">User needs</h2>
+
+
+  <ul>
+    <li>As a user I WANT visual context (supporting written information), SO THAT I can help identify my health thing (condition / symptom / medicine).</li>
+    <li>As a user I WANT visual context, SO THAT I'm reassured that I'm on the correct page.</li>
+  </ul>
+
+
+	<h2 id="example">Example</h2>
+
+    <div class="example" style="background-color: #eff2f3;">
+
+            <div class="nhsuk-c-image nhsuk-o-grid__item--two-thirds">
+                    <img
+                        alt="Picture of allergic conjunctivitis"
+                        src="https://assets.nhs.uk/prod/images/S_1017_allergic-conjunctivitis_M15.2e16d0ba.fill-320x213.jpg"
+                        sizes="(min-width: 1020px) 320px, (min-width: 768px) 50vw, 100vw"
+                        srcset="
+
+                            https://assets.nhs.uk/prod/images/S_1017_allergic-conjunctivitis_M15.2e16d0ba.fill-320x213.jpg 320w,
+
+                            https://assets.nhs.uk/prod/images/S_1017_allergic-conjunctivitis_M15.2e16d0ba.fill-510x340.jpg 510w,
+
+                            https://assets.nhs.uk/prod/images/S_1017_allergic-conjunctivitis_M15.2e16d0ba.fill-640x427.jpg 640w,
+
+                            https://assets.nhs.uk/prod/images/S_1017_allergic-conjunctivitis_M15.2e16d0ba.fill-767x511.jpg 767w,
+
+                            https://assets.nhs.uk/prod/images/S_1017_allergic-conjunctivitis_M1.2e16d0ba.fill-1019x679.jpg 1019w,
+
+                            https://assets.nhs.uk/prod/images/S_1017_allergic-conjunctivitis_M1.2e16d0ba.fill-1125x750.jpg 1125w,
+
+                            https://assets.nhs.uk/prod/images/S_1017_allergic-conjunctivitis_M.2e16d0ba.fill-1534x1023.jpg 1534w,
+
+                        "
+                    />
+                    <div class="nhsuk-c-image-caption">
+                        <p>Itchy, red, watering eyes</p>
+                    </div>
+                </div>
+
+
+
+      </div>
+
+  <div class="example-snippet">
+
+  </div>
+
+{% endblock %}
