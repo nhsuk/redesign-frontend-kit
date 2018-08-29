@@ -51,7 +51,7 @@
 
 
     <li class="nhsuk-c-breadcrumb__item">
-      <a href="#" class="nhsuk-c-breadcrumb__link">Your schedule of antenatal appointments</a>
+      <a href="#" class="nhsuk-c-breadcrumb__link">Your antenatal appointments</a>
       <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
         <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"/>
         <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/images/icons/icon-chevron-right-grey-10px.png" xlink:href="">
@@ -70,163 +70,99 @@
 </nav>
 {% endblock %}
 
-{% block sidebar %}
-<div> <h2 class="nhsuk-page-nav-right"> <strong>Your pregnancy antenatal care</strong></h2>
-   <ul class="nhsuk-page-nav-right">
-     <li><a href="/examples/allergies/test-condition-allergies-overview">What is antenatal care and how do I start</a></li>
-     <li><a href="/examples/allergies/test-condition-allergies-diagnosis"> Your schedule of antenatal appointments</span></strong></mark></li>
-     <li><a href="/examples/allergies/test-condition-allergies-diagnosis">Who's who in the antenatal team</li>
-     <li><strong><span style="background-color: #fdcc68"> Checks at your appointments</span></strong></mark></li>
-     <li><a href="/examples/allergies/test-condition-allergies-diagnosis">What does an ultrasound scan do?</a></li>
-     <li><a href="/examples/allergies/test-condition-allergies-diagnosis">What is screening and do I have to have it?</a></li>
-     <li><a href="/examples/allergies/test-condition-allergies-prevention">Screening for Down's syndrome</a></li>
-     <li><a href="/examples/allergies/test-condition-allergies-prevention">1st scan</a></li>
-     <li><a href="/examples/allergies/test-condition-allergies-diagnosis">Mid-pregnancy (anomaly) scan</a></li>
-     <li><a href="/examples/allergies/test-condition-allergies-prevention">Screening for sickle cell and thalassaemia</a></li>
-     <li><a href="/examples/allergies/test-condition-allergies-prevention">Screening for HIV, hepatitis B and syphilis</a></li>
-	</ul> </div>
-{% endblock %}
+
 
 {% block content %}
+<div class="nhsuk-o-width-container">
+    <main class="nhsuk-o-main-wrapper">
+        <div class="nhsuk-o-grid">
+<div class="nhsuk-o-grid__item nhsuk-o-grid__item--full">
 
-    <section class="nhsuk-page-content__section-one">
+      <div class="nhsuk-page-heading">
 
-		<div class="nhsuk-reading-width">
+        <h1>Your schedule of antenatal appointments<span class="nhsuk-o-h1-sub">Your pregnancy antenatal care</span></h1>
 
-			<div class="nhsuk-page-heading">
-				<h1>Your schedule of antenatal appointments</h1>
-				<p class="nhsuk-body-l nhsuk-page-intro">How many antenatal appointments will I have.
-        Where will I have my antenatal appointments
-      Questions you might be asked</p>
-			</div>
+        <div class="nhsuk-c-page-contents v3">
+          <ul>
+            <li><a href="/examples/test-minihub-amd">What is antenatal care and how do I start</a></li>
+            <li><strong><span style="background-color: #fdcc68"> Your schedule of antenatal appointments</span></strong></mark></li>
+            <li><a href="/examples/test-minihub-amd/living-with-amd">Who's who in the antenatal team</a></li>
+              <li><a href="/examples/test-minihub-amd/living-with-amd">Checks at your appointments</a></li>
+                <li><a href="/examples/test-minihub-amd/living-with-amd">What does an ultrasound scan do?</a></li>
+                  <li><a href="/examples/test-minihub-amd/living-with-amd">What is screening and do I have to have it?</a></li>
+                  <li><a href="/examples/test-minihub-amd/living-with-amd">Screening for Down's syndrome</a></li>
+                  <li><a href="/examples/test-minihub-amd/living-with-amd">1st scan</a></li>
+                    <li><a href="/examples/test-minihub-amd/living-with-amd">Mid-pregnancy (anomaly) scan</a></li>
+                      <li><a href="/examples/test-minihub-amd/living-with-amd">Screening for sickle cell and thalassaemia</a></li>
+                      <li><a href="/examples/test-minihub-amd/living-with-amd">Screening for HIV, hepatitis B and syphilis</a></li>
+          </ul>
+        </div>
 
-			<div class="nhsuk-c-page-contents">
-
-
-        <div class="nhsuk-c-reveal">
-					<a href="#" class="nhsuk-c-reveal__header">Open page contents</a>
-					<div class="nhsuk-c-reveal__content">
-						<ul>
-							<li><a href="#First-contact">First contact with midwife or doctor</a></li>
-							<li><a href="#8-12-weeks">8-12 weeks: booking appointment</a></li>
-							<li><a href="#8-14-weeks">8-14 weeks: 1st scan</a></li>
-							<li><a href="#16-week">16 week pregnant</a></li>
-							<li><a href="#18-20-weeks">18-20 weeks</a></li>
-              <li><a href="#25-weeks-pregnant">25 weeks pregnant</a></li>
-              <li><a href="#28-weeks">28 weeks</a></li>
-                <li><a href="#31-weeks">31 weeks</a></li>
-                  <li><a href="#34-weeks">34 weeks</a></li>
-                    <li><a href="#36-week">36weeks</a></li>
-                      <li><a href="#38-weeks">38 weeks</a></li>
-                        <li><a href="#40-weeks">40 weeks</a></li>
-                          <li><a href="#41-weeks">41 weeks</a></li>
-                            <li><a href="#42-weeks">42 weeks</a></li>
-                              <li><a href="#time-off">Time off for antenatal appointmens</a></li>
-						</ul>
-					</div>
-				</div>
-
-				<script>
-					$('.nhsuk-c-page-contents .nhsuk-c-reveal__header').click( function() {
-						$(this).next("div").toggle();
-						var txt = $(".nhsuk-c-page-contents .nhsuk-c-reveal__content").is(':visible') ? 'Close page contents' : 'Open page contents';
-						$(this).toggleClass("open").text(txt);
-						return false;
-					});
-				</script>
-
-				<p class="nhsuk-nav-bottom-link"><a href="#nav-bottom">View all pages about Antenatal care</a></p>
-
-			</div>
+      </div>
 
 
+<div class="nhsuk-o-grid">
 
-
-     <table class="nhsuk-table">
-     <thead>
-      <tr>
-        <th>Week</th>
-        <th>commitments</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-        <td>0-12 weeks</td>
-        <td><a href="/conditions/osteoarthritis/">1 appointment - 2 screenings - 1 flu vaccine</a></td>
-      </tr>
-      <tr>
-        <td>12-20 weeks</td>
-        <td><a href="/conditions/bursitis/">2 appointments - 2 scans - 1 blood test</a></td>
-      </tr>
-      <tr>
-        <td>20-37 Weeks</td>
-        <td><a href="/conditions/gout/">2 appointments - 1 screening - 1 blood test</td></a>
-      </tr>
-      <tr>
-        <td>37 Weeks</td>
-        <td><a href="/conditions/gout/">7 appointmens - 1 scan - 1 induction</a> </td>
-      </tr>
-      </tbody>
-      </table>
+<div class="nhsuk-o-grid__item nhsuk-o-grid__item--full">
 
 
 
 
 
-      <h2 id="First-contact">First contact with midwife or doctor</h2>
+			<h2 id="First-contact">Generic Internal Page</h2>
 
       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 
 
 
 
-      <h2 id="8-12-weeks">8-12 weeks: booking appointment</h2>
+      <h2 id="8-12-weeks">Lorem ipsum </h2>
 
       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 
 
 
-      <h2 id="8-14-weeks">8-14 weeks: 1st scan</h2>
+			<h2 id="8-14-weeks">Lorem ipsum</h2>
 
       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 
-      <h2 id="16-week">16 week pregnant</h2>
+			<h2 id="16-week">Lorem ipsum</h2>
 
       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 
 
-      <h2 id="18-20-weeks">18-20 weeks</h2>
+			<h2 id="18-20-weeks">Lorem ipsum</h2>
 
       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 
-       <h2 id="25-weeks-pregnant">25 weeks pregnant</h2>
+       <h2 id="25-weeks-pregnant">Lorem ipsum</h2>
 
        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 
 
-       <h2 id="28-weeks">28 weeks</h2>
+       <h2 id="28-weeks">Lorem ipsum</h2>
        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 
-       <h2 id="34-weeks">34 weeks</h2>
+       <h2 id="34-weeks">Lorem ipsums</h2>
        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 
-       <h2 id="38-weeks">38 weeks</h2>
+       <h2 id="38-weeks">Lorem ipsum</h2>
        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 
-       <h2 id="40-weeks">40 weeks</h2>
+       <h2 id="40-weeks">Lorem ipsum</h2>
        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 
-       <h2 id="41-weeks">41 weeks</h2>
+       <h2 id="41-weeks">Lorem ipsum</h2>
        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 
-       <h2 id="42-weeks">42 weeks</h2>
+       <h2 id="42-weeks">Lorem ipsum</h2>
        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 
-       <h2 id="time-off">Time off for antenatal appointmens</h2>
+       <h2 id="time-off">Lorem ipsum</h2>
        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 
-		</div>
-		{{ miniHubPagination("/examples/test-minihub-amd", "What is antenatal care and how do I start", "/examples/test-minihub-amd/getting-diagnosed", "Who's who in the antenatal team")}}
-    </section>
-
+     </div>
+     </div>
+     </section>
+	{{ miniHubPagination("/examples/test-minihub-amd", "What is antenatal care and how do I start", "/examples/test-minihub-amd/getting-diagnosed", "Who's who in the antenatal team")}}
 {% endblock %}

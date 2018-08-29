@@ -5,6 +5,13 @@
 {% from "macros/care-card.html" import carecard %}
 {% from "macros/review-date.html" import reviewdate %}
 {% extends "includes/templates/page-v4.html"%}
+{% from "macros/mini-hub-pagination.html" import miniHubPagination, miniHubPaginationPrevious, miniHubPaginationNext%}
+{% from "macros/action-link.html" import actionLink %}
+
+
+{% from "macros/image.html" import image %}
+
+{% extends 'includes/site-layout.html' %}
 
 {% block breadcrumb %}
 <nav class="nhsuk-c-breadcrumb" role="Breadcrumb" aria-label="Breadcrumb">
@@ -63,78 +70,38 @@
 </nav>
 {% endblock %}
 
-{% block sidebar %}
-<div> <h2 class="nhsuk-page-nav-right">Your pregnancy antenatal care</h2>
-   <ul class="nhsuk-page-nav-right">
-        <li><a href="/examples/allergies/test-condition-allergies-overview">What is antenatal care and how do I start</a></li>
-        <li><strong><span style="background-color: #fdcc68"> Your schedule of antenatal appointments</span></strong></mark></li>
-        <li><a href="/examples/allergies/test-condition-allergies-diagnosis">Who's who in the antenatal team</li>
-        <li><a href="/examples/allergies/test-condition-allergies-diagnosis">Checks at your appointments</a></li>
-        <li><a href="/examples/allergies/test-condition-allergies-diagnosis">What does an ultrasound scan do?</a></li>
-        <li><a href="/examples/allergies/test-condition-allergies-diagnosis">What is screening and do I have to have it?</a></li>
-        <li><a href="/examples/allergies/test-condition-allergies-prevention">Screening for Down's syndrome</a></li>
-        <li><a href="/examples/allergies/test-condition-allergies-prevention">1st scan</a></li>
-        <li><a href="/examples/allergies/test-condition-allergies-diagnosis">Mid-pregnancy (anomaly) scan</a></li>
-        <li><a href="/examples/allergies/test-condition-allergies-prevention">Screening for sickle cell and thalassaemia</a></li>
-        <li><a href="/examples/allergies/test-condition-allergies-prevention">Screening for HIV, hepatitis B and syphilis</a></li>
-	</ul> </div>
-{% endblock %}
+
 
 {% block content %}
+<div class="nhsuk-o-width-container">
+    <main class="nhsuk-o-main-wrapper">
+        <div class="nhsuk-o-grid">
+<div class="nhsuk-o-grid__item nhsuk-o-grid__item--full">
 
-    <section class="nhsuk-page-content__section-one">
+      <div class="nhsuk-page-heading">
 
-		<div class="nhsuk-reading-width">
+        <h1>Your antenatal appointments<span class="nhsuk-o-h1-sub">Your pregnancy antenatal care</span></h1>
 
-			<div class="nhsuk-page-heading">
-				<h1>Antenatal page </h1>
-				<p class="nhsuk-body-l nhsuk-page-intro">Lorem ipsum dolat sum lorem ipsum as ticor.
-    </p>
-			</div>
+        <div class="nhsuk-c-page-contents v3">
+          <ul>
+            <li><a href="/examples/test-minihub-amd">What is your antenatal care</a></li>
 
-			<div class="nhsuk-c-page-contents">
+            <li><a href="/examples/test-minihub-amd/getting-diagnosed">Who is who in your antenatal team</a></li>
+            <li><strong><span style="background-color: #fdcc68"> Your antenatal appointments</span></strong></mark></li>
+            <li><a href="/examples/test-minihub-amd/living-with-amd">Tests scans and checks</a></li>
+              <li><a href="/examples/test-minihub-amd/living-with-amd">Your first antenatal appointment</a></li>
+                <li><a href="/examples/test-minihub-amd/living-with-amd">1st scan</a></li>
+                  <li><a href="/examples/test-minihub-amd/living-with-amd">Mid pregnancy scan</a></li>
+                  <li><a href="/examples/test-minihub-amd/living-with-amd">If screenings find something</a></li>
+          </ul>
+        </div>
 
-
-				<div class="nhsuk-c-reveal">
-					<a href="#" class="nhsuk-c-reveal__header">Open page contents</a>
-					<div class="nhsuk-c-reveal__content">
-						<ul>
-							<li><a href="#First-contact">Lorem ipsum</a></li>
-							<li><a href="#8-12-weeks">Lorem ipsum</a></li>
-							<li><a href="#8-14-weeks">Lorem ipsum</a></li>
-							<li><a href="#16-week">Lorem ipsum</a></li>
-							<li><a href="#18-20-weeks">Lorem ipsum</a></li>
-              <li><a href="#25-weeks-pregnant">Lorem ipsum</a></li>
-              <li><a href="#28-weeks">Lorem ipsum</a></li>
-                <li><a href="#31-weeks">Lorem ipsum</a></li>
-                  <li><a href="#34-weeks">Lorem ipsum</a></li>
-                    <li><a href="#36-week">Lorem ipsum</a></li>
-                      <li><a href="#38-weeks">Lorem ipsum</a></li>
-                        <li><a href="#40-weeks">Lorem ipsum</a></li>
-                          <li><a href="#41-weeks">Lorem ipsum</a></li>
-                            <li><a href="#42-weeks">Lorem ipsum</a></li>
-                              <li><a href="#time-off">Lorem  ipsum</a></li>
-						</ul>
-					</div>
-				</div>
-
-				<script>
-					$('.nhsuk-c-page-contents .nhsuk-c-reveal__header').click( function() {
-						$(this).next("div").toggle();
-						var txt = $(".nhsuk-c-page-contents .nhsuk-c-reveal__content").is(':visible') ? 'Close page contents' : 'Open page contents';
-						$(this).toggleClass("open").text(txt);
-						return false;
-					});
-				</script>
-
-				<p class="nhsuk-nav-bottom-link"><a href="#nav-bottom">View all pages about Antenatal care</a></p>
-
-			</div>
+      </div>
 
 
+<div class="nhsuk-o-grid">
 
-
-
+<div class="nhsuk-o-grid__item nhsuk-o-grid__item--full">
 
 
 
@@ -193,7 +160,7 @@
        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 
      </div>
-
+     </div>
      </section>
-
+	{{ miniHubPagination("/examples/test-minihub-amd", "What is antenatal care and how do I start", "/examples/test-minihub-amd/getting-diagnosed", "Who's who in the antenatal team")}}
 {% endblock %}
