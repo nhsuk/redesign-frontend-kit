@@ -1,90 +1,50 @@
 .nhsuk-c-global-alert {
-    background: $nhsuk-yellow;
+		background: $nhsuk-yellow;
+		padding: 32px 0;
 
-    .nhsuk-c-global-alert__content {
-        @include clear();
-        padding: 16px 0;
-
-        .nhsuk-c-global-alert__header,
-        .nhsuk-c-global-alert__message {
-            font-size: 19px;
-            float: left;
-            line-height: 28px;
-            margin: 0;
-            padding: 8px;
-
-            @include mq($until:desktop) {
-                float: none;
-            }
-
-            @include mq($until:tablet) {
-                font-size: 16px;
-                line-height: 24px;
-            }
-        }
-        
-        .nhsuk-c-global-alert__header {
-            background: $nhsuk-black;
-            color: $nhsuk-yellow;          
-            margin: 0 8px 0 0;
-            padding: 8px 16px;
-            
-            @include mq($until:desktop) {
-                display: inline-block;
-                padding: 4px 8px
-            }
-        }
-
-        .nhsuk-c-global-alert__message {
-            @include mq($until:desktop) {
-                display: block;
-                padding: 8px 0 0;
-            }
-        }
-    }
-}
-
-.nhsuk-feedback-banner {
-  display: none;
-	background: $nhsuk-white;
-	bottom: 0;
-	box-shadow: 0px -4px 0px 0px rgba(33,43,50,0.16);
-	margin: 0 auto;
-	padding: 32px 0;
-	position: fixed;
-	width:100%;
-
-  &__content {
-    @include clear();
-  }
-
-  &__header {
-		font-size: 24px;
-		line-height: 32px;
-		margin: 0;
-		
-		@include mq($until:desktop) {
-			font-size: 20px;
-			line-height: 28px;
+		@include mq($until:tablet) {
+			padding: 24px 0;
 		}
-  }
 
-  &__message {
-		 margin: 8px 0 0;
-  }
+    &__content {
+			@include top-and-bottom;
+		}
+        
+		&__header {  
+			font-size: 24px;
+      line-height: 32px;      
+			margin: 0;
 
-  &__close {
-    float: right;
-    color: $nhsuk-black;
-    display: block;
-    font-size: 14px;
-    margin: 6px 0 0 0;
-  }
+			@include mq($until:tablet) {
+				font-size: 20px;
+				line-height: 28px;
+			}
+		}
 
-  @media screen and (max-width:480px) {
-    .wrap {
-      white-space:nowrap;
+		&__message {
+			margin-top: 8px;
+		}
+
+		&__updated {
+			font-size: 14px;
+			margin-top: 8px;
+
+			@include mq($until:tablet) {
+				font-size: 12px;
+			}
+		}
+				
+		&__close {
+			float: right;
+			color: $nhsuk-black;
+			display: block;
+			font-size: 14px;
+			margin: 6px 0 0 0;
+		}
+
+		@media screen and (max-width:480px) {
+      .wrap {
+        white-space:nowrap;
+      }
     }
-  }
-
 }
