@@ -16,9 +16,11 @@
 @import 'components/video/video';
 @import 'components/hero/hero';
 @import 'components/blockquote/blockquote';
-@import 'components/global-alert/global-alert';
 @import 'components/home-page/home-page';
 @import 'components/user-account/user-account';
+@import 'components/global-alert/global-alert';
+@import 'components/phase-banner/phase-banner';
+@import 'components/survey-banner/survey-banner';
 
 // Azure specific styles
 @import 'pages/code';

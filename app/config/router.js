@@ -350,19 +350,8 @@ router.get('/examples/test-banner-new-page-v1', (req, res) => {
   res.render('examples/test-banner-new-page-v1', {});
 });
 
-router.get('/examples/generichubpage-b', (req, res) => {
-  res.render('examples/generichubpage-b', {});
+router.get('/examples/banner-gate', (req, res) => {
+  res.render('examples/banner-gate', {});
 });
 
-router.get('/examples/maurotestb', (req, res) => {
-  res.render('examples/maurotestb', {});
-});
-
-router.get('/examples/maurotestc', (req, res) => {
-  res.render('examples/maurotestc', {});
-});
-
-router.get('/examples/hubpageweekbyweek', (req, res) => {
-  res.render('examples/hubpageweekbyweek', {});
-});
 module.exports = router;
