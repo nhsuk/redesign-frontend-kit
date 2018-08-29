@@ -1,0 +1,40 @@
+.nhsuk-c-phase-banner {
+    background: $nhsuk-white;
+    border-bottom:4px solid $nhsuk-grey-5;
+    padding-bottom:8px;
+    padding-top:8px;
+
+    @include mq($until:tablet) {
+        padding-bottom:8px;
+        padding-top:8px;
+    }
+
+    p {
+        display: table;
+        font-size: 16px;
+        line-height: 28px;
+        margin: 0;
+
+        @include mq($until:tablet) {
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        span {
+            display: table-cell;
+        }
+    }
+}
+
+.nhsuk-c-phase-banner__tag {
+    background: $nhsuk-blue;
+    color: $nhsuk-white;
+    display: block;
+    margin-right: 12px;
+    padding: 4px 12px;
+
+    @include mq($until:tablet) {
+        margin-right: 8px;
+        padding: 0px 8px;
+    }
+}
