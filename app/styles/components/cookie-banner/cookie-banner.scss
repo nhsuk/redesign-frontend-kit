@@ -1,0 +1,61 @@
+
+.nhsuk-c-cookie-banner {
+    background: tint($nhsuk-blue, 80%);
+    padding: 16px 0;
+  
+    &__header {
+      font-size: 19px;
+      line-height: 28px;
+      margin: 0;
+      
+      @include mq($until:tablet) {
+        font-size: 16px;
+				line-height: 24px;
+      }
+    }
+  
+    &__message {
+			font-size: 16px;
+      line-height: 24px;
+			margin: 4px 0 0;
+			
+			@include mq($until:tablet) {
+				font-size: 14px;
+				line-height: 20px;
+      }
+		}
+		
+		&__action {
+			display: block;
+			text-align: right;
+
+			@include mq($until:desktop) {
+				text-align: left;
+			}
+		}
+
+		&__ok,
+		&__more {
+			display: inline-block;
+		}
+
+		&__ok {
+			background: $nhsuk-green;
+			border-radius: 4px;
+			box-shadow: 0 2px 0 0 $nhsuk-blue-shade-50;
+			color: $nhsuk-white !important;
+			font-weight: 600;
+			padding: 4px 40px;	
+			text-decoration: none;
+
+			@include mq($until:desktop) {
+				margin-top: 8px;
+			}
+		}
+
+		&__more {
+			margin-top: 8px;
+			font-size: 16px;
+		}
+  
+  }

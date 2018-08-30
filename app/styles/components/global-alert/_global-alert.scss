@@ -1,6 +1,6 @@
 .nhsuk-c-global-alert {
 		background: $nhsuk-yellow;
-		padding: 24px 0;
+		padding: 32px 0;
 
 		@include mq($until:tablet) {
 			padding: 16px 0;
@@ -46,5 +46,23 @@
       .wrap {
         white-space:nowrap;
       }
+		}
+
+		a {
+			&:focus {
+				background: $nhsuk-blue-shade-35;
+				box-shadow: 0 0 0 4px $nhsuk-blue-shade-35;
+				color: $nhsuk-white;
+			}
+			&:hover {
+				background: $nhsuk-blue;
+				box-shadow: 0 0 0 4px $nhsuk-blue;
+				color: $nhsuk-white;
+			}
+			&:active {
+				background: $nhsuk-blue-shade-50 !important;
+				box-shadow: 0 0 0 4px $nhsuk-blue-shade-35;
+				color: $nhsuk-white;
+			}
 		}
 }
