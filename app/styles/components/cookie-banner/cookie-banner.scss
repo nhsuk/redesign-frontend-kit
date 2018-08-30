@@ -1,8 +1,8 @@
 
 .nhsuk-c-cookie-banner {
-    background: tint($nhsuk-blue, 80%);
-    padding: 16px 0;
-  
+    background: tint($nhsuk-blue, 90%);
+		padding: 16px 0;
+		  
     &__header {
       font-size: 19px;
       line-height: 28px;
@@ -45,17 +45,42 @@
 			box-shadow: 0 2px 0 0 $nhsuk-blue-shade-50;
 			color: $nhsuk-white !important;
 			font-weight: 600;
-			padding: 4px 40px;	
+			padding: 4px 16px;
+			position: relative;	
 			text-decoration: none;
 
+			&:focus {
+				background: $nhsuk-green;
+				box-shadow: 0 0 0 4px $nhsuk-focus-colour;
+			}
+
+			&:hover {
+				background: $nhsuk-green-shade-35;
+				box-shadow: 0 2px 0 0 $nhsuk-blue-shade-50;
+			}
+
+			&:active {
+				background: $nhsuk-green-shade-50 !important;
+				box-shadow: 0 2px 0 0 $nhsuk-blue-shade-50;
+				top: 2px;
+			}
+
 			@include mq($until:desktop) {
-				margin-top: 8px;
+				margin-top: 12px;
+			}
+
+			@include mq($until:tablet) {
+				padding: 4px 16px;	
 			}
 		}
 
 		&__more {
-			margin-top: 8px;
+			margin-top: 12px;
 			font-size: 16px;
+
+			@include mq($until:desktop) {
+				font-size: 14px;
+			}
 		}
   
   }

@@ -5,8 +5,8 @@
     padding-top:8px;
 
     @include mq($until:tablet) {
-        padding-bottom:8px;
-        padding-top:8px;
+        padding-bottom:12px;
+        padding-top:12px;
     }
 
     p {
@@ -17,7 +17,7 @@
 
         @include mq($until:tablet) {
             font-size: 14px;
-            line-height: 18px;
+            line-height: 20px;
         }
 
         span {
@@ -31,10 +31,9 @@
     color: $nhsuk-white;
     display: block;
     margin-right: 12px;
-    padding: 4px 12px;
+    padding: 0 12px;
 
     @include mq($until:tablet) {
-        margin-right: 8px;
-        padding: 2px 6px;
+        padding: 0 6px;
     }
 }
