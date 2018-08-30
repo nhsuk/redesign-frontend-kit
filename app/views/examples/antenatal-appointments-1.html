@@ -63,75 +63,39 @@
 </nav>
 {% endblock %}
 
-{% block sidebar %}
-<div> <h2 class="nhsuk-page-nav-right">Your pregnancy antenatal care</h2>
-   <ul class="nhsuk-page-nav-right">
-        <li><a href="/examples/allergies/test-condition-allergies-overview">What is your antenatal care</a></li>
-        <li><a href="/examples/allergies/test-condition-allergies-symptoms">Who is who in your antenatal team</a></li>
-        <li><strong><span style="background-color: #fdcc68"> Your antenatal appointments </span></strong></mark></li>
-        <li><a href="/examples/allergies/test-condition-allergies-diagnosis">Tests scans and checks</a></li>
-        <li><a href="/examples/allergies/test-condition-allergies-diagnosis">Your first antenatal appointment</a></li>
-        <li><a href="/examples/allergies/test-condition-allergies-diagnosis">1st scan</a></li>
-        <li><a href="/examples/allergies/test-condition-allergies-prevention">Mid pregnancy scan</a></li>
-        <li><a href="/examples/allergies/test-condition-allergies-prevention">If screenings find something</a></li>
-	</ul> </div>
-{% endblock %}
+
 
 {% block content %}
 
-    <section class="nhsuk-page-content__section-one">
+<div class="nhsuk-o-width-container">
+    <main class="nhsuk-o-main-wrapper">
+        <div class="nhsuk-o-grid">
+<div class="nhsuk-o-grid__item nhsuk-o-grid__item--full">
 
-		<div class="nhsuk-reading-width">
+      <div class="nhsuk-page-heading">
 
-			<div class="nhsuk-page-heading">
-				<h1>Your antenatal appointments </h1>
-				<p class="nhsuk-body-l nhsuk-page-intro">What will happen at your antenatal appointments with the midwife or doctor.
-    </p>
-			</div>
+        <h1>Your antenatal appointments<span class="nhsuk-o-h1-sub">Your pregnancy antenatal care</span></h1>
 
-			<div class="nhsuk-c-page-contents">
+        <div class="nhsuk-c-page-contents v3">
+          <ul>
+            <li><a href="/examples/test-minihub-amd">What is antenatal care </a></li>
+            <li><a href="/examples/test-minihub-amd/living-with-amd">Who's who in the antenatal team</a></li>
+            <li><strong><span style="background-color: #fdcc68">Your antenatal appointments</span></strong></mark></li>
+              <li><a href="/examples/test-minihub-amd/living-with-amd">Tests scans and checks</a></li>
+                <li><a href="/examples/test-minihub-amd/living-with-amd">Your first antenatal appointment</a></li>
+                  <li><a href="/examples/test-minihub-amd/living-with-amd">1st scan</a></li>
+                  <li><a href="/examples/test-minihub-amd/living-with-amd">Mid pregnancy scan</a></li>
+                  <li><a href="/examples/test-minihub-amd/living-with-amd">If screenings find something/a></li>
 
+          </ul>
+        </div>
 
-				<div class="nhsuk-c-reveal">
-					<a href="#" class="nhsuk-c-reveal__header">Open page contents</a>
-					<div class="nhsuk-c-reveal__content">
-						<ul>
-							<li><a href="#First-contact">First contact with midwife or doctor</a></li>
-							<li><a href="#8-12-weeks">8-12 weeks: booking appointment</a></li>
-							<li><a href="#8-14-weeks">8-14 weeks: 1st scan</a></li>
-							<li><a href="#16-week">16 week pregnant</a></li>
-							<li><a href="#18-20-weeks">18-20 weeks</a></li>
-              <li><a href="#25-weeks-pregnant">25 weeks pregnant</a></li>
-              <li><a href="#28-weeks">28 weeks</a></li>
-                <li><a href="#31-weeks">31 weeks</a></li>
-                  <li><a href="#34-weeks">34 weeks</a></li>
-                    <li><a href="#36-week">36weeks</a></li>
-                      <li><a href="#38-weeks">38 weeks</a></li>
-                        <li><a href="#40-weeks">40 weeks</a></li>
-                          <li><a href="#41-weeks">41 weeks</a></li>
-                            <li><a href="#42-weeks">42 weeks</a></li>
-                              <li><a href="#time-off">Time off for antenatal appointmens</a></li>
-						</ul>
-					</div>
-				</div>
+      </div>
+      <div class="nhsuk-o-grid">
 
-				<script>
-					$('.nhsuk-c-page-contents .nhsuk-c-reveal__header').click( function() {
-						$(this).next("div").toggle();
-						var txt = $(".nhsuk-c-page-contents .nhsuk-c-reveal__content").is(':visible') ? 'Close page contents' : 'Open page contents';
-						$(this).toggleClass("open").text(txt);
-						return false;
-					});
-				</script>
+      <div class="nhsuk-o-grid__item nhsuk-o-grid__item--full">
 
-				<p class="nhsuk-nav-bottom-link"><a href="#nav-bottom">View all pages about Antenatal care</a></p>
-
-			</div>
-
-
-
-
-     <table class="nhsuk-table2">
+     <table class="nhsuk-table">
      <thead>
       <tr>
         <th>Week</th>
@@ -140,21 +104,50 @@
       </thead>
       <tbody>
       <tr>
-        <td>0-12 weeks</td>
-        <td><a href="/conditions/osteoarthritis/">1 appointment - 2 screenings - 1 flu vaccine</a></td>
+        <td>Pre 13 </td>
+        <td><a href="/conditions/osteoarthritis/">Booking Visit (blood test)</a></td>
       </tr>
       <tr>
-        <td>12-20 weeks</td>
-        <td><a href="/conditions/bursitis/">2 appointments - 2 scans - 1 blood test</a></td>
+        <td>11–13</td>
+        <td><a href="/conditions/bursitis/">Nuchal Translucency Scan (ultrasounds scan)</a></td>
       </tr>
       <tr>
-        <td>20-37 Weeks</td>
-        <td><a href="/conditions/gout/">2 appointments - 1 screening - 1 blood test</td></a>
+        <td>16</td>
+        <td><a href="/conditions/gout/">Midwife Visit (discuss your blood results)</td></a>
       </tr>
       <tr>
-        <td>37 Weeks</td>
-        <td><a href="/conditions/gout/">7 appointmens - 1 scan - 1 induction</a> </td>
+        <td>18–22</td>
+        <td><a href="/conditions/gout/">GP visit - Anomaly Scan</a> </td>
       </tr>
+      <tr>
+        <td>28</td>
+        <td><a href="/conditions/gout/">GP visit (Blood Tests)</a> </td>
+      </tr>
+      <tr>
+        <td>31</td>
+        <td><a href="/conditions/gout/">Midwife visit - GP visit</a> </td>
+      </tr>
+      <tr>
+        <td>34</td>
+        <td><a href="/conditions/gout/">Midwife GP Visit (discuss breastfeeding) - GP Visit</a> </td>
+      </tr>
+      <tr>
+        <td>36</td>
+        <td><a href="/conditions/gout/"> Midwife visit (discuss your birth plan)</a> </td>
+      </tr>
+      <tr>
+        <td>38</td>
+        <td><a href="/conditions/gout/">GP visit </a> </td>
+      </tr>
+      <td>40</td>
+      <td><a href="/conditions/gout/">Midwife visit </a> </td>
+    </tr>
+     <td>41</td>
+      <td><a href="/conditions/gout/">Midwife Visit (Sweep and Induction date) </a> </td>
+    </tr>
+
+
+
       </tbody>
       </table>
 
@@ -217,7 +210,7 @@
        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 
      </div>
-
+ </div>
      </section>
 
 {% endblock %}
