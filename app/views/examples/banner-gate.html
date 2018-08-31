@@ -1,8 +1,11 @@
-{% set title = 'Sore throat' %}
+{% set title = 'Banner gate' %}
 {% set parent = 'Health A-Z' %}
-{% set cookieBanner = 'active' %}
 {% from "macros/review-date.html" import reviewdate %}
 {% extends 'includes/site-layout.html' %}
+
+{% block banner %}
+  {% include 'partials/cookie-banner/cookie-banner.html' %}
+{% endblock %}
 
 {% block body %}
 
@@ -23,9 +26,9 @@
 				
 					<div class="nhsuk-page-content">
 
-          <p>This page is the edge case for having all the banners on the same page aka Banner Gate.</p>
+          <p>This is the edge case for having all the banners on the same page.</p>
 
-          <p>This includes:</p>
+          <p>Including the:</p>
           <ul>
             <li>Cookie banner</li>
             <li>Emergency banner</li>

@@ -32,7 +32,7 @@
     &__message {
       margin: 8px 0 0;
 
-      @include mq($until:tablet) {
+      @include mq($until:319px) {
         padding-bottom: 32px;
       }
     }
@@ -42,9 +42,10 @@
       color: $nhsuk-black;
       display: block;
       font-size: 14px;
-      margin: 6px 0 0 0;
+      line-height: 28px;
+      margin: 0;
 
-      @include mq($until:tablet) {
+      @include mq($until:319px) {
         bottom: 24px;
         position: absolute;
         right: 16px;
