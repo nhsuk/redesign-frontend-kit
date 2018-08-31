@@ -30,6 +30,7 @@
 			text-align: right;
 
 			@include mq($until:desktop) {
+				display: inline-block;
 				text-align: left;
 			}
 		}
@@ -66,7 +67,7 @@
 			}
 
 			@include mq($until:desktop) {
-				margin-top: 12px;
+				margin: 12px 12px 0 0;
 			}
 
 			@include mq($until:tablet) {
