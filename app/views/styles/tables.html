@@ -23,8 +23,29 @@
 {% endblock %}
 
 {% block content %}
+
+<h2>Notes</h2>
+
+<p>We tried to keep tables as simple as possible for the moment. </p>
+
+<p>For context, on the NHS website: </p>
+
+<ul>
+
+  <li>tables never exceeded three columns, we didn't design for or test any tables over three columns. </li>
+  <li>The majority of NHS website tables are text, a few contain data (numerical).</li>
+  <li>We haven't uncovered any needs around re-ordering data in tables. </li>
+
+</ul>
+
+
+
+
+
+
+
   <h2 id="userneed">User needs</h2>
-  <p>Use the table component to make information easier to compare and scan for users.</p>
+  <p>As a user, I need to easily find the information that relates to my situation, so that i can get better/ be informed.</p>
 
   <h2 id="whatsused">What's currently being used</h2>
   <ul>
@@ -139,7 +160,16 @@
 
   <h2 id="usage">Usage</h2>
 
-  <p>This is where we'd suggest how to use something</p>
+  <h3>Going forward</h3>
+
+  <p>Tables will need captions. Currently on NHS.uk's wagtail we don't have the option to include captions so this will need to be explored further. </p>
+  <p>We'd also like to look at tables with more than three columns, tables that are mostly data and tables that could be reordered by a user.</p> 
+
+<h3>What is success</h3>  
+<p>Success would be a user being able to find the information they require. </p>
+
+<h3>How we measure success</h3>
+<p>Success can be measured by page depth, exit rate and page depth and also monitoring a feedback survey to find if any users mentioned not being able to find information that is presented in the table.</p>
 
 
 {% endblock %}
