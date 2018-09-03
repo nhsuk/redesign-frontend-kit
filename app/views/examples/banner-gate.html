@@ -2,9 +2,10 @@
 {% set parent = 'Health A-Z' %}
 {% from "macros/review-date.html" import reviewdate %}
 {% extends 'includes/site-layout.html' %}
-{% set cookieBanner = 'active' %}
 
-
+{% block banner %}
+  {% include 'partials/cookie-banner/cookie-banner.html' %}
+{% endblock %}
 
 {% block body %}
 
