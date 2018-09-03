@@ -2,10 +2,9 @@
 {% set parent = 'Health A-Z' %}
 {% from "macros/review-date.html" import reviewdate %}
 {% extends 'includes/site-layout.html' %}
+{% set cookieBanner = 'active' %}
 
-{% block banner %}
-  {% include 'partials/cookie-banner/cookie-banner.html' %}
-{% endblock %}
+
 
 {% block body %}
 
@@ -18,7 +17,7 @@
             <div class="nhsuk-o-grid">
 				<div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds">
 
-					<div class="nhsuk-page-heading" style="padding-bottom:1em;">
+					<div class="nhsuk-page-heading">
 
 						<h1>Banner gate</h1>
 					

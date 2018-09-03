@@ -73,6 +73,7 @@
 			@include mq($until:tablet) {
 				padding: 4px 16px;	
 			}
+
 		}
 
 		&__more {
@@ -84,4 +85,37 @@
 			}
 		}
   
-  }
+	}
+	
+	.nhsuk-c-cookie-banner.v2 {
+		background: $nhsuk-grey-5;
+		padding: 8px 0;
+
+		.nhsuk-c-cookie-banner__ok {
+			background: $nhsuk-grey-1;
+			box-shadow: 0 2px 0 0 $nhsuk-black;
+			font-size: 16px;
+			font-weight: 400;
+			margin: 8px 0;
+
+			@include mq($until:desktop) {
+				font-size: 14px;
+			}
+
+			&:focus {
+				background: $nhsuk-grey-1;
+				box-shadow: 0 0 0 4px $nhsuk-focus-colour;
+			}
+
+			&:hover {
+				background: shade($nhsuk-grey-1, 35%);
+				box-shadow: 0 2px 0 0 $nhsuk-black;
+			}
+
+			&:active {
+				background: shade($nhsuk-grey-1, 50%) !important;
+				box-shadow: 0 2px 0 0 $nhsuk-black;
+				top: 2px;
+			}
+		}
+	}
