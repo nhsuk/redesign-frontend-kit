@@ -1,10 +1,11 @@
-{% set title = 'Banner gate' %}
+{% set title = 'Banner test page' %}
 {% set parent = 'Health A-Z' %}
 {% from "macros/review-date.html" import reviewdate %}
+{% from "macros/keypoint.html" import keypoint %}
 {% extends 'includes/site-layout.html' %}
 
 {% block banner %}
-  {% include 'partials/cookie-banner/cookie-banner.html' %}
+  <!--{% include 'partials/cookie-banner/cookie-banner.html' %}-->
 {% endblock %}
 
 {% block body %}
@@ -20,7 +21,7 @@
 
 					<div class="nhsuk-page-heading">
 
-						<h1>Banner gate</h1>
+						<h1>Banner test page</h1>
 					
           </div>
 				
@@ -30,13 +31,14 @@
 
           <p>Including the:</p>
           <ul>
-            <li>Cookie banner</li>
             <li>Emergency banner</li>
             <li>Phase banner</li>
             <li>Feedback banner</li>
           </ul>
 
-							{{ reviewdate("30/08/2018", "30/09/2018") }}
+          {{ keypoint("<p>We need to make sure these banners are accessible.</p>") }}
+
+					{{ reviewdate("30/08/2018", "30/09/2018") }}
 
 					</div>
 
