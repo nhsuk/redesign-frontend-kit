@@ -11,44 +11,89 @@
 {% block sidebar %}
     <h2 class="nhsuk-heading-xs">Contents</h2>
     <ul>
-		<li><a href="#rules">Rules</a></li>
-		<li><a href="#user-needs">User needs</a></li>
-		<li><a href="#user-research">User research</a></li>
-		<li><a href="#breakpoints">Breakpoints</a></li>
-        <li><a href="#example">Example</a></li>
+      <li><a href="#current-design">What was being used</a></li>
+      <li><a href="#previous-research">Previous research</a></li>
+      <li><a href="#user-need">User need</a></li>
+      <li><a href="#our-designs">Design and research</a></li>
+      <li><a href="#code">Example and code snippet</a></li>
+      <li><a href="#accessibility">Accessiblity</a></li>
+      <li><a href="#usage">Usage (rules)</a></li>
     </ul>
 {% endblock %}
 
 {% block content %}
 
-	<h2 id="rules">Rules</h2>
-	<ul>
-		<li>If the screen size cannot fit the entire breadcrumb trail, the breadcrumb can wrap onto 2 lines, but individual items within the trail shouldn't be truncated.</li>
-		<li>The current page title/name does not need to be shown in the breadcrumb because in the page template, this information is displayed directly underneath as a H1.</li>
-		<li>On mobile, due to the reduced screen width, the full breadcrumb trail is replaced by a 'Back to [parent]' link.</li>
-	</ul>
+<div class="nhsuk-reading-width">
 
-	<h2 id="user-needs">User needs</h2>
-    <ul>
-		<li>As a user I NEED to know which section of the website I am in SO THAT I am orientated and am aware of other sections.</li>
-    	<li>As a user I NEED to know what other sections exist on the website SO THAT I can continue information seeking if the current page doesn't contain the information that I require.</li>
-    	<li>As a user I NEED to be able to quickly navigate to a different page in the section SO THAT I can find the most relevant information for my situation.</li>
-	</ul>
+  <h2 id="current-design">What was being used</h2>
+  <div class="example grey-background">
+    <img class="component-image mobile" alt="Breadcrumb on nhs.uk" src="../images/components/breadcrumb/breadcrumb-old-mobile.png">
+    <p class="nhsuk-body-s">Breadcrumb used on nhs.uk</p>
+  </div>
 
-	<h2 id="user-research">User Research</h2>
-	<ul>
-		<li></li>
-	</ul>
+  <h2 id="previous-research">Previous research</h2>
+  <p>The migration team did some <a href="https://paper.dropbox.com/doc/Breadcrumbs--AMGIkSbPafDEGnpXzK8fhrFsAg-kaTBtORWOc1Cz5rpAvOFQ">previous work on breadcrumbs</a>.</p>
 
-	<h2 id="breakpoints">Breakpoints</h2>
-    <ul>
-        <li>mobile:  640px or below</li>
-        <li>tablet:  990px or below</li>
-    </ul>
+	<h2 id="user-need">User need</h2>
+  <ul>
+    <li>As a user I NEED to know which section of the website I am in SO THAT I am orientated and am aware of other sections.</li>
+    <li>As a user I NEED to know what other sections exist on the website SO THAT I can continue information seeking if the current page doesn't contain the information that I require.</li>
+    <li>As a user I NEED to be able to quickly navigate to a different page in the section SO THAT I can find the most relevant information for my situation.</li>
+  </ul>
 
-	<h2 id="example">Example</h2>
+  <h2 id="our-designs">Design and research</h2>
+  <p>The current breadcrumb when presented on mobile devices took up a lot of space. Searching online, we found a few examples of a truncated breadcrumb on mobile devices.</p>
+  <div class="example grey-background">
+    <img class="component-image mobile" alt="Breadcrumb on argos.co.uk" src="../images/components/breadcrumb/breadcrumb-argos.png">
+    <p class="nhsuk-body-s">Breadcrumb on argos.co.uk</p>
+  </div>
+  <div class="example grey-background">
+    <img class="component-image mobile" alt="Breadcrumb on screwfix.co.uk" src="../images/components/breadcrumb/breadcrumb-screwfix.png">
+    <p class="nhsuk-body-s">Breadcrumb on screwfix.co.uk</p>
+  </div>
+  <p>This is a pattern commonly found on mobile apps. It made sense to test it out!</p>
+
+  <h3 class="nhsuk-heading-l">First iteration</h3>
+  <h4 class="nhsuk-heading-m">Hypothesis</h4>
+  <p><strong>If</strong> we make the breadcrumb background white</br>
+  <strong>Then</strong> users will notice it</br>
+  <strong>Because</strong> it looks seperate to the header and page background colour.</p>
+  <p><strong>If</strong> we truncate the breadcrumb on mobile</br>
+  <strong>Then</strong> users will understand the interaction</br>
+  <strong>Because</strong> it is a common mobile design pattern.</p>
+  <div class="example grey-background">
+    <img class="component-image" alt="New breadcrumb on desktop" src="../images/components/breadcrumb/breadcrumb-new-desktop.png">
+    <p class="nhsuk-body-s">Breadcrumb first iteration on desktop</p>
+  </div>
+  <div class="example grey-background">
+    <img class="component-image mobile" alt="New breadcrumb on mobile devices" src="../images/components/breadcrumb/breadcrumb-new-mobile.png">
+    <p class="nhsuk-body-s">Breadcrumb first iteration on mobile</p>
+  </div>
+  <h4 class="nhsuk-heading-m">Research findings</h4>
+  <p><strong>Leeds, pop-up research and lab testing</strong></p>
+  <ul>
+    <li>Users understood where they were and where they had come from.</li>
+    <li>Some users used the breadcrumb to navigate back a level.</li>
+    <li>Most users used search to find more info on back pain.</li>
+    <li>Most users clicked the logo to navigate back to the home page.</li>
+    <li>A small number of users expected to find a home link within the menu (on mobile).</li>
+  </ul>
+
+  <h3 class="nhsuk-heading-l">Second iteration</h3>
+  <p>We didn't iterate the breadcrumb. We added a home link to the menu on mobile devices.</p>
+  <h4 class="nhsuk-heading-m">Hypothesis</h4>
+  <p><strong>If</strong> we add a home link to the mobile menu</br>
+  <strong>Then</strong> all users will know how to navigate back to the home page</br>
+  <strong>Because</strong> it can be done in multiple ways.</p>
+
+  <div class="example grey-background">
+    <img class="component-image mobile" alt="Menu link on mobile menu" src="../images/components/breadcrumb/nav-mobile-home-link.png">
+    <p class="nhsuk-body-s">Menu on mobile devices.</p>
+  </div>
+
+	<h2 id="code">Example and code snippet</h2>
 	<div class="example grey-background">
-    <nav class="nhsuk-c-breadcrumb" role="Breadcrumb" aria-label="Breadcrumb">
+    <nav class="nhsuk-c-breadcrumb" aria-label="Breadcrumb">
       <ol class="nhsuk-c-breadcrumb__list">
         <li class="nhsuk-c-breadcrumb__item">
           <a href="#" class="nhsuk-c-breadcrumb__link">Home</a>
@@ -78,8 +123,8 @@
 
 	<div class="example-snippet">
 		<button class="nhsuk-btn-copy" data-clipboard-target="#clipboard-1">Copy</button>
-    <pre class="language-markup" id="clipboard-1">
-<code class="  language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>nhsuk-c-breadcrumb<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Breadcrumb<span class="token punctuation">"</span></span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Breadcrumb<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<pre class="language-markup" id="clipboard-1">
+<code class="  language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>nhsuk-c-breadcrumb<span class="token punctuation">"</span></span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Breadcrumb<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ol</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>nhsuk-c-breadcrumb__list<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>nhsuk-c-breadcrumb__item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>nhsuk-c-breadcrumb__link<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Home<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
@@ -105,7 +150,24 @@
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>nhsuk-c-breadcrumb__backlink<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Back to Your guide to care and support<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span></code>
-    </pre>
+</pre>
 	</div>
+
+  <h2 id="accessibility">Accessibility</h2>
+  <p>Using <code>aria-label="role"</code> provides a label that describes the type of navigation provided in the nav element.</p>
+  <p>Adding <code>aria-hidden="true"</code> to the svg icons means that they are hidden to screenreaders.</p>
+
+  <h2 id="usage">Usage (rules)</h2>
+
+  <h3>When to use this pattern</h3>
+  <p>A breadcrumb should be used on almost every page that you create on NHS.UK. It helps users navigate the many levels of hierarchy that exist.</p>
+  <h3>How it works</h3>
+	<ul>
+		<li>If the screen size cannot fit the entire breadcrumb trail, the breadcrumb can wrap onto 2 lines, but individual items within the trail shouldn't be truncated.</li>
+		<li>The current page title/name does not need to be shown in the breadcrumb because in the page template, this information is displayed directly underneath as a H1.</li>
+		<li>On mobile, due to the reduced screen width, the full breadcrumb trail is replaced by a 'Back to [parent]' link.</li>
+	</ul>
+
+</div>
 
 {% endblock %}
