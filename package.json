@@ -11,11 +11,6 @@
     "watch": "concurrently \"gulp\" \"nodemon app.js --config config/nodemon.json -q\"",
     "test": "npm run lint-css",
     "lint-css": "./node_modules/.bin/sass-lint -c ./config/.sass-lint.yml 'src/**/*.scss' -v -q",
-    "backstop:ref": "node app.js & ./node_modules/backstopjs/cli/index.js reference --config=config/backstop.json",
-    "backstop:test": "node app.js & ./node_modules/backstopjs/cli/index.js test --config=config/backstop.json",
-    "backstop:clean": "rm -rf tests/backstop/backstop_data/bitmaps_test/*",
-    "cypress:run": "node app.js & ./node_modules/.bin/cypress run",
-    "cypress:open": "node app.js & ./node_modules/.bin/cypress open"
   },
   "dependencies": {
     "babel-core": "^6.26.3",
@@ -30,9 +25,7 @@
     "sass-mq": "^4.0.2"
   },
   "devDependencies": {
-    "backstopjs": "^3.5.2",
     "concurrently": "^3.6.1",
-    "cypress": "^3.0.3",
     "del": "^3.0.0",
     "nodemon": "^1.18.3",
     "sass-lint": "^1.12.1"
