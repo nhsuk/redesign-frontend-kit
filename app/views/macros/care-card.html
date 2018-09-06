@@ -1,15 +1,15 @@
 {% macro carecard(type, title, content) %}
 {% if type == 'grey' %}
-<div class="nhsuk-c-care-card nhsuk-c-care-card--grey">
+<div class="nhsuk-c-care-card nhsuk-c-care-card--grey" role="note" aria-label="Non-urgent advice">
 {% elseif type == 'red' %}
-<div class="nhsuk-c-care-card nhsuk-c-care-card--red">
+<div class="nhsuk-c-care-card nhsuk-c-care-card--red" role="note" aria-label="Urgent care low">
 {% elseif type == 'black' %}
-<div class="nhsuk-c-care-card nhsuk-c-care-card--black">
+<div class="nhsuk-c-care-card nhsuk-c-care-card--black" role="note" aria-label="Urgent care high">
 {% else %}
-<div class="nhsuk-c-care-card">
+<div class="nhsuk-c-care-card" role="note" aria-label="Non-urgent care">
 {% endif %}
   <div class="nhsuk-c-care-card__heading">
-    <h3>{{title}}</h3>
+    <h2 class="nhsuk-heading-m">{{title}}</h2>
   </div>
   <div class="nhsuk-c-care-card__content">
     {{content | safe}}
