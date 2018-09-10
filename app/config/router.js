@@ -340,5 +340,11 @@ router.get('/examples/antenatal-appointments-2', (req, res) => {
   res.render('examples/antenatal-appointments-2', {});
 });
 
+router.get('/examples/landingpage-c', (req, res) => {
+  res.render('examples/landingpage-c', {});
+});
 
+router.get('/examples/landingpage-d', (req, res) => {
+  res.render('examples/landingpage-d', {});
+});
 module.exports = router;
