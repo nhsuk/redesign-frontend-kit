@@ -347,4 +347,9 @@ router.get('/examples/landingpage-c', (req, res) => {
 router.get('/examples/landingpage-d', (req, res) => {
   res.render('examples/landingpage-d', {});
 });
+
+
+router.get('/examples/landingpage-e', (req, res) => {
+  res.render('examples/landingpage-e', {});
+});
 module.exports = router;
