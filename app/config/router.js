@@ -352,4 +352,14 @@ router.get('/examples/landingpage-d', (req, res) => {
 router.get('/examples/landingpage-e', (req, res) => {
   res.render('examples/landingpage-e', {});
 });
+
+
+router.get('/examples/starting-your-pregnancy-care-1', (req, res) => {
+  res.render('examples/starting-your-pregnancy-care-1', {});
+});
+
+router.get('/examples/starting-your-pregnancy-care-2', (req, res) => {
+  res.render('examples/starting-your-pregnancy-care-2', {});
+});
+
 module.exports = router;
