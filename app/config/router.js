@@ -362,4 +362,8 @@ router.get('/examples/starting-your-pregnancy-care-2', (req, res) => {
   res.render('examples/starting-your-pregnancy-care-2', {});
 });
 
+router.get('/examples/earlydayshubpage', (req, res) => {
+  res.render('examples/earlydayshubpage', {});
+});
+
 module.exports = router;

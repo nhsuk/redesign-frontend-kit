@@ -1,6 +1,17 @@
-{% set title = 'Your pregnancy antenatal care A2' %}
-{% set parent = '' %}
-{% extends "includes/templates/hub.html"%}
+{% set title = 'Antenatal Appointments 1' %}
+{% set parent = 'Health A-Z' %}
+{% from "macros/callout.html" import callout %}
+{% from "macros/keypoint.html" import keypoint %}
+{% from "macros/care-card.html" import carecard %}
+{% from "macros/review-date.html" import reviewdate %}
+{% extends "includes/templates/page-v4.html"%}
+{% from "macros/mini-hub-pagination.html" import miniHubPagination, miniHubPaginationPrevious, miniHubPaginationNext%}
+{% from "macros/action-link.html" import actionLink %}
+
+
+{% from "macros/image.html" import image %}
+
+{% extends 'includes/site-layout.html' %}
 
 {% block breadcrumb %}
 <nav class="nhsuk-c-breadcrumb" role="Breadcrumb" aria-label="Breadcrumb">
@@ -53,91 +64,109 @@
 
 {% endblock %}
 
-{% block header %}
-    <!--<h1>The NHS in England</h1>
-    <div class="nhsuk-c-intro-image" style="background-image: url(../images/image-nurse.png)">
-        <div class="nhsuk-c-intro-image-inner">
-            <p class="nhsuk-heading-m">Everything you need to know about the health service and what you can get from it</p>
-        </div>
-    </div>-->
-<p class="nhsuk-body-l nhsuk-page-intro">I'm pregnant</p><br>
-    <h1>Starting your pregnancy care </h1>
-	<div class="nhsuk-reading-width">
-
-	</div>
-{% endblock %}
 
 {% block content %}
-<div class="nhsuk-reading-width">
 
-        <div class="nhsuk-c-promo-v1">
-            <h2 class="nhsuk-heading-s"><a href="/examples/generic-internal-page-1">Your pregnancy (antenatal) care</a></h2>
-            <p>What antenatal care is, how to book your first midwife appointment, and where you’ll have your appointments.</p>
+<div class="nhsuk-o-width-container">
+    <main class="nhsuk-o-main-wrapper">
+        <div class="nhsuk-o-grid">
+<div class="nhsuk-o-grid__item nhsuk-o-grid__item--full">
+
+      <div class="nhsuk-page-heading">
+
+        <h1>Starting your pregnancy care<span class="nhsuk-o-h1-sub">I'm pregnant</span></h1>
+
+        <div class="nhsuk-c-page-contents v3">
+          <ul>
+
+
+            <li><strong><span style="background-color: #fdcc68"> Starting your pregnancy care</span></strong></mark></li>
+            <li><a href="/examples/test-minihub-amd/living-with-amd">Signs and symptoms of pregnancy</span></strong></mark></li>
+              <li><a href="/examples/test-minihub-amd/living-with-amd">Finding out and telling people</a></li>
+
+
+          </ul>
         </div>
 
-        <div class="nhsuk-c-promo-v1">
-            <h2 class="nhsuk-heading-s"><a href="/examples/antenatal-appointments-1">Your antenatal appointments</a></h2>
-            <p>How many appointments you’ll be offered, when they’ll happen, what to expect at each one, and how to get prepared.</p>
-        </div>
-
-        <div class="nhsuk-c-promo-v1">
-            <h2 class="nhsuk-heading-s"><a href="/examples/generic-internal-page-2">Who's who in the antenatal team</a></h2>
-            <p>Who will be involved in your antenatal care, and other healthcare professionals you might see, including midwives, obstetricians, sonographers and neonatal nurses.</p>
-        </div>
-
-        <div class="nhsuk-c-promo-v1">
-            <h2 class="nhsuk-heading-s"><a href="/examples/generic-internal-page-2">
-Routine checks and tests</a></h2>
-            <p>Tests you can expect at each appointment and why, such as blood pressure checks and urine tests. </p>
-        </div>
-
-        <div class="nhsuk-c-promo-v1">
-            <h2 class="nhsuk-heading-s"><a href="/examples/generic-internal-page-2">What is screening?</a></h2>
-            <p>What screening tests you’ll be offered, when you’ll be offered them, and why.</p>
-        </div>
-
-        <div class="nhsuk-c-promo-v1">
-            <h2 class="nhsuk-heading-s"><a href="/examples/generic-internal-page-2">Screening for Down's syndrome</a></h2>
-            <p>How screening for Down’s syndrome and other conditions is done, and when you’ll be offered it</p>
-        </div>
-
-        <div class="nhsuk-c-promo-v1">
-            <h2 class="nhsuk-heading-s"><a href="/examples/generic-internal-page-2">Blood test for HIV, syphilis and hepatitis B</a></h2>
-            <p>When and why you’ll be offered a test for HIV, syphilis and hepatitis B, and the care you’ll be offered if you have any of these infections</p>
-        </div>
-
-        <div class="nhsuk-c-promo-v1">
-            <h2 class="nhsuk-heading-s"><a href="/examples/generic-internal-page-2">Screening for sickle cell and thalassaemia</a></h2>
-            <p>Screening for these blood disorders involves questions about your family history, and sometimes a blood test</p>
-        </div>
-
-        <div class="nhsuk-c-promo-v1">
-            <h2 class="nhsuk-heading-s"><a href="/examples/generic-internal-page-2">If screening finds something</a></h2>
-            <p>What to expect if screening finds something, and where to get more information and support</p>
-        </div>
-
-        <div class="nhsuk-c-promo-v1">
-            <h2 class="nhsuk-heading-s"><a href="/examples/generic-internal-page-2">Screening for sickle cell and thalassaemia</a></h2>
-            <p>The blood tests to find out if you have a gene for the blood conditions sickle cell or thalassaemia.</p>
-        </div>
-
-        <div class="nhsuk-c-promo-v1">
-            <h2 class="nhsuk-heading-s"><a href="/examples/generic-internal-page-2">Ultrasound scans</a></h2>
-            <p>How an ultrasound scan works in pregnancy, and what it can do</p>
-        </div>
-
-        <div class="nhsuk-c-promo-v1">
-            <h2 class="nhsuk-heading-s"><a href="/examples/generic-internal-page-2">Dating scan</a></h2>
-            <p>What the 8 to 13 week scan checks</p>
-        </div>
-
-        <div class="nhsuk-c-promo-v1">
-            <h2 class="nhsuk-heading-s"><a href="/examples/generic-internal-page-2">Anomaly scan</a></h2>
-            <p>What the 18 to 21 week scan checks </p>
-        </div>
-</div>
+      </div>
 
 
-</div>
+<div class="nhsuk-o-grid">
 
+<div class="nhsuk-o-grid__item nhsuk-o-grid__item--full">
+
+<h3 id="First-contact"> <a href="a">Your pregnancy (antenatal) care </a></h3>
+
+      <p>What antenatal care is, how to book your first midwife appointment, and where you’ll have your appointments
+"</p>
+
+
+<h3 id="First-contact"><a href="a">Your antenatal appointments </a></h3>
+
+      <p>What antenatal care is, how to book your first midwife appointment, and where you’ll have your appointments
+"</p>
+
+
+
+<h3 id="First-contact"><a href="a">Who's who in the antenatal team</a></h3>
+
+      <p>Who will be involved in your antenatal care, and other healthcare professionals you might see, including midwives, obstetricians, sonographers and neonatal nurses
+</p>
+
+
+
+<h3 id="First-contact"><a href="a">Routine checks and tests</a></h3>
+
+      <p>Tests you can expect at each appointment and why, such as blood pressure checks and urine tests </p>
+
+
+
+<h3 id="First-contact"><a href="a">What is screening?</a></h3>
+
+      <p>What screening tests you’ll be offered, when you’ll be offered them, and why</p>
+
+
+
+<h3 id="First-contact"><a href="a">Screening for Down's syndrome</a></h3>
+
+      <p>How screening for Down’s syndrome and other conditions is done, and when you’ll be offered it</p>
+
+
+
+<h3 id="First-contact"><a href="a">Screening for sickle cell and thalassaemia</a></h3>
+
+      <p>Screening for these blood disorders involves questions about your family history, and sometimes a blood test</p>
+
+
+
+<h3 id="First-contact"><a href="a">If screening finds something</a></h3>
+
+      <p>What to expect if screening finds something, and where to get more information and support</p>
+
+
+
+<h3 id="First-contact"><a href="a">Ultrasound scans</a></h3>
+
+      <p>How an ultrasound scan works in pregnancy, and what it can do</p>
+
+
+
+<h3 id="First-contact"><a href="a">Dating scan</a></h3>
+
+      <p>
+What the 8 to 13 week scan checks</p>
+
+
+
+<h3 id="First-contact"><a href="a">Anomaly scan</a></h3>
+
+      <p>What the 18 to 21 week scan checks </p>
+
+
+
+
+     </div>
+     </div>
+     </section>
+	{{ miniHubPagination(" ", " ", "/examples/test-minihub-amd/getting-diagnosed", "Signs and symptoms of pregnancy")}}
 {% endblock %}
