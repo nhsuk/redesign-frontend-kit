@@ -1,5 +1,6 @@
 {% set title = 'Your pregnancy and baby guide E' %}
 {% set parent = '' %}
+{% from "macros/action-link.html" import actionLink %}
 {% extends "includes/templates/hub.html"%}
 
 {% block breadcrumb %}
@@ -65,13 +66,15 @@
             <p class="nhsuk-heading-m">Everything you need to know about the health service and what you can get from it</p>
         </div>
     </div>-->
-    	<div class="nhsuk-reading-width">
-
-    	</div>
 
 
 
-
+<br><div class="nhsuk-o-grid">
+  <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-half">
+    <p>{{ actionLink("/examples/health-a-z/health-a-z", "Work out your due date", "nhsuk-c-action-link--small nhsuk-c-action-link--alternative") }}</p>
+  </div><div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-half">
+    <p>{{ actionLink("/examples/health-a-z/health-a-z", "Make and save your birth plan", "nhsuk-c-action-link--small nhsuk-c-action-link--alternative") }}</p>
+</div></div>
 
           <hr class="nhsuk-hr">
 
