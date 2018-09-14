@@ -47,4 +47,7 @@
   margin: 40px 0;
   padding: 16px;
 
+  .visually-hidden:first-of-type + * {
+    margin-top: 0;
+  }
 }
