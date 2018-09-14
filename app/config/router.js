@@ -366,4 +366,8 @@ router.get('/examples/earlydayshubpage', (req, res) => {
   res.render('examples/earlydayshubpage', {});
 });
 
+router.get('/examples/generichubpage-a3', (req, res) => {
+  res.render('examples/generichubpage-a3', {});
+});
+
 module.exports = router;
