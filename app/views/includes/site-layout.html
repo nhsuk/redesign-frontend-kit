@@ -31,7 +31,9 @@
   </head>
   <body class="{{ body_class }}">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
-
+    
+    {% block banner %}{% endblock %}
+    
     <div class="nhsuk-c-skiplink">
       <a href="#main-content" class="nhsuk-c-skiplink__link">
         Skip to main content
@@ -39,8 +41,6 @@
     </div>
 
     {% block userAccount %}{% endblock %}
-
-    {% block banner %}{% endblock %}
 
     {% if navigation == 'transactional' %}
       {% include "includes/header-transactional.html" %}

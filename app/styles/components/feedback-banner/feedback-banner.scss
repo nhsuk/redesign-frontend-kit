@@ -16,12 +16,14 @@
   
     &__content {
       @include clear();
+      position: relative;
     }
   
     &__header {
       font-size: 24px;
       line-height: 32px;
       margin: 0;
+      padding-right: 56px;
       
     @include mq($until:tablet) {
         font-size: 20px;
@@ -38,17 +40,20 @@
     }
   
     &__close {
-      float: right;
       color: $nhsuk-black;
       display: block;
       font-size: 14px;
       line-height: 28px;
       margin: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
 
       @include mq($until:319px) {
-        bottom: 24px;
+        bottom: 0;
         position: absolute;
-        right: 16px;
+        right: 0;
+        top: auto;
       }
     }
   

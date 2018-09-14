@@ -1,19 +1,21 @@
 .nhsuk-c-global-alert {
 		background: $nhsuk-yellow;
-		padding: 32px 0;
+    padding: 24px 0;
 
 		@include mq($until:tablet) {
 			padding: 16px 0;
 		}
 
     &__content {
-			@include top-and-bottom;
+      @include top-and-bottom;
+      position: relative;
 		}
         
 		&__header {  
 			font-size: 24px;
       line-height: 32px;      
-			margin: 0;
+      margin: 0;
+      padding-right: 56px;
 
 			@include mq($until:tablet) {
 				font-size: 20px;
@@ -35,12 +37,13 @@
 		}
 				
 		&__close {
-			float: right;
 			color: $nhsuk-black;
 			display: block;
 			font-size: 14px;
 			line-height: 28px;
-			margin: 6px 0 0 0;
+      position: absolute;
+      right: 0;
+      top: 0;
 		}
 
 		@media screen and (max-width:480px) {

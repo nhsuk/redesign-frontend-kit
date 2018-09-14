@@ -1,11 +1,12 @@
 {% extends 'includes/site-layout.html' %}
-
-{% block body %}
+{% block banner %}
   {% include 'partials/global-alert/global-alert-emergency.html' %}
+{% endblock %}
+{% block body %}
   {% include 'partials/phase-banner/phase-banner-new-page-style.html' %}
     {% block breadcrumb %}{% endblock %}
     <div class="nhsuk-o-width-container">
-        <main id="main-content" class="nhsuk-o-main-wrapper">
+        <main id="main-content" class="nhsuk-o-main-wrapper"> 
             <div class="nhsuk-o-grid">
                 <div class="nhsuk-o-grid__item nhsuk-o-grid__item--full">
                     <div class="nhsuk-page-heading">
