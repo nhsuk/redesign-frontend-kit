@@ -79,6 +79,14 @@ router.get('/styles/beta-banner', (req, res) => {
   res.render('styles/beta-banner', {});
 });
 
+router.get('/styles/details', (req, res) => {
+  res.render('styles/details', {});
+});
+
+router.get('/styles/expanders', (req, res) => {
+  res.render('styles/expanders', {});
+});
+
 
 /* Example pages */
 
