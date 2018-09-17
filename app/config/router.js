@@ -374,4 +374,8 @@ router.get('/examples/generichubpage-a3', (req, res) => {
   res.render('examples/generichubpage-a3', {});
 });
 
+router.get('/examples/starting-your-pregnancy-care-3', (req, res) => {
+  res.render('examples/starting-your-pregnancy-care-3', {});
+});
+
 module.exports = router;
