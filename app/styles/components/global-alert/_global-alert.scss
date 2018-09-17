@@ -35,16 +35,6 @@
 				font-size: 12px;
 			}
 		}
-				
-		&__close {
-			color: $nhsuk-black;
-			display: block;
-			font-size: 14px;
-			line-height: 28px;
-      position: absolute;
-      right: 0;
-      top: 0;
-		}
 
 		@media screen and (max-width:480px) {
 			.wrap {
