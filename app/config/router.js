@@ -362,8 +362,12 @@ router.get('/examples/starting-your-pregnancy-care-2', (req, res) => {
   res.render('examples/starting-your-pregnancy-care-2', {});
 });
 
-router.get('/examples/earlydayshubpage', (req, res) => {
-  res.render('examples/earlydayshubpage', {});
+router.get('/examples/earlydayshubpage-1', (req, res) => {
+  res.render('examples/earlydayshubpage-1', {});
+});
+
+router.get('/examples/earlydayshubpage-2', (req, res) => {
+  res.render('examples/earlydayshubpage-2', {});
 });
 
 router.get('/examples/generichubpage-a3', (req, res) => {
