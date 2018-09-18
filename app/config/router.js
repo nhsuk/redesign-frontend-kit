@@ -75,8 +75,8 @@ router.get('/styles/multi-page-nav', (req, res) => {
   res.render('styles/multi-page-nav', {});
 });
 
-router.get('/styles/beta-banner', (req, res) => {
-  res.render('styles/beta-banner', {});
+router.get('/styles/phase-banner', (req, res) => {
+  res.render('styles/phase-banner', {});
 });
 
 router.get('/styles/details', (req, res) => {
@@ -86,6 +86,20 @@ router.get('/styles/details', (req, res) => {
 router.get('/styles/expanders', (req, res) => {
   res.render('styles/expanders', {});
 });
+
+router.get('/styles/survey-banner', (req, res) => {
+  res.render('styles/survey-banner', {});
+});
+
+router.get('/styles/emergency-banner', (req, res) => {
+  res.render('styles/emergency-banner', {});
+});
+
+router.get('/styles/cookie-banner', (req, res) => {
+  res.render('styles/cookie-banner', {});
+});
+
+
 
 
 /* Example pages */
