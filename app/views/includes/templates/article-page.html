@@ -1,9 +1,7 @@
 {% extends 'includes/site-layout.html' %}
-{% block banner %}
-  {% include 'partials/global-alert/global-alert-emergency.html' %}
-{% endblock %}
+{% block banner %}{% endblock %}
 {% block body %}
-  {% include 'partials/phase-banner/phase-banner-new-page-style.html' %}
+    {% block phaseBanner %}{% endblock %}
     {% block breadcrumb %}{% endblock %}
     <div class="nhsuk-o-width-container">
         <main id="main-content" class="nhsuk-o-main-wrapper"> 

@@ -5,6 +5,11 @@
 {% from "macros/care-card.html" import carecard %}
 {% extends "includes/templates/article-page.html"%}
 
+{% block banner %}
+  {% include 'partials/cookie-banner/cookie-banner-updated.html' %}
+  {% include 'partials/global-alert/global-alert-emergency.html' %}
+{% endblock %}
+
 {% block breadcrumb %}
     {% include 'partials/breadcrumb/breadcrumb.html' %}
 {% endblock %}
@@ -13,11 +18,15 @@
     <h1>Chickenpox</h1>
 {% endblock %}
 
+{% block phaseBanner %}
+  {% include 'partials/phase-banner/phase-banner-new-page-style.html' %}
+{% endblock %}
+
 {% block content %}
 
-            <div class="nhsuk-reading-width">
-                    <p><strong>Chickenpox is common and mostly affects children, although you can get it at any age. It usually gets better by itself within a week without needing to see a GP.</strong></p>
-                </div>
+    <div class="nhsuk-reading-width">
+      <p><strong>Chickenpox is common and mostly affects children, although you can get it at any age. It usually gets better by itself within a week without needing to see a GP.</strong></p>
+    </div>
 		<h2>Check if it's chickenpox</h2>
 
 
