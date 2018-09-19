@@ -109,3 +109,15 @@ border: #000 10px dotted;
 .milan {
 border: #000 10px dotted;
 }
+
+.example {
+  .nhsuk-c-global-alert {
+    padding: 24px;
+    @include mq($until: desktop) {
+      padding: 24px 0;
+    }
+    @include mq($until: tablet) {
+      padding: 16px 0;
+    }
+  }
+}
