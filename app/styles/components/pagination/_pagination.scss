@@ -123,3 +123,73 @@
         }
     }
 }
+
+.navigation--number {
+
+    .container {
+        align-items: flex-start;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0 18px;
+        position: relative;
+
+        .navigation-control {
+            background-color: #fff;
+            margin-right: 3px;
+            min-width: 84px;
+            padding: 9px 18px;
+            text-align: center;
+            text-decoration: none; 
+            @include mq($from: tablet) {
+                padding: 6px 18px;
+            }
+        }
+       
+        ol {
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+
+            span {
+                font-size: 0;
+            }
+          
+            .count {
+                display: block;
+                font-weight: 300;
+                font-size: 1.125rem;
+                line-height: 1.334;
+            }
+
+            .active {
+                background-color: #2b57ab;
+                color: #fff;
+            }
+           
+            li {
+                display: block;
+                margin: 0 3px 3px 0;
+                min-width: 42px;
+                text-align: center;
+                text-transform: capitalize;
+                
+                a {
+                    display: block;
+                    background-color: #fff;
+                    color: #2b57ab;
+                    text-decoration: none;
+                  
+                    a:link {
+                        color: #2b57ab;
+                        text-decoration: none;
+                    }
+
+
+                }
+            }
+        }
+    }
+}

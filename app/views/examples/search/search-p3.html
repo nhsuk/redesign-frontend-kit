@@ -1,0 +1,50 @@
+{% set title = 'Symptoms - Age-related macular degeneration (AMD)' %}
+{% set parent = 'Search' %}
+{% from "macros/search-pagination.html" import searchPagination, searchPaginationPrevious, searchPaginationNext%}
+{% from "macros/search-listing.html" import searchListing %}
+{% extends 'includes/site-layout.html' %}
+
+{% block body %}
+
+	{% include 'partials/breadcrumb/breadcrumb-level-1.html' %}
+
+    <div class="nhsuk-o-width-container">
+        <main class="nhsuk-o-main-wrapper">
+            <div class="nhsuk-o-grid">
+				<div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds">
+
+					<div class="nhsuk-page-heading">
+
+						<h1>Search results for... <small>'back pain'</small></h1>
+
+					</div>
+				
+					<div class="nhsuk-page-content">
+										
+						<p>21 - 30 of 47 results</p>
+						
+						<p>
+						{{ searchListing("search-listing", "https://www.nhs.uk/Services/Trusts/HospitalsAndClinics/DefaultView.aspx?id=105753", "Hospitals and clinics - The Back Pain Team Ltd - NHS","Official information from NHS about The Back Pain Team Ltd including contact details, directions, opening hours and service/treatment details") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/live-well/exercise/back-pain-cure-vickys-story/", "'My search for a back pain cure' - NHS","Vicky Joseph spent years searching for a cure for her back pain. Find out what finally helped her.") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/news/medical-practice/back-pain-test-aids-diagnosis/", "Back pain test 'aids diagnosis' - NHS","“A simple technique could help differentiate patients with different causes of back pain,” suggests BBC News. The new service says that researchers have devised bedside tests that...") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/start4life/pregnancy/week-by-week/1st-trimester/week-five", "Start4Life - 5 Weeks Pregnant | Pregnancy | Start4Life","5 weeks pregnant? Find out all you need to know, see how your baby is developing & how your body is changing through our week-by-week guide") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/conditions/nhs-fitness-studio/chronic-back-pain-pilates-exercise-video/", "Back pain pilates video workout - NHS","A pilates home video workout for people with back pain from the NHS Fitness Studio, where you can find a range of workout routines to suit you, whether your aim is to lose weight, improve your overall fitness, or de-stress.") }}
+						{{ searchListing("search-listing", "https://beta.nhs.uk/medicines/tramadol/", "Tramadol: strong painkiller to treat severe pain - NHS.UK","In general, you will be prescribed the lowest dose that relieves your pain. ... You may need to take it for longer if you have a long-term condition such as back pain.") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/Services/Trusts/ContactDetails/DefaultView.aspx?id=105753", "Contact Details - The Back Pain Team Ltd - NHS","Official information from NHS about The Back Pain Team Ltd including contact details, directions, opening hours and service/treatment details") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/live-well/exercise/", "Exercise - NHS","Physical activity guidelines for adults, aged 19-64, for general health and fitness, including tips on how to achieve 150 minutes of activity a week.") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/news/medical-practice/acupuncture-may-ease-back-pain/", "Acupuncture may ease back pain - NHS","A study has shown that acupuncture provides more relief for lower back pain than other medications or physiotherapy, reported The Daily Telegraph and other newspapers.") }}
+						{{ searchListing("search-listing", "https://beta.nhs.uk/medicines/prednisolone/", "Prednisolone: steroid to treat allergies and infections - NHS.UK","muscle pain or weakness, muscle cramps, or a heartbeat that does not feel normal - these can be signs of low potassium levels. ... severe stomach pain, severe back pain, severe upset stomach or vomiting - these can be signs of pancreas problems.") }}
+						</p>
+
+						{{ searchPagination("/examples/search/search-p2", "2 of 5", "/examples/search/search-p4", "4 of 5")}}
+
+					</div>
+
+				</div>
+			</div>
+        </main>
+	</div>
+	
+
+
+{% endblock %}

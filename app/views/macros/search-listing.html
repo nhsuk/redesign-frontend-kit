@@ -1,0 +1,10 @@
+{% macro searchListing(promoClass, promoLink, promoTitle, promoDescription) %}
+    <div class="nhsuk-c-promo {{promoClass}}">
+        <a href="{{promoLink}}">
+            <div class="nhsuk-c-promo__content">
+                <h3 class="nhsuk-c-promo__heading">{{promoTitle}}</h3>
+                <p class="nhsuk-c-promo__description">{{promoDescription}}</p>
+            </div>
+        </a>
+    </div>
+{% endmacro %}

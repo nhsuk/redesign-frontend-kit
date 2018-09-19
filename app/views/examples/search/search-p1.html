@@ -1,0 +1,50 @@
+{% set title = 'Symptoms - Age-related macular degeneration (AMD)' %}
+{% set parent = 'Search' %}
+{% from "macros/search-pagination.html" import searchPagination, searchPaginationPrevious, searchPaginationNext%}
+{% from "macros/search-listing.html" import searchListing %}
+{% extends 'includes/site-layout.html' %}
+
+{% block body %}
+
+	{% include 'partials/breadcrumb/breadcrumb-level-1.html' %}
+
+    <div class="nhsuk-o-width-container">
+        <main class="nhsuk-o-main-wrapper">
+            <div class="nhsuk-o-grid">
+				<div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds">
+
+					<div class="nhsuk-page-heading">
+
+						<h1>Search results for... <small>'back pain'</small></h1>
+
+					</div>
+				
+					<div class="nhsuk-page-content">
+										
+						<p>1 - 10 of 47 results</p>
+						
+						<p>
+						{{ searchListing("search-listing", "https://www.nhs.uk/conditions/back-pain/", "Back pain - NHS","Find out how to relieve back pain, what can cause it, and when to get medical advice.") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/live-well/exercise/lower-back-pain-exercises/", "Lower back pain exercises - NHS","Exercises (with photos) to help reduce lower back pain by stretching, strengthening and mobilising the lower back.") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/Tools/Pages/Back-pain-guide.aspx", "Back pain guide","A guide to types of back pain, treatments for back pain, and ways to prevent back pain.") }}
+						{{ searchListing("search-listing", "https://beta.nhs.uk/medicines/naproxen/", "Naproxen: medicine to relieve pain and swelling - NHS.UK","It's also used for period pain and muscle and bone disorders, such as back pain and sprains and strains. ... Paracetamol is usually the best treatment for most types of pain, but naproxen is better for some types, such as period pain or back pain.") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/news/medical-practice/low-back-pain-treatment-needs-improvements/", "Low back pain treatment ‘needs improvements’ - NHS","'Lower back pain being treated badly on a global scale, study says' The Guardian reports") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/service-search", "Find services - NHS","Menu. Search. Search the NHS website. Search. Close search. Menu. Close menu. Find services. You can search all of our service directories from here. Try searching by service name, service type, condition or surgical procedure. Find services. Find.") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/be-clear-on-cancer/symptoms/ovarian-cancer", "Ovarian cancer - Be Clear on Cancer","Feeling bloated, most days, for 3 weeks or more, could be a sign of ovarian cancer. Tell your doctor.") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/oneyou/active10/home", "Active 10 - Home","Build some brisk walking into your day and start feeling healthier. Download the free Active 10 walking tracker app on Android and iOS now.") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/start4life/baby/breastfeeding/breastfeeding-issues", "Start4Life - Breastfeeding Issues | Breastfeeding | Start4Life","These are the most common breastfeeding problems. If you have any concerns, it is important that you talk to your health visitor.") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/conditions/back-pain/causes/", "Back pain - Causes - NHS","Find out about the causes of back pain, including some of the medical conditions that can cause it.") }}
+						</p>
+
+						{{ searchPaginationNext("/examples/search/search-p2", "2 of 5")}}
+
+					</div>
+
+				</div>
+			</div>
+        </main>
+	</div>
+	
+
+
+{% endblock %}

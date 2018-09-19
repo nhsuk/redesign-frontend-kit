@@ -1,0 +1,78 @@
+{% macro searchPagination(previousUrl, previousTitle, nextUrl, nextTitle) %}
+    <nav class="nhsuk-c-pagination-v2" role="navigation" aria-label="Pagination">
+        <a href="{{previousUrl}}" class="nhsuk-c-pagination-prev">
+            <span class="nhsuk-c-pagination-link">Previous</span>
+            <span class="nhsuk-c-pagination-title">{{previousTitle}}</span>
+            {% include 'partials/icons/icon-arrow-left.svg' %}
+        </a>
+        <a href="{{nextUrl}}" class="nhsuk-c-pagination-next">
+            <span class="nhsuk-c-pagination-link">Next</span>
+            <span class="nhsuk-c-pagination-title">{{nextTitle}}</span>
+            {% include 'partials/icons/icon-arrow-right.svg' %}
+        </a>
+        <div class="clear"></div>
+    </nav>
+{% endmacro %}
+
+{% macro search2Pagination(previousUrl, previousTitle, nextUrl, nextTitle) %}
+<nav aria-label="Pagination" class="navigation--number" data-active-tile="1">
+    <div class="container">
+        <ol>
+            <li class="active" data-number="1">
+                <span>
+                    <span>Page </span>
+                    <span class="count">1</span>
+                    <span>of 43</span>
+                </span>
+            </li>
+            <li data-number="2">
+                <a href="/examples/search2/search-p2"><span>Page </span>
+                <span class="count">2</span>
+                <span>of 43</span>
+                </a>
+            </li>
+            <li data-number="3">
+                <a href="/examples/search2/search-p3"><span>Page </span>
+                <span class="count">3</span>
+                <span>of 43</span>
+                </a>
+            </li>
+            <li data-number="4">
+                <a href="/examples/search2/search-p4"><span>Page </span>
+                <span class="count">4</span>
+                <span>of 43</span>
+                </a>
+            </li>
+            <li data-number="5">
+                <a href="/examples/search2/search-p5"><span>Page </span>
+                <span class="count">5</span>
+                <span>of 43</span>
+                </a>
+            </li>
+        </ol>
+        <a class="navigation-control" href="/examples/search2/search-p2">Next</a>
+    </div>
+</nav>
+{% endmacro %}
+
+{% macro searchPaginationPrevious(previousUrl, previousTitle) %}
+    <nav class="nhsuk-c-pagination-v2" role="navigation" aria-label="Pagination">
+        <a href="{{previousUrl}}" class="nhsuk-c-pagination-prev">
+            <span class="nhsuk-c-pagination-link">Previous</span>
+            <span class="nhsuk-c-pagination-title">{{previousTitle}}</span>
+            {% include 'partials/icons/icon-arrow-left.svg' %}
+        </a>
+        <div class="clear"></div>
+    </nav>
+{% endmacro %}
+
+{% macro searchPaginationNext(nextUrl, nextTitle) %}
+    <nav class="nhsuk-c-pagination-v2" role="navigation" aria-label="Pagination">
+        <a href="{{nextUrl}}" class="nhsuk-c-pagination-next">
+            <span class="nhsuk-c-pagination-link">Next</span>
+            <span class="nhsuk-c-pagination-title">{{nextTitle}}</span>
+            {% include 'partials/icons/icon-arrow-right.svg' %}
+        </a>
+        <div class="clear"></div>
+    </nav>
+{% endmacro %}

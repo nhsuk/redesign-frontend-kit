@@ -1,0 +1,37 @@
+{% macro searchPagination(previousUrl, previousTitle, nextUrl, nextTitle) %}
+    <nav class="nhsuk-c-pagination-v2" role="navigation" aria-label="Pagination">
+        <a href="{{previousUrl}}" class="nhsuk-c-pagination-prev">
+            <span class="nhsuk-c-pagination-link">Previous</span>
+            <span class="nhsuk-c-pagination-title">{{previousTitle}}</span>
+            {% include 'partials/icons/icon-arrow-left.svg' %}
+        </a>
+        <a href="{{nextUrl}}" class="nhsuk-c-pagination-next">
+            <span class="nhsuk-c-pagination-link">Next</span>
+            <span class="nhsuk-c-pagination-title">{{nextTitle}}</span>
+            {% include 'partials/icons/icon-arrow-right.svg' %}
+        </a>
+        <div class="clear"></div>
+    </nav>
+{% endmacro %}
+
+{% macro searchPaginationPrevious(previousUrl, previousTitle) %}
+    <nav class="nhsuk-c-pagination-v2" role="navigation" aria-label="Pagination">
+        <a href="{{previousUrl}}" class="nhsuk-c-pagination-prev">
+            <span class="nhsuk-c-pagination-link">Previous</span>
+            <span class="nhsuk-c-pagination-title">{{previousTitle}}</span>
+            {% include 'partials/icons/icon-arrow-left.svg' %}
+        </a>
+        <div class="clear"></div>
+    </nav>
+{% endmacro %}
+
+{% macro searchPaginationNext(nextUrl, nextTitle) %}
+    <nav class="nhsuk-c-pagination-v2" role="navigation" aria-label="Pagination">
+        <a href="{{nextUrl}}" class="nhsuk-c-pagination-next">
+            <span class="nhsuk-c-pagination-link">Next</span>
+            <span class="nhsuk-c-pagination-title">{{nextTitle}}</span>
+            {% include 'partials/icons/icon-arrow-right.svg' %}
+        </a>
+        <div class="clear"></div>
+    </nav>
+{% endmacro %}
