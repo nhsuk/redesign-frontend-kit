@@ -378,4 +378,10 @@ router.get('/examples/starting-your-pregnancy-care-3', (req, res) => {
   res.render('examples/starting-your-pregnancy-care-3', {});
 });
 
+
+router.get('/examples/starting-your-pregnancy-care-4', (req, res) => {
+  res.render('examples/starting-your-pregnancy-care-4', {});
+});
+
+
 module.exports = router;

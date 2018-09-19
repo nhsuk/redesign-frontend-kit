@@ -1,0 +1,230 @@
+{% set title = 'Blisters' %}
+{% set parent = 'Health A-Z' %}
+{% from "macros/list.html" import list %}
+{% from "macros/action-link.html" import actionLink %}
+{% from "macros/care-card.html" import carecard %}
+{% extends "includes/templates/page.html"%}
+{% from "macros/review-date.html" import reviewdate %}
+{% extends "includes/templates/page-v4.html"%}
+{% from "macros/mini-hub-pagination.html" import miniHubPagination, miniHubPaginationPrevious, miniHubPaginationNext%}
+{% from "macros/action-link.html" import actionLink %}
+
+{% block breadcrumb %}
+<nav class="nhsuk-c-breadcrumb" role="Breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-o-width-container">
+    <ol class="nhsuk-c-breadcrumb__list">
+    <li class="nhsuk-c-breadcrumb__item">
+      <a href="#" class="nhsuk-c-breadcrumb__link">Home</a>
+      <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"/>
+        <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/images/icons/icon-chevron-right-grey-10px.png" xlink:href="">
+      </svg>
+    </li>
+    <li class="nhsuk-c-breadcrumb__item">
+      <a href="#" class="nhsuk-c-breadcrumb__link">Health A-Z</a>
+      <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"/>
+        <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/images/icons/icon-chevron-right-grey-10px.png" xlink:href="">
+      </svg>
+    </li>
+
+    <li class="nhsuk-c-breadcrumb__item">
+      <a href="#" class="nhsuk-c-breadcrumb__link">Your pregnancy and baby guide</a>
+      <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"/>
+        <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/images/icons/icon-chevron-right-grey-10px.png" xlink:href="">
+      </svg>
+    </li>
+
+
+    <li class="nhsuk-c-breadcrumb__item">
+      <a href="#" class="nhsuk-c-breadcrumb__link">Early days</a>
+      <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"/>
+        <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/images/icons/icon-chevron-right-grey-10px.png" xlink:href="">
+      </svg>
+    </li>
+
+
+    <li class="nhsuk-c-breadcrumb__item">
+      <a href="#" class="nhsuk-c-breadcrumb__link">Your NHS pregnancy journey</a>
+      <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"/>
+        <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/images/icons/icon-chevron-right-grey-10px.png" xlink:href="">
+      </svg>
+    </li>
+
+
+  </ol>
+  <p class="nhsuk-c-breadcrumb__back">
+    <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"/>
+      <image class="nhsuk-icon__chevron-left nhsuk-icon__chevron-left--fallback" src="/images/icons/icon-chevron-left-blue.png" xlink:href="">
+    </svg>
+    <a href="#" class="nhsuk-c-breadcrumb__backlink">Back to Your pregnancy and baby guide</a>
+
+  </p>
+
+</nav>
+
+{% endblock %}
+
+{% block header %}
+<div class="nhsuk-o-width-container">
+    <main class="nhsuk-o-main-wrapper">
+        <div class="nhsuk-o-grid">
+<div class="nhsuk-o-grid__item nhsuk-o-grid__item--full">
+
+      <div class="nhsuk-page-heading">
+
+        <h1>Your NHS pregnancy journey<span class="nhsuk-o-h1-sub">Early days</span></h1>
+
+        <div class="nhsuk-c-page-contents v3">
+          <ul>
+
+
+            <li><strong><span style="background-color: #fdcc68"> Your NHS pregnancy journey</span></strong></mark></li>
+            <li><a href="/examples/test-minihub-amd/living-with-amd">Signs and symptoms of pregnancy</span></strong></mark></li>
+
+              <li><a href="/examples/test-minihub-amd/living-with-amd">Finding out and telling people</a></li>
+
+
+          </ul>
+        </div>
+
+      </div>
+{% endblock %}
+
+{% block sidebar %}
+    <h2 class="nhsuk-heading-xs">Page contents</h2>
+    <ol class="nhsuk-listnav">
+
+        <li><a href="#things-you-can-try">Things you can try</a></li>
+
+        <li><a href="#how-a-pharmacist-can-help">How a pharmacist can help</a></li>
+
+        <li><a href="#symptoms">Symptoms</a></li>
+
+        <li><a href="#when-to-get-medical-help">When to get medical help</a></li>
+
+        <li><a href="#treatment-from-a-gp">Treatment from a GP</a></li>
+
+        <li><a href="#prevention">Prevention</a></li>
+
+    </ol>
+{% endblock %}
+
+{% block content %}
+
+
+<div class="nhsuk-o-grid">
+
+<div class="nhsuk-o-grid__item nhsuk-o-grid__item--full">
+
+<h2 id="First-contact">Starting your pregnancy (antenatal) care</h2>
+
+      <p>"You should see a midwife or GP as soon as you find out you’re pregnant. This is so they can organise your NHS pregnancy care (also called antenatal care).
+
+Your first appointment with a midwife should happen before you’re 10 weeks pregnant.
+"</p>
+
+
+
+
+      <h2 id="8-12-weeks">What is antenatal care? </h2>
+
+      <p>This is the care you have while you're pregnant to make sure you and your baby are as well as possible. The NHS offers all pregnant women in England:</p><ul  type="round">
+        <ul><li> up to 10 pregnancy appointments (7 if you’ve had a child before) to check the health and development of you and your baby</li>
+          <li> screening tests to find out the chance of your baby having certain conditions, such as Down's syndrome</li>
+            <li> blood tests to check for syphilis, HIV and hepatitis B</li>
+              <li> screening for sickle cell and thalassaemia (inherited blood disorders)</li>
+
+      </ul><p>Depending on your health and where you live, you may see:</p><br>
+      <li> a midwife for all your appointments, or </li>
+        <li> a midwife for some appointments and a GP for others </li> <br>
+
+        <a href="a">Find out more about pregnancy (antenatal) care</a>
+
+
+
+
+
+
+      <h2 id="8-14-weeks">How do I start my antenatal care?</h2>
+
+      <p>As soon as you find out you’re pregnant you can book an appointment with:</p>
+
+
+      <li>local midwife services (your GP or a Children’s Centre can put you in touch with your nearest midwife service – find your nearest Children’s Centre <a href="a"> https://www.gov.uk/find-sure-start-childrens-centre)  </a></li>
+        <li> your GP</li> <br>
+
+
+
+        <h2 id="8-14-weeks">When and where will my appointments be? </h2>
+
+        <p>Find out more about <a href="a"> [when you’ll have your antenatal appointments]</a>
+<br><br>
+Your appointments can take place at:
+
+<ul><li> your home</li>
+  <li> a Children's Centre</li>
+    <li> a GP surgery</li>
+      <li> a hospital</li>
+
+</ul><br>
+You’ll usually go to the hospital for your pregnancy scans.</p>
+
+
+<h2 id="8-14-weeks">What can I do now for me and my baby?</h2><br>
+
+It's important not to miss any of your antenatal appointments. Some of the tests and measurements that can identify potential problems have to be done at specific times.
+
+There are also things you can do to keep you and your baby as healthy as possible in pregnancy, including:
+
+
+<ul><li><a href="a">  not smoking</a></li>
+<li> <a href="a"> not drinking alcohol</a></li>
+<li> <a href="a"> getting some exercise</a></li>
+<li> <a href="a"> having a healthy diet</a></li>
+<li> <a href="a"> knowing which foods to avoid </a></li>
+<li> <a href="a"> taking a folic acid supplement and thinking about taking a vitamin D supplement </a></li>
+<li> <a href="a"> knowing how to avoid infections that may harm your baby, and symptoms to look out for </a></li>
+<li><a href="a">  having the flu vaccination </a></li>
+<li> <a href="a"> knowing about baby movements in pregnancy </a></li>
+<li> <a href="a"> knowing how to cope with feelings, worries and relationships in pregnancy </a></li>
+
+
+</ul>
+
+
+
+<h2 id="8-14-weeks">What if I have a health condition?</h2>
+
+<p>If you have a health condition, for example diabetes or asthma, these can affect your pregnancy. Pregnancy can also affect any conditions you have.
+
+Don’t stop taking your medicine until you’ve talked with your doctor.
+
+Find out more about:
+
+
+<ul><li> asthma and pregnancy</li>
+<li> congenital heart disease and pregnancy</li>
+<li> coronary heart disease and pregnancy</li>
+<li> diabetes and pregnancy</li>
+<li> epilepsy and pregnancy</li>
+<li> mental health issues and pregnancy</li>
+<li> overweight and pregnancy</li>
+</ul>
+
+
+
+
+
+
+
+
+     </div>
+     </div>
+
+  {{ miniHubPagination(" ", " ", "/examples/test-minihub-amd/getting-diagnosed", "Signs and symptoms of pregnancy")}}
+{% endblock %}
