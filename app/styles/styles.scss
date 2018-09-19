@@ -111,7 +111,8 @@ border: #000 10px dotted;
 }
 
 .example {
-  .nhsuk-c-global-alert {
+  .nhsuk-c-global-alert,
+  .nhsuk-c-feedback-banner {
     padding: 24px;
     @include mq($until: desktop) {
       padding: 24px 0;
