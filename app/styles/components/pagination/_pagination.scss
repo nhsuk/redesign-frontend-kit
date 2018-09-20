@@ -133,9 +133,10 @@
         margin: 0 auto;
         padding: 0 18px;
         position: relative;
-
+        
         .navigation-control {
             background-color: #fff;
+            color: #2b57ab;
             margin-right: 3px;
             min-width: 84px;
             padding: 9px 18px;
@@ -148,20 +149,20 @@
        
         ol {
             margin: 0;
+            padding: 0;
             display: flex;
             flex-wrap: wrap;
             list-style: none;
-            padding: 0;
+          
+            .count {
+                //display: block;
+                font-size: 1.2rem;
+                line-height: 2;
+                margin: 0px;
+            }
 
             span {
                 font-size: 0;
-            }
-          
-            .count {
-                display: block;
-                font-weight: 300;
-                font-size: 1.125rem;
-                line-height: 1.334;
             }
 
             .active {
@@ -175,7 +176,8 @@
                 min-width: 42px;
                 text-align: center;
                 text-transform: capitalize;
-                
+
+
                 a {
                     display: block;
                     background-color: #fff;
@@ -183,6 +185,10 @@
                     text-decoration: none;
                   
                     a:link {
+                        color: #2b57ab;
+                        text-decoration: none;
+                    }
+                    a:link:visited {
                         color: #2b57ab;
                         text-decoration: none;
                     }

@@ -29,7 +29,44 @@
 						{{ searchListing("search-listing", "https://www.nhs.uk/conditions/pelvic-pain/", "Pelvic pain - NHS","Pelvic pain is felt below your bellybutton. It may come on suddenly and severely, or could be mild and last for months. See your GP as soon as possible.") }}
 						</p>
 
-						{{ searchPaginationPrevious("/examples/search/search-p4", "4 of 5")}}
+						<nav aria-label="Pagination" class="navigation--number" data-active-tile="1">
+							<div class="container">
+								<a class="navigation-control" href="/examples/search2/search-p4">Previous</a>
+								<ol>
+									<li data-number="1">
+										<a href="/examples/search2/search-p1"><span>Page </span>
+										<span class="count">1</span>
+										<span>of 43</span>
+										</a>
+									</li>									
+									<li data-number="2">
+										<a href="/examples/search2/search-p2"><span>Page </span>
+										<span class="count">2</span>
+										<span>of 43</span>
+										</a>
+									</li>
+									<li data-number="3">
+										<a href="/examples/search2/search-p3"><span>Page </span>
+										<span class="count">3</span>
+										<span>of 43</span>
+										</a>
+									</li>									
+									<li data-number="4">
+										<a href="/examples/search2/search-p4"><span>Page </span>
+										<span class="count">4</span>
+										<span>of 43</span>
+										</a>
+									</li>									
+									<li  class="active" data-number="5">
+										<span>
+										<span>Page </span>
+										<span class="count">5</span>
+										<span>of 43</span>
+										</span>
+									</li>
+								</ol>
+							</div>
+						</nav>
 
 					</div>
 
