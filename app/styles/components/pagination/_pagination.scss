@@ -162,7 +162,12 @@
             }
 
             span {
-                font-size: 0;
+                @include mq($from: tablet) {
+                    font-size: 0;
+                }
+                span:nth-child(3){
+                    display:none;
+                }
             }
 
             .active {
@@ -171,11 +176,20 @@
             }
            
             li {
-                display: block;
+                display: none;
                 margin: 0 3px 3px 0;
                 min-width: 42px;
                 text-align: center;
                 text-transform: capitalize;
+
+                @include mq($from: tablet) {
+                    display: block;
+                }
+                
+                &.active {
+                    display: block;
+                    padding: 0 10px;
+                }
 
 
                 a {
