@@ -1,0 +1,41 @@
+{% set title = 'Symptoms - Age-related macular degeneration (AMD)' %}
+{% set parent = 'Search' %}
+{% from "macros/search-pagination.html" import searchPagination, searchPaginationPrevious, searchPaginationNext%}
+{% from "macros/search-listing.html" import searchListing %}
+{% extends 'includes/site-layout.html' %}
+
+{% block body %}
+
+	{% include 'partials/breadcrumb/breadcrumb-level-1.html' %}
+
+    <div class="nhsuk-o-width-container">
+        <main class="nhsuk-o-main-wrapper">
+            <div class="nhsuk-o-grid">
+				<div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds">
+
+					<div class="nhsuk-page-heading">
+
+						<h1>Search results for... <small>'back pain'</small></h1>
+
+					</div>
+				
+					<div class="nhsuk-page-content">
+										
+						<p>
+						{{ searchListing("search-listing", "https://www.nhs.uk/conditions/shoulder-pain/", "Shoulder pain - NHS","Meditation could ease the agony of back pain, a study suggests, the Daily Mirror reports. A US study compared a technique called mindfulness-based stress reduction (MBSR) with usual care and cognitive behavioural therapy (CBT) for…") }}
+						{{ searchListing("search-listing", "https://beta.nhs.uk/medicines/ibuprofen-for-adults/", "Ibuprofen for adults: painkiller - NHS.UK","Ibuprofen is typically used for period pain or toothache. Some people find ibuprofen better than paracetamol for back pain. ... It can also be used for back pain and pain from arthritis.") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/conditions/pelvic-pain/", "Pelvic pain - NHS","Pelvic pain is felt below your bellybutton. It may come on suddenly and severely, or could be mild and last for months. See your GP as soon as possible.") }}
+						</p>
+
+						{{ searchPaginationPrevious("/examples/search/search-p4", "4 of 5")}}
+
+					</div>
+
+				</div>
+			</div>
+        </main>
+	</div>
+	
+
+
+{% endblock %}

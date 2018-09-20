@@ -1,0 +1,48 @@
+{% set title = 'Symptoms - Age-related macular degeneration (AMD)' %}
+{% set parent = 'Search' %}
+{% from "macros/search-pagination.html" import searchPagination, searchPaginationPrevious, searchPaginationNext%}
+{% from "macros/search-listing.html" import searchListing %}
+{% extends 'includes/site-layout.html' %}
+
+{% block body %}
+
+	{% include 'partials/breadcrumb/breadcrumb-level-1.html' %}
+
+    <div class="nhsuk-o-width-container">
+        <main class="nhsuk-o-main-wrapper">
+            <div class="nhsuk-o-grid">
+				<div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds">
+
+					<div class="nhsuk-page-heading">
+
+						<h1>Search results for... <small>'back pain'</small></h1>
+
+					</div>
+				
+					<div class="nhsuk-page-content">
+
+						<p>
+						{{ searchListing("search-listing", "https://www.nhs.uk/live-well/exercise/exercises-for-back-pain/", "Exercises for back pain - NHS","Exercises for back pain, including advice on staying active, creating an exercise programme and how manual therapy can help.") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/news/medication/paracetamol-doesnt-work-for-lower-back-pain/", "Paracetamol 'doesn't work' for lower back pain - NHS","“Paracetamol used to treat acute lower back pain is no better than a dummy pill,” BBC News reports. A well-conducted trial casts doubts on the widespread recommendation that paracetamol is an effective treatment for lower back pain…") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/medicines/omeprazole/", "Omeprazole: medicine to lower stomach acid - NHS.UK","headaches. diarrhoea. stomach pain. constipation. wind. feeling sick or vomiting. Omeprazole may also make you feel dizzy or sleepy. ... Stopping suddenly could make your stomach produce a lot more acid, and make your symptoms come back.") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/conditions/back-pain/treatment/", "Back pain - Treatment - NHS","Find out about the treatments for back pain, including back exercises, painkillers, physiotherapy and surgery.") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/Services/Trusts/Services/DefaultView.aspx?id=105753", "Departments and services - The Back Pain Team Ltd - NHS","Official information from NHS about The Back Pain Team Ltd including contact details, directions, opening hours and service/treatment details") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/live-well/healthy-body/back-pain-at-work/", "Back pain at work - NHS","Learn how to avoid back pain at work, with tips on desk organisation, adjusting your chair and lifting safely.") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/start4life/pregnancy/pregnancy-faqs/", "Start4Life - Top 10 FAQs | Pregnancy | Start4Life","Click here to find out answers about the most commonly asked questions around pregnancy and labour.") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/news/medical-practice/alexander-technique-for-back-pain/", "Alexander technique for back pain - NHS","Extensive coverage has today been given to a study that found the Alexander technique – a method of teaching improved posture – is beneficial for easing back pain.") }}
+						{{ searchListing("search-listing", "https://beta.nhs.uk/medicines/atorvastatin/", "Atorvastatin: a statin used to lower cholesterol - NHS.UK","One rare but serious side effect is unexplained muscle pain, tenderness or weakness. ... feeling sick. headache. pain in the back and joints. nosebleeds. sore throat.") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/conditions/pregnancy-and-baby/backache-pregnant/", "Back pain in pregnancy - NHS","Find out about the causes of backache in pregnancy, and what you can do to help ease the discomfort of back pain.") }}
+						</p>
+
+						{{ searchPagination("/examples/search/search-p1", "1 of 5", "/examples/search/search-p3", "3 of 5")}}
+
+					</div>
+
+				</div>
+			</div>
+        </main>
+	</div>
+	
+
+
+{% endblock %}

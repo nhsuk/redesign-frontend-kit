@@ -1,0 +1,80 @@
+{% set title = 'Symptoms - Age-related macular degeneration (AMD)' %}
+{% set parent = 'Search' %}
+{% from "macros/search-pagination.html" import searchPagination, searchPaginationPrevious, searchPaginationNext%}
+{% from "macros/search-listing.html" import searchListing %}
+{% extends 'includes/site-layout.html' %}
+
+{% block body %}
+
+	{% include 'partials/breadcrumb/breadcrumb-level-1.html' %}
+
+    <div class="nhsuk-o-width-container">
+        <main class="nhsuk-o-main-wrapper">
+            <div class="nhsuk-o-grid">
+				<div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds">
+
+					<div class="nhsuk-page-heading">
+
+						<h1>Search results for... <small>'back pain'</small></h1>
+
+					</div>
+				
+					<div class="nhsuk-page-content">
+										
+						<p>41 - 43 of 43 results</p>
+						
+						<p>
+						{{ searchListing("search-listing", "https://www.nhs.uk/conditions/shoulder-pain/", "Shoulder pain - NHS","Meditation could ease the agony of back pain, a study suggests, the Daily Mirror reports. A US study compared a technique called mindfulness-based stress reduction (MBSR) with usual care and cognitive behavioural therapy (CBT) for…") }}
+						{{ searchListing("search-listing", "https://beta.nhs.uk/medicines/ibuprofen-for-adults/", "Ibuprofen for adults: painkiller - NHS.UK","Ibuprofen is typically used for period pain or toothache. Some people find ibuprofen better than paracetamol for back pain. ... It can also be used for back pain and pain from arthritis.") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/conditions/pelvic-pain/", "Pelvic pain - NHS","Pelvic pain is felt below your bellybutton. It may come on suddenly and severely, or could be mild and last for months. See your GP as soon as possible.") }}
+						</p>
+
+						<nav aria-label="Pagination" class="navigation--number" data-active-tile="1">
+							<div class="container">
+								<a class="navigation-control" href="/examples/search2/search-p4">Previous</a>
+								<ol>
+									<li data-number="1">
+										<a href="/examples/search2/search-p1"><span>Page </span>
+										<span class="count">1</span>
+										<span>of 43</span>
+										</a>
+									</li>									
+									<li data-number="2">
+										<a href="/examples/search2/search-p2"><span>Page </span>
+										<span class="count">2</span>
+										<span>of 43</span>
+										</a>
+									</li>
+									<li data-number="3">
+										<a href="/examples/search2/search-p3"><span>Page </span>
+										<span class="count">3</span>
+										<span>of 43</span>
+										</a>
+									</li>									
+									<li data-number="4">
+										<a href="/examples/search2/search-p4"><span>Page </span>
+										<span class="count">4</span>
+										<span>of 43</span>
+										</a>
+									</li>									
+									<li  class="active" data-number="5">
+										<span>
+										<span>Page </span>
+										<span class="count">5</span>
+										<span>of 43</span>
+										</span>
+									</li>
+								</ol>
+							</div>
+						</nav>
+
+					</div>
+
+				</div>
+			</div>
+        </main>
+	</div>
+	
+
+
+{% endblock %}

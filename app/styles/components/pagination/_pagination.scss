@@ -123,3 +123,93 @@
         }
     }
 }
+
+.navigation--number {
+
+    .container {
+        align-items: flex-start;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0 18px;
+        position: relative;
+        
+        .navigation-control {
+            background-color: #fff;
+            color: #2b57ab;
+            margin-right: 3px;
+            min-width: 84px;
+            padding: 9px 18px;
+            text-align: center;
+            text-decoration: none; 
+            @include mq($from: tablet) {
+                padding: 6px 18px;
+            }
+        }
+       
+        ol {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+          
+            .count {
+                //display: block;
+                font-size: 1.2rem;
+                line-height: 2;
+                margin: 0px;
+            }
+
+            span {
+                @include mq($from: tablet) {
+                    font-size: 0;
+                }
+                span:nth-child(3){
+                    display:none;
+                }
+            }
+
+            .active {
+                background-color: #2b57ab;
+                color: #fff;
+            }
+           
+            li {
+                display: none;
+                margin: 0 3px 3px 0;
+                min-width: 42px;
+                text-align: center;
+                text-transform: capitalize;
+
+                @include mq($from: tablet) {
+                    display: block;
+                }
+                
+                &.active {
+                    display: block;
+                    padding: 0 10px;
+                }
+
+
+                a {
+                    display: block;
+                    background-color: #fff;
+                    color: #2b57ab;
+                    text-decoration: none;
+                  
+                    a:link {
+                        color: #2b57ab;
+                        text-decoration: none;
+                    }
+                    a:link:visited {
+                        color: #2b57ab;
+                        text-decoration: none;
+                    }
+
+
+                }
+            }
+        }
+    }
+}

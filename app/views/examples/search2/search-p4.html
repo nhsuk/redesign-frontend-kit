@@ -1,0 +1,88 @@
+{% set title = 'Symptoms - Age-related macular degeneration (AMD)' %}
+{% set parent = 'Search' %}
+{% from "macros/search-pagination.html" import searchPagination, searchPaginationPrevious, searchPaginationNext%}
+{% from "macros/search-listing.html" import searchListing %}
+{% extends 'includes/site-layout.html' %}
+
+{% block body %}
+
+	{% include 'partials/breadcrumb/breadcrumb-level-1.html' %}
+
+    <div class="nhsuk-o-width-container">
+        <main class="nhsuk-o-main-wrapper">
+            <div class="nhsuk-o-grid">
+				<div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds">
+
+					<div class="nhsuk-page-heading">
+
+						<h1>Search results for... <small>'back pain'</small></h1>
+
+					</div>
+				
+					<div class="nhsuk-page-content">
+										
+						<p>31 - 40 of 43 results</p>
+						
+						<p>
+						{{ searchListing("search-listing", "https://www.nhs.uk/conditions/stomach-ache/", "Stomach ache - NHS","Read about a stomach ache and abdominal pains, including stomach cramps or a dull ache in the tummy (abdomen).") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/news/medical-practice/cbt-sessions-help-back-pain/", "CBT sessions 'help' back pain - NHS","Researchers have found that CBT can improve physical fitness and quality of life for people with chronic lower back pain.") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/live-well/exercise/free-fitness-ideas/", "Get fit for free - NHS","Get fit for free with these fitness tips, including exercise ideas, free podcasts, home workouts, Green Gyms, and how to get free equipment.") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/conditions/arthritis/", "Arthritis - NHS","Arthritis is a common condition that causes pain and inflammation in a joint.") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/Services/Trusts/ReviewsAndRatings/DefaultView.aspx?id=105753", "Reviews and ratings - The Back Pain Team Ltd - NHS","Official information from NHS about The Back Pain Team Ltd including contact details, directions, opening hours and service/treatment details") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/medicines/amitriptyline-for-pain/", "Amitriptyline: a medicine used to treat pain and to prevent migraine…","It's especially good for nerve pain such as back pain and neuralgia. ... severe constipation or you're unable to pee and it's causing severe tummy pain.") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/news/lifestyle-and-exercise/yoga-may-improve-lower-back-pain/", "Yoga 'may improve lower back pain' - NHS","Yoga can help relieve the agony of back pain, a major review of medical evidence found, the Daily Mail reports. The review concluded there is evidence yoga may help improve function and relieve pain associated with chronic lower back pain…") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/conditions/chest-pain/", "Chest pain - NHS","Read about chest pain, which can be caused by anything from muscle pain to a heart attack and should never be ignored") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/live-well/healthy-body/10-ways-to-ease-pain/", "10 ways to reduce pain - NHS","Find 10 practical ways to beat pain including relaxation tips, breathing exercises and using telephone helplines.") }}
+						{{ searchListing("search-listing", "https://www.nhs.uk/medicines/diclofenac/", "Diclofenac: medicine to remove pain and swelling - NHS.UK","Diclofenac contents. About diclofenac. Diclofenac is a medicine that reduces inflammation and pain. ... It works by reducing hormones that cause inflammation and pain in the body.") }}
+						</p>
+
+						<nav aria-label="Pagination" class="navigation--number" data-active-tile="1">
+							<div class="container">
+								<a class="navigation-control" href="/examples/search2/search-p3">Previous</a>
+								<ol>
+									<li data-number="1">
+										<a href="/examples/search2/search-p1"><span>Page </span>
+										<span class="count">1</span>
+										<span>of 43</span>
+										</a>
+									</li>									
+									<li data-number="2">
+										<a href="/examples/search2/search-p2"><span>Page </span>
+										<span class="count">2</span>
+										<span>of 43</span>
+										</a>
+									</li>
+									<li data-number="3">
+										<a href="/examples/search2/search-p3"><span>Page </span>
+										<span class="count">3</span>
+										<span>of 43</span>
+										</a>
+									</li>									
+									<li  class="active" data-number="4">
+										<span>
+										<span>Page </span>
+										<span class="count">4</span>
+										<span>of 43</span>
+										</span>
+									</li>
+									<li data-number="5">
+										<a href="/examples/search2/search-p5"><span>Page </span>
+										<span class="count">5</span>
+										<span>of 43</span>
+										</a>
+									</li>
+								</ol>
+								<a class="navigation-control" href="/examples/search2/search-p5">Next</a>
+							</div>
+						</nav>
+
+					</div>
+
+				</div>
+			</div>
+        </main>
+	</div>
+	
+
+
+{% endblock %}

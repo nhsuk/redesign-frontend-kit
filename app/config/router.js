@@ -376,4 +376,52 @@ router.get('/examples/banner-gate', (req, res) => {
   res.render('examples/banner-gate', {});
 });
 
+router.get('/examples/search', (req, res) => {
+  res.render('examples/search/index', {});
+});
+
+router.get('/examples/search/search-p1', (req, res) => {
+  res.render('examples/search/search-p1', {});
+});
+
+router.get('/examples/search/search-p2', (req, res) => {
+  res.render('examples/search/search-p2', {});
+});
+
+router.get('/examples/search/search-p3', (req, res) => {
+  res.render('examples/search/search-p3', {});
+});
+
+router.get('/examples/search/search-p4', (req, res) => {
+  res.render('examples/search/search-p4', {});
+});
+
+router.get('/examples/search/search-p5', (req, res) => {
+  res.render('examples/search/search-p5', {});
+});
+
+router.get('/examples/search2', (req, res) => {
+  res.render('examples/search2/index', {});
+});
+
+router.get('/examples/search2/search-p1', (req, res) => {
+  res.render('examples/search2/search-p1', {});
+});
+
+router.get('/examples/search2/search-p2', (req, res) => {
+  res.render('examples/search2/search-p2', {});
+});
+
+router.get('/examples/search2/search-p3', (req, res) => {
+  res.render('examples/search2/search-p3', {});
+});
+
+router.get('/examples/search2/search-p4', (req, res) => {
+  res.render('examples/search2/search-p4', {});
+});
+
+router.get('/examples/search2/search-p5', (req, res) => {
+  res.render('examples/search2/search-p5', {});
+});
+
 module.exports = router;
