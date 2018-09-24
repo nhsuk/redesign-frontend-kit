@@ -1,6 +1,6 @@
 {% set title = 'Symptoms - Age-related macular degeneration (AMD)' %}
 {% set parent = 'Search' %}
-{% from "macros/search-pagination.html" import searchPagination, searchPaginationPrevious, searchPaginationNext%}
+{% from "macros/mini-hub-pagination.html" import miniHubPagination, miniHubPaginationPrevious, miniHubPaginationNext%}
 {% from "macros/search-listing.html" import searchListing %}
 {% extends 'includes/site-layout.html' %}
 
@@ -34,7 +34,7 @@
 						{{ searchListing("search-listing", "https://www.nhs.uk/conditions/back-pain/causes/", "Back pain - Causes - NHS","Find out about the causes of back pain, including some of the medical conditions that can cause it.") }}
 						</p>
 
-						{{ searchPaginationNext("/examples/search/search-p2", "2 of 5")}}
+						{{ miniHubPaginationNext("/examples/search/search-p2", "2 of 5")}}
 
 					</div>
 

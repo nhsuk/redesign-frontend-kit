@@ -1,37 +1,31 @@
-{% macro searchPagination(previousUrl, previousTitle, nextUrl, nextTitle) %}
-    <nav class="nhsuk-c-pagination-v2" role="navigation" aria-label="Pagination">
-        <a href="{{previousUrl}}" class="nhsuk-c-pagination-prev">
-            <span class="nhsuk-c-pagination-link">Previous</span>
-            <span class="nhsuk-c-pagination-title">{{previousTitle}}</span>
-            {% include 'partials/icons/icon-arrow-left.svg' %}
-        </a>
-        <a href="{{nextUrl}}" class="nhsuk-c-pagination-next">
-            <span class="nhsuk-c-pagination-link">Next</span>
-            <span class="nhsuk-c-pagination-title">{{nextTitle}}</span>
-            {% include 'partials/icons/icon-arrow-right.svg' %}
-        </a>
-        <div class="clear"></div>
-    </nav>
-{% endmacro %}
-
-{% macro searchPaginationPrevious(previousUrl, previousTitle) %}
-    <nav class="nhsuk-c-pagination-v2" role="navigation" aria-label="Pagination">
-        <a href="{{previousUrl}}" class="nhsuk-c-pagination-prev">
-            <span class="nhsuk-c-pagination-link">Previous</span>
-            <span class="nhsuk-c-pagination-title">{{previousTitle}}</span>
-            {% include 'partials/icons/icon-arrow-left.svg' %}
-        </a>
-        <div class="clear"></div>
-    </nav>
-{% endmacro %}
-
-{% macro searchPaginationNext(nextUrl, nextTitle) %}
-    <nav class="nhsuk-c-pagination-v2" role="navigation" aria-label="Pagination">
-        <a href="{{nextUrl}}" class="nhsuk-c-pagination-next">
-            <span class="nhsuk-c-pagination-link">Next</span>
-            <span class="nhsuk-c-pagination-title">{{nextTitle}}</span>
-            {% include 'partials/icons/icon-arrow-right.svg' %}
-        </a>
-        <div class="clear"></div>
-    </nav>
+{% macro searchPagination(currentPage, pageCount) %}
+<nav aria-label="Pagination" class="navigation--number" data-active-tile="1">
+    <div class="container">
+        {% if (currentPage > 1) %}
+        <a class="navigation-control" href="/examples/search2/search-p{{ currentPage - 1 }}">Previous</a>
+        {% endif %}
+        <ol>
+            {% for i in range(1, pageCount+1) -%}
+                {% if i == currentPage %}
+                    <li class="active" data-number="{{ i }}">
+                        <span>
+                            <span>Page </span>
+                            <span class="count">{{ i }}</span>
+                        </span>
+                    </li>
+                {% else %}
+                    <li data-number="{{ i }}">
+                        <a href="/examples/search2/search-p{{ i }}">
+                            <span>Page </span>
+                            <span class="count">{{ i }}</span>
+                        </a>
+                    </li>
+                {% endif %}
+            {%- endfor %}
+        </ol>
+        {% if (currentPage < pageCount) %}
+        <a class="navigation-control" href="/examples/search2/search-p{{ currentPage + 1 }}">Next</a>
+        {% endif %}
+    </div>
+</nav>
 {% endmacro %}
