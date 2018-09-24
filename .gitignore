@@ -29,12 +29,6 @@ bower_components
 .DS_Store
 Thumbs.db
 
-# Tests
-**/backstop/backstop_data/bitmaps_test/
-**/backstop/backstop_data/html_report/
-**/cypress/videos
-**/cypress/screenshots
-
 # CSS files
 app/assets/css/styles.min.css
 app/assets/css/nhsuk.min.css
