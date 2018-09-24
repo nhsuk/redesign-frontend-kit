@@ -5,7 +5,7 @@ var rename = require("gulp-rename");
 var cleanCSS = require('gulp-clean-css');
 
 function styles() {
-  return gulp.src('app/styles/styles.scss')
+  return gulp.src('app/styles/*.scss')
     .pipe(sass())
     .pipe(cleanCSS())
     .pipe(rename({
@@ -19,7 +19,7 @@ function styles() {
 }
 
 function watch() {
-  gulp.watch('app/styles/styles.scss');
+  gulp.watch('app/styles/*.scss');
 }
 
 exports.styles = styles;
