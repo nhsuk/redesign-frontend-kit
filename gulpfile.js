@@ -14,7 +14,7 @@ var paths = {
   css: {
     folder: 'app/assets/css',
     file: 'app/assets/css/*.css',
-    frontend: 'app/assets/css/nhsuk.min.css'  
+    frontend: 'app/assets/css/nhsuk.min.css'
   },
   collection: {
     frontend: 'src/**/*.scss',
@@ -109,6 +109,11 @@ function publishImages() { // Hard coded file names until we clear out the asset
   .pipe(gulp.dest('dist/assets/images'));
 }
 
+function publishDetailsComponent() {
+  return gulp.src('src/details/*')
+  .pipe(gulp.dest('dist/packages/details/'));
+}
+
 exports.styles = styles;
 exports.watch = watch;
 exports.deletePublish = deletePublish;
@@ -127,4 +132,4 @@ exports.publishImages = publishImages
 gulp.task('build', styles);
 gulp.task('default', watch);
 gulp.task('delete', deletePublish);
-gulp.task('publish', gulp.parallel(publishCSS, publishCore, publishSkiplinks, publishHeader, publishNavigation, publishFooter, publishCallout, publishCareCard, publishActionLink, publishReviewDate, publishImageComponent, publishIcons, publishImages));
+gulp.task('publish', gulp.parallel(publishCSS, publishCore, publishSkiplinks, publishHeader, publishNavigation, publishFooter, publishCallout, publishCareCard, publishActionLink, publishReviewDate, publishImageComponent, publishIcons, publishImages, publishDetailsComponent));
