@@ -1,7 +1,7 @@
 {
-  "name": "nhsuk-frontend",
-  "version": "0.0.5",
-  "description": "NHS.UK front-end library and design system",
+  "name": "nhsuk-prototyping-kit",
+  "version": "0.0.6",
+  "description": "NHS.UK front-end prototyping kit and example pages",
   "sasslintConfig": "config/sass-lint.yml",
   "scripts": {
     "postinstall": "npm run build",
@@ -21,7 +21,7 @@
     "gulp-clean-css": "^3.10.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.1",
-    "nhsuk-frontend-test": "^1.0.1",
+    "nhsuk-frontend-test": "^1.0.2",
     "nunjucks": "^3.1.3",
     "sass-mq": "^4.0.2"
   },

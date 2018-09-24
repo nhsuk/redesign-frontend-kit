@@ -6,7 +6,8 @@ const path = require('path');
 
 app.set('view engine', 'html');
 app.set('port', process.env.PORT || 3000);
-app.use(express.static(path.join(__dirname, 'app/assets')));
+app.use('/assets', express.static(path.join(__dirname, 'app/assets')));
+app.use('/nhsuk-frontend', express.static(path.join(__dirname, 'node_modules/nhsuk-frontend-test')))
 
 nunjucks.configure('app/views', {
   autoescape: true,

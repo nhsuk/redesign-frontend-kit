@@ -1,4 +1,4 @@
-# NHS.UK frontend (DEVELOPMENT)
+# NHS.UK prototyping kit
 
 This repository provides a development environment for making changes to components, along with research & findings, visual examples and code snippets.
 
