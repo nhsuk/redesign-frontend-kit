@@ -1,7 +1,7 @@
 const app = require('express')();
 const express = require('express');
-const router = require('./app/config/router');
 const nunjucks = require('nunjucks');
+const routing = require('./app/config/routing');
 const path = require('path');
 
 app.set('view engine', 'html');
@@ -13,7 +13,9 @@ nunjucks.configure('app/views', {
   express: app
 });
 
-app.use('/', router)
+app.get(/^([^.]+)$/, function (req, res, next) {
+  routing.matchRoutes(req, res, next)
+})
 
 if (app.get('env') === 'production') {
   app.use(function(err, req, res, next) {
