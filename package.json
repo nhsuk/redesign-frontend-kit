@@ -2,15 +2,13 @@
   "name": "nhsuk-prototyping-kit",
   "version": "0.0.6",
   "description": "NHS.UK front-end prototyping kit and example pages",
-  "sasslintConfig": "config/sass-lint.yml",
   "scripts": {
-    "postinstall": "npm run build",
+    "prepare": "npm run build",
     "build": "gulp build",
     "start": "node app.js",
-    "prewatch": "gulp build",
-    "watch": "concurrently \"gulp\" \"nodemon app.js --config config/nodemon.json -q\"",
-    "test": "npm run lint-css",
-    "lint-css": "./node_modules/.bin/sass-lint -c ./config/.sass-lint.yml 'app/styles/**/*.scss' -v -q"
+    "prewatch": "npm run build",
+    "watch": "concurrently \"gulp\" \"nodemon app.js --config nodemon.json -q\"",
+    "test": ""
   },
   "dependencies": {
     "babel-core": "^6.26.3",
@@ -28,8 +26,7 @@
   "devDependencies": {
     "concurrently": "^3.6.1",
     "del": "^3.0.0",
-    "nodemon": "^1.18.4",
-    "sass-lint": "^1.12.1"
+    "nodemon": "^1.18.4"
   },
   "engines": {
     "node": "8.11.1"
