@@ -1,16 +1,21 @@
+// Import frontend library
+
 @import "node_modules/nhsuk-frontend-test/nhsuk";
 
-@import 'globals/objects/full-width-container';
-@import 'globals/settings/typography';
+// Globals (move to FE library?)
 
-@import 'components/page-contents/page-contents';
-@import 'components/promo/promo';
-@import 'components/reveals/reveals';
-@import 'components/pagination/pagination';
-@import 'components/video/video';
+@import 'globals/objects/full-width-container';
+
+// Components in development
+
 @import 'components/hero/hero';
 @import 'components/home-page/home-page';
+@import 'components/page-contents/page-contents';
+@import 'components/pagination/pagination';
+@import 'components/promo/promo';
+@import 'components/reveals/reveals';
 @import 'components/user-account/user-account';
+@import 'components/video/video';
 
 // Azure specific styles
 
@@ -19,8 +24,6 @@
 @import 'pages/colours';
 
 // CSS for medicines page - lifted from beta.nhs.uk
-// Fixes the extra numbering added to the markup of medicines pages.
-// Can remove this eventually.
 
 .o-list-sections {
   padding-left: 2em;
@@ -30,13 +33,4 @@
 
 .o-list-sections>li {
   display: block;
-}
-
-ul ul, 
-ol ul {
-  list-style-type: disc;
-}
-
-.nhsuk-page-content__section-one > *:first-child {
-    margin-top: 0; //added a class of nhsuk-page-content__section-one to remove margin-top from first element within the section
 }

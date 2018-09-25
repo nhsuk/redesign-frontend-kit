@@ -1,12 +1,8 @@
 # NHS.UK prototyping kit
 
-This repository provides a development environment for making changes to components, along with research & findings, visual examples and code snippets.
+This repository provides a development environment for making changes to components, along with research & findings, visual examples and code snippets from the Redesign project.
 
 Examples and code snippets of NHS.UK frontend components and elements can be found at our <a href="https://nhsuk-redesign.azurewebsites.net">NHS.UK prototyping and example website</a>.
-
-## Using NHS.UK frontend
-
-NHS.UK frontend is in development, it's not quite ready to be used yet. We are currently working on this and hope to release something for wider use in September 2018.
 
 ## Installation
 
@@ -24,6 +20,6 @@ Follow our [contributing guide](https://github.com/nhsuk/frontend/blob/master/.g
 
 Following a successful pull request and merge, the code will automatically be deployed to our <a href="https://nhsuk-redesign.azurewebsites.net">NHS.UK prototyping and example website</a>.
 
+## Licence
 
-
-
+Unless stated otherwise, the codebase is released under the MIT License. This covers both the codebase and any sample code in the documentation. The documentation is © Crown copyright and available under the terms of the Open Government 3.0 licence.
