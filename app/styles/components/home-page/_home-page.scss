@@ -475,17 +475,6 @@
 
 }
 
-.nhsuk-section__content--stacked-collapsed {
-  .nhsuk-c-panel__blockquote {
-    margin-top: 26px !important;
-
-    @include mq($until: tablet) {
-      margin-top: 22px !important;
-    }
-
-  }
-}
-
 .nhsuk-o-grid__item--full {
   &.nhsuk-section__content--stacked-collapsed {
     padding-top: 0;
