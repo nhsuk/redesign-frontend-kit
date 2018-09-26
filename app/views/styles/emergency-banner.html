@@ -1,6 +1,7 @@
 {% set title = 'Emergency banner' %}
 {% set navigation = 'transactional' %}
 {% set navigationWidth = 'fluid' %}
+{% from 'components/emergency-alert/macro.njk' import emergencyAlert %}
 {% extends "includes/templates/styles.html"%}
 
 {% block header %}
@@ -128,7 +129,7 @@
 	<h2 id="code">Example and code snippet</h2>
 
 	<div class="example grey-background">
-    {% include 'partials/global-alert/global-alert-emergency.html' %}
+      {{ emergencyAlert('National flu outbreak', 'There has been a national flu outbreak.', '#', 'How does it affect me', 'Updated 23 mins ago') }}
 	</div>
 
 	<div class="example-snippet">

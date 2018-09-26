@@ -27,44 +27,18 @@
     <!--[if !IE]><!-->
       <script src="/nhsuk-frontend/core/assets/libraries/jquery-3.3.1.min.js" type="text/javascript"></script>
     <!--<![endif]-->
-
-    <script src="/nhsuk-frontend/nhsuk.js"></script>
-    <script src="/assets/js/prism.min.js"></script>
-    <script src="/assets/js/clipboard.min.js"></script>
-
   </head>
   <body class="{{ body_class }}">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
     
     {% block banner %}{% endblock %}
 
-      {% block outerHeader %}{% endblock %}
-
-    {% set primaryLinks = [
-        {
-          'url'  : 'https://www.nhs.uk/conditions',
-          'label' : 'Health A-Z'
-        },
-        {
-          'url' : 'https://www.nhs.uk/live-well/',
-          'label' : 'Live Well'        
-        },
-        {
-          'url'  : 'https://www.nhs.uk/conditions/social-care-and-support/',
-          'label' : 'Care and support'    
-        },
-        {
-          'url'  : 'https://www.nhs.uk/news/',
-          'label' : 'Health news'    
-        },
-        {
-          'url' : 'https://www.nhs.uk/service-search',
-          'label' : 'Services near you'
-        }
-      ]
-    %}
-
-    {{ header(primaryLinks) }}
+    {% if navigation == 'transactional' %}
+      {% include "includes/header-transactional.html" %}
+    {% else %}
+      {% include "includes/header.html" %}
+      {% include "includes/nav.html" %}
+    {% endif %}
 
     {% block body %}{% endblock %}
 
@@ -106,6 +80,10 @@
 
     {{ footer(primaryLinks, secondaryLinks) }}
 
+    <script src="/nhsuk-frontend/nhsuk.js"></script>
+    <script src="/assets/js/prism.min.js"></script>
+    <script src="/assets/js/clipboard.min.js"></script>
+    
     <script>
     var clipboard = new ClipboardJS('.nhsuk-btn-copy');
       clipboard.on('success', function(e) {
