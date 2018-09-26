@@ -1,0 +1,178 @@
+{% set title = 'Blisters' %}
+{% set parent = 'Health A-Z' %}
+{% from "macros/list.html" import list %}
+{% from "macros/action-link.html" import actionLink %}
+{% from "macros/care-card.html" import carecard %}
+{% extends "includes/templates/page.html"%}
+{% from "macros/review-date.html" import reviewdate %}
+{% extends "includes/templates/page-v4.html"%}
+{% from "macros/mini-hub-pagination.html" import miniHubPagination, miniHubPaginationPrevious, miniHubPaginationNext%}
+{% from "macros/action-link.html" import actionLink %}
+
+{% block breadcrumb %}
+<nav class="nhsuk-c-breadcrumb" role="Breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-o-width-container">
+    <ol class="nhsuk-c-breadcrumb__list">
+    <li class="nhsuk-c-breadcrumb__item">
+      <a href="#" class="nhsuk-c-breadcrumb__link">Home</a>
+      <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"/>
+        <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/images/icons/icon-chevron-right-grey-10px.png" xlink:href="">
+      </svg>
+    </li>
+    <li class="nhsuk-c-breadcrumb__item">
+      <a href="#" class="nhsuk-c-breadcrumb__link">Health A-Z</a>
+      <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"/>
+        <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/images/icons/icon-chevron-right-grey-10px.png" xlink:href="">
+      </svg>
+    </li>
+
+    <li class="nhsuk-c-breadcrumb__item">
+      <a href="#" class="nhsuk-c-breadcrumb__link">Your pregnancy and baby guide</a>
+      <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"/>
+        <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/images/icons/icon-chevron-right-grey-10px.png" xlink:href="">
+      </svg>
+    </li>
+
+
+    <li class="nhsuk-c-breadcrumb__item">
+      <a href="#" class="nhsuk-c-breadcrumb__link">Early days</a>
+      <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"/>
+        <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/images/icons/icon-chevron-right-grey-10px.png" xlink:href="">
+      </svg>
+    </li>
+
+
+    <li class="nhsuk-c-breadcrumb__item">
+      <a href="#" class="nhsuk-c-breadcrumb__link">Your NHS pregnancy journey</a>
+      <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"/>
+        <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/images/icons/icon-chevron-right-grey-10px.png" xlink:href="">
+      </svg>
+    </li>
+
+
+  </ol>
+  <p class="nhsuk-c-breadcrumb__back">
+    <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"/>
+      <image class="nhsuk-icon__chevron-left nhsuk-icon__chevron-left--fallback" src="/images/icons/icon-chevron-left-blue.png" xlink:href="">
+    </svg>
+    <a href="#" class="nhsuk-c-breadcrumb__backlink">Back to Your pregnancy and baby guide</a>
+
+  </p>
+
+</nav>
+
+{% endblock %}
+
+{% block header %}
+<div class="nhsuk-o-width-container">
+    <main class="nhsuk-o-main-wrapper">
+        <div class="nhsuk-o-grid">
+<div class="nhsuk-o-grid__item nhsuk-o-grid__item--full">
+
+      <div class="nhsuk-page-heading">
+
+        <h1>Your first midwife appointment<span class="nhsuk-o-h1-sub"></span></h1>
+
+
+      </div>
+{% endblock %}
+
+{% block sidebar %}
+    <h2 class="nhsuk-heading-xs">Page contents</h2>
+    <ol class="nhsuk-listnav">
+
+        <li><a href="#Questions your midwife will ask">Questions your midwife will ask</a></li>
+
+        <li><a href="#Information your midwife should give you ">Information your midwife should give you </a></li>
+
+        <li><a href="#Tests and further discussion">Tests and further discussion</a></li>
+
+      
+
+
+
+    </ol>
+{% endblock %}
+
+{% block content %}
+
+
+<div class="nhsuk-o-grid">
+
+<div class="nhsuk-o-grid__item nhsuk-o-grid__item--full">
+
+
+
+      <p>Ideally your first midwife appointment should happen by the time you’re 10 weeks pregnant.
+
+The appointment lasts at least one hour.
+ant.
+"</p>
+
+
+
+
+      <h2 id="Questions your midwife will ask">Questions your midwife will ask </h2>
+
+      <p>Your midwife will ask questions to identify any health needs you have, and make sure you get the care that’s right for you. These include questions about: </p><ul  type="round">
+        <ul><li> where you live and who you live with  </li>
+          <li> your partner, if you have one</li>
+            <li> the baby’s father</li>
+              <li> any other pregnancies or children </li>
+              <li> smoking, alcohol and drug use</li>
+                <li> your physical and mental health, and any issues or treatment you’ve had in the past </li>
+                  <li> any health issues in your family </li>
+                  <li> your job, if you have one </li>
+</ul>
+
+
+      <h2 id="Information your midwife should give you">Information your midwife should give you </h2>
+
+      <p>how the baby develops during pregnancy</p>
+      <ul><li> nutrition and diet </li>
+        <li> exercise and pelvic floor exercises</li>
+          <li> antenatal screening tests</li>
+            <li> your antenatal care </li>
+            <li> breastfeeding, including workshops</li>
+              <li>antenatal education</li>
+                <li> maternity benefits </li>
+                <li> your options for where to have your baby</li>
+</ul>
+
+
+  <h2 id="Tests and further discussion">Tests and further discussion</h2><br>
+  Your midwife or doctor should:
+
+  <ul><li>give you your handheld notes and plan of care</li>
+    <li> see if you may need additional care or support</li>
+      <li> plan with you the care you’ll get throughout your pregnancy</li>
+        <li> measure your height and weight, and calculate your body mass index (BMI)</li>
+        <li> measure your blood pressure and test your urine for protein, to check for pre-eclampsia</li>
+          <li>find out whether you are at increased risk of gestational diabetes or pre-eclampsia</li>
+            <li> offer you screening tests and make sure you understand what is involved before you decide to have any of them</li>
+            <li> offer you an ultrasound scan at 8-14 weeks to estimate when your baby is due</li>
+            <li> offer you an ultrasound scan at 18-20 weeks to check the physical development of your baby and screen for possible abnormalities</li>
+            <li> ask about your mood to identify possible depression</li>
+            <li> ask about any past or present severe mental illness or psychiatric treatment</li>
+            <br>
+</ul>
+This appointment is a chance to tell your midwife or doctor if you're in a vulnerable situation or need extra support.
+
+This could be because of domestic abuse or violence, sexual abuse, or female genital mutilation (FGM). FGM can cause problems during labour and childbirth, which can be life threatening for mother and baby. It's important you tell your midwife or doctor if this has happened to you.
+
+
+
+
+
+
+     </div>
+     </div>
+
+  {{ miniHubPagination(" ", " ", "/examples/test-minihub-amd/getting-diagnosed", "Signs and symptoms of pregnancy")}}
+{% endblock %}

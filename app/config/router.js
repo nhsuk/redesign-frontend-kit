@@ -395,4 +395,8 @@ router.get('/examples/starting-your-pregnancy-care-5', (req, res) => {
   res.render('examples/starting-your-pregnancy-care-5', {});
 });
 
+router.get('/examples/Your-first-midwife-appointment', (req, res) => {
+  res.render('examples/Your-first-midwife-appointment', {});
+});
+
 module.exports = router;
