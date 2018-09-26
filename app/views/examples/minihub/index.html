@@ -2,12 +2,14 @@
 {% set parent = 'Health A-Z' %}
 {% from 'components/pagination/macro.njk' import pagination, paginationNext, paginationPrevious %}
 {% from 'components/review-date/macro.njk' import reviewDate %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
 {% extends 'includes/site-layout.html' %}
 
+{% block breadcrumb %}
+  {{ breadcrumbs('/', 'Home', '/section', 'Section') }}
+{% endblock %}
+
 {% block body %}
-
-	{% include 'partials/breadcrumb/breadcrumb.html' %}
-
     <div class="nhsuk-o-width-container">
         <main class="nhsuk-o-main-wrapper">
             <div class="nhsuk-o-grid">
