@@ -399,4 +399,8 @@ router.get('/examples/Your-first-midwife-appointment', (req, res) => {
   res.render('examples/Your-first-midwife-appointment', {});
 });
 
+router.get('/examples/Your-first-midwife-appointment-2', (req, res) => {
+  res.render('examples/Your-first-midwife-appointment-2', {});
+});
+
 module.exports = router;
