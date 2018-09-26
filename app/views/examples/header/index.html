@@ -1,6 +1,5 @@
 {% set title = 'Header and Footer example' %}
 {% set parent = 'Example' %}
-{% set cookieBanner = 'active' %}
 {% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
 {% extends "includes/templates/article-page.html"%}
 
@@ -9,20 +8,10 @@
 {% endblock %}
 
 {% block header %}
-    <h1>Header</h1>
-    <div class="nhsuk-reading-width">
-        <p class="nhsuk-body-l nhsuk-page-intro">Header with Guide to the General Data Protection Regulation (GDPR) compliant cookie and online consent.</p>
-    </div>
-{% endblock %}
-
-{% block sidebar %}
-    <h2 class="nhsuk-heading-xs">Page contents</h2>
-    <ol class="nhsuk-list-nav">
-        <li><a href="#">Placeholder</a></li>
-    </ol>
+  <h1>Header &amp; Footer</h1>
 {% endblock %}
 
 {% block content %}
-    <h3>Page content</h3>
+  <h2>Page title</h2>
+  <p>Page content.</p>
 {% endblock %}
-

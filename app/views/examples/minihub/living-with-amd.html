@@ -4,11 +4,14 @@
 {% from 'components/inset-text/macro.njk' import insetText %}
 {% from 'components/callout/macro.njk' import callout %}
 {% from 'components/review-date/macro.njk' import reviewDate %}
-{% extends 'includes/site-layout.html' %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% extends 'includes/templates/article-page.html' %}
+
+{% block breadcrumb %}
+  {{ breadcrumbs('/', 'Home', '/section', 'Section') }}
+{% endblock %}
 
 {% block body %}
-
-{% include 'partials/breadcrumb/breadcrumb-amd.html' %}
 
     <div class="nhsuk-o-width-container">
         <main class="nhsuk-o-main-wrapper">
@@ -90,7 +93,7 @@
 						
 						<p>Contact your specialist as soon as possible if your vision gets worse or you notice any new symptoms.</p>
 						
-						{{ insetText("<p>Keep having routine eye tests (usually every 2 years). They can pick up other eye problems that your check-ups don't look for.</p>") }}
+						{{ insetText("Information: ", "<p>Keep having routine eye tests (usually every 2 years). They can pick up other eye problems that your check-ups don't look for.</p>") }}
 
 						<h2>Registering as sight impaired</h2>
 						

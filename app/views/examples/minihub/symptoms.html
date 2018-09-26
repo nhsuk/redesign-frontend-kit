@@ -6,11 +6,14 @@
 {% from 'components/inset-text/macro.njk' import insetText %}
 {% from 'components/images/macro.njk' import image %}
 {% from 'components/review-date/macro.njk' import reviewDate %}
-{% extends 'includes/site-layout.html' %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% extends 'includes/templates/article-page.html' %}
+
+{% block breadcrumb %}
+  {{ breadcrumbs('/', 'Home', '/section', 'Section') }}
+{% endblock %}
 
 {% block body %}
-
-	{% include 'partials/breadcrumb/breadcrumb-amd.html' %}
 
     <div class="nhsuk-o-width-container">
         <main class="nhsuk-o-main-wrapper">
@@ -63,7 +66,7 @@
 						
 						<p>AMD isn't painful and doesn't affect the appearance of your eyes.</p>
 
-						{{ insetText("<p>Sometimes AMD may be found during a routine eye test before you have symptoms.</p>") }}
+						{{ insetText("Information: ", "<p>Sometimes AMD may be found during a routine eye test before you have symptoms.</p>") }}
 
 						{{ careCard("blue", "See an optician if you're worried about your vision", "
 												<p>If you have a problem with your eyes, early diagnosis and treatment may help stop your vision getting worse.</p>
