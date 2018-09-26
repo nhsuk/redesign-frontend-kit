@@ -1,17 +1,25 @@
 const app = require('express')();
 const express = require('express');
 const nunjucks = require('nunjucks');
-const routing = require('./app/config/routing');
+const routing = require('./config/routing');
 const path = require('path');
 
 app.set('view engine', 'html');
 app.set('port', process.env.PORT || 3000);
-app.use(express.static(path.join(__dirname, 'app/assets')));
+app.use('/assets', express.static(path.join(__dirname, 'app/assets')));
+app.use('/nhsuk-frontend', express.static(path.join(__dirname, '/node_modules/nhsuk-frontend-test')));
 
-nunjucks.configure('app/views', {
+var appViews = [
+  path.join(__dirname, '/node_modules/nhsuk-frontend-test/'),
+  path.join(__dirname, '/app/views/')
+]
+
+nunjucks.configure(appViews, {
   autoescape: true,
-  express: app
-});
+  express: app,
+  noCache: true,
+  watch: true
+})
 
 app.get(/^([^.]+)$/, function (req, res, next) {
   routing.matchRoutes(req, res, next)

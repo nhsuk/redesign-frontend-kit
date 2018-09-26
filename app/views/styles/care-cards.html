@@ -1,7 +1,7 @@
 {% set title = 'Care cards' %}
 {% set navigation = 'transactional' %}
 {% set navigationWidth = 'fluid' %}
-{% from "macros/care-card.html" import carecard %}
+{% from 'components/care-card/macro.njk' import careCard %}
 {% extends "includes/templates/styles.html"%}
 
 {% block header %}
@@ -42,7 +42,7 @@
 
 	<div class="nhsuk-reading-width">
 		<div class="example grey-background">
-			{{ carecard("grey", "Call 111", "<p>If you can't speak to your GP and don't know what to do next.</p>") }}
+			{{ careCard("grey", "Call 111", "<p>If you can't speak to your GP and don't know what to do next.</p>") }}
 		</div>
 	</div>
 
@@ -83,7 +83,7 @@
 
 	<div class="nhsuk-reading-width">
 		<div class="example grey-background">
-			{{ carecard("blue", "Speak to a GP if:", "
+			{{ careCard("blue", "Speak to a GP if:", "
 					<ul>
 						<li>you're not sure it's chickenpox</li>
 						<li>the skin around the blisters is red, hot or painful (signs of infection)</li>
@@ -137,7 +137,7 @@
 
 	<div class="nhsuk-reading-width">
 		<div class="example grey-background">
-			{{ carecard("red", "Ask for an urgent GP appointment if:", "
+			{{ careCard("red", "Ask for an urgent GP appointment if:", "
 					<ul>
 						<li>you're an adult and have chickenpox</li>
 						<li>you're pregnant and haven't had chickenpox before and you've been near someone with it </li>
@@ -192,7 +192,7 @@
 
 	<div class="nhsuk-reading-width">
 		<div class="example grey-background">
-			{{ carecard("black", "Call 999 if you have sudden chest pain that:", "
+			{{ careCard("black", "Call 999 if you have sudden chest pain that:", "
 				<ul>
 					<li>spreads to your arms, back, neck or jaw</li>
 					<li>makes your chest feel tight or heavy</li>

@@ -386,7 +386,7 @@
     position: relative;
 
     &:before {
-      background-image: url(/images/illustrations/crosses.svg);
+      background-image: url(/assets/images/homepage/illustrations/crosses.svg);
       background-position: left top;
       background-repeat: no-repeat;
       bottom: 0;
@@ -398,7 +398,7 @@
       width: 48%;
 
       @include mq($until: desktop) {
-        background-image: url(/images/illustrations/crosses-mobile.svg);
+        background-image: url(/assets/images/homepage/illustrations/crosses-mobile.svg);
         bottom: auto;
         height: 125px;
         left: 0;
@@ -473,17 +473,6 @@
     margin-top: 8px;
   }
 
-}
-
-.nhsuk-section__content--stacked-collapsed {
-  .nhsuk-c-panel__blockquote {
-    margin-top: 26px !important;
-
-    @include mq($until: tablet) {
-      margin-top: 22px !important;
-    }
-
-  }
 }
 
 .nhsuk-o-grid__item--full {
@@ -733,7 +722,7 @@
 
   .nhsuk-hero-image {
     &.rotate {
-      background-image: url(/images/hero-home/nhsuk-home-hero-1.jpg);
+      background-image: url(/assets/images/homepage/hero-home/nhsuk-home-hero-1.jpg);
     }
   }
 

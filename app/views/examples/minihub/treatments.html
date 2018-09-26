@@ -1,13 +1,10 @@
 {% set title = 'Treatments - Age-related macular degeneration (AMD)' %}
 {% set parent = 'Age-related macular degeneration (AMD)' %}
-{% from "macros/mini-hub-pagination.html" import miniHubPagination, miniHubPaginationPrevious, miniHubPaginationNext%}
-{% from "macros/review-date.html" import reviewdate %}
+{% from 'components/pagination/macro.njk' import pagination, paginationNext, paginationPrevious %}
+{% from 'components/review-date/macro.njk' import reviewDate %}
 {% extends 'includes/site-layout.html' %}
 
 {% block body %}
-
-	{% include 'partials/breadcrumb/breadcrumb-amd.html' %}
-
     <div class="nhsuk-o-width-container">
         <main class="nhsuk-o-main-wrapper">
             <div class="nhsuk-o-grid">
@@ -115,9 +112,10 @@
 						<p>Research into new treatments for AMD is ongoing. Your specialist can let you know if there are any studies you could take part in.</p>
 						
 						<p>You can also <a href="https://www.ukctg.nihr.ac.uk/home/" title="External website">search the UK Clinical Trials Gateway (UKCTG)</a> to find studies.</p>
-						{{ reviewdate("12/02/2016", "01/02/2019") }}
+						
+            {{ reviewDate("12/02/2016", "01/02/2019") }}
 
-						{{ miniHubPagination("/examples/minihub/getting-diagnosed", "Getting diagnosed", "/examples/minihub/living-with-amd", "Living with AMD")}}
+						{{ pagination("/examples/minihub/getting-diagnosed", "Getting diagnosed", "/examples/minihub/living-with-amd", "Living with AMD")}}
 
 					</div>
 

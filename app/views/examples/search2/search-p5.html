@@ -2,12 +2,10 @@
 {% set parent = 'Search' %}
 {% from "macros/search-pagination.html" import searchPagination%}
 {% from "macros/search-listing.html" import searchListing %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
 {% extends 'includes/site-layout.html' %}
 
 {% block body %}
-
-	{% include 'partials/breadcrumb/breadcrumb-level-1.html' %}
-
     <div class="nhsuk-o-width-container">
         <main class="nhsuk-o-main-wrapper">
             <div class="nhsuk-o-grid">

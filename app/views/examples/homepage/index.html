@@ -1,7 +1,6 @@
 {% set title = 'NHS.UK Home page' %}
-{% from "macros/action-link.html" import actionLink %}
-{% from "macros/promo.html" import promoWithImage, promo %}
-{% from "macros/blockquote.html" import blockquote %}
+{% from 'components/action-link/macro.njk' import actionLink %}
+{% from 'components/promo/macro.njk' import promo, promoWithImage, promoNoDescription %}
 {% extends "includes/templates/nhsuk-home-page.html"%}
 
 {% block content %}
@@ -76,14 +75,14 @@
 
 {% block customJS %}
     <script>
-        //random image for nhsuk-hero-home
+        //random image for nhsuk-homepage/hero-home
         function randomImage(){
         var images = [
-        '/images/hero-home/nhsuk-home-hero-image-1.jpg',
-        '/images/hero-home/nhsuk-home-hero-image-2.jpg',
-        '/images/hero-home/nhsuk-home-hero-image-3.jpg',
-        '/images/hero-home/nhsuk-home-hero-image-4.jpg',
-        '/images/hero-home/nhsuk-home-hero-image-5.jpg'];
+        '/assets/images/homepage/hero-home/nhsuk-home-hero-image-1.jpg',
+        '/assets/images/homepage/hero-home/nhsuk-home-hero-image-2.jpg',
+        '/assets/images/homepage/hero-home/nhsuk-home-hero-image-3.jpg',
+        '/assets/images/homepage/hero-home/nhsuk-home-hero-image-4.jpg',
+        '/assets/images/homepage/hero-home/nhsuk-home-hero-image-5.jpg'];
         var size = images.length;
         var x = Math.floor(size * Math.random());
         console.log(x);

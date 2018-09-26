@@ -1,6 +1,3 @@
-@import '../../src/globals/settings/colours';
-@import '../../src/globals/helpers/top-and-bottom';
-
 .example {
   background: $nhsuk-white;
   border: 1px solid $nhsuk-border-colour;
@@ -240,4 +237,11 @@ pre[class*=language-] {
       max-width: 50%;
     }
   }
+}
+
+code,
+.example-code-snippet {
+  background-color: $nhsuk-white;
+  color: $nhsuk-blue;
+  padding: 0 5px;
 }

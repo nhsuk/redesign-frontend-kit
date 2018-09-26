@@ -1,10 +1,4 @@
 // sass-lint:disable mixins-before-declarations, quotes, property-sort-order, single-line-per-selector
-@import './node_modules/sass-mq/mq';
-@import '../../src/globals/settings/media-queries';
-@import '../../src/globals/tools/exports';
-@import '../../src/globals/tools/legacy-ie';
-@import '../../src/globals/settings/measurements';
-@import '../../src/globals/helpers/reading-width';
 
 @mixin govuk-width-container-fluid {
   max-width: 100%;

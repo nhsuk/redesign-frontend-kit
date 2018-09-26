@@ -1,7 +1,7 @@
 {% set title = 'Images' %}
 {% set navigation = 'transactional' %}
 {% set navigationWidth = 'fluid' %}
-{% from "macros/image.html" import image %}
+{% from 'components/images/macro.njk' import image %}
 {% extends "includes/templates/styles.html"%}
 
 {% block header %}
@@ -66,31 +66,6 @@
     <h3>Version 1</h3>
 
     <div class="nhsuk-c-image nhsuk-o-grid__item--two-thirds">
-
-      <!--
-        <img
-        alt="Picture of allergic conjunctivitis"
-        src="/images/video_player-4.jpg"
-        sizes="(min-width: 1020px) 320px, (min-width: 768px) 50vw, 100vw"
-        srcset="
-
-        /images/video_player-4.jpg 320w,
-
-        /images/video_player-4.jpg 510w,
-
-        /images/video_player-4.jpg 640w,
-
-       /images/video_player-4.jpg 767w,
-
-        /images/video_player-4.jpg 1019w,
-
-        /images/video_player-4.jpg 1125w,
-
-        /images/video_player-4.jpg 1534w,
-
-        "
-    />-->
-
     <div style="display: block; position: relative; max-width: 100%;">
       <div style="padding-top: 56.25%;">
         <video

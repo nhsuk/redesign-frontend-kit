@@ -1,7 +1,7 @@
 {% set title = 'Review date' %}
 {% set navigation = 'transactional' %}
 {% set navigationWidth = 'fluid' %}
-{% from "macros/review-date.html" import reviewdate %}
+{% from 'components/review-date/macro.njk' import reviewDate %}
 {% extends "includes/templates/styles.html"%}
 
 {% block header %}
@@ -44,7 +44,7 @@
       <div class="example">
         <h3>Version 1</h3>
 
-			  <img class="component-image" src="../images/components/review-date-v1.png">
+			  <img class="component-image" src="/assets/images/component-write-up/review-date-v1.png">
 
         <h3>Research findings</h3>    
         <p>Keep it usable, Salford, 4 July 2018 - 5 participants</p>
@@ -76,7 +76,7 @@
 
     <div class="nhsuk-reading-width">
       <div class="example">
-          {{ reviewdate("12/02/2016", "01/02/2019") }}
+          {{ reviewDate("12/02/2016", "01/02/2019") }}
       </div>
     </div>
 

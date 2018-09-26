@@ -1,22 +1,14 @@
 {% set title = 'Paracetamol for children' %}
 {% set parent = 'Medicines A-Z' %}
-{% from "macros/mini-hub-pagination.html" import miniHubPagination, miniHubPaginationPrevious, miniHubPaginationNext%}
-{% from "macros/review-date.html" import reviewdate %} 
+{% from 'components/review-date/macro.njk' import reviewDate %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
 {% extends 'includes/site-layout.html' %}
 
+{% block breadcrumb %}
+  {{ breadcrumbs('/', 'Home', '/section', 'Section') }}
+{% endblock %}
+
 {% block body %}
-
-<nav class="nhsuk-c-breadcrumb" role="Breadcrumb" aria-label="Breadcrumb">
-		<div class="nhsuk-o-width-container">
-		  <ol class="nhsuk-c-breadcrumb__list">
-			<li class="nhsuk-c-breadcrumb__item"><a href="/" class="nhsuk-c-breadcrumb__link">Home</a> {% include 'partials/icons/icon-chevron-right.svg' %}</li>
-			<li class="nhsuk-c-breadcrumb__item"><a href="../" class="nhsuk-c-breadcrumb__link">{{parent}}</a></li>
-		  </ol>
-		  <p class="nhsuk-c-breadcrumb__back">{% include 'partials/icons/icon-chevron-left.svg' %}<a href="../" class="nhsuk-c-breadcrumb__backlink">Back to {{parent}}</a></p>
-		</div>
-	  </nav>
-	  
-
     <div class="nhsuk-o-width-container">
         <main class="nhsuk-o-main-wrapper">
             <div class="nhsuk-o-grid">
@@ -468,7 +460,7 @@
 															</section>
 
 
-						{{ reviewdate("12/02/2016", "01/02/2019") }}
+						{{ reviewDate("12/02/2016", "01/02/2019") }}
 
 
 					</div>

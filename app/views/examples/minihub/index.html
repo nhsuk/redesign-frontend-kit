@@ -1,15 +1,15 @@
 {% set title = 'Age-related macular degeneration (AMD)' %}
 {% set parent = 'Health A-Z' %}
-{% from "macros/mini-hub-pagination.html" import miniHubPagination, miniHubPaginationPrevious, miniHubPaginationNext%}
-{% from "macros/review-date.html" import reviewdate %}
+{% from 'components/pagination/macro.njk' import pagination, paginationNext, paginationPrevious %}
+{% from 'components/review-date/macro.njk' import reviewDate %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
 {% extends 'includes/site-layout.html' %}
 
+{% block breadcrumb %}
+  {{ breadcrumbs('/', 'Home', '/section', 'Section') }}
+{% endblock %}
+
 {% block body %}
-
-	{% include 'partials/global-alert/global-alert-notice.html' %}
-
-	{% include 'partials/breadcrumb/breadcrumb.html' %}
-
     <div class="nhsuk-o-width-container">
         <main class="nhsuk-o-main-wrapper">
             <div class="nhsuk-o-grid">
@@ -43,9 +43,9 @@
 						<li><strong>The exact cause is unknown.</strong> It's been linked to smoking, high blood pressure, being overweight and having a family history of AMD.</li>
 						</ul>
 
-						{{ reviewdate("12/02/2016", "01/02/2019") }}
+						{{ reviewDate("12/02/2016", "01/02/2019") }}
 
-						{{ miniHubPaginationNext("/examples/minihub/symptoms", "Symptoms")}}
+						{{ paginationNext("/examples/minihub/symptoms", "Symptoms")}}
 
 					</div>
 

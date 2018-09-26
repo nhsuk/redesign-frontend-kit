@@ -1,13 +1,11 @@
 {% set title = 'Symptoms - Age-related macular degeneration (AMD)' %}
 {% set parent = 'Search' %}
-{% from "macros/mini-hub-pagination.html" import miniHubPagination, miniHubPaginationPrevious, miniHubPaginationNext%}
+{% from 'components/pagination/macro.njk' import pagination, paginationNext, paginationPrevious %}
 {% from "macros/search-listing.html" import searchListing %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
 {% extends 'includes/site-layout.html' %}
 
 {% block body %}
-
-	{% include 'partials/breadcrumb/breadcrumb-level-1.html' %}
-
     <div class="nhsuk-o-width-container">
         <main class="nhsuk-o-main-wrapper">
             <div class="nhsuk-o-grid">
@@ -34,7 +32,7 @@
 						{{ searchListing("search-listing", "https://beta.nhs.uk/medicines/prednisolone/", "Prednisolone: steroid to treat allergies and infections - NHS.UK","muscle pain or weakness, muscle cramps, or a heartbeat that does not feel normal - these can be signs of low potassium levels. ... severe stomach pain, severe back pain, severe upset stomach or vomiting - these can be signs of pancreas problems.") }}
 						</p>
 
-						{{ miniHubPagination("/examples/search/search-p2", "2 of 5", "/examples/search/search-p4", "4 of 5")}}
+						{{ pagination("/examples/search/search-p2", "2 of 5", "/examples/search/search-p4", "4 of 5")}}
 
 					</div>
 
