@@ -1,7 +1,7 @@
 {% set title = 'Review date' %}
 {% set navigation = 'transactional' %}
 {% set navigationWidth = 'fluid' %}
-{% from "macros/review-date.html" import reviewdate %}
+{% from 'components/review-date/macro.njk' import reviewDate %}
 {% extends "includes/templates/styles.html"%}
 
 {% block header %}
@@ -76,7 +76,7 @@
 
     <div class="nhsuk-reading-width">
       <div class="example">
-          {{ reviewdate("12/02/2016", "01/02/2019") }}
+          {{ reviewDate("12/02/2016", "01/02/2019") }}
       </div>
     </div>
 

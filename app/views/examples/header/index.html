@@ -1,10 +1,11 @@
 {% set title = 'Header and Footer example' %}
 {% set parent = 'Example' %}
 {% set cookieBanner = 'active' %}
-{% extends "includes/templates/page.html"%}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% extends "includes/templates/article-page.html"%}
 
 {% block breadcrumb %}
-  {% include 'partials/breadcrumb/breadcrumb.html' %}
+  {{ breadcrumbs('/', 'Home', '/section', 'Section') }}
 {% endblock %}
 
 {% block header %}

@@ -1,9 +1,9 @@
 {% set title = 'Living with AMD - Age-related macular degeneration (AMD)' %}
 {% set parent = 'Age-related macular degeneration (AMD)' %}
-{% from "macros/mini-hub-pagination.html" import miniHubPagination, miniHubPaginationPrevious, miniHubPaginationNext%}
-{% from "macros/keypoint.html" import keypoint %}
-{% from "macros/callout.html" import callout %}
-{% from "macros/review-date.html" import reviewdate %}
+{% from 'components/pagination/macro.njk' import pagination, paginationNext, paginationPrevious %}
+{% from 'components/inset-text/macro.njk' import insetText %}
+{% from 'components/callout/macro.njk' import callout %}
+{% from 'components/review-date/macro.njk' import reviewDate %}
 {% extends 'includes/site-layout.html' %}
 
 {% block body %}
@@ -90,7 +90,7 @@
 						
 						<p>Contact your specialist as soon as possible if your vision gets worse or you notice any new symptoms.</p>
 						
-						{{ keypoint("<p>Keep having routine eye tests (usually every 2 years). They can pick up other eye problems that your check-ups don't look for.</p>") }}
+						{{ insetText("<p>Keep having routine eye tests (usually every 2 years). They can pick up other eye problems that your check-ups don't look for.</p>") }}
 
 						<h2>Registering as sight impaired</h2>
 						
@@ -115,9 +115,9 @@
 						
 						{{ callout("Important", "<p>See a GP if you've been feeling low for more than 2 weeks. They can offer support and treatment if you need it.</p>") }}
 
-						{{ reviewdate("12/02/2016", "01/02/2019") }}
+						{{ reviewDate("12/02/2016", "01/02/2019") }}
     				
-						{{ miniHubPaginationPrevious("/examples/minihub/treatments", "Treatments")}}
+						{{ paginationPrevious("/examples/minihub/treatments", "Treatments")}}
 
 					</div>
 

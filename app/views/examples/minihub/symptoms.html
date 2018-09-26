@@ -1,11 +1,11 @@
 {% set title = 'Symptoms - Age-related macular degeneration (AMD)' %}
 {% set parent = 'Age-related macular degeneration (AMD)' %}
-{% from "macros/mini-hub-pagination.html" import miniHubPagination, miniHubPaginationPrevious, miniHubPaginationNext%}
-{% from "macros/action-link.html" import actionLink %}
-{% from "macros/care-card.html" import carecard %}
-{% from "macros/keypoint.html" import keypoint %}
-{% from "macros/image.html" import image %}
-{% from "macros/review-date.html" import reviewdate %}
+{% from 'components/pagination/macro.njk' import pagination, paginationNext, paginationPrevious %}
+{% from 'components/action-link/macro.njk' import actionLink %}
+{% from 'components/care-card/macro.njk' import careCard %}
+{% from 'components/inset-text/macro.njk' import insetText %}
+{% from 'components/images/macro.njk' import image %}
+{% from 'components/review-date/macro.njk' import reviewDate %}
 {% extends 'includes/site-layout.html' %}
 
 {% block body %}
@@ -63,9 +63,9 @@
 						
 						<p>AMD isn't painful and doesn't affect the appearance of your eyes.</p>
 
-						{{ keypoint("<p>Sometimes AMD may be found during a routine eye test before you have symptoms.</p>") }}
+						{{ insetText("<p>Sometimes AMD may be found during a routine eye test before you have symptoms.</p>") }}
 
-						{{ carecard("blue", "See an optician if you're worried about your vision", "
+						{{ careCard("blue", "See an optician if you're worried about your vision", "
 												<p>If you have a problem with your eyes, early diagnosis and treatment may help stop your vision getting worse.</p>
 												<a href='/service-search/Opticians/LocationSearch/9' class='nhsuk-c-action-link'>
         									<svg class='nhsuk-icon nhsuk-icon__arrow-right-circle' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden='true'>
@@ -77,7 +77,7 @@
     										</a>
 						") }}
 						
-						{{ carecard("red", "Get an urgent opticians appointment if:", "
+						{{ careCard("red", "Get an urgent opticians appointment if:", "
 								<ul>
 									<li>your vision gets suddenly worse </li>
 									<li>you have a dark 'curtain' or shadow moving across your vision</li>
@@ -95,9 +95,9 @@
 								</a>
 						") }}
 
-						{{ reviewdate("12/02/2016", "01/02/2019") }}
+						{{ reviewDate("12/02/2016", "01/02/2019") }}
 
-						{{ miniHubPagination("/examples/minihub", "What is AMD?", "/examples/minihub/getting-diagnosed", "Getting diagnosed")}}
+						{{ pagination("/examples/minihub", "What is AMD?", "/examples/minihub/getting-diagnosed", "Getting diagnosed")}}
 
 
 					</div>

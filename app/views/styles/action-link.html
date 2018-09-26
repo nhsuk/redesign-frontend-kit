@@ -1,8 +1,8 @@
 {% set title = 'Action link' %}
 {% set navigation = 'transactional' %}
 {% set navigationWidth = 'fluid' %}
+{% from 'components/action-link/macro.njk' import actionLink %}
 {% extends "includes/templates/styles.html"%}
-{% from "macros/action-link.html" import actionLink %}
 
 {% block header %}
     <h1>Action link</h1>

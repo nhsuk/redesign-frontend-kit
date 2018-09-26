@@ -1,7 +1,7 @@
 {% set title = 'Callouts' %}
 {% set navigation = 'transactional' %}
 {% set navigationWidth = 'fluid' %}
-{% from "macros/keypoint.html" import keypoint %}
+{% from 'components/inset-text/macro.njk' import insetText %}
 {% extends "includes/templates/styles.html"%}
 
 {% block header %}
@@ -124,7 +124,7 @@
 	<h2 id="code">Example and code snippet</h2>
 
 	<div class="example grey-background">
-		{{ keypoint("<p>Sometimes AMD may be found during a routine eye test before you have symptoms.</a></p>") }}
+		{{ insetText("<p>Sometimes AMD may be found during a routine eye test before you have symptoms.</a></p>") }}
 	</div>
 
 	<div class="example-snippet">
