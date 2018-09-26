@@ -1,6 +1,6 @@
 {% set title = 'Symptoms - Age-related macular degeneration (AMD)' %}
 {% set parent = 'Search' %}
-{% from "macros/search-pagination.html" import searchPagination, searchPaginationPrevious, searchPaginationNext%}
+{% from "macros/search-pagination.html" import searchPagination%}
 {% from "macros/search-listing.html" import searchListing %}
 {% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
 {% extends 'includes/site-layout.html' %}
@@ -34,45 +34,7 @@
 						{{ searchListing("search-listing", "https://www.nhs.uk/conditions/pregnancy-and-baby/backache-pregnant/", "Back pain in pregnancy - NHS","Find out about the causes of backache in pregnancy, and what you can do to help ease the discomfort of back pain.") }}
 						</p>
 
-						<nav aria-label="Pagination" class="navigation--number" data-active-tile="1">
-							<div class="container">
-								<a class="navigation-control" href="/examples/search2/search-p1">Previous</a>
-								<ol>
-									<li data-number="1">
-										<a href="/examples/search2/search-p1"><span>Page </span>
-										<span class="count">1</span>
-										<span>of 43</span>
-										</a>
-									</li>
-									<li  class="active" data-number="2">
-										<span>
-										<span>Page </span>
-										<span class="count">2</span>
-										<span>of 43</span>
-										</span>
-									</li>
-									<li data-number="3">
-										<a href="/examples/search2/search-p3"><span>Page </span>
-										<span class="count">3</span>
-										<span>of 43</span>
-										</a>
-									</li>
-									<li data-number="4">
-										<a href="/examples/search2/search-p4"><span>Page </span>
-										<span class="count">4</span>
-										<span>of 43</span>
-										</a>
-									</li>
-									<li data-number="5">
-										<a href="/examples/search2/search-p5"><span>Page </span>
-										<span class="count">5</span>
-										<span>of 43</span>
-										</a>
-									</li>
-								</ol>
-								<a class="navigation-control" href="/examples/search2/search-p3">Next</a>
-							</div>
-						</nav>
+						{{ searchPagination(2, 5)}}
 
 					</div>
 

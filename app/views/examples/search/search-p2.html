@@ -1,6 +1,6 @@
 {% set title = 'Symptoms - Age-related macular degeneration (AMD)' %}
 {% set parent = 'Search' %}
-{% from "macros/search-pagination.html" import searchPagination, searchPaginationPrevious, searchPaginationNext%}
+{% from "macros/mini-hub-pagination.html" import miniHubPagination, miniHubPaginationPrevious, miniHubPaginationNext%}
 {% from "macros/search-listing.html" import searchListing %}
 {% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
 {% extends 'includes/site-layout.html' %}
@@ -32,7 +32,7 @@
 						{{ searchListing("search-listing", "https://www.nhs.uk/conditions/pregnancy-and-baby/backache-pregnant/", "Back pain in pregnancy - NHS","Find out about the causes of backache in pregnancy, and what you can do to help ease the discomfort of back pain.") }}
 						</p>
 
-						{{ searchPagination("/examples/search/search-p1", "1 of 5", "/examples/search/search-p3", "3 of 5")}}
+						{{ miniHubPagination("/examples/search/search-p1", "1 of 5", "/examples/search/search-p3", "3 of 5")}}
 
 					</div>
 

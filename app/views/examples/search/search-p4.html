@@ -1,6 +1,6 @@
 {% set title = 'Symptoms - Age-related macular degeneration (AMD)' %}
 {% set parent = 'Search' %}
-{% from "macros/search-pagination.html" import searchPagination, searchPaginationPrevious, searchPaginationNext%}
+{% from "macros/mini-hub-pagination.html" import miniHubPagination, miniHubPaginationPrevious, miniHubPaginationNext%}
 {% from "macros/search-listing.html" import searchListing %}
 {% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
 {% extends 'includes/site-layout.html' %}
@@ -32,7 +32,7 @@
 						{{ searchListing("search-listing", "https://www.nhs.uk/medicines/diclofenac/", "Diclofenac: medicine to remove pain and swelling - NHS.UK","Diclofenac contents. About diclofenac. Diclofenac is a medicine that reduces inflammation and pain. ... It works by reducing hormones that cause inflammation and pain in the body.") }}
 						</p>
 
-						{{ searchPagination("/examples/search/search-p3", "3 of 5", "/examples/search/search-p5", "5 of 5")}}
+						{{ miniHubPagination("/examples/search/search-p3", "3 of 5", "/examples/search/search-p5", "5 of 5")}}
 
 					</div>
 

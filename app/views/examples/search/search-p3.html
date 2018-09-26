@@ -1,6 +1,6 @@
 {% set title = 'Symptoms - Age-related macular degeneration (AMD)' %}
 {% set parent = 'Search' %}
-{% from "macros/search-pagination.html" import searchPagination, searchPaginationPrevious, searchPaginationNext%}
+{% from "macros/mini-hub-pagination.html" import miniHubPagination, miniHubPaginationPrevious, miniHubPaginationNext%}
 {% from "macros/search-listing.html" import searchListing %}
 {% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
 {% extends 'includes/site-layout.html' %}
@@ -32,7 +32,7 @@
 						{{ searchListing("search-listing", "https://beta.nhs.uk/medicines/prednisolone/", "Prednisolone: steroid to treat allergies and infections - NHS.UK","muscle pain or weakness, muscle cramps, or a heartbeat that does not feel normal - these can be signs of low potassium levels. ... severe stomach pain, severe back pain, severe upset stomach or vomiting - these can be signs of pancreas problems.") }}
 						</p>
 
-						{{ searchPagination("/examples/search/search-p2", "2 of 5", "/examples/search/search-p4", "4 of 5")}}
+						{{ miniHubPagination("/examples/search/search-p2", "2 of 5", "/examples/search/search-p4", "4 of 5")}}
 
 					</div>
 
