@@ -383,5 +383,16 @@ router.get('/examples/starting-your-pregnancy-care-4', (req, res) => {
   res.render('examples/starting-your-pregnancy-care-4', {});
 });
 
+router.get('/examples/landingpage-f', (req, res) => {
+  res.render('examples/landingpage-f', {});
+});
+
+router.get('/examples/generichubpage-a4', (req, res) => {
+  res.render('examples/generichubpage-a4', {});
+});
+
+router.get('/examples/starting-your-pregnancy-care-5', (req, res) => {
+  res.render('examples/starting-your-pregnancy-care-5', {});
+});
 
 module.exports = router;

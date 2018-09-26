@@ -1,8 +1,14 @@
-{% set title = 'Early days hubpage-2' %}
+{% set title = 'Your pregnancy and baby guide E' %}
 {% set parent = '' %}
+{% from "macros/action-link.html" import actionLink %}
 {% extends "includes/templates/hub.html"%}
 
 {% block breadcrumb %}
+
+
+
+
+
 <nav class="nhsuk-c-breadcrumb" role="Breadcrumb" aria-label="Breadcrumb">
   <div class="nhsuk-o-width-container">
     <ol class="nhsuk-c-breadcrumb__list">
@@ -30,13 +36,7 @@
     </li>
 
 
-    <li class="nhsuk-c-breadcrumb__item">
-      <a href="#" class="nhsuk-c-breadcrumb__link">Starting your pregnancy care</a>
-      <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"/>
-        <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/images/icons/icon-chevron-right-grey-10px.png" xlink:href="">
-      </svg>
-    </li>
+
 
 
   </ol>
@@ -45,11 +45,17 @@
       <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"/>
       <image class="nhsuk-icon__chevron-left nhsuk-icon__chevron-left--fallback" src="/images/icons/icon-chevron-left-blue.png" xlink:href="">
     </svg>
-    <a href="#" class="nhsuk-c-breadcrumb__backlink">Back to Your pregnancy and baby guide</a>
-
+    <a href="#" class="nhsuk-c-breadcrumb__backlink">Back to Health A-Z</a>
   </p>
-
+  </div>
 </nav>
+
+
+
+
+
+
+{% include 'partials/home-page/home-page-hero-maurob.html' %}
 
 {% endblock %}
 
@@ -60,44 +66,62 @@
             <p class="nhsuk-heading-m">Everything you need to know about the health service and what you can get from it</p>
         </div>
     </div>-->
-<p class="nhsuk-body-l nhsuk-page-intro">I'm pregnant</p><br>
-    <h1>Early days </h1>
-	<div class="nhsuk-reading-width">
 
-	</div>
-{% endblock %}
 
-{% block content %}
-<div class="nhsuk-reading-width">
 
+<br><div class="nhsuk-o-grid">
+  <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-half">
+    <p>{{ actionLink("/examples/health-a-z/health-a-z", "Work out your due date", "nhsuk-c-action-link--small nhsuk-c-action-link--alternative") }}</p>
+  </div><div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-half">
+    <p>{{ actionLink("/examples/health-a-z/health-a-z", "Make and save your birth plan", "nhsuk-c-action-link--small nhsuk-c-action-link--alternative") }}</p>
+</div></div>
+<hr class="nhsuk-hr">
+
+<div class="nhsuk-o-grid">
+
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
         <div class="nhsuk-c-promo-v1">
-            <h2 class="nhsuk-heading-s"><a href="/examples/starting-your-pregnancy-care-4">Your NHS pregnancy journey</a></h2>
-            <p>You’ll be offered tests, scans and at least 7 to 10 appointments with a midwife or doctor – find out how to start</p>
+            <h2 class="nhsuk-heading-s"><a href="/examples/generic-internal-page-1">Getting Pregnant</a></h2>
+            <p>In this section you can find informations that you need to know before before givebirth.</p>
         </div>
-
+    </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
         <div class="nhsuk-c-promo-v1">
-            <h2 class="nhsuk-heading-s"><a href="/examples/antenatal-appointments-1">Signs and symptoms of pregnancy</a></h2>
-            <p>These can include a missed period, peeing more and feeling sick – not every woman gets all of these symptoms</p>
+            <h2 class="nhsuk-heading-s"><a href="/examples/generichubpage-a4">I'm Pregnant</a></h2>
+            <p>In this section you can find informations that you need to know during your pregnancy.</p>
         </div>
-
+    </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
         <div class="nhsuk-c-promo-v1">
-            <h2 class="nhsuk-heading-s"><a href="/examples/generic-internal-page-2">Health things you need to know</a></h2>
-            <p>Food, alcohol, exercise, medicines, vitamins, avoiding illness, not smoking, sex, vaccinations and more</p>
+            <h2 class="nhsuk-heading-s"><a href="/examples/antenatal-appointments-1">Labour and birth</a></h2>
+            <p>In this section you can find informations that you need to know about labour and giving birth.</p>
         </div>
-
-        <div class="nhsuk-c-promo-v1">
-            <h2 class="nhsuk-heading-s"><a href="/examples/generic-internal-page-2">If you’ve got a health condition</a></h2>
-            <p>How you and your health team can manage your condition in pregnancy, such as epilepsy and mental health</p>
-        </div>
-
-        <div class="nhsuk-c-promo-v1">
-            <h2 class="nhsuk-heading-s"><a href="/examples/generic-internal-page-2">Finding out and telling people</a></h2>
-            <p>When you find out you're pregnant, you may feel a range of emotions. Get tips on coping, and telling people you’re pregnant</p>
-        </div>
+    </div>
 
 </div>
 
+<div class="nhsuk-o-grid">
+
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <div class="nhsuk-c-promo-v1">
+            <h2 class="nhsuk-heading-s"><a href="/examples/generic-internal-page-1">Your newborn</a></h2>
+            <p>In this section you can find informations that you need to know about your newborn.</p>
+        </div>
+    </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <div class="nhsuk-c-promo-v1">
+            <h2 class="nhsuk-heading-s"><a href="/examples/generic-internal-page-1">Babies and Toddlers</a></h2>
+            <p>In this section you can find informations that you need to know about being a parent.</p>
+        </div>
+    </div>
+
+
 
 </div>
+
+  </main>
+</div>
+
+
 
 {% endblock %}
