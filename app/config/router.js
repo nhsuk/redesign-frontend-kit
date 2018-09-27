@@ -403,4 +403,8 @@ router.get('/examples/Your-first-midwife-appointment-2', (req, res) => {
   res.render('examples/Your-first-midwife-appointment-2', {});
 });
 
+router.get('/examples/sign-and-symptoms-of-pregnancy', (req, res) => {
+  res.render('examples/sign-and-symptoms-of-pregnancy', {});
+});
+
 module.exports = router;
