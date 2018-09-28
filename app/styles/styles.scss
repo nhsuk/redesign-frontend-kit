@@ -1,13 +1,32 @@
-// Import frontend library
+// Settings
+@import 'core/common';
 
-@import "node_modules/nhsuk-frontend-test/nhsuk";
+// Components
+@import 'components/a-z-list/a-z-list';
+@import 'components/action-link/action-link';
+@import 'components/breadcrumbs/breadcrumbs';
+@import 'components/callout/callout';
+@import 'components/care-card/care-card';
+@import 'components/cookie-banner/cookie-banner';
+@import 'components/do-dont-list/do-dont-list';
+@import 'components/emergency-alert/emergency-alert';
+@import 'components/feedback-banner/feedback-banner';
+@import 'components/footer/footer';
+@import 'components/header/header';
+@import 'components/hero/hero';
+@import 'components/images/images';
+@import 'components/inset-text/inset-text';
+@import 'components/pagination/pagination';
+@import 'components/phase-banner/phase-banner';
+@import 'components/promo/promo';
+@import 'components/reveals/reveals';
+@import 'components/review-date/review-date';
+@import 'components/tables/tables';
 
 // Globals (move to FE library?)
-
 @import 'globals/objects/full-width-container';
 
 // Components in development
-
 @import 'components/hero/hero';
 @import 'components/home-page/home-page';
 @import 'components/page-contents/page-contents';
@@ -18,7 +37,6 @@
 @import 'components/video/video';
 
 // Azure specific styles
-
 @import 'pages/code';
 @import 'pages/grid';
 @import 'pages/colours';
