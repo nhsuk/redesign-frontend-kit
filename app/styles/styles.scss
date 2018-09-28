@@ -1,54 +1,27 @@
 // Settings
-@import 'core/common';
+@import 'node_modules/nhsuk-frontend-test/core/common';
 
 // Components
-@import 'components/a-z-list/a-z-list';
-@import 'components/action-link/action-link';
-@import 'components/breadcrumbs/breadcrumbs';
-@import 'components/callout/callout';
-@import 'components/care-card/care-card';
-@import 'components/cookie-banner/cookie-banner';
-@import 'components/do-dont-list/do-dont-list';
-@import 'components/emergency-alert/emergency-alert';
-@import 'components/feedback-banner/feedback-banner';
-@import 'components/footer/footer';
-@import 'components/header/header';
-@import 'components/hero/hero';
-@import 'components/images/images';
-@import 'components/inset-text/inset-text';
-@import 'components/pagination/pagination';
-@import 'components/phase-banner/phase-banner';
-@import 'components/promo/promo';
-@import 'components/reveals/reveals';
-@import 'components/review-date/review-date';
-@import 'components/tables/tables';
+@import 'node_modules/nhsuk-frontend-test/components/a-z-list/a-z-list';
+@import 'node_modules/nhsuk-frontend-test/components/action-link/action-link';
+@import 'node_modules/nhsuk-frontend-test/components/breadcrumbs/breadcrumbs';
+@import 'node_modules/nhsuk-frontend-test/components/callout/callout';
+@import 'node_modules/nhsuk-frontend-test/components/care-card/care-card';
+@import 'node_modules/nhsuk-frontend-test/components/cookie-banner/cookie-banner';
+@import 'node_modules/nhsuk-frontend-test/components/do-dont-list/do-dont-list';
+@import 'node_modules/nhsuk-frontend-test/components/emergency-alert/emergency-alert';
+@import 'node_modules/nhsuk-frontend-test/components/feedback-banner/feedback-banner';
+@import 'node_modules/nhsuk-frontend-test/components/footer/footer';
+@import 'node_modules/nhsuk-frontend-test/components/header/header';
+@import 'node_modules/nhsuk-frontend-test/components/hero/hero';
+@import 'node_modules/nhsuk-frontend-test/components/images/images';
+@import 'node_modules/nhsuk-frontend-test/components/inset-text/inset-text';
+@import 'node_modules/nhsuk-frontend-test/components/pagination/pagination';
+@import 'node_modules/nhsuk-frontend-test/components/phase-banner/phase-banner';
+@import 'node_modules/nhsuk-frontend-test/components/promo/promo';
+@import 'node_modules/nhsuk-frontend-test/components/reveals/reveals';
+@import 'node_modules/nhsuk-frontend-test/components/review-date/review-date';
+@import 'node_modules/nhsuk-frontend-test/components/tables/tables';
 
-// Globals (move to FE library?)
-@import 'globals/objects/full-width-container';
-
-// Components in development
-@import 'components/hero/hero';
-@import 'components/home-page/home-page';
-@import 'components/page-contents/page-contents';
-@import 'components/pagination/pagination';
-@import 'components/promo/promo';
-@import 'components/reveals/reveals';
-@import 'components/user-account/user-account';
-@import 'components/video/video';
-
-// Azure specific styles
-@import 'pages/code';
-@import 'pages/grid';
-@import 'pages/colours';
-
-// CSS for medicines page - lifted from beta.nhs.uk
-
-.o-list-sections {
-  padding-left: 2em;
-  counter-reset: item;
-  padding-left: 0;
-}
-
-.o-list-sections>li {
-  display: block;
-}
+// App specific styles
+@import 'app';
