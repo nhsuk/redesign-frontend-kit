@@ -1,0 +1,147 @@
+
+
+{% set title = 'Dementia Information Service' %}
+{% set parent = 'Health A-Z' %}
+{% from 'components/inset-text/macro.njk' import insetText %}
+{% from 'components/do-dont-list/macro.njk' import list %}
+{% from 'components/care-card/macro.njk' import careCard %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% from 'components/cookie-banner/macro.njk' import cookieBanner %}
+{% from 'components/emergency-alert/macro.njk' import emergencyAlert %}
+{% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
+{% from 'components/phase-banner/macro.njk' import phaseBanner %}
+{% extends "includes/templates/article-page.html"%}
+
+<link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
+
+
+{% block breadcrumb %}
+  {{ phaseBanner('New', 'We are testing a new page layout — your <a href="#">feedback</a> will help us to improve it.') }}
+
+  {{ breadcrumbs('/', 'Home', '/section', 'Section') }}
+{% endblock %}
+
+{% block header %}
+    <h1>Sign up to receive Dementia Information Service emails</h1>
+{% endblock %}
+
+{% block content %}
+
+
+
+
+
+
+
+    <div class="nhsuk-reading-width">
+      <p>Welcome to the Dementia Information Service, which guides you through the often difficult time after a dementia diagnosis. The emails can support you if you have just found out, or accepted, that you or a loved one has dementia.</p>
+      <p>Sign up to receive 6 emails about getting the help you need, now and in the future.</p>
+    </div>
+
+    <fieldset class="govuk-fieldset" style="margin: 0;padding: 0;border: 0;">
+        <legend style="padding-bottom:16px;padding-left: 0px;">
+<h3>Your details</h3>
+        </legend>
+      
+        <div class="govuk-form-group" >
+          <label class="govuk-label" for="name-line-1">
+            Name
+          </label>
+          <input class="govuk-input" id="name" name="name" type="text">
+        </div>
+
+        <div class="govuk-form-group" >
+            <label class="govuk-label" for="dob-line-2">
+              Date of birth
+            </label>
+            <input class="govuk-input" id="name" name="name" type="text">
+          </div>
+
+          <div class="govuk-form-group" >
+            <label class="govuk-label" for="email-line-3">
+              Email address
+            </label>
+            <input class="govuk-input" id="name" name="name" type="text">
+          </div>
+      
+        <div class="govuk-radios">
+            <p style="margin-bottom: 16px;">Pick one of the following:</p>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="where-do-you-live-1" name="where-do-you-live" type="radio" value="england">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live-1">
+                    I have been diagnosed with dementia
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="where-do-you-live-1" name="where-do-you-live" type="radio" value="england">
+                    <label class="govuk-label govuk-radios__label" for="where-do-you-live-1">
+                            I am a carer
+                    </label>
+            </div>
+            <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="where-do-you-live-1" name="where-do-you-live" type="radio" value="england">
+                    <label class="govuk-label govuk-radios__label" for="where-do-you-live-1">
+                            Other
+                    </label>
+            </div>
+          </div>
+
+          <p style="margin-bottom:16px;">We will send you a weekly email for 6 weeks, and will occasionally send you other relevant health information
+                via email (for example surveys about your use of the service)</p>
+          <div class="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+                    I agree to the data I have provided being used to personalise the emails I receive from the NHS website
+              </label>
+            </div>
+
+            <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+                            I agree to usage data being collected automatically in order for the NHS website to evaluate and improve the services we provide
+                    </label>
+                  </div>
+                  <p>View our full <a href=https://www.nhs.uk/our-policies/terms-and-conditions/ target="_blank">Terms & Conditions</a>
+                    and <a href=https://www.nhs.uk/our-policies/privacy-policy/ target="_blank">Privacy Policy</a></p>
+
+            <button type="submit" class="govuk-button" style="
+            margin-top: 16px;
+        ">
+                Submit
+              </button>
+
+
+          </div>
+ 
+
+      
+      </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="content-divider content-divider--short"></div>
+
+{{ careCard("grey", "Call 111", "<p>If you can’t speak to your GP or don’t know what to do next.</p>") }}
+
+{% endblock %}
+
+{% block footer %}
+  {{ feedbackBanner('Help us make the NHS website better', 'Your feedback helps us improve the NHS website.', '#', 'Take our short survey') }}
+{% endblock %}
+
+
