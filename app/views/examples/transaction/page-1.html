@@ -1,0 +1,83 @@
+
+
+{% set title = 'Register with a GP' %}
+{% set parent = 'Health A-Z' %}
+{% from 'components/inset-text/macro.njk' import insetText %}
+{% from 'components/do-dont-list/macro.njk' import list %}
+{% from 'components/care-card/macro.njk' import careCard %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% from 'components/cookie-banner/macro.njk' import cookieBanner %}
+{% from 'components/emergency-alert/macro.njk' import emergencyAlert %}
+{% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
+{% from 'components/phase-banner/macro.njk' import phaseBanner %}
+{% from 'components/reveals/macro.njk' import reveal %}
+{% extends "includes/templates/article-page.html"%}
+
+<link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
+
+
+{% block breadcrumb %}
+  {{ phaseBanner('New', 'We are testing a new page layout — your <a href="#">feedback</a> will help us to improve it.') }}
+
+  {{ breadcrumbs('/', 'Home', '/section', 'Section') }}
+{% endblock %}
+
+{% block header %}
+<div class="nhsuk-reading-width">
+        <h1>Register with Luscombe Family Practice</h1>
+        </div>{% endblock %}
+
+{% block content %}
+
+
+
+
+
+
+
+    <div class="nhsuk-reading-width">
+      <p>To register:</p>
+     
+      <ol>
+          <li>Fill out the form (takes 10 minutes)</li>
+          <li>Go to the surgery with proof of ID and address</li>
+      </ol>
+
+      <p>You should be registered in 10 days.</p>
+    </div>
+
+    {{ reveal('How your personal information is used', '
+    <p>Only Luscombe Family Practice sees the personal information you put this application.</p>
+    <p>Its sent securely to them so they can add it to your medical record. Its not stored for any other purpose.</p>
+    ') }}
+
+      <a href="page-2"><button type="submit" class="govuk-button" style="
+      margin-top: 16px;
+  ">
+          Start now
+        </button></a>
+
+
+
+
+
+
+
+<h3>Who can use this service</h3>
+<p>Use this service to register yourself. To register someone else, go in person to the surgery.</p>
+
+<p>Some GP practices only register people living in the local area. Check with Luscombe Family Practice is you're unsure.</p>
+
+
+
+<div class="content-divider content-divider--short"></div>
+
+
+
+{% endblock %}
+
+{% block footer %}
+  {{ feedbackBanner('Help us make the NHS website better', 'Your feedback helps us improve the NHS website.', '#', 'Take our short survey') }}
+{% endblock %}
+
+
