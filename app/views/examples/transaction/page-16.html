@@ -16,15 +16,30 @@
 <link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
 
 
+
+
+
 {% block breadcrumb %}
   {{ phaseBanner('New', 'We are testing a new page layout — your <a href="#">feedback</a> will help us to improve it.') }}
 
-  {{ breadcrumbs('/', 'Home', '/section', 'Section') }}
+
 {% endblock %}
 
 {% block header %}
 <div class="nhsuk-reading-width">
-        <h1>Register at the Rose Medical Practice</h1>
+
+
+
+        <div class="govuk-panel govuk-panel--confirmation">
+                <h1 >
+                  Application complete
+                </h1>
+                <h2>
+                  Your reference number<br><strong>HDJ2123F</strong>
+                </h2>
+              </div>
+
+
         </div>{% endblock %}
 
 {% block content %}
@@ -36,37 +51,49 @@
 
 
     <div class="nhsuk-reading-width">
-      <p>To register:</p>
-     
-      <ol>
-          <li>Fill out the form (takes 10 minutes)</li>
-          <li>Go to the surgery with proof of ID and address</li>
-      </ol>
 
-      <p>You should be registered in 10 days.</p>
-    </div>
+            
 
-    {{ reveal('How your personal information is used', '
-    <p>Only Luscombe Family Practice sees the personal information you put this application.</p>
-    <p>Its sent securely to them so they can add it to your medical record. Its not stored for any other purpose.</p>
-    ') }}
 
-      <a href="page-2"><button type="submit" class="govuk-button" style="
-      margin-top: 16px;
-  ">
-          Start now
-        </button></a>
+<h3>What happens next</h3>
+<p>To complete registration, go to Rose Medical Practice with:</p>
+<ol>
+    <li><strong>Photo ID</strong><br /> Like a passport or driver's licence</li>
+    <li><strong>Proof of address</strong><br /> A bill less than three months old (gas, electric or council tax)</li>
+    <li><strong>Your NHS number</strong><br /> Find it on prescriptions or doctors / hospital letters </li>
+
+
+</ol>
+
+
+</div>
 
 
 
 
+              
 
 
 
-<h3>Who can use this service</h3>
-<p>Use this service to register yourself. To register someone else, go in person to the surgery.</p>
 
-<p>Some GP practices only register people living in the local area. Check with Luscombe Family Practice is you're unsure.</p>
+
+
+
+      
+
+
+
+
+                <script src="https://design-system.service.gov.uk/javascripts/vendor/iframeResizer.contentWindow.js"></script>
+                <script src="https://design-system.service.gov.uk/javascripts/govuk-frontend-e8916db391d2382b438540cae5e0d57a.js"></script>
+
+
+
+
+
+
+
+
 
 
 

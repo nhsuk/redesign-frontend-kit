@@ -1,0 +1,142 @@
+
+
+{% set title = 'Register with a GP' %}
+{% set parent = 'Health A-Z' %}
+{% from 'components/inset-text/macro.njk' import insetText %}
+{% from 'components/do-dont-list/macro.njk' import list %}
+{% from 'components/care-card/macro.njk' import careCard %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% from 'components/cookie-banner/macro.njk' import cookieBanner %}
+{% from 'components/emergency-alert/macro.njk' import emergencyAlert %}
+{% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
+{% from 'components/phase-banner/macro.njk' import phaseBanner %}
+{% from 'components/reveals/macro.njk' import reveal %}
+{% extends "includes/templates/article-page.html"%}
+
+<link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
+
+
+
+
+
+{% block breadcrumb %}
+  {{ phaseBanner('New', 'We are testing a new page layout — your <a href="#">feedback</a> will help us to improve it.') }}
+
+
+{% endblock %}
+
+{% block header %}
+<div class="nhsuk-reading-width">
+
+
+
+        <h1>Check your answers before sending your registration </h1>
+        </div>{% endblock %}
+
+{% block content %}
+
+
+
+
+
+
+
+    <div class="nhsuk-reading-width">
+
+            <div class="nhsuk-c-panel">
+                    <h3 id="Do">Personal details</h3>
+            <table class="nhsuk-table2" style="
+            margin-top: 0px;border:0px;
+        ">
+                    <tbody>
+
+                    <tr>
+                        <td><strong>Name</strong></td>
+                        <td>Mr Smith</td>
+                        <td><a href="/conditions/cold-sore/">Change</a></td>
+                    </tr>
+                    <tr>
+                            <td><strong>Sex</strong></td>
+                            <td>Male</td>
+                            <td><a href="/conditions/cold-sore/">Change</a></td>
+                        </tr>
+                        <tr>
+                                <td><strong>Date of birth</strong></td>
+                                <td>07/07/1983</td>
+                                <td><a href="/conditions/cold-sore/">Change</a></td>
+                         </tr>
+
+
+                         <tr>
+                                <td><strong>Place of birth</strong></td>
+                                <td>Richmond <br />
+                                England</td>
+                                <td><a href="/conditions/cold-sore/">Change</a></td>
+                         </tr>
+
+
+
+
+                    </tbody>
+                    </table>
+
+</div>
+
+<h3>Now send you application</h3>
+<p>By submitting this notification you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
+    <p>Your details with be sent to Rose Medical Practice to begin your registration.</p>
+
+
+</div>
+
+
+
+
+              
+
+
+
+
+
+
+
+                      {{ reveal('How your personal information is handled', '
+                      <p>Only Luscombe Family Practice sees the personal information you put this application.</p>
+                      <p>Its sent securely to them so they can add it to your medical record. Its not stored for any other purpose.</p>
+                      ') }}
+
+
+
+
+                <script src="https://design-system.service.gov.uk/javascripts/vendor/iframeResizer.contentWindow.js"></script>
+                <script src="https://design-system.service.gov.uk/javascripts/govuk-frontend-e8916db391d2382b438540cae5e0d57a.js"></script>
+
+
+
+    <a href="page-16">
+            <button type="submit" class="govuk-button" style="
+        margin-top: 16px;
+    ">
+            Accept and send registration
+          </button></a>
+
+
+
+
+
+
+
+
+
+
+<div class="content-divider content-divider--short"></div>
+
+
+
+{% endblock %}
+
+{% block footer %}
+  {{ feedbackBanner('Help us make the NHS website better', 'Your feedback helps us improve the NHS website.', '#', 'Take our short survey') }}
+{% endblock %}
+
+

@@ -26,7 +26,8 @@
 {% block header %}
 <div class="nhsuk-reading-width">
 
-        <h1>Do you know your NHS number? </h1>
+
+        <h1>Do you have any allergies? </h1>
         </div>{% endblock %}
 
 {% block content %}
@@ -60,7 +61,7 @@
                   <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-1">
                     <div class="govuk-form-group">
               <label class="govuk-label" for="contact-by-email">
-                NHS number
+                Allergy
               </label>
               <input class="govuk-input govuk-!-width-full" id="contact-by-email" name="contact-by-email" type="email">
             </div>
@@ -83,34 +84,27 @@
                   
                 </form>
 
-
-                <div role="note" aria-label="Information" class="nhsuk-c-inset-text">
-                        <p><strong>NHS number</strong></p>
-                        <p>It's a ten digit number on your prescriptions or GP an hospital letters. For example. '943 476 5919'</p>
-                      </div>
-
-                      {{ reveal('Why am I being asked this question?', '
-                      <p>Only Luscombe Family Practice sees the personal information you put this application.</p>
-                      <p>Its sent securely to them so they can add it to your medical record. Its not stored for any other purpose.</p>
-                      ') }}
-
+                {{ reveal('Why am I being asked this question?', '
+                <p>Only Luscombe Family Practice sees the personal information you put this application.</p>
+                <p>Its sent securely to them so they can add it to your medical record. Its not stored for any other purpose.</p>
+                ') }}
                 <script src="https://design-system.service.gov.uk/javascripts/vendor/iframeResizer.contentWindow.js"></script>
                 <script src="https://design-system.service.gov.uk/javascripts/govuk-frontend-e8916db391d2382b438540cae5e0d57a.js"></script>
 
 
 
-    <a href="page-3">
+    <a href="page-14">
             <button type="submit" class="govuk-button" style="
         margin-top: 16px;
     ">
             Continue
           </button></a>
 
+
+
           <div>
-          <a href="page-1" class="govuk-back-link">Change my previous answer</a>
-        </div>
-
-
+              <a href="page-12" class="govuk-back-link">Change my previous answer</a>
+            </div>
 
 
 

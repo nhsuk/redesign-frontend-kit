@@ -16,15 +16,17 @@
 <link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
 
 
+
 {% block breadcrumb %}
   {{ phaseBanner('New', 'We are testing a new page layout — your <a href="#">feedback</a> will help us to improve it.') }}
 
-  {{ breadcrumbs('/', 'Home', '/section', 'Section') }}
+
 {% endblock %}
 
 {% block header %}
 <div class="nhsuk-reading-width">
-        <h1>What is your current address? </h1>
+
+        <h1>What is your name? </h1>
         </div>{% endblock %}
 
 {% block content %}
@@ -37,24 +39,55 @@
 
     <div class="nhsuk-reading-width">
 
-        <div style="background:#ffffff;padding:16px;">
+
+            <div class="govuk-form-group">
+                    <label class="govuk-label" for="sort">
+                      Title
+                    </label>
+                    <select class="govuk-select" id="sort" name="sort">
+                            <option value="master">Select</option> 
+                        <option value="master">Master</option>                      
+                    <option value="mr">Mr</option>
+                    <option value="miss">Miss</option>
+                      <option value="mrs" >Mrs</option>
+                      <option value="ms">Ms</option>
+                      <option value="mx">Mx</option>
+                      <option value="m">M</option>
+                    </select>
+                  </div>
+
+            <div class="govuk-form-group">
+                    <label class="govuk-label" for="name">
+                      First name
+                    </label>
+                    <input class="govuk-input" id="name" name="name" type="text">
+                    
+                  </div>
 
 
-                <div class="nhsuk-o-grid ">
-                        <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-half nhsuk-!-one-half">
-                          <p style="margin-top: 0px;">86 Albert Road<br />Leeds<br /> West Yorkshire
-                        </p>
-                        </div>
-                        <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-half nhsuk-!-one-half">
-                          <p style="text-align: right;margin-top: 0px;"><a href="">Reset</a></p>
-                        </div>
-
+                  <div class="govuk-form-group">
+                        <label class="govuk-label" for="name">
+                          Middle names
+                        </label>
+                        <input class="govuk-input" id="name" name="name" type="text">
+                        
                       </div>
 
+                      <div class="govuk-form-group">
+                            <label class="govuk-label" for="name">
+                              Last name
+                            </label>
+                            <input class="govuk-input" id="name" name="name" type="text">
+                            
+                          </div>
 
 
 
-    </div>
+
+                <script src="https://design-system.service.gov.uk/javascripts/vendor/iframeResizer.contentWindow.js"></script>
+                <script src="https://design-system.service.gov.uk/javascripts/govuk-frontend-e8916db391d2382b438540cae5e0d57a.js"></script>
+
+
 
     <a href="page-5">
             <button type="submit" class="govuk-button" style="
@@ -63,7 +96,9 @@
             Continue
           </button></a>
 
-
+          <div>
+          <a href="page-3" class="govuk-back-link">Change my previous answer</a>
+        </div>
 
 
 
