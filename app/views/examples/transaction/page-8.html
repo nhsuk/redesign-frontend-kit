@@ -1,0 +1,90 @@
+
+
+{% set title = 'Register with a GP' %}
+{% set parent = 'Health A-Z' %}
+{% from 'components/inset-text/macro.njk' import insetText %}
+{% from 'components/do-dont-list/macro.njk' import list %}
+{% from 'components/care-card/macro.njk' import careCard %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% from 'components/cookie-banner/macro.njk' import cookieBanner %}
+{% from 'components/emergency-alert/macro.njk' import emergencyAlert %}
+{% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
+{% from 'components/phase-banner/macro.njk' import phaseBanner %}
+{% from 'components/reveals/macro.njk' import reveal %}
+{% extends "includes/templates/article-page.html"%}
+
+<link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
+
+
+{% block header %}
+<div class="nhsuk-reading-width">
+
+
+        <h1>What is your current address? </h1>
+        </div>{% endblock %}
+
+{% block content %}
+
+
+
+
+
+
+
+    <div class="nhsuk-reading-width">
+
+            <fieldset class="govuk-fieldset">
+                  
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="address-line-1">
+                        House name / number (optional)
+                        <span class="govuk-visually-hidden">line 1 of 2</span>
+                      </label>
+                      <input class="govuk-input" id="address-line-1" name="address-line-1" type="text">
+                    </div>
+                  
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="address-postcode">
+                        Postcode
+                      </label>
+                      <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" >
+                    </div>
+
+                    <a href="page-9">
+                            <button type="submit" class="govuk-button" style="
+                        margin-top: 16px;
+                    ">
+                            Find address
+                          </button></a>
+
+
+
+                          <div>
+                              <a href="page-7" class="govuk-back-link">Change my previous answer</a>
+                            </div>
+                  </fieldset>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="content-divider content-divider--short"></div>
+
+
+
+{% endblock %}
+
+{% block footer %}
+  {{ feedbackBanner('Help us make the NHS website better', 'Your feedback helps us improve the NHS website.', '#', 'Take our short survey') }}
+{% endblock %}
+
+
