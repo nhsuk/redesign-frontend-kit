@@ -2,6 +2,7 @@
 
 {% set title = 'Register with a GP' %}
 {% set parent = 'Health A-Z' %}
+{% set navigation = 'transactional-gp' %}
 {% from 'components/inset-text/macro.njk' import insetText %}
 {% from 'components/do-dont-list/macro.njk' import list %}
 {% from 'components/care-card/macro.njk' import careCard %}
@@ -11,7 +12,7 @@
 {% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
 {% from 'components/phase-banner/macro.njk' import phaseBanner %}
 {% from 'components/reveals/macro.njk' import reveal %}
-{% extends "includes/templates/article-page.html"%}
+{% extends "includes/templates/transaction-page.html"%}
 
 <link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
 
@@ -23,11 +24,6 @@
 
 {% endblock %}
 
-{% block header %}
-<div class="nhsuk-reading-width">
-
-        <h1>What is your sex? </h1>
-        </div>{% endblock %}
 
 {% block content %}
 
@@ -48,7 +44,9 @@
 
                     <div class="govuk-form-group">
                             <fieldset class="govuk-fieldset">
-
+                                <legend >   
+                                    <h1 style="padding-bottom:40px;margin-top:25px;">What is your sex? </h1>
+                              </legend>
                               <div class="govuk-radios">
                                 <div class="govuk-radios__item">
                                   <input class="govuk-radios__input" id="where-do-you-live-1" name="where-do-you-live" type="radio" value="england">
