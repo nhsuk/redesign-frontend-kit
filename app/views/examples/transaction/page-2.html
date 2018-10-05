@@ -2,6 +2,7 @@
 
 {% set title = 'Register with a GP' %}
 {% set parent = 'Health A-Z' %}
+{% set navigation = 'transactional-gp' %}
 {% from 'components/inset-text/macro.njk' import insetText %}
 {% from 'components/do-dont-list/macro.njk' import list %}
 {% from 'components/care-card/macro.njk' import careCard %}
@@ -11,7 +12,8 @@
 {% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
 {% from 'components/phase-banner/macro.njk' import phaseBanner %}
 {% from 'components/reveals/macro.njk' import reveal %}
-{% extends "includes/templates/article-page.html"%}
+{% from 'components/pagination/macro.njk' import pagination, paginationNext, paginationPrevious %}
+{% extends "includes/templates/transaction-page.html"%}
 
 <link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
 
@@ -23,11 +25,6 @@
 
 {% endblock %}
 
-{% block header %}
-<div class="nhsuk-reading-width">
-
-        <h1>Do you know your NHS number? </h1>
-        </div>{% endblock %}
 
 {% block content %}
 
@@ -49,7 +46,8 @@
 
             <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">   
+              <legend >   
+                  <h1 style="padding-bottom:40px;margin-top:25px;">Do you know your NHS number? </h1>
             </legend>
               <div class="govuk-radios govuk-radios--conditional" data-module="radios">
                 <div class="govuk-radios__item">
@@ -99,18 +97,13 @@
 
 
 
-    <a href="page-3">
-            <button type="submit" class="govuk-button" style="
-        margin-top: 16px;
-    ">
+    <a href="page-3" type="submit" class="govuk-button" style="margin-bottom: 0px;">
             Continue
-          </button></a>
-
-          <div>
-          <a href="page-1" class="govuk-back-link">Change my previous answer</a>
-        </div>
+          </a>
 
 
+
+        {{ paginationPrevious("/examples/transaction/page-1", "Start page")}}
 
 
 
