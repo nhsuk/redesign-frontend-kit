@@ -2,6 +2,7 @@
 
 {% set title = 'Register with a GP' %}
 {% set parent = 'Health A-Z' %}
+{% set navigation = 'transactional-gp' %}
 {% from 'components/inset-text/macro.njk' import insetText %}
 {% from 'components/do-dont-list/macro.njk' import list %}
 {% from 'components/care-card/macro.njk' import careCard %}
@@ -11,17 +12,15 @@
 {% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
 {% from 'components/phase-banner/macro.njk' import phaseBanner %}
 {% from 'components/reveals/macro.njk' import reveal %}
-{% extends "includes/templates/article-page.html"%}
+{% extends "includes/templates/transaction-page.html"%}
 
 <link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
 
+{% block breadcrumb %}
+  {{ phaseBanner('New', 'We are testing a new page layout — your <a href="#">feedback</a> will help us to improve it.') }}
 
-{% block header %}
-<div class="nhsuk-reading-width">
 
-
-        <h1>What is your current address? </h1>
-        </div>{% endblock %}
+{% endblock %}
 
 {% block content %}
 
@@ -34,7 +33,9 @@
     <div class="nhsuk-reading-width">
 
             <fieldset class="govuk-fieldset">
-                  
+                <legend >   
+                    <h1 class="nhsuk-c-transaction-head">What is your current address? </h1>
+              </legend>
                     <div class="govuk-form-group">
                       <label class="govuk-label" for="address-line-1">
                         House name / number (optional)
@@ -50,18 +51,9 @@
                       <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" >
                     </div>
 
-                    <a href="page-9">
-                            <button type="submit" class="govuk-button" style="
-                        margin-top: 16px;
-                    ">
-                            Find address
-                          </button></a>
+                    <a href="page-9" type="submit" class="govuk-button" style="margin-bottom: 24px;">Continue</a>
 
-
-
-                          <div>
-                              <a href="page-7" class="govuk-back-link">Change my previous answer</a>
-                            </div>
+                    <p class="nhsuk-change-answer"><a href="page-7" >Change my previous answer</a></p>
                   </fieldset>
 
 

@@ -2,6 +2,7 @@
 
 {% set title = 'Register with a GP' %}
 {% set parent = 'Health A-Z' %}
+{% set navigation = 'transactional-gp' %}
 {% from 'components/inset-text/macro.njk' import insetText %}
 {% from 'components/do-dont-list/macro.njk' import list %}
 {% from 'components/care-card/macro.njk' import careCard %}
@@ -11,18 +12,18 @@
 {% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
 {% from 'components/phase-banner/macro.njk' import phaseBanner %}
 {% from 'components/reveals/macro.njk' import reveal %}
-{% extends "includes/templates/article-page.html"%}
+{% extends "includes/templates/transaction-page.html"%}
+
 
 <link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
 
+{% block breadcrumb %}
+  {{ phaseBanner('New', 'We are testing a new page layout — your <a href="#">feedback</a> will help us to improve it.') }}
 
 
-{% block header %}
-<div class="nhsuk-reading-width">
+{% endblock %}
 
 
-        <h1>Is this your current address? </h1>
-        </div>{% endblock %}
 
 {% block content %}
 
@@ -33,6 +34,7 @@
 
 
     <div class="nhsuk-reading-width">
+        <h1 class="nhsuk-c-transaction-head">Is this your current address? </h1>
 
         <div style="background:#ffffff;padding:16px;">
 
@@ -52,14 +54,9 @@
 
         
 
-    <p><a href="page-8">No I need to change this</a></p>
+    <a href="page-11" type="submit" class="govuk-button" style="margin-bottom: 24px;">Continue</a>
 
-    <a href="page-11">
-            <button type="submit" class="govuk-button" style="
-        margin-top: 16px;
-    ">
-            Continue
-          </button></a>
+    <p class="nhsuk-change-answer"><a href="page-8" >Change my previous answer</a></p>
 
 
 

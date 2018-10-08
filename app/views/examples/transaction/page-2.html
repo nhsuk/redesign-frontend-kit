@@ -2,6 +2,7 @@
 
 {% set title = 'Register with a GP' %}
 {% set parent = 'Health A-Z' %}
+{% set navigation = 'transactional-gp' %}
 {% from 'components/inset-text/macro.njk' import insetText %}
 {% from 'components/do-dont-list/macro.njk' import list %}
 {% from 'components/care-card/macro.njk' import careCard %}
@@ -11,11 +12,12 @@
 {% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
 {% from 'components/phase-banner/macro.njk' import phaseBanner %}
 {% from 'components/reveals/macro.njk' import reveal %}
-{% extends "includes/templates/article-page.html"%}
+{% from 'components/pagination/macro.njk' import pagination, paginationNext, paginationPrevious %}
+{% extends "includes/templates/transaction-page.html"%}
 
 <link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
 
-
+<link rel="stylesheet" href="/assets/css/ben-shame.css">
 
 {% block breadcrumb %}
   {{ phaseBanner('New', 'We are testing a new page layout — your <a href="#">feedback</a> will help us to improve it.') }}
@@ -23,11 +25,6 @@
 
 {% endblock %}
 
-{% block header %}
-<div class="nhsuk-reading-width">
-
-        <h1>Do you know your NHS number? </h1>
-        </div>{% endblock %}
 
 {% block content %}
 
@@ -49,8 +46,13 @@
 
             <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">   
+              <legend >   
+                  <h1 class="nhsuk-c-transaction-head">Do you know your NHS number? </h1>
             </legend>
+
+            <span class="nhsuk-hint">This is a 10 digit number, like 485 777 3456</span>
+            <span class="nhsuk-hint-last">You can find this on any letter sent to you by the NHS, on a prescription or by logging in to a GP practice online service</span>
+              </span>
               <div class="govuk-radios govuk-radios--conditional" data-module="radios">
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="how-contacted-conditional-1" name="how-contacted" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional-1">
@@ -84,35 +86,31 @@
                 </form>
 
 
-                <div role="note" aria-label="Information" class="nhsuk-c-inset-text">
-                        <p><strong>NHS number</strong></p>
-                        <p>It's a ten digit number on your prescriptions or GP an hospital letters. For example. '943 476 5919'</p>
-                      </div>
 
-                      {{ reveal('Why am I being asked this question?', '
-                      <p>Only Luscombe Family Practice sees the personal information you put this application.</p>
-                      <p>Its sent securely to them so they can add it to your medical record. Its not stored for any other purpose.</p>
-                      ') }}
 
                 <script src="https://design-system.service.gov.uk/javascripts/vendor/iframeResizer.contentWindow.js"></script>
                 <script src="https://design-system.service.gov.uk/javascripts/govuk-frontend-e8916db391d2382b438540cae5e0d57a.js"></script>
 
 
 
-    <a href="page-3">
-            <button type="submit" class="govuk-button" style="
-        margin-top: 16px;
-    ">
+    <a href="page-3" type="submit" class="govuk-button" style="margin-bottom: 0px;">
             Continue
-          </button></a>
+          </a>
 
-          <div>
-          <a href="page-1" class="govuk-back-link">Change my previous answer</a>
-        </div>
+          <details class="nhsuk-c-details-transaction" role="group">
+              <summary class="nhsuk-c-summary" data-analytics="summary" role="button" aria-controls="details-content-0" aria-expanded="false">
+                <span class="nhsuk-c-summary__title">Why am I being asked this question?</span>
+              </summary>
+              <div class="nhsuk-c-details__content" id="details-content-0" aria-hidden="true">
+                
+                      <p>Only Luscombe Family Practice sees the personal information you put this application.</p>
+                      <p>Its sent securely to them so they can add it to your medical record. Its not stored for any other purpose.</p>
+                      
+              </div>
+            </details>
 
 
-
-
+<p>          <a href="page-1" >Change my previous answer</a></p>
 
 
 

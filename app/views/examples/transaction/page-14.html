@@ -2,6 +2,7 @@
 
 {% set title = 'Register with a GP' %}
 {% set parent = 'Health A-Z' %}
+{% set navigation = 'transactional-gp' %}
 {% from 'components/inset-text/macro.njk' import insetText %}
 {% from 'components/do-dont-list/macro.njk' import list %}
 {% from 'components/care-card/macro.njk' import careCard %}
@@ -11,7 +12,7 @@
 {% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
 {% from 'components/phase-banner/macro.njk' import phaseBanner %}
 {% from 'components/reveals/macro.njk' import reveal %}
-{% extends "includes/templates/article-page.html"%}
+{% extends "includes/templates/transaction-page.html"%}
 
 <link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
 
@@ -23,13 +24,7 @@
 
 {% endblock %}
 
-{% block header %}
-<div class="nhsuk-reading-width">
 
-
-
-        <h1>Have you ever had any of these conditions? </h1>
-        </div>{% endblock %}
 
 {% block content %}
 
@@ -46,8 +41,8 @@
 
             <div class="govuk-form-group">
                     <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
-                      <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-
+                        <legend >   
+                            <h1 style="padding-bottom:40px;margin-top:25px;">Have you ever had any of these conditions?  </h1>
                       </legend>
                       <span id="waste-hint" class="govuk-hint">
                         Select all that apply.

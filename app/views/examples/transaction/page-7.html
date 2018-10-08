@@ -2,6 +2,7 @@
 
 {% set title = 'Register with a GP' %}
 {% set parent = 'Health A-Z' %}
+{% set navigation = 'transactional-gp' %}
 {% from 'components/inset-text/macro.njk' import insetText %}
 {% from 'components/do-dont-list/macro.njk' import list %}
 {% from 'components/care-card/macro.njk' import careCard %}
@@ -11,7 +12,7 @@
 {% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
 {% from 'components/phase-banner/macro.njk' import phaseBanner %}
 {% from 'components/reveals/macro.njk' import reveal %}
-{% extends "includes/templates/article-page.html"%}
+{% extends "includes/templates/transaction-page.html"%}
 
 <link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
 
@@ -23,11 +24,6 @@
 
 {% endblock %}
 
-{% block header %}
-<div class="nhsuk-reading-width">
-
-        <h1>Have you ever lived abroad? </h1>
-        </div>{% endblock %}
 
 {% block content %}
 
@@ -48,6 +44,11 @@
 
                     <div class="govuk-form-group">
                             <fieldset class="govuk-fieldset">
+
+                                    <legend >   
+                                        <h1 class="nhsuk-c-transaction-head">Have you ever lived abroad? </h1>
+                                  </legend>
+
 
                               <div class="govuk-radios">
                                 <div class="govuk-radios__item">
@@ -106,16 +107,10 @@
 
 
 
-    <a href="page-8">
-            <button type="submit" class="govuk-button" style="
-        margin-top: 16px;
-    ">
-            Continue
-          </button></a>
+                <a href="page-8" type="submit" class="govuk-button" style="margin-bottom: 24px;">Continue</a>
 
-          <div>
-          <a href="page-6" class="govuk-back-link">Change my previous answer</a>
-        </div>
+                <p class="nhsuk-change-answer"><a href="page-6" >Change my previous answer</a></p>
+
 
 
 
