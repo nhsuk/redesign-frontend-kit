@@ -23,12 +23,7 @@
 
 {% endblock %}
 
-{% block header %}
-<div class="nhsuk-reading-width">
 
-
-        <h1>Is this your current address? </h1>
-        </div>{% endblock %}
 
 {% block content %}
 
@@ -39,7 +34,7 @@
 
 
     <div class="nhsuk-reading-width">
-        <h1 style="padding-bottom:40px;margin-top:25px;">What is your current address? </h1>
+        <h1 class="nhsuk-c-transaction-head">Is this your current address? </h1>
 
         <div style="background:#ffffff;padding:16px;">
 
@@ -59,14 +54,9 @@
 
         
 
-    <p><a href="page-8">No I need to change this</a></p>
+    <a href="page-11" type="submit" class="govuk-button" style="margin-bottom: 24px;">Continue</a>
 
-    <a href="page-11">
-            <button type="submit" class="govuk-button" style="
-        margin-top: 16px;
-    ">
-            Continue
-          </button></a>
+    <p class="nhsuk-change-answer"><a href="page-8" >Change my previous answer</a></p>
 
 
 
