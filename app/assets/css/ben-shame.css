@@ -1,0 +1,28 @@
+.nhsuk-c-details-transaction {
+    display: block;
+    margin: 24px 0;
+}
+
+
+.nhsuk-c-transaction-head {
+   padding-bottom:24px;
+    margin-top:24px;
+
+}
+
+
+.nhsuk-hint{
+    display: block;
+    margin-bottom: 16px;
+    color: #425563;
+}
+
+.nhsuk-hint-last{
+    display: block;
+    margin-bottom: 24px;
+    color: #425563;
+}
+
+.nhsuk-change-answer {
+    margin-top:0px;
+}
