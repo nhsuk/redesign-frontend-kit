@@ -407,4 +407,9 @@ router.get('/examples/sign-and-symptoms-of-pregnancy', (req, res) => {
   res.render('examples/sign-and-symptoms-of-pregnancy', {});
 });
 
+
+router.get('/examples/landingpage-g', (req, res) => {
+  res.render('examples/landingpage-g', {});
+});
+
 module.exports = router;
