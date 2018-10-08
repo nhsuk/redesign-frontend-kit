@@ -34,10 +34,10 @@
 
     <div class="nhsuk-reading-width">
 
-            <fieldset class="govuk-fieldset">
+            <fieldset class="govuk-fieldset nhsuk-fieldset">
 
                 <legend >   
-                    <h1 style="padding-bottom:40px;margin-top:25px;">How can Rose Medical Practice contact you?  </h1>
+                  <h1 class="nhsuk-c-transaction-head">How can Rose Medical Practice contact you?  </h1>
               </legend>
                     <div class="govuk-form-group">
                       <label class="govuk-label" for="address-line-1">
@@ -63,32 +63,37 @@
                       <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text">
                     </div>
                   
-                    {{ reveal('Why am I being asked this question?', '
-                    <p>Only Luscombe Family Practice sees the personal information you put this application.</p>
-                    <p>Its sent securely to them so they can add it to your medical record. Its not stored for any other purpose.</p>
-                    ') }}
+
                   
                   </fieldset>
 
 
 
-
+</div>
 
         
 
 
 
-    <a href="page-12">
-            <button type="submit" class="govuk-button" style="
-        margin-top: 16px;
-    ">
-            Continue
-          </button></a>
-
-          <div>
-                <a href="page-8" class="govuk-back-link">Change my previous answer</a>
-              </div>
-
+                  <a href="page-12" type="submit" class="govuk-button" style="margin-bottom: 0px;">
+                    Continue
+                  </a>
+        
+                  <details role="group" style="margin-top:24px;">
+                    <summary data-analytics="summary" role="button" aria-controls="details-content-0" aria-expanded="false" style="color: #005eb8;">
+                        <span class="details__summary" style="text-decoration: underline;    color: #005eb8;font-weight:400;">Why am I being asked this question?</span>
+                    </summary>
+                    <div class="details__content" id="details-content-0" aria-hidden="true">
+                        <div class="block-markdown">
+                            <p>Only Luscombe Family Practice sees the personal information you put this application.</p>
+                          <p>Its sent securely to them so they can add it to your medical record. Its not stored for any other purpose.</p>
+                
+                    </div>
+                    </div>
+                </details>
+        
+        
+        <p>          <a href="page-10" >Change my previous answer</a></p>
 
 
 

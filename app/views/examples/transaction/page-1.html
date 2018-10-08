@@ -48,20 +48,26 @@
      
     </div>
 
-    {{ reveal('How your personal information is used', '
-    <p>Only Rose Medical Practice sees the personal information you put this application.</p>
-    <p>Its sent securely to them so they can add it to your medical record. Its not stored for any other purpose.</p>
-    ') }}
 
-      <a href="page-2"><button type="submit" class="govuk-button" style="margin-top: 16px;">
-          Start 
-        </button></a>
+      <a href="page-2" type="submit" class="govuk-button" style="margin-top: 16px;">
+          Start</a>
 
         <!--<a href="page-2" role="button" class="govuk-button govuk-button--start">
             Start now
           </a>-->
 
-
+          <details role="group" style="margin-top:2px;">
+            <summary data-analytics="summary" role="button" aria-controls="details-content-0" aria-expanded="false" style="color: #005eb8;">
+                <span class="details__summary" style="text-decoration: underline;    color: #005eb8;font-weight:400;">How your personal information is handled</span>
+            </summary>
+            <div class="details__content" id="details-content-0" aria-hidden="true">
+                <div class="block-markdown">
+                    <p>Only Luscombe Family Practice sees the personal information you put this application.</p>
+                  <p>Its sent securely to them so they can add it to your medical record. Its not stored for any other purpose.</p>
+        
+            </div>
+            </div>
+        </details>
 
 
 <div class="content-divider content-divider--short"></div>
