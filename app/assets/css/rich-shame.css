@@ -1,0 +1,24 @@
+.govuk-button {
+    font-weight: 600;
+    font-size: 19px;
+    /* font-size: 1rem; */
+    line-height: 1.1875;
+    margin-top: 0;
+    margin-bottom: 22px;
+    padding: 9px 14px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #00823b;
+    -webkit-box-shadow: 0 3px 0 #003618;
+    box-shadow: 0 3px 0 #003618;
+ }
+
+.govuk-radios__input+.govuk-radios__label::before{
+    background: white;
+    border-color: #425563;
+}
+
+.govuk-radios__label {
+    padding: 8px 15px 5px 8px;
+}
