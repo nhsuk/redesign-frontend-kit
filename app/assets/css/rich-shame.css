@@ -16,9 +16,18 @@
 
 .govuk-radios__input+.govuk-radios__label::before{
     background: white;
-    border-color: #425563;
+    border: 2px solid #425563;
 }
 
 .govuk-radios__label {
     padding: 8px 15px 5px 8px;
 }
+
+.govuk-checkboxes__input+.govuk-checkboxes__label::before {
+    background: white;
+    border: 2px solid #425563;
+}
+
+/* .govuk-input {
+    border: 1px solid #425563;
+} */
