@@ -37,7 +37,19 @@
     <div class="nhsuk-reading-width">
 
 
+        <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="error-summary">
+            <h2 class="govuk-error-summary__title" id="error-summary-title">
+              There is a problem
+            </h2>
+            <div class="govuk-error-summary__body">
+              <ul class="govuk-list govuk-error-summary__list">
+                <li>
+                  <a href="#dob-error">Enter more detail about your major surgery</a>
+                </li>
 
+              </ul>
+            </div>
+          </div>
 
             <div class="govuk-form-group">
                     <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
@@ -146,14 +158,16 @@ margin-bottom: 24px;
                         </div>
                       
                       
-                        <div class="govuk-form-group">
-                          <label class="govuk-label" for="address-town">
-                            I had major surgery
-                          </label>
-                          <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text">
-                        </div>
                       
-
+                        <div class="govuk-form-group govuk-form-group--error">
+                            <label class="govuk-label" for="more-detail">
+                                I had major surgery
+                            </label>
+                            <span id="more-detail-error" class="govuk-error-message">
+                              Enter more detail
+                            </span>
+                            <textarea class="govuk-textarea govuk-textarea--error" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint more-detail-error"></textarea>
+                          </div>
 
                       
                       </fieldset>                  

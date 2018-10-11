@@ -37,6 +37,8 @@
     <div class="nhsuk-reading-width">
 
 
+
+
         <div class="govuk-form-group nhsuk-form-group">
             <fieldset class="govuk-fieldset">
                 <legend >   
@@ -44,13 +46,15 @@
               </legend>
 
 
-            <div class="govuk-form-group">
-                    <label class="govuk-label" for="name">
-                      First name
-                    </label>
-                    <input class="govuk-input" id="name" name="name" type="text">
-                    
-                  </div>
+              <div class="govuk-form-group govuk-form-group--error">
+                <label class="govuk-label" for="full-name">
+                  First name
+                </label>
+                <span id="full-name-error" class="govuk-error-message">
+                  Enter your first name
+                </span>
+                <input class="govuk-input govuk-input--error" id="full-name" name="full-name" type="text" aria-describedby="full-name-error">
+              </div>
 
 
                   <div class="govuk-form-group">
@@ -77,7 +81,7 @@
 
 
 
-                <button type="submit" class="govuk-button" onclick="window.location.href='page-5'" ">Continue</button>
+                <button type="submit" class="govuk-button" onclick="window.location.href='page-5'" >Continue</button>
 
                 <p class="nhsuk-change-answer"><a href="page-3" >Change my previous answer</a></p>
 
