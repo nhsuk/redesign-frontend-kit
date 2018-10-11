@@ -145,15 +145,20 @@ margin-bottom: 24px;
                           <input class="govuk-input" id="address-line-1" name="address-line-1" type="text">
                         </div>
                       
-                      
-                        <div class="govuk-form-group">
-                          <label class="govuk-label" for="address-town">
-                            I had major surgery
-                          </label>
-                          <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text">
-                        </div>
-                      
 
+                      
+                        <div class="govuk-character-count" data-module="character-count" data-maxlength="200">
+                          <div class="govuk-form-group">
+                            <label class="govuk-label" for="with-hint">
+                              I had major surgery
+                            </label>
+                            <textarea class="govuk-textarea js-character-count " id="with-hint" name="with-hint" rows="5" aria-describedby="with-hint-hint"></textarea>
+                          </div>
+                        
+                          <span id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+                            You can enter up to 200 characters
+                          </span>
+                        </div>
 
                       
                       </fieldset>                  
@@ -165,6 +170,8 @@ margin-bottom: 24px;
 
                 <script src="https://design-system.service.gov.uk/javascripts/vendor/iframeResizer.contentWindow.js"></script>
                 <script src="https://design-system.service.gov.uk/javascripts/govuk-frontend-e8916db391d2382b438540cae5e0d57a.js"></script>
+
+                <script src="https://design-system.service.gov.uk/javascripts/govuk-frontend-d27023fee8c3ad5b2c91404944bd45fc.js"></script>
 
 
 
