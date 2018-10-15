@@ -44,8 +44,21 @@
                         <legend >   
                           <h1 class="nhsuk-c-transaction-head">Have you ever had any of these conditions?  </h1>
                       </legend>
+
+                      <details role="group" style="margin-bottom:24px;">
+                          <summary data-analytics="summary" role="button" aria-controls="details-content-0" aria-expanded="false" style="color: #005eb8;">
+                              <span class="details__summary" style="text-decoration: underline;    color: #005eb8;font-weight:400;">Why am I being asked this question?</span>
+                          </summary>
+                          <div class="details__content" id="details-content-0" aria-hidden="true">
+                              <div class="block-markdown">
+                                  <p>Only Rose Medical Practice sees the personal information you put in this application.</p>
+                      
+                          </div>
+                          </div>
+                      </details>
+
                       <span id="waste-hint" class="govuk-hint">
-                        Select all that apply.
+                        Select all that apply
                       </span>
                       <div class="govuk-checkboxes">
                         <div class="govuk-checkboxes__item">
@@ -152,7 +165,7 @@ margin-bottom: 24px;
                             <label class="govuk-label" for="with-hint">
                               I had major surgery
                             </label>
-                            <textarea class="govuk-textarea js-character-count " id="with-hint" name="with-hint" rows="5" aria-describedby="with-hint-hint"></textarea>
+                            <textarea class="govuk-textarea js-character-count " id="with-hint" name="with-hint" rows="8" aria-describedby="with-hint-hint"></textarea>
                           </div>
                         
                           <span id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
@@ -177,20 +190,9 @@ margin-bottom: 24px;
 
                 <button type="submit" class="govuk-button" onclick="window.location.href='page-15'" >Check my answers</button>
       
-                <details role="group" >
-                  <summary data-analytics="summary" role="button" aria-controls="details-content-0" aria-expanded="false" style="color: #005eb8;">
-                      <span class="details__summary" style="text-decoration: underline;    color: #005eb8;font-weight:400;">Why am I being asked this question?</span>
-                  </summary>
-                  <div class="details__content" id="details-content-0" aria-hidden="true">
-                      <div class="block-markdown">
-                          <p>Only Luscombe Family Practice sees the personal information you put this application.</p>
-                        <p>Its sent securely to them so they can add it to your medical record. Its not stored for any other purpose.</p>
-              
-                  </div>
-                  </div>
-              </details>
 
-                  <p>          <a href="page-13" >Change my previous answer</a></p>
+
+                  <p class="nhsuk-change-answer">          <a href="page-13" >Change my previous answer</a></p>
 
 
 
