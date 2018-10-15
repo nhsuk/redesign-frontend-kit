@@ -32,3 +32,16 @@
 /* .govuk-input {
     border: 1px solid #425563;
 } */
+
+.nhsuk-page-heading {
+    padding: 12px 0 18px 0;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.nhsuk-c-transaction-head {
+    padding-bottom: 18px;
+    margin-top: 12px;
+    font-size: 1.7em;
+    line-height: 30px;
+}
