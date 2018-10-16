@@ -36,55 +36,92 @@
 
 
         <div class="govuk-form-group nhsuk-form-group">
+
+
+
+
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                    <legend >
+                        <h1 class="nhsuk-c-transaction-head">How do you want to be contacted?  </h1>
+                    </legend>
+      
+
+                  <div class="govuk-checkboxes" data-module="checkboxes">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="citizenship-conditional-1" name="citizen" type="checkbox" value="email" data-aria-controls="conditional-citizenship-conditional-1">
+                      <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-1">
+                        Email
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-citizenship-conditional-1">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="contact-by-email">
+                          Email address
+                        </label>
+                        <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email">
+                      </div>
+              
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="citizenship-conditional-2" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
+                      <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                        Phone
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-citizenship-conditional-2">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="contact-by-phone">
+                          Phone number
+                        </label>
+                        <input class="govuk-input govuk-!-width-one-third" id="contact-by-phone" name="contact-by-phone" type="tel">
+                      </div>
+              
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="citizenship-conditional-3" name="citizen" type="checkbox" value="text message" data-aria-controls="conditional-citizenship-conditional-3">
+                      <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-3">
+                        Text message
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-citizenship-conditional-3">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="contact-by-text">
+                          Mobile phone number
+                        </label>
+                        <input class="govuk-input govuk-!-width-one-third" id="contact-by-text" name="contact-by-text" type="tel">
+                      </div>
+              
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             
           
-          <fieldset class="govuk-fieldset nhsuk-fieldset">
-              <legend >
-                  <h1 class="nhsuk-c-transaction-head">How do you want to be contacted?  </h1>
-              </legend>
-
-              <details role="group" style="margin-bottom:24px;">
-                  <summary data-analytics="summary" role="button" aria-controls="details-content-0" aria-expanded="false" style="color: #005eb8;">
-                      <span class="details__summary" style="text-decoration: underline;    color: #005eb8;font-weight:400;">Why we ask you for your contact details</span>
-                  </summary>
-                  <div class="details__content" id="details-content-0" aria-hidden="true">
-                      <div class="block-markdown">
-                          <p>Only Rose Medical Practice sees the personal information you put in this application.</p>
-              
-                  </div>
-                  </div>
-              </details>
-              <span id="waste-hint" class="govuk-hint">
-                  Select all that apply
-                </span>
-                <div class="govuk-checkboxes">
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste-1">
-                      Phone
-                    </label>
-                  </div>
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste-2">
-                      Email
-                    </label>
-                  </div>
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-                      Text message
-                    </label>
-                  </div>
-                </div>
+          
 
 
 
 
-
-
-            </fieldset>
-          </div>
 
 
 
@@ -97,7 +134,7 @@
         
 <script src="https://design-system.service.gov.uk/javascripts/vendor/iframeResizer.contentWindow.js"></script>
 <script src="https://design-system.service.gov.uk/javascripts/govuk-frontend-e8916db391d2382b438540cae5e0d57a.js"></script>
-
+<script src="https://design-system.service.gov.uk/javascripts/govuk-frontend-d27023fee8c3ad5b2c91404944bd45fc.js"></script>
 
                   <button type="submit" class="govuk-button" onclick="window.location.href='page-11-b'" >Continue</button>
         
