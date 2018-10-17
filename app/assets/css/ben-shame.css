@@ -41,3 +41,21 @@
 
 
 
+.nhsuk-logo-smaller {
+    height:20px !important; 
+    width:20px !important;
+
+}
+
+.nhsuk-c-transaction-head  {
+    margin-top:24px !important;
+    padding-bottom:24px !important; 
+
+}
+
+
+.govuk-error-summary {
+
+margin-top:24px !important;
+
+}
