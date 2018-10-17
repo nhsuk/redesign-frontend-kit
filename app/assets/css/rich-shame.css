@@ -45,3 +45,24 @@
     font-size: 1.7em;
     line-height: 30px;
 }
+
+.nhsuk-global-footer__logo {
+    display:none !important;
+}
+
+.nhsuk-global-footer ul {
+    padding: 15px 0;
+}
+
+.nhsuk-global-header__logo {
+    float: left;
+    padding: 10px 0;
+}
+
+.nhsuk-o-main-wrapper {
+    padding: 15px 0 20px;
+}
+
+.govuk-label {
+    margin-bottom: 0px;
+}
