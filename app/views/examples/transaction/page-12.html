@@ -1,0 +1,109 @@
+
+
+{% set title = 'Register with a GP' %}
+{% set parent = 'Health A-Z' %}
+{% set navigation = 'transactional-gp' %}
+{% from 'components/inset-text/macro.njk' import insetText %}
+{% from 'components/do-dont-list/macro.njk' import list %}
+{% from 'components/care-card/macro.njk' import careCard %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% from 'components/cookie-banner/macro.njk' import cookieBanner %}
+{% from 'components/emergency-alert/macro.njk' import emergencyAlert %}
+{% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
+{% from 'components/phase-banner/macro.njk' import phaseBanner %}
+{% from 'components/reveals/macro.njk' import reveal %}
+{% extends "includes/templates/transaction-page.html"%}
+
+<link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
+
+
+
+{% block breadcrumb %}
+
+
+{% endblock %}
+
+
+{% block content %}
+
+
+
+
+
+
+
+    <div class="nhsuk-reading-width">
+
+
+
+
+        <form novalidate>
+      
+        
+
+
+            <div class="govuk-form-group nhsuk-form-group" style="margin-top:24px !important;">
+            <fieldset class="govuk-fieldset nhsuk-fieldset">
+                <legend >   
+                  <h1 class="nhsuk-c-transaction-head">Are you taking any regular medication?  </h1>
+              </legend>
+              <details role="group" style="margin-bottom: 24px;">
+                  <summary data-analytics="summary" role="button" aria-controls="details-content-0" aria-expanded="false" style="color: #005eb8;">
+                      <span class="details__summary" style="text-decoration: underline;    color: #005eb8;font-weight:400;">Why am I being asked this question?</span>
+                  </summary>
+                  <div class="details__content" id="details-content-0" aria-hidden="true">
+                      <div class="block-markdown">
+                          <p>Only Luscombe Family Practice sees the personal information you put this application.</p>
+                        <p>Its sent securely to them so they can add it to your medical record. Its not stored for any other purpose.</p>
+              
+                  </div>
+                  </div>
+              </details>
+
+              <div class="govuk-character-count" data-module="character-count" data-maxlength="200">
+                  <div class="govuk-form-group">
+
+                    <textarea class="govuk-textarea js-character-count " id="with-hint" name="with-hint" rows="8" aria-describedby="with-hint-hint"></textarea>
+                  </div>
+                
+                  <span id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite" style="
+                  margin-bottom: 0px;
+              ">
+                    You can enter up to 500 characters
+                  </span>
+                </div>
+            </fieldset>
+            </div>
+            
+            
+                  
+                </form>
+
+
+                <script src="https://design-system.service.gov.uk/javascripts/vendor/iframeResizer.contentWindow.js"></script>
+                <script src="https://design-system.service.gov.uk/javascripts/govuk-frontend-e8916db391d2382b438540cae5e0d57a.js"></script>
+
+                <script src="https://design-system.service.gov.uk/javascripts/govuk-frontend-d27023fee8c3ad5b2c91404944bd45fc.js"></script>
+
+                <script src="../../../assets/js/gds.js"></script>
+                <script src="../../../assets/js/gds-2.js"></script>
+                <script src="../../../assets/js/gds-3.js"></script>
+                <button type="submit" class="govuk-button" onclick="window.location.href='page-13'" >Continue</button>
+      
+
+
+                  <p style="margin-top: 0px;">          <a href="page-11" >Change my previous answer</a></p>
+
+
+
+<div class="content-divider content-divider--short"></div>
+
+
+
+{% endblock %}
+
+{% block footer %}
+  {{ feedbackBanner('Help us make the NHS website better', 'Your feedback helps us improve the NHS website.', '#', 'Take our short survey') }}
+{% endblock %}
+
+

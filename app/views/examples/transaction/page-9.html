@@ -1,0 +1,108 @@
+
+
+{% set title = 'Register with a GP' %}
+{% set parent = 'Health A-Z' %}
+{% set navigation = 'transactional-gp' %}
+{% from 'components/inset-text/macro.njk' import insetText %}
+{% from 'components/do-dont-list/macro.njk' import list %}
+{% from 'components/care-card/macro.njk' import careCard %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% from 'components/cookie-banner/macro.njk' import cookieBanner %}
+{% from 'components/emergency-alert/macro.njk' import emergencyAlert %}
+{% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
+{% from 'components/phase-banner/macro.njk' import phaseBanner %}
+{% from 'components/reveals/macro.njk' import reveal %}
+{% extends "includes/templates/transaction-page.html"%}
+
+<link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
+
+
+{% block breadcrumb %}
+
+
+{% endblock %}
+
+{% block content %}
+
+
+
+
+
+
+
+    <div class="nhsuk-reading-width">
+      <div class="govuk-form-group nhsuk-form-group" style="margin-top:24px !important;">
+            <fieldset class="govuk-fieldset">
+                        <legend >   
+                            <h1 class="nhsuk-c-transaction-head">Choose your address</h1>
+                        </legend>
+            </fieldset>
+
+
+<div style="border-left:4px solid #768692; background-color:white; padding:16px 16px 16px 16px;margin-bottom:16px;">
+    <a href="page-10"><p style="margin-top:0px;">82 Albert Road, Leeds, West Yorkshire</p></a>
+
+</div>
+
+<div style="border-left:4px solid #768692; background-color:white; padding:16px 16px 16px 16px;margin-bottom:16px;">
+  <a href="page-10"><p style="margin-top:0px;">84 Albert Road, Leeds, West Yorkshire</p></a>
+
+</div>
+
+<div style="border-left:4px solid #768692; background-color:white; padding:16px 16px 16px 16px;margin-bottom:16px;">
+  <a href="page-10"><p style="margin-top:0px;">86 Albert Road, Leeds, West Yorkshire</p></a>
+
+</div>
+
+<div style="border-left:4px solid #768692; background-color:white; padding:16px 16px 16px 16px;margin-bottom:16px;">
+  <a href="page-10"><p style="margin-top:0px;">88 Albert Road, Leeds, West Yorkshire</p></a>
+
+</div>
+
+<div style="border-left:4px solid #768692; background-color:white; padding:16px 16px 16px 16px;margin-bottom:16px;">
+  <a href="page-10"><p style="margin-top:0px;">90 Albert Road, Leeds, West Yorkshire</p></a>
+
+</div>
+
+<div style="border-left:4px solid #768692; background-color:white; padding:16px 16px 16px 16px;margin-bottom:16px;">
+  <a href="page-10"><p style="margin-top:0px;">92 Albert Road, Leeds, West Yorkshire</p></a>
+
+</div>
+
+<div style="border-left:4px solid #768692; background-color:white; padding:16px 16px 16px 16px;margin-bottom:24px;">
+  <a href="page-10"><p style="margin-top:0px;">94 Albert Road, Leeds, West Yorkshire</p></a>
+
+</div></div>
+
+<p class="nhsuk-change-answer" style="padding-bottom:24px;"><a href="page-8" >My address is not here. Change my previous answer.</a></p>
+
+
+
+    
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="content-divider content-divider--short"></div>
+
+
+
+{% endblock %}
+
+{% block footer %}
+  {{ feedbackBanner('Help us make the NHS website better', 'Your feedback helps us improve the NHS website.', '#', 'Take our short survey') }}
+{% endblock %}
+
+

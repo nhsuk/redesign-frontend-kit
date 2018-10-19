@@ -1,0 +1,62 @@
+.govuk-button {
+    font-weight: 600;
+    font-size: 19px;
+    /* font-size: 1rem; */
+    line-height: 1.1875;
+    margin-top: 0;
+    margin-bottom: 26px;
+    padding: 12px 16px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #00823b;
+    -webkit-box-shadow: 0 4px 0 #00190c;
+    box-shadow: 0 4px 0 #003618;
+    width: auto;
+ }
+
+.govuk-radios__input+.govuk-radios__label::before{
+    background: white;
+    border: 2px solid #425563;
+}
+
+.govuk-radios__label {
+    padding: 8px 15px 5px 8px;
+}
+
+.govuk-checkboxes__input+.govuk-checkboxes__label::before {
+    background: white;
+    border: 2px solid #425563;
+}
+
+/* .govuk-input {
+    border: 1px solid #425563;
+} */
+
+.nhsuk-page-heading {
+    padding: 12px 0 18px 0;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.nhsuk-c-transaction-head {
+    padding-bottom: 18px;
+    margin-top: 12px;
+    font-size: 1.7em;
+    line-height: 30px;
+}
+
+.nhsuk-global-footer__logo {
+}
+
+.nhsuk-global-footer ul {
+    padding: 15px 0;
+}
+
+.nhsuk-o-main-wrapper {
+    padding: 0 0 24px;
+}
+
+.govuk-label {
+    margin-bottom: 0px;
+}

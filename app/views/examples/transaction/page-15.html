@@ -1,0 +1,313 @@
+
+
+{% set title = 'Register with a GP' %}
+{% set parent = 'Health A-Z' %}
+{% set navigation = 'transactional-gp' %}
+{% from 'components/inset-text/macro.njk' import insetText %}
+{% from 'components/do-dont-list/macro.njk' import list %}
+{% from 'components/care-card/macro.njk' import careCard %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% from 'components/cookie-banner/macro.njk' import cookieBanner %}
+{% from 'components/emergency-alert/macro.njk' import emergencyAlert %}
+{% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
+{% from 'components/phase-banner/macro.njk' import phaseBanner %}
+{% from 'components/reveals/macro.njk' import reveal %}
+{% extends "includes/templates/transaction-page.html"%}
+
+<link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
+
+
+
+
+
+{% block breadcrumb %}
+
+
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="nhsuk-reading-width">
+
+
+
+    <div class="govuk-form-group" style="margin-top:24px !important;">
+
+<h1 class="nhsuk-c-transaction-head">Check your answers before sending your registration </h1>
+
+
+
+    <div class="nhsuk-reading-width">
+
+
+
+<h2 style="margin-top:12px;">Personal details</h2>
+
+
+
+  <div class="nhsuk-o-grid" style="padding-bottom:12px;padding-top:18px;">
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <p style="margin-top: 0px;"><strong>Your NHS number</strong></p>
+      </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+      <p style="margin-top: 0px;">123 567 9101</p>
+    </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <p style="margin-top: 0px;"><a href="page-2">Change</a></p>
+      </div>
+  </div>
+
+<div style="border-bottom:1px solid #AEB7BD;margin-bottom:12px;"></div>
+
+<div class="nhsuk-o-grid" style="padding-bottom:12px;">
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <p style="margin-top: 0px;"><strong>Name</strong></p>
+      </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+      <p style="margin-top: 0px;">Sarah Philips</p>
+    </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <p style="margin-top: 0px;"><a href="page-4">Change</a></p>
+      </div>
+  </div>
+
+<div style="border-bottom:1px solid #AEB7BD;margin-bottom:12px;"></div>
+
+
+<div class="nhsuk-o-grid" style="padding-bottom:12px;">
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <p style="margin-top: 0px;"><strong>Date of birth</strong></p>
+      </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+      <p style="margin-top: 0px;">5 January 1978</p>
+    </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <p style="margin-top: 0px;"><a href="page-5">Change</a></p>
+      </div>
+  </div>
+
+  <div style="border-bottom:1px solid #AEB7BD;margin-bottom:12px;"></div>
+
+
+  <div class="nhsuk-o-grid" style="padding-bottom:12px;">
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <p style="margin-top: 0px;"><strong>Country and town / city of birth</strong></p>
+      </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+      <p style="margin-top: 0px;">England, Leeds</p>
+    </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <p style="margin-top: 0px;"><a href="page-6">Change</a></p>
+      </div>
+  </div>
+
+  <div style="border-bottom:1px solid #AEB7BD;margin-bottom:12px;"></div>
+
+
+
+  <div class="nhsuk-o-grid" style="padding-bottom:12px;">
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <p style="margin-top: 0px;"><strong>Lived abroad</strong></p>
+      </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+      <p style="margin-top: 0px;">Always lived in the UK</p>
+    </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <p style="margin-top: 0px;"><a href="page-7">Change</a></p>
+      </div>
+  </div>
+
+  <div style="border-bottom:1px solid #AEB7BD;margin-bottom:12px;"></div>
+
+
+
+
+  <div class="nhsuk-o-grid" style="padding-bottom:12px;">
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <p style="margin-top: 0px;"><strong>Current address</strong></p>
+      </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+      <p style="margin-top: 0px;">86 Albert Road<br />
+        Leeds <br/>
+        West Yorkshire</p>
+    </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <p style="margin-top: 0px;"><a href="page-8">Change</a></p>
+      </div>
+  </div>
+
+  <div style="border-bottom:1px solid #AEB7BD;margin-bottom:12px;"></div>
+
+
+  <div class="nhsuk-o-grid" style="padding-bottom:12px;">
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <p style="margin-top: 0px;"><strong>Contact number</strong></p>
+      </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+      <p style="margin-top: 0px;">0113 264 403</p>
+    </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <p style="margin-top: 0px;"><a href="page-11">Change</a></p>
+      </div>
+  </div>
+
+  <div style="border-bottom:1px solid #AEB7BD;margin-bottom:12px;"></div>
+
+
+
+
+
+
+
+
+
+
+<h2 style="margin-bottom: 18px">Medical details</h2>
+
+
+<div class="nhsuk-o-grid" style="padding-bottom:12px;">
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <p style="margin-top: 0px;"><strong>Regular medication</strong></p>
+      </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+      <p style="margin-top: 0px;">Aspirin</p>
+    </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <p style="margin-top: 0px;"><a href="page-12">Change</a></p>
+      </div>
+  </div>
+
+  <div style="border-bottom:1px solid #AEB7BD;margin-bottom:12px;"></div>
+
+
+
+
+
+  <div class="nhsuk-o-grid" style="padding-bottom:12px;">
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <p style="margin-top: 0px;"><strong>Allergies</strong></p>
+      </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+      <p style="margin-top: 0px;">Hay fever</p>
+    </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <p style="margin-top: 0px;"><a href="page-13">Change</a></p>
+      </div>
+  </div>
+
+  <div style="border-bottom:1px solid #AEB7BD;margin-bottom:12px;"></div>
+
+
+  <div class="nhsuk-o-grid" style="padding-bottom:12px;">
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <p style="margin-top: 0px;"><strong>Conditions</strong></p>
+      </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+      <p style="margin-top: 0px;">High blood pressure</p>
+    </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <p style="margin-top: 0px;"><a href="page-14">Change</a></p>
+      </div>
+  </div>
+
+  <div style="border-bottom:1px solid #AEB7BD;margin-bottom:12px;"></div>
+
+
+
+
+
+
+
+  <div class="nhsuk-o-grid" style="padding-bottom:12px;">
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <p style="margin-top: 0px;"><strong>Tell my GP</strong></p>
+      </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+      <p style="margin-top: 0px;">I had major surgery: on my knee</p>
+    </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <p style="margin-top: 0px;"><a href="page-14">Change</a></p>
+      </div>
+  </div>
+
+  <div style="border-bottom:1px solid #AEB7BD;margin-bottom:12px;"></div>
+
+
+
+
+
+
+
+
+
+
+
+<h3>Now send you application</h3>
+<p>By submitting this notification you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
+    <p style="
+    margin-bottom: 24px;
+">Your details with be sent to Rose Medical Practice to begin your registration.</p>
+
+
+</div>
+
+
+
+
+              
+
+
+
+
+
+
+                <script src="https://design-system.service.gov.uk/javascripts/vendor/iframeResizer.contentWindow.js"></script>
+                <script src="https://design-system.service.gov.uk/javascripts/govuk-frontend-e8916db391d2382b438540cae5e0d57a.js"></script>
+
+
+
+   
+
+
+
+
+
+            <button type="submit" class="govuk-button" onclick="window.location.href='page-16'" >Accept and send registration</button>
+
+ 
+
+
+
+            <details role="group" >
+                <summary data-analytics="summary" role="button" aria-controls="details-content-0" aria-expanded="false" style="color: #005eb8;">
+                    <span class="details__summary" style="text-decoration: underline;    color: #005eb8;font-weight:400;">How your personal information is handled</span>
+                </summary>
+                <div class="details__content" id="details-content-0" aria-hidden="true">
+                    <div class="block-markdown">
+                        <p>Only Luscombe Family Practice sees the personal information you put this application.</p>
+                      <p>Its sent securely to them so they can add it to your medical record. Its not stored for any other purpose.</p>
+            
+                </div>
+                </div>
+            </details>
+
+           <!-- <p>          <a href="page-13" >Change my previous answer</a></p>-->
+
+
+
+
+</div></div>
+
+<div class="content-divider content-divider--short"></div>
+
+
+
+{% endblock %}
+
+{% block footer %}
+  {{ feedbackBanner('Help us make the NHS website better', 'Your feedback helps us improve the NHS website.', '#', 'Take our short survey') }}
+{% endblock %}
+
+

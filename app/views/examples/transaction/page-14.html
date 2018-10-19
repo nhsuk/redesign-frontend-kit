@@ -1,0 +1,216 @@
+
+
+{% set title = 'Register with a GP' %}
+{% set parent = 'Health A-Z' %}
+{% set navigation = 'transactional-gp' %}
+{% from 'components/inset-text/macro.njk' import insetText %}
+{% from 'components/do-dont-list/macro.njk' import list %}
+{% from 'components/care-card/macro.njk' import careCard %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% from 'components/cookie-banner/macro.njk' import cookieBanner %}
+{% from 'components/emergency-alert/macro.njk' import emergencyAlert %}
+{% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
+{% from 'components/phase-banner/macro.njk' import phaseBanner %}
+{% from 'components/reveals/macro.njk' import reveal %}
+{% extends "includes/templates/transaction-page.html"%}
+
+<link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
+
+
+
+{% block breadcrumb %}
+
+
+{% endblock %}
+
+
+
+{% block content %}
+
+
+
+
+
+
+
+    <div class="nhsuk-reading-width">
+
+
+
+
+      <div class="govuk-form-group nhsuk-form-group" style="margin-top:24px !important;">
+                    <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                        <legend >   
+                          <h1 class="nhsuk-c-transaction-head">Have you ever had any of these conditions?  </h1>
+                      </legend>
+
+                      <details role="group" style="margin-bottom:24px;">
+                          <summary data-analytics="summary" role="button" aria-controls="details-content-0" aria-expanded="false" style="color: #005eb8;">
+                              <span class="details__summary" style="text-decoration: underline;    color: #005eb8;font-weight:400;">Why am I being asked this question?</span>
+                          </summary>
+                          <div class="details__content" id="details-content-0" aria-hidden="true">
+                              <div class="block-markdown">
+                                  <p>Only Rose Medical Practice sees the personal information you put in this application.</p>
+                      
+                          </div>
+                          </div>
+                      </details>
+
+                      <span id="waste-hint" class="govuk-hint">
+                        Select all that apply
+                      </span>
+                      <div class="govuk-checkboxes">
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="asthma">
+                          <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+                            Asthma
+                          </label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="cancer">
+                          <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                            Cancer
+                          </label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="lung">
+                          <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                            Lung disease (like emphysema or bronchitis)
+                          </label>
+                        </div>
+
+                        <div class="govuk-checkboxes__item">
+                                <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="diabetes">
+                                <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                                  Diabetes
+                                </label>
+                        </div>
+
+                        <div class="govuk-checkboxes__item">
+                                <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="disabilities">
+                                <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                                  Disabilities, including physical and learning disabilities
+                                </label>
+                        </div>
+
+                        <div class="govuk-checkboxes__item">
+                                <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="epilepsy">
+                                <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                                  Epilepsy
+                                </label>
+                        </div>
+
+                        <div class="govuk-checkboxes__item">
+                                <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="heart">
+                                <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                                  Heart Disease
+                                </label>
+                        </div>
+
+                        <div class="govuk-checkboxes__item">
+                                <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="blood">
+                                <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                                  High blood pressure
+                                </label>
+                        </div>
+
+                        <div class="govuk-checkboxes__item">
+                                <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="mental-health">
+                                <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                                  Mental health issues, such as depression
+                                </label>
+                        </div>
+
+                        <div class="govuk-checkboxes__item">
+                                <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="stroke">
+                                <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                                  Stroke or mini stroke
+                                </label>
+                        </div>
+
+                        <div class="govuk-checkboxes__item">
+                                <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="stroke">
+                                <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                                  Thyroid problems
+                                </label>
+                        </div>
+
+
+
+                      </div>
+                    </fieldset>
+                  </div>
+
+
+
+
+                  <fieldset class="govuk-fieldset nhsuk-fieldset">
+<h3 style="
+margin-bottom: 18px;
+">Anything else you need to tell your GP?</h3>
+                      
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="address-line-1">
+                            I have a condition not listed above
+                            <span class="govuk-visually-hidden">line 1 of 1</span>
+                          </label>
+                          <input class="govuk-input" id="address-line-1" name="address-line-1" type="text">
+                        </div>
+                      
+
+                      
+                        <div class="govuk-character-count" data-module="character-count" data-maxlength="200">
+                          <div class="govuk-form-group">
+                            <label class="govuk-label" for="with-hint">
+                              I had major surgery
+                            </label>
+                            <textarea class="govuk-textarea js-character-count " id="with-hint" name="with-hint" rows="8" aria-describedby="with-hint-hint"></textarea>
+                          </div>
+                        
+                          <span id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+                            You can enter up to 200 characters
+                          </span>
+                        </div>
+
+                      
+                      </fieldset>                  
+
+
+
+
+
+
+                <script src="https://design-system.service.gov.uk/javascripts/vendor/iframeResizer.contentWindow.js"></script>
+                <script src="https://design-system.service.gov.uk/javascripts/govuk-frontend-e8916db391d2382b438540cae5e0d57a.js"></script>
+
+                <script src="https://design-system.service.gov.uk/javascripts/govuk-frontend-d27023fee8c3ad5b2c91404944bd45fc.js"></script>
+
+
+                <script src="../../../assets/js/gds.js"></script>
+                <script src="../../../assets/js/gds-2.js"></script>
+                <script src="../../../assets/js/gds-3.js"></script>
+
+                <button type="submit" class="govuk-button" onclick="window.location.href='page-15'" >Continue</button>
+      
+
+
+                  <p class="nhsuk-change-answer">          <a href="page-13" >Change my previous answer</a></p>
+
+
+
+
+
+
+
+
+<div class="content-divider content-divider--short"></div>
+
+
+
+{% endblock %}
+
+{% block footer %}
+  {{ feedbackBanner('Help us make the NHS website better', 'Your feedback helps us improve the NHS website.', '#', 'Take our short survey') }}
+{% endblock %}
+
+

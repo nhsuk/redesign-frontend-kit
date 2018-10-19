@@ -1,0 +1,126 @@
+
+
+{% set title = 'Register with a GP' %}
+{% set parent = 'Health A-Z' %}
+{% set navigation = 'transactional-gp' %}
+{% from 'components/inset-text/macro.njk' import insetText %}
+{% from 'components/do-dont-list/macro.njk' import list %}
+{% from 'components/care-card/macro.njk' import careCard %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% from 'components/cookie-banner/macro.njk' import cookieBanner %}
+{% from 'components/emergency-alert/macro.njk' import emergencyAlert %}
+{% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
+{% from 'components/phase-banner/macro.njk' import phaseBanner %}
+{% from 'components/reveals/macro.njk' import reveal %}
+{% extends "includes/templates/transaction-page.html"%}
+
+<link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
+
+
+
+{% block breadcrumb %}
+
+
+{% endblock %}
+
+
+{% block content %}
+
+
+
+
+
+
+
+    <div class="nhsuk-reading-width">
+
+
+
+
+      <div class="govuk-form-group nhsuk-form-group" style="margin-top:24px !important;">
+
+
+
+                    <div class="govuk-form-group">
+                            <fieldset class="govuk-fieldset">
+
+                                    <legend >   
+                                        <h1 class="nhsuk-c-transaction-head">Have you ever lived abroad? </h1>
+                                  </legend>
+
+
+                              <div class="govuk-radios">
+                                <div class="govuk-radios__item">
+                                  <input class="govuk-radios__input" id="where-do-you-live-1" name="where-do-you-live" type="radio" value="england">
+                                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-1">
+                                    Yes
+                                  </label>
+                                </div>
+                                <div class="govuk-radios__item">
+                                  <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                                    No
+                                  </label>
+                                </div>
+
+                              </div>
+                            </fieldset>
+                          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  </div>
+
+
+
+
+                <script src="https://design-system.service.gov.uk/javascripts/vendor/iframeResizer.contentWindow.js"></script>
+                <script src="https://design-system.service.gov.uk/javascripts/govuk-frontend-e8916db391d2382b438540cae5e0d57a.js"></script>
+
+
+
+                <button type="submit" class="govuk-button" onclick="window.location.href='page-8'" >Continue</button>
+
+                <p class="nhsuk-change-answer"><a href="page-6" >Change my previous answer</a></p>
+
+
+
+
+
+
+
+
+
+<div class="content-divider content-divider--short"></div>
+
+
+
+{% endblock %}
+
+{% block footer %}
+  {{ feedbackBanner('Help us make the NHS website better', 'Your feedback helps us improve the NHS website.', '#', 'Take our short survey') }}
+{% endblock %}
+
+

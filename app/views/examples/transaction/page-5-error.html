@@ -1,0 +1,134 @@
+
+
+{% set title = 'Register with a GP' %}
+{% set parent = 'Health A-Z' %}
+{% set navigation = 'transactional-gp' %}
+{% from 'components/inset-text/macro.njk' import insetText %}
+{% from 'components/do-dont-list/macro.njk' import list %}
+{% from 'components/care-card/macro.njk' import careCard %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% from 'components/cookie-banner/macro.njk' import cookieBanner %}
+{% from 'components/emergency-alert/macro.njk' import emergencyAlert %}
+{% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
+{% from 'components/phase-banner/macro.njk' import phaseBanner %}
+{% from 'components/reveals/macro.njk' import reveal %}
+{% extends "includes/templates/transaction-page.html"%}
+
+<link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
+
+
+
+{% block breadcrumb %}
+
+
+{% endblock %}
+
+
+
+{% block content %}
+
+
+
+
+
+
+
+    <div class="nhsuk-reading-width">
+
+
+            <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="error-summary">
+                    <h2 class="govuk-error-summary__title" id="error-summary-title">
+                      There is a problem
+                    </h2>
+                    <div class="govuk-error-summary__body">
+                      <ul class="govuk-list govuk-error-summary__list">
+                        <li>
+                          <a href="#dob-error">Date of birth must be in the past</a>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+
+
+            <div class="govuk-form-group govuk-form-group--error" style="margin-top:24px;">
+                    <fieldset class="govuk-fieldset" aria-describedby="dob-hint dob-error" role="group">
+                      <legend >
+                            <h1 class="nhsuk-c-transaction-head" style="margin-top:0px!important;">What is your date of birth? </h1>
+                      </legend>
+                      <span id="dob-hint" class="govuk-hint">
+                        For example, 31 3 1980
+                      </span>
+                      <span id="dob-error" class="govuk-error-message">
+                        Date of birth must be in the past
+                      </span>
+                      <div class="govuk-date-input" id="dob">
+                        <div class="govuk-date-input__item">
+                          <div class="govuk-form-group">
+                            <label class="govuk-label govuk-date-input__label" for="dob-day">
+                              Day
+                            </label>
+                            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="number" value="6" pattern="[0-9]*">
+                          </div>
+                        </div>
+                        <div class="govuk-date-input__item">
+                          <div class="govuk-form-group">
+                            <label class="govuk-label govuk-date-input__label" for="dob-month">
+                              Month
+                            </label>
+                            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month" type="number" value="3" pattern="[0-9]*">
+                          </div>
+                        </div>
+                        <div class="govuk-date-input__item">
+                          <div class="govuk-form-group">
+                            <label class="govuk-label govuk-date-input__label" for="dob-year">
+                              Year
+                            </label>
+                            <input class="govuk-input govuk-date-input__input govuk-input--width-4 govuk-input--error" id="dob-year" name="dob-year" type="number" value="2076" pattern="[0-9]*">
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+
+
+
+<!--No Error-->                  
+
+
+
+            <div class="govuk-form-group nhsuk-form-group">
+
+                  </div>
+                          </div>
+
+
+
+
+                <script src="https://design-system.service.gov.uk/javascripts/vendor/iframeResizer.contentWindow.js"></script>
+                <script src="https://design-system.service.gov.uk/javascripts/govuk-frontend-e8916db391d2382b438540cae5e0d57a.js"></script>
+
+
+
+                <button type="submit" class="govuk-button" onclick="window.location.href='page-6'" >Continue</button>
+
+                <p class="nhsuk-change-answer"><a href="page-4" >Change my previous answer</a></p>
+
+
+
+
+
+
+
+
+<div class="content-divider content-divider--short"></div>
+
+
+
+{% endblock %}
+
+{% block footer %}
+  {{ feedbackBanner('Help us make the NHS website better', 'Your feedback helps us improve the NHS website.', '#', 'Take our short survey') }}
+{% endblock %}
+
+
