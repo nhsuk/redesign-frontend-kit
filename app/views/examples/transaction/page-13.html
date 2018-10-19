@@ -19,7 +19,6 @@
 
 
 {% block breadcrumb %}
-  {{ phaseBanner('New', 'We are testing a new page layout — your <a href="#">feedback</a> will help us to improve it.') }}
 
 
 {% endblock %}
@@ -43,52 +42,12 @@
         
 
 
-            <div class="govuk-form-group nhsuk-form-group">
+            <div class="govuk-form-group nhsuk-form-group" style="margin-top:24px !important;">
             <fieldset class="govuk-fieldset nhsuk-fieldset">
                 <legend >   
                   <h1 class="nhsuk-c-transaction-head">Do you have any allergies?  </h1>
               </legend>
-              <div class="govuk-radios govuk-radios--conditional" data-module="radios">
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="how-contacted-conditional-1" name="how-contacted" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional-1">
-                  <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-1">
-                    Yes
-                  </label>    </div>
-                  <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-1">
-                    <div class="govuk-form-group">
-              <label class="govuk-label" for="contact-by-email">
-                Allergies
-              </label>
-              <input class="govuk-input govuk-!-width-full" id="contact-by-email" name="contact-by-email" type="email">
-            </div>
-            
-            
-                  </div>
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio" value="phone" data-aria-controls="conditional-how-contacted-conditional-2">
-                  <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
-                    No
-                  </label>    </div>
-
-
-
-              </div>
-            </fieldset>
-            </div>
-            
-            
-                  
-                </form>
-
-
-                <script src="https://design-system.service.gov.uk/javascripts/vendor/iframeResizer.contentWindow.js"></script>
-                <script src="https://design-system.service.gov.uk/javascripts/govuk-frontend-e8916db391d2382b438540cae5e0d57a.js"></script>
-
-
-
-                <button type="submit" class="govuk-button" onclick="window.location.href='page-14'" >Continue</button>
-      
-                <details role="group" >
+              <details role="group" style="margin-bottom: 24px;">
                   <summary data-analytics="summary" role="button" aria-controls="details-content-0" aria-expanded="false" style="color: #005eb8;">
                       <span class="details__summary" style="text-decoration: underline;    color: #005eb8;font-weight:400;">Why am I being asked this question?</span>
                   </summary>
@@ -101,7 +60,40 @@
                   </div>
               </details>
 
-                  <p>          <a href="page-12" >Change my previous answer</a></p>
+              <div class="govuk-character-count" data-module="character-count" data-maxlength="200">
+                  <div class="govuk-form-group">
+
+                    <textarea class="govuk-textarea js-character-count " id="with-hint" name="with-hint" rows="8" aria-describedby="with-hint-hint"></textarea>
+                  </div>
+                
+                  <span id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite" style="
+                  margin-bottom: 0px;
+              ">
+                    You can enter up to 500 characters
+                  </span>
+                </div>
+            </fieldset>
+            </div>
+            
+            
+                  
+                </form>
+
+
+                <script src="https://design-system.service.gov.uk/javascripts/vendor/iframeResizer.contentWindow.js"></script>
+                <script src="https://design-system.service.gov.uk/javascripts/govuk-frontend-e8916db391d2382b438540cae5e0d57a.js"></script>
+
+                <script src="https://design-system.service.gov.uk/javascripts/govuk-frontend-d27023fee8c3ad5b2c91404944bd45fc.js"></script>
+
+
+                <script src="../../../assets/js/gds.js"></script>
+                <script src="../../../assets/js/gds-2.js"></script>
+                <script src="../../../assets/js/gds-3.js"></script>
+                <button type="submit" class="govuk-button" onclick="window.location.href='page-14'" >Continue</button>
+      
+
+
+                  <p style="margin-top: 0px;">          <a href="page-12" >Change my previous answer</a></p>
 
 
 

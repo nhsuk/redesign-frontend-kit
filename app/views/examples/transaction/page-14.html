@@ -19,7 +19,6 @@
 
 
 {% block breadcrumb %}
-  {{ phaseBanner('New', 'We are testing a new page layout — your <a href="#">feedback</a> will help us to improve it.') }}
 
 
 {% endblock %}
@@ -39,13 +38,26 @@
 
 
 
-            <div class="govuk-form-group">
+      <div class="govuk-form-group nhsuk-form-group" style="margin-top:24px !important;">
                     <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
                         <legend >   
                           <h1 class="nhsuk-c-transaction-head">Have you ever had any of these conditions?  </h1>
                       </legend>
+
+                      <details role="group" style="margin-bottom:24px;">
+                          <summary data-analytics="summary" role="button" aria-controls="details-content-0" aria-expanded="false" style="color: #005eb8;">
+                              <span class="details__summary" style="text-decoration: underline;    color: #005eb8;font-weight:400;">Why am I being asked this question?</span>
+                          </summary>
+                          <div class="details__content" id="details-content-0" aria-hidden="true">
+                              <div class="block-markdown">
+                                  <p>Only Rose Medical Practice sees the personal information you put in this application.</p>
+                      
+                          </div>
+                          </div>
+                      </details>
+
                       <span id="waste-hint" class="govuk-hint">
-                        Select all that apply.
+                        Select all that apply
                       </span>
                       <div class="govuk-checkboxes">
                         <div class="govuk-checkboxes__item">
@@ -134,7 +146,7 @@
 
                   <fieldset class="govuk-fieldset nhsuk-fieldset">
 <h3 style="
-margin-bottom: 24px;
+margin-bottom: 18px;
 ">Anything else you need to tell your GP?</h3>
                       
                         <div class="govuk-form-group">
@@ -145,15 +157,20 @@ margin-bottom: 24px;
                           <input class="govuk-input" id="address-line-1" name="address-line-1" type="text">
                         </div>
                       
-                      
-                        <div class="govuk-form-group">
-                          <label class="govuk-label" for="address-town">
-                            I had major surgery
-                          </label>
-                          <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text">
-                        </div>
-                      
 
+                      
+                        <div class="govuk-character-count" data-module="character-count" data-maxlength="200">
+                          <div class="govuk-form-group">
+                            <label class="govuk-label" for="with-hint">
+                              I had major surgery
+                            </label>
+                            <textarea class="govuk-textarea js-character-count " id="with-hint" name="with-hint" rows="8" aria-describedby="with-hint-hint"></textarea>
+                          </div>
+                        
+                          <span id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+                            You can enter up to 200 characters
+                          </span>
+                        </div>
 
                       
                       </fieldset>                  
@@ -166,24 +183,18 @@ margin-bottom: 24px;
                 <script src="https://design-system.service.gov.uk/javascripts/vendor/iframeResizer.contentWindow.js"></script>
                 <script src="https://design-system.service.gov.uk/javascripts/govuk-frontend-e8916db391d2382b438540cae5e0d57a.js"></script>
 
+                <script src="https://design-system.service.gov.uk/javascripts/govuk-frontend-d27023fee8c3ad5b2c91404944bd45fc.js"></script>
 
 
-                <button type="submit" class="govuk-button" onclick="window.location.href='page-15'" >Check my answers</button>
+                <script src="../../../assets/js/gds.js"></script>
+                <script src="../../../assets/js/gds-2.js"></script>
+                <script src="../../../assets/js/gds-3.js"></script>
+
+                <button type="submit" class="govuk-button" onclick="window.location.href='page-15'" >Continue</button>
       
-                <details role="group" >
-                  <summary data-analytics="summary" role="button" aria-controls="details-content-0" aria-expanded="false" style="color: #005eb8;">
-                      <span class="details__summary" style="text-decoration: underline;    color: #005eb8;font-weight:400;">Why am I being asked this question?</span>
-                  </summary>
-                  <div class="details__content" id="details-content-0" aria-hidden="true">
-                      <div class="block-markdown">
-                          <p>Only Luscombe Family Practice sees the personal information you put this application.</p>
-                        <p>Its sent securely to them so they can add it to your medical record. Its not stored for any other purpose.</p>
-              
-                  </div>
-                  </div>
-              </details>
 
-                  <p>          <a href="page-13" >Change my previous answer</a></p>
+
+                  <p class="nhsuk-change-answer">          <a href="page-13" >Change my previous answer</a></p>
 
 
 

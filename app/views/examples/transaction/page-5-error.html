@@ -36,17 +36,31 @@
     <div class="nhsuk-reading-width">
 
 
+            <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="error-summary">
+                    <h2 class="govuk-error-summary__title" id="error-summary-title">
+                      There is a problem
+                    </h2>
+                    <div class="govuk-error-summary__body">
+                      <ul class="govuk-list govuk-error-summary__list">
+                        <li>
+                          <a href="#dob-error">Date of birth must be in the past</a>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
 
 
-
-
-      <div class="govuk-form-group nhsuk-form-group" style="margin-top:24px !important;">
-                    <fieldset class="govuk-fieldset" aria-describedby="dob-hint" role="group">
-                        <legend >   
-                            <h1 class="nhsuk-c-transaction-head">What is your date of birth? </h1>
+            <div class="govuk-form-group govuk-form-group--error" style="margin-top:24px;">
+                    <fieldset class="govuk-fieldset" aria-describedby="dob-hint dob-error" role="group">
+                      <legend >
+                            <h1 class="nhsuk-c-transaction-head" style="margin-top:0px!important;">What is your date of birth? </h1>
                       </legend>
                       <span id="dob-hint" class="govuk-hint">
                         For example, 31 3 1980
+                      </span>
+                      <span id="dob-error" class="govuk-error-message">
+                        Date of birth must be in the past
                       </span>
                       <div class="govuk-date-input" id="dob">
                         <div class="govuk-date-input__item">
@@ -54,7 +68,7 @@
                             <label class="govuk-label govuk-date-input__label" for="dob-day">
                               Day
                             </label>
-                            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="number" pattern="[0-9]*">
+                            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="number" value="6" pattern="[0-9]*">
                           </div>
                         </div>
                         <div class="govuk-date-input__item">
@@ -62,7 +76,7 @@
                             <label class="govuk-label govuk-date-input__label" for="dob-month">
                               Month
                             </label>
-                            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month" type="number" pattern="[0-9]*">
+                            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month" type="number" value="3" pattern="[0-9]*">
                           </div>
                         </div>
                         <div class="govuk-date-input__item">
@@ -70,11 +84,21 @@
                             <label class="govuk-label govuk-date-input__label" for="dob-year">
                               Year
                             </label>
-                            <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year" type="number" pattern="[0-9]*">
+                            <input class="govuk-input govuk-date-input__input govuk-input--width-4 govuk-input--error" id="dob-year" name="dob-year" type="number" value="2076" pattern="[0-9]*">
                           </div>
                         </div>
                       </div>
                     </fieldset>
+                  </div>
+
+
+
+<!--No Error-->                  
+
+
+
+            <div class="govuk-form-group nhsuk-form-group">
+
                   </div>
                           </div>
 
@@ -86,7 +110,7 @@
 
 
 
-                <button type="submit" class="govuk-button" onclick="window.location.href='page-5-error'" >Continue</button>
+                <button type="submit" class="govuk-button" onclick="window.location.href='page-6'" >Continue</button>
 
                 <p class="nhsuk-change-answer"><a href="page-4" >Change my previous answer</a></p>
 

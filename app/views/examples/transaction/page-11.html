@@ -17,7 +17,6 @@
 <link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
 
 {% block breadcrumb %}
-  {{ phaseBanner('New', 'We are testing a new page layout — your <a href="#">feedback</a> will help us to improve it.') }}
 
 
 {% endblock %}
@@ -34,64 +33,117 @@
 
     <div class="nhsuk-reading-width">
 
-            <fieldset class="govuk-fieldset nhsuk-fieldset">
 
-                <legend >   
-                  <h1 class="nhsuk-c-transaction-head">How can Rose Medical Practice contact you?  </h1>
-              </legend>
-                    <div class="govuk-form-group">
-                      <label class="govuk-label" for="address-line-1">
-                        Best phone number
-                        <span class="govuk-visually-hidden">line 1 of 2</span>
-                      </label>
-                      <input class="govuk-input" id="address-line-1" name="address-line-1" type="text">
-                    </div>
-                  
 
-                  
-                    <div class="govuk-form-group">
-                      <label class="govuk-label" for="address-town">
-                        Back-up phone number (optional)
-                      </label>
-                      <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text">
-                    </div>
-                  
-                    <div class="govuk-form-group">
-                      <label class="govuk-label" for="address-county">
-                        Email address (optional)
-                      </label>
-                      <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text">
-                    </div>
-                  
+        <div class="govuk-form-group nhsuk-form-group">
 
-                  
-                  </fieldset>
+
+
+
+            <div class="govuk-form-group" style="margin-top:24px !important;">
+                <fieldset class="govuk-fieldset">
+                    <legend >
+                        <h1 class="nhsuk-c-transaction-head">How do you want to be contacted?  </h1>
+                    </legend>
+      
+
+                  <div class="govuk-checkboxes" data-module="checkboxes">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="citizenship-conditional-1" name="citizen" type="checkbox" value="email" data-aria-controls="conditional-citizenship-conditional-1">
+                      <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-1">
+                        Email
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-citizenship-conditional-1">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="contact-by-email">
+                          Email address
+                        </label>
+                        <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email">
+                      </div>
+              
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="citizenship-conditional-2" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
+                      <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                        Phone
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-citizenship-conditional-2">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="contact-by-phone">
+                          Phone number
+                        </label>
+                        <input class="govuk-input govuk-!-width-one-third" id="contact-by-phone" name="contact-by-phone" type="tel">
+                      </div>
+              
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="citizenship-conditional-3" name="citizen" type="checkbox" value="text message" data-aria-controls="conditional-citizenship-conditional-3">
+                      <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-3">
+                        Text message
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-citizenship-conditional-3">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="contact-by-text">
+                          Mobile phone number
+                        </label>
+                        <input class="govuk-input govuk-!-width-one-third" id="contact-by-text" name="contact-by-text" type="tel">
+                      </div>
+              
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+          
+          
+
+
+
+
+
+
+
+
 
 
 
 </div>
 
         
+<script src="https://design-system.service.gov.uk/javascripts/vendor/iframeResizer.contentWindow.js"></script>
+<script src="https://design-system.service.gov.uk/javascripts/govuk-frontend-e8916db391d2382b438540cae5e0d57a.js"></script>
+<script src="https://design-system.service.gov.uk/javascripts/govuk-frontend-d27023fee8c3ad5b2c91404944bd45fc.js"></script>
 
-
+<script src="../../../assets/js/gds.js"></script>
 
                   <button type="submit" class="govuk-button" onclick="window.location.href='page-12'" >Continue</button>
         
-                  <details role="group" >
-                    <summary data-analytics="summary" role="button" aria-controls="details-content-0" aria-expanded="false" style="color: #005eb8;">
-                        <span class="details__summary" style="text-decoration: underline;    color: #005eb8;font-weight:400;">Why am I being asked this question?</span>
-                    </summary>
-                    <div class="details__content" id="details-content-0" aria-hidden="true">
-                        <div class="block-markdown">
-                            <p>Only Luscombe Family Practice sees the personal information you put this application.</p>
-                          <p>Its sent securely to them so they can add it to your medical record. Its not stored for any other purpose.</p>
-                
-                    </div>
-                    </div>
-                </details>
+
         
         
-        <p><p class="nhsuk-change-answer"><a href="page-10" >Change my previous answer</a></p></p>
+        <p class="nhsuk-change-answer"><a href="page-10" >Change my previous answer</a></p>
 
 
 
