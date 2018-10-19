@@ -1,0 +1,99 @@
+{% set title = 'The NHS in England' %}
+{% set parent = '' %}
+{% set navigation = 'transactional' %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% extends "includes/templates/hub.html"%}
+
+{% block breadcrumb %}
+    {{ breadcrumbs('/examples/manual/', 'Home') }}  
+{% endblock %}
+
+{% block header %}
+  <h1>Patterns</h1>
+	<div class="nhsuk-reading-width">
+		<p class="nhsuk-body-l nhsuk-page-intro">Reusable components and design patterns that solve common problems.</p>
+	</div>
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-o-grid">
+
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <div class="nhsuk-c-promo-v1">
+            <h2 class="nhsuk-heading-s"><a href="#">Care cards</a></h2>
+            <p>Cards that help users understand the sort of care they need.</p>
+        </div>
+    </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <div class="nhsuk-c-promo-v1">
+            <h2 class="nhsuk-heading-s"><a href="#">Do and Don’t lists</a></h2>
+            <p>Help users understand what they should and shouldn’t do.</p>
+        </div>
+    </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <div class="nhsuk-c-promo-v1">
+            <h2 class="nhsuk-heading-s"><a href="#">Footer</a></h2>
+            <p>Helps users find links they expect at the bottom of our pages.</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="nhsuk-o-grid">
+
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <div class="nhsuk-c-promo-v1">
+            <h2 class="nhsuk-heading-s"><a href="#">Header</a></h2>
+            <p>Shows users they are on an NHS service and helps them get started.</p>
+        </div>
+    </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <div class="nhsuk-c-promo-v1">
+            <h2 class="nhsuk-heading-s"><a href="#">Icons</a></h2>
+            <p>A small set of icons that we know our users need and understand</p>
+        </div>
+    </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <div class="nhsuk-c-promo-v1">
+            <h2 class="nhsuk-heading-s"><a href="/examples/manual/warning-callout">Warning callout</a></h2>
+            <p>Designed to stand out from the rest of the content.</p>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="nhsuk-o-width-container">
+    <main class="nhsuk-o-main-wrapper">
+        <div class="nhsuk-o-grid">
+            <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds">
+
+                    <div class="nhsuk-page-content">
+										
+                            <h2>Tested NHS.UK patterns</h2>
+    
+                            <p>We know that these patterns help users find what they need. They will also make your service consistent with other NHS services.</p>
+
+                            <p>We are continuing to test and improve them and we are working on new patterns, including components for forms. If you can’t find what you want here, contact us on the NHS.UK #standards Slack channel or email the standards team at service-manual@nhs.net.</p>
+
+
+                            <h2>Creating or changing patterns</h2>
+    
+                            <p>You're welcome to adapt one of these patterns or to create a new one. Check with us first on the NHS.UK #standards Slack channel or email us at service-manual@nhs.net. We may already be working on what you need.</p>
+
+                            <p>Help improve the manual by contributing your work.</p>
+
+                            <h2>Why use patterns?</h2>
+                            <p>Following design patterns means you can:</p>
+                            <ul>
+                                <li>avoid repeating work done by other teams</li>
+                                <li>build on the research and experience of other teams</li>
+                                <li>make your service consistent with other NHS services</li>
+                            </ul>
+                    </div>
+            </div>
+        </div>    
+    </main>
+</div>
+
+{% endblock %}

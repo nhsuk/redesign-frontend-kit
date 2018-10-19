@@ -1,0 +1,95 @@
+{% set title = 'The NHS in England' %}
+{% set parent = '' %}
+{% set navigation = 'transactional' %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% extends "includes/templates/hub.html"%}
+
+{% block breadcrumb %}
+  {{ breadcrumbs('/examples/manual/', 'Home') }}
+{% endblock %}
+
+{% block header %}
+  <h1>Content style guide</h1>
+	<div class="nhsuk-reading-width">
+		<p class="nhsuk-body-l nhsuk-page-intro">How to write for digital NHS services.</p>
+	</div>
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-o-grid">
+
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <div class="nhsuk-c-promo-v1">
+            <h2 class="nhsuk-heading-s"><a href="#">How we write</a></h2>
+            <p>Everything we write follows these general principles.</p>
+        </div>
+    </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <div class="nhsuk-c-promo-v1">
+            <h2 class="nhsuk-heading-s"><a href="#">Voice and tone</a></h2>
+            <p>Sara to write proper words here.</p>
+        </div>
+    </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <div class="nhsuk-c-promo-v1">
+            <h2 class="nhsuk-heading-s"><a href="/examples/manual/inclusive-language">Inclusive language</a></h2>
+            <p>Sara to write proper words here.</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="nhsuk-o-grid">
+
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <div class="nhsuk-c-promo-v1">
+            <h2 class="nhsuk-heading-s"><a href="#">Writing for accessibility</a></h2>
+            <p>Sara to write proper words here. This one is a longer example.</p>
+        </div>
+    </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <div class="nhsuk-c-promo-v1">
+            <h2 class="nhsuk-heading-s"><a href="#">Formatting and punctuation</a></h2>
+            <p>Sara to write proper words here.</p>
+        </div>
+    </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <div class="nhsuk-c-promo-v1">
+            <h2 class="nhsuk-heading-s"><a href="#">Health content A to Z</a></h2>
+            <p>Sara to write proper words here.</p>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="nhsuk-o-width-container">
+    <main class="nhsuk-o-main-wrapper">
+        <div class="nhsuk-o-grid">
+            <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds">
+
+                    <div class="nhsuk-page-content">
+										
+                            <h2>Using the style guide</h2>
+    
+                            <p>This style guide is for anyone creating content for the NHS, to help make things clear and consistent across all of our services.</p>
+
+                            <p>It's meant as a guide, not a rulebook. You're welcome to adapt a style pattern if it does not meet your users' needs.</p>
+
+
+                            <h2>In progress</h2>
+    
+                            <p>The guide will grow and change as we learn more about the language and writing styles that work best for our users.</p>
+
+                            <p>Follow the NHS.UK #standards Slack channel or email service-manual@nhs.net to hear about and discuss changes.</p>
+
+                            <p>Check the GOV.UK style guide and content design guide for any points of style that you do not find here. If it's not there, we recommend using the Oxford Dictionary for Writers and Editors.</p>
+
+    
+                    </div>
+            </div>
+        </div>    
+    </main>
+</div>
+
+{% endblock %}

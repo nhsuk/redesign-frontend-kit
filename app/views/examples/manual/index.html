@@ -1,0 +1,37 @@
+{% set title = 'Examples' %}
+{% set navigation = 'transactional' %}
+{% extends 'includes/site-layout.html' %}
+
+{% block body %}
+<main id="main-content" class="nhsuk-home-page">
+    <div class="nhsuk-hero">
+        <div class="nhsuk-o-width-container">
+            <div class="nhsuk-o-main-wrapper nhsuk-hero-container">
+                <div class="nhsuk-o-grid">
+                    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--full">
+                        <div class="nhsuk-page-heading">
+                          <h1>Service manual</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nhsuk-o-width-container">
+        <div class="nhsuk-o-main-wrapper">
+            <div class="nhsuk-o-grid">
+                <div class="nhsuk-o-grid__item nhsuk-o-grid__item--full">
+                    <ul>  
+                        <li><a href="/examples/components">Design principles</a></li>
+                        <li><a href="/examples/header">Look and feel</a></li>
+                        <li><a href="/examples/manual/patterns">Patterns</a></li>
+                        <li><a href="/examples/manual/content-style-guide">Content style guide</a></li>
+                        <li><a href="/examples/hubpage">Practices</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
