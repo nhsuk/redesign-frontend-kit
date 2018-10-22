@@ -1,0 +1,45 @@
+{% set title = 'Practices' %}
+{% set parent = '' %}
+{% set navigation = 'transactional' %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% extends "includes/templates/hub.html"%}
+
+{% block breadcrumb %}
+    {{ breadcrumbs('/examples/manual/', 'Home') }}  
+{% endblock %}
+
+{% block header %}
+  <h1>Practices</h1>
+	<div class="nhsuk-reading-width">
+		<p class="nhsuk-body-l nhsuk-page-intro">How we approach our working practices at NHS Digital and what we expect of teams.</p>
+	</div>
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-o-grid">
+
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <div class="nhsuk-c-promo-v1">
+            <h2 class="nhsuk-heading-s"><a href="#">Make your service accessible</a></h2>
+            <p>What we expect of teams at NHS Digital.</p>
+        </div>
+    </div>
+</div>
+
+<div class="nhsuk-o-grid">
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds">
+        <div class="nhsuk-page-content">
+										
+            <h4>What we're working on next</h4>
+
+            <p>We've started with <a href="">accessibility</a> because teams tell us it's a very important area for them. We'll be researching and testing more detailed accessibility guidance over the next couple of months.</p>
+
+            <p>We're also starting work on guidance on agile working and will be looking at what user researchers need from the service manual.</p>
+
+            <p>Please get in touch on the <a href="#">NHS.UK #standards Slack channel</a> if you'd like to contribute or email the standards team at <a href="#">service-manual@nhs.net</a>.</p>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
