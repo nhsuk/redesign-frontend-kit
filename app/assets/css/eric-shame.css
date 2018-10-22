@@ -1,0 +1,19 @@
+.eric-shame-in-this-section {
+    border-top: 2px solid #005eb8;
+}
+
+.eric-shame-in-this-section h3 {
+    margin-top: 16px;
+}
+
+.eric-shame-in-this-section ul {
+    margin-top: 16px;
+    list-style: none;
+    padding-left: 0;
+}
+
+@media only screen and (min-width: 800px) {
+    .eric-shame-in-this-section {
+        margin-left: 32px;
+    }
+}
