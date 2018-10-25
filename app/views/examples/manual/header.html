@@ -9,11 +9,9 @@
 {% endblock %}
 
 {% block header %}
-  <h1>Breadcrumbs</h1>
+  <h1>Header</h1>
 	<div class="nhsuk-reading-width">
-		<p class="nhsuk-body-l nhsuk-page-intro">The warning callout is designed to stand out from the rest of the content.</p>
-
-        <p class="nhsuk-body-l nhsuk-page-intro">It helps users identify and understand the important content on the page, even if they don't read the whole page.</p>
+		<p class="nhsuk-body-l nhsuk-page-intro">The header shows users they are on an NHS service and helps them get started in finding what they need.</p>
 	</div>
 {% endblock %}
 
@@ -26,58 +24,26 @@
                             
             <h2>Code and design</h2>
 
-            <!-- I know this is horrible, just to test quickly :) --> 
-            <br>
-            <img src="/assets/images/manual/warning-callout.png" alt="this is just a hacky thing for the prototype">
+            <!-- Example / snippet to go here --> 
 
+            <h2>When to use the header</h2>
 
-            <h2>When to use a warning callout</h2>
+            <p>Use this header at the top of every page if your service is part of the new NHS.UK website, replacing what was NHS Choices.</p>
+            <p>If your service is not part of what was NHS Choices, get in touch on the <a href="">NHS.UK #standards Slack channel</a> or email <a href="">service-manual@nhs.net</a>. We are considering how to use the header on other NHS Digital sites and services on the NHS.UK domain including, for example, some transactional journeys.</p>
 
-            <p>Use this callout for information that:</p>
+            <h2>How to use the header</h2>
 
+            <p>For smaller viewports, for example on mobile devices, the search and navigation items are hidden and can be expanded by buttons, which need JavaScript to work. You can find the <a href="">JavaScript code above</a>.</p>
+            <p>For the search suggestions functionality, you need two JavaScript files:</p>
             <ul>
-                <li>is time critical</li>
-                <li>could have a significant effect on someone's health</li>
-                <li>addresses a common or significant misconception or mistake</li>
+                <li><a href="">typeahead.bundle.min.js</a></li>
+                <li><a href="">could have a significant effect on someone's health</a></li>
             </ul>
-
-            <p>If the information is important but not important enough for a warning callout, use inset text instead.</p>
-
-            <p>If you need to tell a user to contact their GP or get medical help, use a <a href="">care card</a>.</p>
-
-            <h2>How to use a warning callout</h2>
-
-            <p>Give the callout a short, clearly worded heading. Headings help people scan the page for warnings and understand what's relevant to them.</p>
-
-            <p>Make the callout concise, specific and self-contained. For example, don't introduce a callout with the words "If this happens...". Explain the circumstances.</p>
-
-            <p>Don't break the flow with a callout. Think about whether you need it and the best place to put it.</p>
-
-            <p>Don't overdo callouts. Avoid having more than 2 on a page. We want to reassure people, not to scare them.</p>
-
-            <p>If possible, put at least 1 short paragraph of text between 2 callouts or between an action link and a callout.</p>
-
-            <p>Give priority to <a href="">care cards</a> over callouts.</p>
-
-            <h3>Accessibility</h3>
-
-            <p>The heading and background contrast ratio is 11.92:1 and the content and background contrast ratio is 13.69:1. These go beyond AAA guidelines.</p>
-
-            <p>We recommend adding an aria label, for example: aria-label="Important". This will help users with screen readers understand that the information is important. We still need to test this with users with access needs.</p>
-
-            <p>If you can help with this, please get in touch on the <a href=""> NHS.UK #standards Slack channel</a> or email us at <a href="">service-manual@nhs.net</a>.</p>
 
             <h2>Research</h2>
-            
-            <p>In testing, users noticed the yellow callouts and understood them as a warning.</p>
-
-            <p>Research shows that clearly worded callout headings:</p>
-
-            <ul>
-                <li>help users spot relevant information quickly</li>
-                <li>help users who cannot distinguish callouts by their colour</li>
-                <li>are better than icons, which may not be accessible and can be interpreted in different ways</li>
-            </ul>
+            <p>Our research has shown that this header is clearer and more usable than the old NHS Choices header, and it expresses the NHS brand.</p>
+            <p>Removing drop downs on larger screens, for example, has made it easier for people with motor skills problems or touchscreens.</p>
+            <p>Get in touch to <a href="">share your research findings</a> if you've used this pattern.</p>
 
             <h2>Discuss</h2>
             <p>Discuss warning callouts on the <a href="">NHS.UK #standards Slack channel</a> or email the standards team at <a href="">service-manual@nhs.net</a>.</p>
@@ -85,8 +51,7 @@
             <div class="nhsuk-c-panel">
                     <h3 class="above">Similar patterns</h3>
                         <ul style="margin-top:0px;">    
-                            <li><a href="#">Care cards</a></li>
-                            <li><a href="#">Do and Don't lists</a></li>
+                            <li><a href="#">Footer</a></li>
                         </ul>
             </div>
 
@@ -98,11 +63,13 @@
         <div class="eric-shame-in-this-section">
            <h3>In this section</h3>
            <ul>
+               <li><a href="">Breadcrumbs</a></li>
                <li><a href="">Care cards</a></li>
                <li><a href="">Do and Don't lists</a></li>
                <li><a href="">Footer</a></li>
-               <li><a href="">Header</a></li>
                <li><a href="">Icons</a></li>
+               <li><a href="">Inset text</a></li>
+               <li><a href="">Warning callout</a></li>
            </ul> 
         </div>
     </div>
