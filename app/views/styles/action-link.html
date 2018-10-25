@@ -12,7 +12,8 @@
 {% block sidebar %}
     <h2 class="nhsuk-heading-xs">Page contents</h2>
     <ul>
-		<li><a href="#current-design">What was being used</a></li>
+      <li><a href="#what-it-is">What it is</a></li>
+      <li><a href="#current-design">What was being used</a></li>
       <li><a href="#previous-research">Previous research</a></li>
       <li><a href="#user-need">User need</a></li>
       <li><a href="#our-designs">Design and research</a></li>
@@ -25,6 +26,9 @@
 {% block content %}
 <div class="nhsuk-reading-width">
 
+  <h2 id="what-it-is">What it is</h2>
+  <p>The action link is intended to bring attention to onward tasks within a page of content, without resorting to putting a link in a callout box. This is to improve the flow of the page, when there are potentially numerous other components on a page.</p>
+    
   <h2 id="current-design">What was being used</h2>
   <div class="example grey-background">
     <img class="component-image mobile" alt="Priority link on nhs.uk" src="/assets/images/component-write-up/action-link/old-action-link.png">
@@ -40,8 +44,6 @@
   <p>The arrow should be green as this is our action colour.</p>
 
   <h3 class="nhsuk-heading-l">First iteration</h3>
-  <h4 class="nhsuk-heading-m">Hypothesis</h4>
-=
 	
   <div class="example grey-background">
     <h3 class="nhsuk-heading-xs">Version 1</h3>
@@ -58,7 +60,8 @@
 
 	<h3 class="nhsuk-heading-l">Second iteration</h3>
   <h4 class="nhsuk-heading-m">Hypothesis</h4>
-
+    <p>If we increase the size of the text to larger than the body text size, and we changed the colour of the icon to green, users will see them more easily.</p>
+    <p>Earlier versions used NHS blue, but these were not noticed by test participants, so green was identified as an ‘action’ colour, to be used for action links as well as buttons.</p>
 	
   <div class="example grey-background">
     <h3 class="nhsuk-heading-xs">Version 2</h3>
@@ -99,6 +102,13 @@
   <h2 id="accessibility">Accessibility</h2>
 
   <h2 id="usage">Usage (rules)</h2>
+  <ul>
+    <li>Only use action links to direct users to the beginning of a task.</li> 
+    <li>Do not use action links simply for linking to other pages, or other sites.</li>
+    <li>More than one action link can be used per page (if, for example, two separate paragraphs of text require an action link to guide users to a related task), but do not stack multiple action links in the same place. This lessens the visual impact of the link.</li> 
+    <li>The wording of an action link should always begin with a verb, to communicate to the user that they are about to begin a task. For example, ‘Apply for an EHIC card’, or ‘Book an appointment’. Links should be short and only mention a single task.</li> 
+    <li>Action links can be used within care cards. </li>
+  </ul>
 
 </div>
 {% endblock %}
