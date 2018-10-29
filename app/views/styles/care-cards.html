@@ -12,72 +12,48 @@
 {% block sidebar %}
     <h2 class="nhsuk-heading-xs">Page contents</h2>
     <ul>
+			<li><a href="#what-it-is">What it is</a></li>
 			<li><a href="#user-need">User need</a></li>
-			<li><a href="#usage">Where it's currently being used</a></li>
-			<li><a href="#hypothesis">Hypothesis</a></li>
-			<li><a href="#iterations">Iterations</a></li>
-			<li><a href="#final-version">Final version</a></li>
+			<li><a href="#nhs-need">NHS need</a></li>
+			<li><a href="#usage">Usage</a></li>
+			<li><a href="#non-urgent-care-card">Non-urgent care card</a></li>
+			<li><a href="#urgent-care-card">Urgent care card</a></li>
+			<li><a href="#immediate-care-card">Immediate care card</a></li>
 			<li><a href="#accessibility">Accessibility</a></li>
-			<li><a href="#rules">Rules</a></li>
+			<li><a href="#research">Research</a></li>
+			<li><a href="#design-decisions">Design decisions</a></li>
+			<li><a href="#111-care-card-deprecated">111 care card (deprecated)</a></li>
     </ul>
 {% endblock %}
 
 {% block content %}
 
-	<h2>111 Care Card</h2>
+<h2 id="what-it-is">What it is</h2>
+<p>Care cards highlight when a user should take steps to contact the health and care system. There are three different styles, depending on the level of urgency the situation requires. </p>
 
-	<h3>User need</h3>
-  <p>As a user I NEED to understand my options if I don't know what to do and I can't speak to my GP, SO THAT I can get the best outcome for my situation.</p>
+<h2 id="user-need">User need</h2>
+	<p>As someone with symptoms or a condition, I NEED to know if I should contact someone about my health, SO THAT I don’t leave it too late to get the right care.</p> 
+
+	<p>As someone with symptoms or a condition, I NEED to understand how urgently to contact someone, SO THAT I am treated at the right time.</p> 
+	
+	<p>As someone with symptoms or a condition, I NEED to understand who to contact, SO THAT I do not waste time contacting the wrong service.</p>
+
+<h2 id="nhs-need">NHS need</h2>
+	<p>As an NHS content designer, I NEED to draw a user’s attention to specific actions, SO THAT they take steps to get the right care.</p>
+
+	<p>As an NHS content designer, I NEED to be able to communicate the level of urgency an action has, both visually and with text, SO THAT users who are skim-reading, or using screen readers, know how important this information is.</p>
+
+<h2 id="usage">Usage</h2>
+<p>You can use multiple care cards on a single page, when for example, different levels of severity of a condition require people to access different levels of care. It is up to the content designer to decide where in the content each care card should be placed, and in what order (there are no rules on which should come first).</p> 
+<p>Only use care cards when directing people to engage directly with the health and care system. They should not be used when directing users to apply online for services (e.g. self-referrals for therapy services, or ordering chlamydia test kits). They should not be used to direct users to contact other parties (e.g. The Samaritans, or charities). You should use info boxes or inset text components to do this. </p>	
+
+<h2 id="non-urgent-care-card">Non-urgent care card</h2>
+	
+	<h3>When to use</h3>
+  <p>Use a non-urgent care card when advising people to contact a healthcare professional about their conditions or symptoms, when it is not time-sensitive. For example, booking a GP appointment, or getting advice from a pharmacist.</p>
   
 	<h3>Where it's currently being used</h3>
-	<p>...</p>
-
-	<h3>Hypothesis</h3>
-	<p>...</p>
-
-	<h3>Iterations</h3>
-	<p>...</p>
-	
-	<h3>Final version</h3>
-
-	<div class="nhsuk-reading-width">
-		<div class="example grey-background">
-			{{ careCard("grey", "Call 111", "<p>If you can't speak to your GP and don't know what to do next.</p>") }}
-		</div>
-	</div>
-
-	<div class="example-snippet">
-	<button class="nhsuk-btn-copy" data-clipboard-target="#clipboard-1">Copy</button>
-
-<pre class="language-markup" id="clipboard-1"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>nhsuk-c-care-card nhsuk-c-care-card--grey<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>nhsuk-c-care-card__heading<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">&gt;</span></span>Call 111<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>nhsuk-c-care-card__content<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>If you can't speak to your GP and don't know what to do next.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
-	</div>
-
-	<h3>Accessibility</h3>
-	<p>...</p>
-
-	<h3>Rules</h3>
-  <p>The 111 care card can be used to direct users to the NHS 111 helpline if they need non-emergency help or advice and don't have access to a health professional or GP.</p>
-	
-	<h2>Primary Care Card</h2>
-	
-	<h3>User need</h3>
-  <p>As a user I NEED to understand what to do if my symptoms indicate I need to see a GP, SO THAT I can get the best outcome for my situation.</p>
-  
-	<h3>Where it's currently being used</h3>
-	<p>...</p>
-
-	<h3>Hypothesis</h3>
-	<p>...</p>
-
-	<h3>Iterations</h3>
-	<p>...</p>
+	<p><a href="https://www.nhs.uk/conditions/chickenpox/">Chickenpox page on NHS.UK</a></p>
 
 	<h3>Final version</h3>
 
@@ -113,25 +89,13 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
 	</div>
 
-	<h3>Accessibility</h3>
-	<p>...</p>
-
-	<h3>Rules</h3>
-  <p>The primary care card can be used to instruct users to visit a health professional or GP if appropriate to their situation.</p>
-
-	<h2>Urgent Care Card</h2>
+<h2 id="urgent-care-card">Urgent Care Card</h2>
 	
-	<h3>User need</h3>
-  <p>As a user I NEED to understand what to do if my symptoms indicate I need urgent GP care SO THAT I can get the best outcome for my situation.</p>
+	<h3>When to use</h3>
+  <p>Use an urgent care card when advising people to contact a healthcare professional about their conditions or symptoms, when it is time sensitive. For example, if people are experiencing an allergic reaction to medication, or are in a situation where getting advice or care quickly, is important. An urgent care card can be used to advise people to contact 111, booking an urgent GP appointment, or going to A&E. </p>
   
 	<h3>Where it's currently being used</h3>
-	<p>...</p>
-
-	<h3>Hypothesis</h3>
-	<p>...</p>
-
-	<h3>Iterations</h3>
-	<p>...</p>
+	<p><a href="https://www.nhs.uk/conditions/chickenpox/">Chickenpox page on NHS.UK</a></p>
 
 	<h3>Final version</h3>
 
@@ -168,25 +132,13 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
 	</div>
 
-	<h3>Accessibility</h3>
-	<p>...</p>
-
-	<h3>Rules</h3>
-  <p>The urgent care card can be used to instruct users to visit a GP or hospital urgently if appropriate to their situation.</p>
-
-	<h2>Emergency Care Card</h2>
+<h2>Immediate Care Card</h2>
 	
-	<h3>User need</h3>
-  <p>As a user I NEED to understand what to do if my symptoms indicate I need to go straight to hospital SO THAT I can get the best outcome for my situation.</p>
+	<h3>When to use</h3>
+  <p>Use an immediate care card when advising people to dial 999, or go immediately to a hospital. This care card should be used only when conditions or symptoms are considered an emergency. </p>
   
 	<h3>Where it's currently being used</h3>
-	<p>...</p>
-
-	<h3>Hypothesis</h3>
-	<p>...</p>
-
-	<h3>Iterations</h3>
-	<p>...</p>
+	<p><a href="https://www.nhs.uk/conditions/chest-pain/">Chest pain page on NHS.UK</a></p>
 
 	<h3>Final version</h3>
 
@@ -221,9 +173,41 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
 	</div>
 
-	<h3>Accessibility</h3>
+	<h2 id="accessibility">Accessibility</h3>
 	<p>...</p>
 
-	<h3>Rules</h3>
-  <p>The emergency care card can be used to instruct users to immediately seek emergency help if appropriate to their situation.</p>
+	<h2 id="research">Research</h3>
+  <p>The overall design of care cards has tested well in numerous labs, amongst broader content testing. Some accessibility testing raised issues around hidden text used to communicate importance. This has been resolved. See the Accessibility section for more details. </p>
+	
+	<h2 id="design-decisions">Design decisions</h2>
+	<p>The design of care cards is deliberately distinct from other callout boxes and components, to ensure their message is clear. The full-width, coloured block at the top of each card is meant to make the user pause, if scrolling/scanning down a page.</p> 
+
+	<p>NHS blue is used for non-urgent care, to be reassuring, whereas red is used for the urgent and immediate cards, to draw the eye and communicate their importance. Small downward arrows are used to guide the eye straight to the content in the card. The immediate care card uses a dark grey background to stand out above all other page content, without being too alarming. Research had shown that a previous iteration that was completely red, was too worrying for some users.</p>
+
+	<h2 id="111-care-card-deprecated">111 Care Card (deprecated)</h2>
+
+	<h3>Deprecation notes</h3>
+	<p>After initial roll-out of the care cards, it became apparent that there was not a clear enough distinction in the type of care that could be promoted with a non-urgent, remote care card, so we have decided to remove it from the design system. The original notes for the card are below.</p>
+
+	<h3>Final version</h3>
+
+	<div class="nhsuk-reading-width">
+		<div class="example grey-background">
+			{{ careCard("grey", "Call 111", "<p>If you can't speak to your GP and don't know what to do next.</p>") }}
+		</div>
+	</div>
+
+	<div class="example-snippet">
+	<button class="nhsuk-btn-copy" data-clipboard-target="#clipboard-1">Copy</button>
+
+<pre class="language-markup" id="clipboard-1"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>nhsuk-c-care-card nhsuk-c-care-card--grey<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>nhsuk-c-care-card__heading<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">&gt;</span></span>Call 111<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>nhsuk-c-care-card__content<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>If you can't speak to your GP and don't know what to do next.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+	</div>
+
 {% endblock %}
