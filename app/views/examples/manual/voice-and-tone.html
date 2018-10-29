@@ -1,0 +1,78 @@
+{% set title = 'Inclusive language' %}
+{% set parent = '' %}
+{% set navigation = 'transactional' %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% extends "includes/templates/hub.html"%}
+
+{% block breadcrumb %}
+  {{ breadcrumbs('/examples/manual', 'Home', '/examples/manual/content-style-guide', 'Content style guide') }}
+{% endblock %}
+
+{% block header %}
+  <h1>Voice and tone</h1>
+	<div class="nhsuk-reading-width">
+	</div>
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-o-width-container">
+    <main class="nhsuk-o-main-wrapper">
+        <div class="nhsuk-o-grid">
+            <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds">
+                <div class="nhsuk-page-content">
+
+                    <h2>Voice</h2>
+                    <p>Our voice is neutral and factual. It's authoritative, but also calm and reassuring.</p>
+                    <p>It's empowering, rather than patronising, and personal, rather than formal.</p>
+                    <p>We:</p>
+                    <ul>
+                        <li>address the user as "you"</li>
+                        <li>reassure by saying things like "Sertraline can cause side effects, but many people have no side effects or only minor ones"</li>
+                        <li>empower by saying things like "talk to your doctor about..." rather than "your doctor will tell you about..."</li>
+                        <li>avoid using "should" as it can sound patronising</li>
+                    </ul>
+                    <p>Using a consistent voice is similar to using the same visual style and colours throughout. It reminds users this is a trusted NHS service.</p>
+
+                    <h2>Tone</h2>
+                    <p>Tone can change depending on the context. We consider the situation and what the emotional state might be for the user.</p>
+                    <p>For example, we may use a direct, serious and reassuring tone when writing about a diagnosis:</p>
+
+                    <div class="nhsuk-c-inset-text">
+                        <p>If you've had a stroke or heart attack or are at high risk of a heart attack, your doctor may recommend that you take a daily low dose aspirin. This is different to taking aspirin for pain relief. Only take low dose aspirin if your doctor recommends it.</p>
+                    </div>
+
+                    <p>We may use an encouraging and conversational tone when writing about exercise or diet:</p>
+
+                    <div class="nhsuk-c-inset-text">
+                        <p>It's tempting to skip a session if the weather's bad. But you're less likely to use the weather as an excuse if you've arranged to exercise with a friend or if you're following a training programme.</p>
+                    </div>
+
+
+                    <div class="nhsuk-c-panel">
+                            <h3 class="above">Related pages</h3>
+                                <ul style="margin-top:0px;">    
+                                    <li><a href="#">Inclusive language</a></li>
+                                    <li><a href="#">Writing for accessibility</a></li>
+                                </ul>
+                    </div>
+
+                    </div>
+            </div>
+
+            <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+                <div class="eric-shame-in-this-section">
+                    <h3>Content style guide</h3>
+                    <ul>
+                        <li><a href="">How we write</a></li>
+                        <li><a href="/examples/manual/inclusive-language">Inclusive language</a></li>
+                        <li><a href="">Writing for accessibility</a></li>
+                        <li><a href="">Formatting and punctuation</a></li>
+                        <li><a href="/examples/manual/health-content-a-to-z">Healh content A to Z</a></li>
+                    </ul> 
+                </div>
+            </div>
+        </div>    
+    </main>
+</div>
+
+{% endblock %}
