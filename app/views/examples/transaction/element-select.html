@@ -1,0 +1,150 @@
+
+
+{% set title = 'Register with a GP' %}
+{% set parent = 'Health A-Z' %}
+{% set navigation = 'transactional-gp' %}
+{% from 'components/inset-text/macro.njk' import insetText %}
+{% from 'components/do-dont-list/macro.njk' import list %}
+{% from 'components/care-card/macro.njk' import careCard %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% from 'components/cookie-banner/macro.njk' import cookieBanner %}
+{% from 'components/emergency-alert/macro.njk' import emergencyAlert %}
+{% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
+{% from 'components/phase-banner/macro.njk' import phaseBanner %}
+{% from 'components/reveals/macro.njk' import reveal %}
+{% from 'components/pagination/macro.njk' import pagination, paginationNext, paginationPrevious %}
+{% extends "includes/templates/transaction-page.html"%}
+
+<link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
+
+<link rel="stylesheet" href="/assets/css/ben-shame.css">
+
+{% block breadcrumb %}
+
+
+{% endblock %}
+
+
+{% block content %}
+
+
+
+
+
+
+
+    <div class="nhsuk-reading-width">
+
+
+
+
+        <form novalidate>
+      
+        
+
+
+            <div class="govuk-form-group nhsuk-form-group" style="margin-top:24px !important;">
+            <fieldset class="govuk-fieldset nhsuk-fieldset">
+              <legend >   
+                  <h1 class="nhsuk-c-transaction-head" >Book new appointment </h1>
+            </legend>
+
+            
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="type">
+                  Type of appointment
+                </label>
+                <select class="govuk-select" id="sort" name="sort">
+                  <option value="session">General appointment in person</option>
+                  <option value="session">General appointment via phone</option>
+                  <option value="hca">Health care assistant</option>
+                  <option value="diabetes">Diabetes Clinic</option>
+                </select>
+              </div>
+
+
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="location">
+                  Location
+                </label>
+                <select class="govuk-select" id="sort" name="sort">
+                  <option value="session">Gledhow Practice</option>
+                </select>
+              </div>
+
+
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="location">
+                  Practice member
+                </label>
+                <select class="govuk-select" id="sort" name="sort">
+                  <option selected="">No preference</option>
+                  <option value="Dr Samuel Jones (Male)">Dr Samuel Jones (Male)</option>
+                  <option value="Dr Fiona Jones (Female)">Dr Fiona Jones (Female)</option>
+                  <option value="Ms Wendy Smith (Female)">Ms Wendy Smith (Female)</option>
+                  <option value="Miss Shereece Uhura (Female)">Miss Shereece Uhura (Female)</option>
+                  <option value="Mr James Kirk (Male)">Mr James Kirk (Male)</option>
+                  <option value="Mrs Nadia Millington (Female)">Mrs Nadia Millington (Female)</option>
+                </select>
+              </div>
+
+
+              <h3>Select an appointment</h3>
+
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="location">
+                  Filter by date
+                </label>
+                <select class="govuk-select" id="sort" name="sort">
+                  <option>Today</option>
+			<option>Tomorrow</option>
+			<option selected="">This week</option>
+			<option>Next week</option>
+			<option>All available</option>
+                </select>
+              </div>
+
+
+
+
+
+
+
+
+            </fieldset>
+            </div>
+            
+            
+                  
+                </form>
+
+
+
+
+                <script src="https://design-system.service.gov.uk/javascripts/vendor/iframeResizer.contentWindow.js"></script>
+                <script src="https://design-system.service.gov.uk/javascripts/govuk-frontend-e8916db391d2382b438540cae5e0d57a.js"></script>
+
+                <script src="../../../assets/js/gds.js"></script>
+                <script src="../../../assets/js/gds-2.js"></script>
+
+                <button type="submit" class="govuk-button" onclick="window.location.href='page-4'" >Continue</button>
+
+
+
+
+<p class="nhsuk-change-answer">          <a href="page-1" >Change my previous answer</a></p>
+
+
+
+
+<div class="content-divider content-divider--short"></div>
+
+
+
+{% endblock %}
+
+{% block footer %}
+  {{ feedbackBanner('Help us make the NHS website better', 'Your feedback helps us improve the NHS website.', '#', 'Take our short survey') }}
+{% endblock %}
+
+
