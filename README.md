@@ -1,8 +1,6 @@
-# NHS.UK prototyping kit
+# NHS.UK Redesign project
 
-This repository provides a development environment for making changes to components, along with research & findings, visual examples and code snippets from the Redesign project.
-
-Examples and code snippets of NHS.UK frontend components and elements can be found at our <a href="https://nhsuk-redesign.azurewebsites.net">NHS.UK prototyping and example website</a>.
+Examples and code snippets of NHS.UK Redesign components and elements can be found at our <a href="https://nhsuk-redesign.azurewebsites.net">NHS.UK Redesign prototyping and example website</a>.
 
 ## Installation
 
@@ -18,7 +16,7 @@ Follow our [contributing guide](https://github.com/nhsuk/frontend/blob/master/.g
 
 ## Deploying
 
-Following a successful pull request and merge, the code will automatically be deployed to our <a href="https://nhsuk-redesign.azurewebsites.net">NHS.UK prototyping and example website</a>.
+Following a successful pull request and merge, the code will automatically be deployed to our <a href="https://nhsuk-redesign.azurewebsites.net">NHS.UK Redesign prototyping and example website</a>.
 
 ## Licence
 
