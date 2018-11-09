@@ -1,0 +1,109 @@
+{% set title = 'NHS.UK Home page' %}
+{% from 'components/action-link/macro.njk' import actionLink %}
+{% from 'components/promo/macro.njk' import promo, promoWithImage, promoNoDescription %}
+{% extends "includes/templates/nhsuk-home-page.html"%}
+
+{% block content %}
+
+{% include 'partials/home-page/home-page-hero.html' %}
+
+<section class="nhsuk-section nhsuk-section--top-section nhsuk-section--white">
+    <div class="nhsuk-o-width-container">
+        <div class="nhsuk-o-grid">
+            {% include 'partials/home-page/home-page-section-content/home-page-health-a-z-and-medicines-no-top-tasks.html' %}
+        </div>
+    </div>
+</section>
+
+<section class="nhsuk-section">
+    <div class="nhsuk-o-width-container">
+        <div class="nhsuk-o-grid">
+            {% include 'partials/home-page/home-page-section-content/home-page-services.html' %}
+        </div>
+    </div>
+</section>
+
+<section class="nhsuk-section  nhsuk-section--white">
+    <div class="nhsuk-o-width-container">
+        <div class="nhsuk-o-grid">
+            {% include 'partials/home-page/home-page-section-content/home-page-ehic-gp-v1.html' %}
+        </div>
+    </div>
+</section>
+
+<section class="nhsuk-section nhsuk-section--with-image">
+    <div class="nhsuk-o-width-container">
+        <div class="nhsuk-o-grid">
+            {% include 'partials/home-page/home-page-section-content/home-page-find-help.html' %}
+        </div>
+    </div>
+</section>
+
+<section class="nhsuk-section nhsuk-section--white">
+    <div class="nhsuk-o-width-container">
+        <div class="nhsuk-o-grid">
+            {% include 'partials/home-page/home-page-section-content/home-page-ehic.html' %}
+        </div>
+    </div>
+</section>
+
+<section class="nhsuk-section">
+    <div class="nhsuk-o-width-container">
+        <div class="nhsuk-o-grid">
+            {% include 'partials/home-page/home-page-section-content/home-page-healthy-living.html' %}
+        </div>
+    </div>
+</section>
+
+<section class="nhsuk-section nhsuk-section--white">
+    <div class="nhsuk-o-width-container">
+        <div class="nhsuk-o-grid">
+            {% include 'partials/home-page/home-page-section-content/home-page-news.html' %}
+        </div>
+    </div>
+</section>
+
+<section class="nhsuk-section">
+    <div class="nhsuk-o-width-container">
+        <div class="nhsuk-o-grid">    
+            {% include 'partials/home-page/home-page-section-content/home-page-apps-library.html' %}
+        </div>
+    </div>
+</section>
+
+<section class="nhsuk-section nhsuk-section--white">
+    <div class="nhsuk-o-width-container">
+        <div class="nhsuk-o-grid">
+            {% include 'partials/home-page/home-page-section-content/home-page-promos.html' %}  
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block customJS %}
+    <script>
+        //random image for nhsuk-homepage/hero-home
+        function randomImage(){
+        var images = [
+        '/assets/images/homepage/hero-home/nhsuk-home-hero-image-1.jpg',
+        '/assets/images/homepage/hero-home/nhsuk-home-hero-image-2.jpg',
+        '/assets/images/homepage/hero-home/nhsuk-home-hero-image-3.jpg',
+        '/assets/images/homepage/hero-home/nhsuk-home-hero-image-4.jpg',
+        '/assets/images/homepage/hero-home/nhsuk-home-hero-image-5.jpg'];
+        var size = images.length;
+        var x = Math.floor(size * Math.random());
+        console.log(x);
+        var element = document.getElementsByClassName('nhsuk-hero-image');
+        console.log(element);
+        if(element.length > 0)
+        {
+            element[0].style["background-image"] = "url("+ images[x] + ")";
+        }
+        }
+
+        document.addEventListener("DOMContentLoaded", randomImage);
+    </script>
+
+{% endblock %}
+
