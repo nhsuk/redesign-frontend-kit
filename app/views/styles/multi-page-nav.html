@@ -38,7 +38,7 @@
 
 
     <h2 id="hypothesis">Our hypothesis</h2>
-    <p>We believe</p> 
+    <p>We believe</p>
     <ul>
       <li>Having two competing navigations (page-to-page and in-page) is confusing for users.</li>
       <li>Users miss the page-to-page nav in the blue box as they are drawn to the in-page nav instead.</li>
@@ -65,8 +65,8 @@
         <p>Page-to-page nav at the bottom of the page.</p>
         <img class="component-image mobile" src="/assets/images/component-write-up/multi-page-nav-mobile-bottom-v1.png">
 
-        <h3>Research findings</h3> 
-        <p>Lab, Leeds, 20th June 2018, 5 users</p>  
+        <h3>Research findings</h3>
+        <p>Lab, Leeds, 20th June 2018, 5 users</p>
         <ul>
             <li>Most users (4/5) missed the link to the page-to-page nav, even when it was on screen, and they were using in-page nav
             <li>It was not clear to users (4/5) that the section was made up of multiple pages</li>
@@ -88,14 +88,14 @@
         <p><a href="https://nhsuk-redesign.azurewebsites.net/examples/test-minihub-amd">Prototype for multi-page nav version 2</a></p>
         <img class="component-image" src="/assets/images/component-write-up/multi-page-nav-v2.png">
         <img class="component-image" src="/assets/images/component-write-up/multi-page-nav-pagination-v2.png">
-        <h3>Research findings</h3> 
+        <h3>Research findings</h3>
         <p>Lab, Manchester, 4th July 2018, 5 users (All with access needs)</p>
         <ul>
             <li>The structure and labelling of the pages fit the mental model of all users, helping them to understand the structure of the content</li>
             <li>However, some users didn’t notice the page-subtitle, indicating which page they were currently on</li>
             <li>Some users indicated the the horizontal rule separated the navigation from the rest of the page</li>
             <li>One user found the pagination particularly useful for navigating based on the way he read content and it supporting his mental model of the page structure. Although they indicated the size of the text was small</li>
-        </ul> 
+        </ul>
         <h4>Quotes</h4>
         <ul>
             <li>"it's a logical path"</li>
@@ -116,35 +116,36 @@
         <p><a href="https://nhsuk-redesign.azurewebsites.net/examples/minihub">Prototype for multi-page nav version 3</a></p>
         <img class="component-image" src="/assets/images/component-write-up/multi-page-nav-v3.png">
         <img class="component-image" src="/assets/images/component-write-up/multi-page-nav-pagination-v3.png">
-        <h3>Research findings</h3> 
-        <p>Lab, Sheffield, 16th July 2018, 6 users (2 with access needs)</p>  
+        <h3>Research findings</h3>
+        <p>Lab, Sheffield, 16th July 2018, 6 users (2 with access needs)</p>
         <ul>
             <li>All users engaged with the top navigation, stating that it fits how they thought the content would be made up.</li>
             <li>Users found the active link formatting on the menu helpful in knowing where they are.</li>
             <li>Some users indicated that the page titles helped them orientate themselves, knowing they’re in the right place.</li>
             <li>Some felt that the links helped them to understand what information there is, and choose what is relevant to them.</li>
             <li>4/5 users – including a user with very low digital skills – used pagination to navigate through pages, and knew this was associated with the navigation at the top of the page.</li>
-        </ul>  
+        </ul>
         <h4>Quotes</h4>
         <ul>
             <li>“You don’t need to think about what to do.” - This user had very low digital skills - scoring 6/28 on the <a href="https://userresearch.blog.gov.uk/2015/02/13/how-we-recruited-people-with-lowno-digital-skills-on-carers-allowance/">digital ability scale</a></li>
             <li> “You don’t have to read through it all”</li>
-        </ul> 
+        </ul>
     </div>
 
     <h2 id="usage">Usage</h2>
 
-        <p>The list of links at the top of the page must be used in conjunction with the page-to-page links, used at the bottom of each page.</p> 
-  
-        <p>Keep links short and descriptive. Links that are too long (more than two lines) inhibit the scannability of this component.</p> 
-          
+        <p>The list of links at the top of the page must be used in conjunction with the page-to-page links, used at the bottom of each page.</p>
+
+        <p>Keep links short and descriptive. Links that are too long (more than two lines) inhibit the scannability of this component.</p>
+
       <p>Page titles must reflect the subject of the specific page (e.g. ‘Treatment’), whilst the overall subject of the section must form the sub-header (e.g. ‘Age-related macular degeneration’). This is so users are clear where they have navigated to.</p>
 
   <h2 id="where-it-is-used">Where it is used</h2>
   <p><a href="https://www.nhs.uk/conditions/age-related-macular-degeneration-amd/">AMD page on NHS.UK</a></p>
 
 <h2 id="accessibility">Accessibility</h2>
-<p>…</p>
-
+<p>The list of links is surrounded by a <span class="example-code-snippet">&lt;nav&gt;</span> element to indicate that they are navigations links. This element has an <span class="example-code-snippet">aria-label</span> attribute with the value <span class="example-code-snippet">Pages in this guide</span>. This will be read out by screen readers that support this attribute to help clarify what the list of links are.</p>
+<p>Additionally there is a visually hidden heading title <span class="example-code-snippet">Contents</span> which will be read by screen readers as a heading to the links.</p>
+<p>If the link describes the current page that you are on, then it has the <span class="example-code-snippet">aria-current=&quot;page&quot;</span> value to indicate to screen readers that this is the case.</p>
 
 {% endblock %}
