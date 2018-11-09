@@ -1,0 +1,153 @@
+
+
+{% set title = 'Register with a GP' %}
+{% set parent = 'Health A-Z' %}
+{% set navigation = 'transactional-gp' %}
+{% from 'components/inset-text/macro.njk' import insetText %}
+{% from 'components/do-dont-list/macro.njk' import list %}
+{% from 'components/care-card/macro.njk' import careCard %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% from 'components/cookie-banner/macro.njk' import cookieBanner %}
+{% from 'components/emergency-alert/macro.njk' import emergencyAlert %}
+{% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
+{% from 'components/phase-banner/macro.njk' import phaseBanner %}
+{% from 'components/reveals/macro.njk' import reveal %}
+{% from 'components/pagination/macro.njk' import pagination, paginationNext, paginationPrevious %}
+{% extends "includes/templates/transaction-page.html"%}
+
+<link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
+
+<link rel="stylesheet" href="/assets/css/ben-shame.css">
+
+
+{% block header %}
+    <h1>Buttons</h1>
+    <p class="nhsuk-body-s"><span class="nhsuk-tag nhsuk-tag__development">Development</span></p>
+{% endblock %}
+
+{% block sidebar %}
+    <h2 class="nhsuk-heading-xs">Contents</h2>
+    <ul>
+    <li><a href="#userneed">User needs</a></li>
+    <li><a href="#whatsused">What's currently being used</a></li>
+    <li><a href="#hypothesis">Our hypothesis</a></li>
+    <li><a href="#Iterations">Iterations</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#example">Examples</a></li>
+    <li><a href="#accessibility">Accessibility</a></li>
+
+    </ul>
+{% endblock %}
+
+{% block content %}
+
+<h2>Notes</h2>
+
+<p>We used GOV.UK's button as a starting point <a href="https://design-system.service.gov.uk/components/button/" >https://design-system.service.gov.uk/components/button/</a> - but due to a number of NHS.uk's elements having squared edges we didn't want the buttons to get lost, so we added 4px radius (rounded corners) to add extra affordance (users will know its a button, not a heading or panel).  </p>
+
+
+
+
+
+
+
+  <h2 id="userneed">How it works</h2>
+  <p>Using GDS advice: </p>
+      
+    <ul>
+        <li>Write button text in sentence case, describing the action it performs. For example ‘Save and continue’ or ‘Start now’.</li>
+        <li>Align the primary action button to the left edge of your form.</li>
+
+    </ul>
+    
+    
+  
+
+  <h2 id="whatsused">What's currently being used</h2>
+  <ul>
+    <li><a href="https://111.nhs.uk">https://111.nhs.uk</a></li>
+    <li><a href="https://www.nhs.uk/your-nhs-data-matters/manage-your-choice/">https://www.nhs.uk/your-nhs-data-matters/manage-your-choice/</a></li>
+    <li><a href="https://www.nhs.uk/using-the-nhs/nhs-services/hospitals/nhs-e-referral-service/">https://www.nhs.uk/using-the-nhs/nhs-services/hospitals/nhs-e-referral-service/</a></li>
+    <li><a href="https://beta.nhs.uk/find-a-chlamydia-test/">https://beta.nhs.uk/find-a-chlamydia-test/</a></li>
+    <li><a href="https://beta.nhs.uk/find-a-pharmacy/">https://beta.nhs.uk/find-a-pharmacy/</a></li>
+
+  </ul>
+
+    <h2 id="hypothesis">Our hypothesis</h2>
+    <p>We believe</p> 
+    <ul>
+      <li>gov buttons are well established (and tested)</li>
+      <li>gov button's squared corners lack affordances within the NHS design system - so need to look more 'button-y'</li>
+      <li>Green is a good colour for primary actions</li>
+      <li>Its best to stay clear of blue as a button colour due to the amount of blue within the NHS Design system</li>
+
+
+    </ul>
+
+    <h2 id="Iterations">Iterations</h2>
+
+
+ 
+
+        <p>Primary action</p>
+
+
+        <button type="submit" class="govuk-button" onclick="window.location.href='page-4'" >Primary button</button>
+
+
+
+    <p>Secondary action</p>
+
+    <button type="submit" class="nhsuk-button-secondary" onclick="window.location.href='page-4'" >Secondary button</button>
+
+
+    <p>Reverse out button - for use on dark coloured backgrounds</p>
+    <div style="background-color: #005EB8;padding-top:20px;padding-left:20px;">
+    <button type="submit" class="nhsuk-button-white" onclick="window.location.href='page-4'" >Reverse button</button>
+</div>
+
+
+    
+
+       
+
+
+
+
+
+
+  <h2 id="example">Examples</h2>
+
+
+  <div class="nhsuk-c-panel nhsuk-c-panel__with-border"></div>
+
+  <div class="example-snippet">
+    <p>...</p>
+  </div>
+
+  <h2 id="accessibility">Accessibility</h2>
+
+  <p>Our accessible considerations are base on simple principles</p>
+
+<ul>
+    <li>Ensure that the words used describe the action it performs (and that it will make sense when read out by a screen reader) </li>
+    <li>Colour contrast meets WCAG AAA standard (primary button has a contrast ratio of 4.93, secondary 7.75. reverse 14.42)</li>
+
+</ul>
+
+
+  <h2 id="usage">Usage</h2>
+
+  <h3>Going forward</h3>
+
+  <p>Tables will need captions. Currently on NHS.uk's wagtail we don't have the option to include captions so this will need to be explored further. </p>
+  <p>We'd also like to look at tables with more than three columns, tables that are mostly data and tables that could be reordered by a user.</p> 
+
+<h3>What is success</h3>  
+<p>Success would be a user being able to find the information they require. </p>
+
+<h3>How we measure success</h3>
+<p>Success can be measured by page depth, exit rate and page depth and also monitoring a feedback survey to find if any users mentioned not being able to find information that is presented in the table.</p>
+
+
+{% endblock %}
