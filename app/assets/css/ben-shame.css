@@ -93,3 +93,22 @@ margin-top:24px !important;
     box-shadow: 0 4px 0 #000000;
     width: auto;
  }
+
+
+ .nhsuk-button-disabled {
+    font-weight: 600;
+    font-size: 19px;
+    /* font-size: 1rem; */
+    line-height: 1.1875;
+    margin-top: 0;
+    margin-bottom: 26px;
+    padding: 12px 16px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #007F3B ;
+    opacity: 0.5;
+    -webkit-box-shadow: 0 4px 0 #000000;
+    box-shadow: 0 4px 0 #000000;
+    width: auto;
+ }
