@@ -1,0 +1,61 @@
+{% set title = 'Frontend kit' %}
+{% set parent = '' %}
+{% set navigation = 'transactional' %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% extends "includes/templates/hub.html"%}
+
+{% block breadcrumb %}
+    {{ breadcrumbs('/examples/manual/', 'Home', '/examples/nhs-standard/', 'NHS Standard') }}  
+{% endblock %}
+
+{% block header %}
+  <h1>1. Are you meeting your users’ needs?</h1>
+	<div class="nhsuk-reading-width">
+		<p class="nhsuk-body-l nhsuk-page-intro">To do.
+        </p>
+	</div>
+{% endblock %}
+
+{% block content %}
+
+<div class="nhsuk-o-grid">
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds">
+        <div class="nhsuk-page-content">
+										
+            <h2>Why it's important</h2>
+            <p>To do</p>
+
+            <h2>What you must do</h2>
+            <p>Placeholder</p>
+          
+            <ul>
+                <li>Thing 1</li>
+                <li>Thing 2</li>
+                <li>Thing 3</li>
+                <li>Thing 4</li>
+            </ul>
+
+            <h2>What you may want to do</h2>
+
+            <p>Placeholder</p>
+          
+            <ul>
+                <li>Thing 1</li>
+                <li>Thing 2</li>
+                <li>Thing 3</li>
+                <li>Thing 4</li>
+            </ul>
+
+            <h2>Guidance</h2>
+            <ul>
+                <li><a href="">GDS - Guidance on example topic</a></li>
+                <li><a href="">GDS - Guidance on example topic</a></li>
+                <li><a href="">GDS - Guidance on example topic</a></li>
+            </ul>
+
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

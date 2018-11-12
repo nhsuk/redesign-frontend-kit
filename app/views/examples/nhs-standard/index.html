@@ -1,0 +1,55 @@
+{% set title = 'Frontend kit' %}
+{% set parent = '' %}
+{% set navigation = 'transactional' %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% extends "includes/templates/hub.html"%}
+
+{% block breadcrumb %}
+    {{ breadcrumbs('/examples/nhs-standard/', 'Home') }}  
+{% endblock %}
+
+{% block header %}
+  <h1>NHS Standard for digital things</h1>
+	<div class="nhsuk-reading-width">
+		<p class="nhsuk-body-l nhsuk-page-intro">The NHS Standard for digital things helps teams at the NHS make good quality products and services that work for their users.
+        </p>
+	</div>
+{% endblock %}
+
+{% block content %}
+
+<div class="nhsuk-o-grid">
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds">
+        <div class="nhsuk-page-content">
+										
+            <h2>1. Are you meeting your users’ needs?</h2>
+            <p>Develop a deep understanding of the problem your users need your team to solve. Build the right interventions to solve the problem in the best possible way. Test that what you are building works for users, and improve it based on what you learn.</p>
+            <br>
+            <a href="/examples/nhs-standard/point1-v1">More about point 1</a>
+
+            <h2>2. Does it work for everyone?</h2>
+            <p>The NHS is for everyone. Make sure people with different physical, mental health, social, cultural or learning needs can use your interventions.</p>
+            <br>
+            <a href="">More about point 2</a>
+
+            <h2>3. Have you defined and measured success?</h2>
+            <p>Define the health, wellbeing or other measurable outcomes that your work will impact. Measure them so you can assess the effect of your interventions.</p>
+            <br>
+            <a href="">More about point 3</a>
+
+            <h2>4. Are you using the right tools and technologies?</h2>
+            <p>To do</p>
+            <br>
+            <a href="">More about point 4</a>
+
+            <h2>5. Are you providing a joined up experience that solves a user’s whole problem?</h2>
+            <p>To do</p>
+            <br>
+            <a href="">More about point 5</a>
+
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
