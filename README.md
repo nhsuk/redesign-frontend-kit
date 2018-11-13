@@ -1,5 +1,8 @@
 # NHS.UK Redesign project
 
+NHS.UK Frontend can be found at https://github.com/nhsuk/nhsuk-frontend.
+This repository is for the NHS Redesign development of components.
+
 Examples and code snippets of NHS.UK Redesign components and elements can be found at our <a href="https://nhsuk-redesign.azurewebsites.net">NHS.UK Redesign prototyping and example website</a>.
 
 ## Installation
