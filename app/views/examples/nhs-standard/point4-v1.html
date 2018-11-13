@@ -1,0 +1,55 @@
+{% set title = 'Frontend kit' %}
+{% set parent = '' %}
+{% set navigation = 'transactional' %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% extends "includes/templates/hub.html"%}
+
+{% block breadcrumb %}
+    {{ breadcrumbs('/examples/manual/', 'Home', '/examples/nhs-standard/', 'NHS Service Standard') }}  
+{% endblock %}
+
+{% block header %}
+  <h1>Are you using the right tools and technologies?</h1>
+	<div class="nhsuk-reading-width">
+	</div>
+{% endblock %}
+
+{% block content %}
+
+<div class="nhsuk-o-grid">
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds">
+        <div class="nhsuk-page-content">
+										
+            <h2>Why it's important</h2>
+            <p>Decisions about technology tend to be a significant investment. Getting it right means you can build and run a good service in a cost effective way. The choices you make will have a huge impact on your ability to build, iterate and operate the service in a sustainable and reliable way.</p>
+
+            <h2>What you must do</h2>
+            <ul>
+                <li>Articulate how the tools and technologies you choose allow you to build and operate a service in a cost effective way, and how they compare to alternatives</li>
+                <li>Calculate the total cost of ownership and keep it to a minimum</li>
+                <li>Explain how you've avoided getting locked into contracts for specific tools and suppliers, using open standards whenever possible</li>
+                <li>Maximise uptime and speed of responsible for any online parts of a service</li>
+                <li>Articulate how you control and manage any data you store</li>
+                <li>Have a plan for protecting confidential and sensitive information about users</li>
+            </ul>
+
+            <h2>What you may want to do</h2>
+          
+            <ul>
+                <li>Use value chain mapping to show you've made good decisions [link]</li>
+                <li>Be able to deploy software changes regularly, without significant downtime</li>
+            </ul>
+
+            <h2>Guidance</h2>
+            <ul>
+                <li><a href="">GDS - Guidance on example topic</a></li>
+                <li><a href="">GDS - Guidance on example topic</a></li>
+                <li><a href="">GDS - Guidance on example topic</a></li>
+            </ul>
+
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
