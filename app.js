@@ -1,7 +1,7 @@
 const app = require('express')();
 const express = require('express');
 const nunjucks = require('nunjucks');
-const routing = require('./config/routing');
+const routing = require('./routing');
 const path = require('path');
 
 app.set('view engine', 'html');
