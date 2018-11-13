@@ -7,7 +7,7 @@
     "build": "gulp build",
     "start": "node app.js",
     "prewatch": "npm run build",
-    "watch": "concurrently \"gulp\" \"nodemon app.js --config nodemon.json -q\"",
+    "watch": "concurrently \"gulp\" \"nodemon -e js,njk,scss,svg --quiet --watch app\"",
     "test": ""
   },
   "dependencies": {
