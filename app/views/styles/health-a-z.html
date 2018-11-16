@@ -15,7 +15,7 @@
     <li><a href="#userneed">User needs</a></li>
     <li><a href="#what-was-being-used">What was being used</a></li>
     <li><a href="#Iterations">Iterations</a></li>
-    <li><a href="#research">Research</a></li>    
+    <li><a href="#research">Research</a></li>
     <li><a href="#design-decisions">Design decisions</a></li>
     <li><a href="#accessibility">Accessibility</a></li>
 
@@ -36,22 +36,21 @@
   <img class="component-image" src="/assets/images/component-write-up/health-a-z.png" width="50%" height="50%">
 
   <h2 id="research">Research</h2>
-  
-    <h3>During a research lab in 2018:</h3> 
-    
-    <p>All users were able to use the A-Z list, and this behaved as they expected.</p> 
-    
-    <p>However, some users missed the quick anchor links at the top of the page, instead opting to scroll through all items</p> 
-    
+
+    <h3>During a research lab in 2018:</h3>
+
+    <p>All users were able to use the A-Z list, and this behaved as they expected.</p>
+
+    <p>However, some users missed the quick anchor links at the top of the page, instead opting to scroll through all items</p>
+
     <p>In these cases users found the list overwhelming </p>
-    
+
     <p>Some users did not use the “back to top” links, instead opting to scroll to the top of the page</p>
 
   <h2 id="design-decisions">Design decisions</h2>
   <p>Clearly labelling each alphabetical section helps users orientate themselves. Placing each condition or symptom link in a white panel separated by a 1px divider, gives long lists structure and makes them easier to scan.</p>
-  
-  <h2 id="accessibility">Accessibility</h2>
-<p>…</p>
 
+  <h2 id="accessibility">Accessibility</h2>
+  <p>The A-Z list is contained within a <span class="example-code-snippet">&lt;nav&gt;</span> element. This element has an aria label attribute with the value <span class="example-code-snippet">Health A-Z Navigation</span>. This will be read out by screen readers that support this attribute to help clarify what the list of links are.</p>
 
 {% endblock %}
