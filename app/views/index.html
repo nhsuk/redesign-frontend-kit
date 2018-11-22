@@ -1,6 +1,7 @@
 {% set title = 'Home' %}
 {% set navigation = 'transactional' %}
 {% from 'components/callout/macro.njk' import callout %}
+{% from 'components/inset-text/macro.njk' import insetText %}
 {% extends 'includes/site-layout.html' %}
 
 {% block body %}
@@ -11,8 +12,7 @@
                 <div class="nhsuk-o-grid">
                     <div class="nhsuk-o-grid__item nhsuk-o-grid__item--full">
                         <div class="nhsuk-page-heading">
-                            <h1>NHS.UK redesign project</h1>
-                            <p>Our latest progress and examples, including our problems, decisions and findings so far.</p>
+                            <h1>NHS.UK Redesign project</h1>
                         </div>
                     </div>
                 </div>
@@ -24,13 +24,14 @@
             <div class="nhsuk-o-grid">
                 <div class="nhsuk-o-grid__item nhsuk-o-grid__item--full">
 
+                  {{ insetText('Information:', 'Component code snippets and examples are not actively maintained on these pages, please use the <a href="https://github.com/nhsuk/nhsuk-frontend/tree/master/packages/components">NHS.UK Frontend repository</a>.</p><p>This website is only used for Redesign project research findings and write ups and will soon be replaced by the <a href="https://beta.nhs.uk/service-manual">NHS digital service manual</a> pages.') }}
+
                   <h2>Design &amp; development progress</h2>
 
                   <table class="nhsuk-table">
                     <thead>
                       <tr>
                         <th>Component</th>
-                        <th class="th__status">Status</th>
                         <th>Description</th>
                       </tr>
                     </thead>
@@ -38,128 +39,103 @@
                     <tbody>
                       <tr>
                         <td><a href="/styles/layout">Layout</a></td>
-                        <td class="td__status"><span class="nhsuk-tag nhsuk-tag__ready">Standards</span></td>
                         <td>Page layout, grid, breakpoints and spacing.</td>
                       </tr>
                       <tr>
                         <td><a href="/styles/typography">Typography</a></td>
-                        <td class="td__status"><span class="nhsuk-tag nhsuk-tag__ready">Standards</span></td>
                         <td>Headings, text, lists and links.</td>
                       </tr>
                       <tr>
                         <td><a href="/styles/colours">Colours</a></td>
-                        <td class="td__status"><span class="nhsuk-tag nhsuk-tag__ready">Standards</span></td>
                         <td>Colour palettes.</td>
                       </tr>
                       <tr>
 						            <td><a href="/styles/icons">Icons</a></td>
-                        <td class="td__status"><span class="nhsuk-tag nhsuk-tag__ready">Standards</span></td>
                         <td>Iconography, SVG images and fallbacks.</td>
                       </tr>
                       <tr>
                         <td><a href="/styles/header-footer">Header &amp; Footer</a></td>
-                        <td class="td__status"><span class="nhsuk-tag nhsuk-tag__ready">Standards</span></td>
                         <td>Site navigation and search &amp; Footer information and links.</td>
                       </tr>
                       <tr>
                         <td><a href="/styles/breadcrumbs">Breadcrumbs</a></td>
-                        <td class="td__status"><span class="nhsuk-tag nhsuk-tag__ready">Standards</span></td>
                         <td>Responsive breadcrumb trail for all pages.</td>
                       </tr>
                       <tr>
                         <td><a href="/styles/callouts">Warning callout</a></td>
-                        <td class="td__status"><span class="nhsuk-tag nhsuk-tag__ready">Standards</span></td>
                         <td>Warn users about something important.</td>
                       </tr>
                       <tr>
                         <td><a href="/styles/inset-text">Inset text</a></td>
-                        <td class="td__status"><span class="nhsuk-tag nhsuk-tag__ready">Standards</span></td>
                         <td>Differentiate a block of text from the content</td>
                       </tr>
                       <tr>
                         <td><a href="/styles/care-cards">Care Cards</a></td>
-                        <td class="td__status"><span class="nhsuk-tag nhsuk-tag__ready">Standards</span></td>
                         <td>Advice for users on when to get care.</td>
                       </tr>
                       <tr>
                         <td><a href="/styles/do-dont-lists">Do &amp; Don't lists</a></td>
-                        <td class="td__status"><span class="nhsuk-tag nhsuk-tag__ready">Standards</span></td>
                         <td>What to do and what not to do lists.</td>
                       </tr>
                       <tr>
                         <td><a href="/styles/action-link">Action links</a></td>
-                        <td class="td__status"><span class="nhsuk-tag nhsuk-tag__ready">Standards</span></td>
                         <td>A link to start an important or transactional journey.</td>
                       </tr>
                       <tr>
                         <td><a href="/styles/images">Images</a></td>
-                        <td class="td__status"><span class="nhsuk-tag nhsuk-tag__ready">Standards</span></td>
                         <td>Images and videos within content.</td>
                       </tr>
                       <tr>
                       <tr>
                         <td><a href="/styles/tables">Tables</a></td>
-                        <td class="td__status"><span class="nhsuk-tag nhsuk-tag__development">Development</span></td>
                         <td></td>
                       </tr>
                       <tr>
                         <td><a href="/styles/details">Details</a></td>
-                        <td class="td__status"><span class="nhsuk-tag nhsuk-tag__development">Development</span></td>
                         <td></td>
                       </tr>
                       <tr>
                         <td><a href="/styles/expanders">Expanders</a></td>
-                        <td class="td__status"><span class="nhsuk-tag nhsuk-tag__development">Development</span></td>
                         <td></td>
                       </tr>
                       <tr>
                         <td><a href="/styles/video">Video</a></td>
-                        <td class="td__status"><span class="nhsuk-tag nhsuk-tag__development">Development</span></td>
                         <td></td>
                       </tr>
                       <tr>
                         <td><a href="/styles/review-date">Page review date</a></td>
-                        <td class="td__status"><span class="nhsuk-tag nhsuk-tag__development">Development</span></td>
                         <td></td>
                       </tr>
                       <tr>
                         <td><a href="/styles/multi-page-nav">Multi-page nav</a></td>
-                        <td class="td__status"><span class="nhsuk-tag nhsuk-tag__design">Design</span></td>
                         <td></td>
                       </tr>
                       <tr>
                         <td>Homepage</td>
-                        <td class="td__status"><span class="nhsuk-tag nhsuk-tag__design">Design</span></td>
                         <td></td>
                       </tr>
                       <tr>
                         <td><a href="/styles/health-a-z">Health A-Z</a></td></td>
-                        <td class="td__status"><span class="nhsuk-tag nhsuk-tag__design">Design</span></td>
                         <td></td>
                       </tr>
                       <tr>
                         <td><a href="/styles/phase-banner">Phase banner (This service is new and feedback)</a></td>
-                        <td class="td__status"><span class="nhsuk-tag nhsuk-tag__development">Development</span></td>
                         <td></td>
                       </tr>
                       <tr>
                         <td><a href="/styles/survey-banner">Survey banner</a></td>
-                        <td class="td__status"><span class="nhsuk-tag nhsuk-tag__development">Development</span></td>
                         <td></td>
                       </tr>
                       <tr>
                         <td><a href="/styles/emergency-banner">Emergency banner</a></td>
-                        <td class="td__status"><span class="nhsuk-tag nhsuk-tag__development">Development</span></td>
                         <td></td>
                       </tr>
                       <tr>
                         <td><a href="/styles/cookie-banner">Cookie banner</a></td>
-                        <td class="td__status"><span class="nhsuk-tag nhsuk-tag__design">Design</span></td>
                         <td></td>
                       </tr>
                       <tr>
                         <td><a href="/styles/buttons">Buttons</a></td>
-                        <td class="td__status"><span class="nhsuk-tag nhsuk-tag__design">Design</span></td>
                         <td></td>
                       </tr>
                       </tbody>
