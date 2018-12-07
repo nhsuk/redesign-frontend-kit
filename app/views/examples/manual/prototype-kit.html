@@ -1,0 +1,47 @@
+{% set title = 'Frontend kit' %}
+{% set parent = '' %}
+{% set navigation = 'transactional' %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% extends "includes/templates/hub.html"%}
+
+{% block breadcrumb %}
+    {{ breadcrumbs('/examples/manual/', 'Home') }}  
+{% endblock %}
+
+{% block header %}
+  <h1>Prototype kit</h1>
+	<div class="nhsuk-reading-width">
+		<p class="nhsuk-body-l nhsuk-page-intro">The code you need to start building NHS services.</p>
+	</div>
+{% endblock %}
+
+{% block content %}
+
+<div class="nhsuk-o-grid">
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds">
+        <div class="nhsuk-page-content">
+										
+            <h2>Coming this winter</h2>
+
+            <p>The Prototype kit is currently in development. We're expecting it to be publicly available soon.</p>
+
+            <p>It's still work in progress, and not ready for use in live services, but you can see its development in this <a href="">link to prototype kit site</a></p>
+
+            <h2>About the Prototype kit</h2>
+
+            <p>It will allow teams to [important benefit], [another important benefit] and [yet another important benefit].</p>
+ 
+            <p>It will have:</p>
+            <ul>
+                <li>Good thing</li>
+                <li>Good thing</li>
+                <li>Good thing</li>
+            </ul>
+
+
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

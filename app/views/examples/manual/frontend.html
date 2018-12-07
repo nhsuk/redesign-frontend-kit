@@ -1,47 +1,74 @@
-{% set title = 'Frontend kit' %}
+{% set title = 'Content style guide' %}
 {% set parent = '' %}
 {% set navigation = 'transactional' %}
 {% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
 {% extends "includes/templates/hub.html"%}
 
 {% block breadcrumb %}
-    {{ breadcrumbs('/examples/manual/', 'Home') }}  
+  {{ breadcrumbs('/examples/manual/', 'Home') }}
 {% endblock %}
 
 {% block header %}
-  <h1>Frontend kit</h1>
+  <h1>Frontend library</h1>
 	<div class="nhsuk-reading-width">
-		<p class="nhsuk-body-l nhsuk-page-intro">The code you need to start building NHS services.</p>
+		<p class="nhsuk-body-l nhsuk-page-intro">Production code to start building user interfaces for the NHS.</p>
 	</div>
 {% endblock %}
 
 {% block content %}
+<div class="nhsuk-o-grid">
+
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <div class="nhsuk-c-promo-v1">
+            <h2 class="nhsuk-heading-s"><a href="/examples/manual/voice-and-tone">Download and install</a></h2>
+            <p>Get started straight away.</p>
+        </div>
+    </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <div class="nhsuk-c-promo-v1">
+            <h2 class="nhsuk-heading-s"><a href="/examples/manual/inclusive-language">Examples</a></h2>
+            <p>Page layouts and components.</p>
+        </div>
+    </div>
+
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <div class="nhsuk-c-promo-v1">
+            <h2 class="nhsuk-heading-s"><a href="#">About</a></h2>
+            <p>Get support and contribute.</p>
+        </div>
+    </div>
+
+</div>
 
 <div class="nhsuk-o-grid">
     <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds">
         <div class="nhsuk-page-content">
-										
-            <h2>Coming this winter</h2>
+                            
 
-            <p>The Frontend kit is currently in development. We're expecting it to be publicly available this winter.</p>
+                <h2>What is it</h2>
 
-            <p>It's still work in progress, and not ready for use in live services, but you can see its development in the <a href="">NHS.UK Frontend GitHub repository</a></p>
+                <p>A short explanation to make it clear for those less technical, or less familiar with the concept.</p>
+                
+                <p>An example would be non developers, or even developers working at the NHS who are still used to old fashion practices and may not have encountered GDS' library.</p>
 
-            <h2>About the Frontend kit</h2>
+                <h2>Why use it</h2>
 
-            <p>It will allow teams to [important benefit], [another important benefit] and [yet another important benefit].</p>
- 
-            <p>It will have:</p>
-            <ul>
-                <li>Good thing</li>
-                <li>Good thing</li>
-                <li>Good thing</li>
-            </ul>
+                <p>Using the frontend library means:</p>
+                <ul>
+                    <li>You save time</li>
+                    <li>Use tested components</li>
+                    <li>Accessible / inclusive components</li>
+                    <li>Other benefit example</li>
+                </ul>
 
+                <h2>Where it comes from</h2>
 
+                <p>The Frontend library starts from the work of teams behind the NHS.UK Site. It's open to contribution, and it has had input from [Name Lastname], [Name Lastname], [Name Lastname].</p>
+
+                <h2></h2>
 
         </div>
     </div>
-</div>
+</div>    
 
 {% endblock %}
