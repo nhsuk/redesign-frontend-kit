@@ -21,8 +21,8 @@ nunjucks.configure(appViews, {
   watch: true
 })
 
-app.get(/^([^.]+)$/, function (req, res, next) {
-  routing.matchRoutes(req, res, next)
+app.get('*', function (req, res) {
+  res.redirect('https://beta.nhs.uk/service-manual/');
 })
 
 if (app.get('env') === 'production') {
