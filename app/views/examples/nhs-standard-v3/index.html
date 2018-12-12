@@ -1,0 +1,143 @@
+{% set title = 'Frontend kit' %}
+{% set parent = '' %}
+{% set navigation = 'transactional' %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% extends "includes/templates/hub.html"%}
+
+{% block breadcrumb %}
+    {{ breadcrumbs('/examples/manual/', 'Home') }}  
+{% endblock %}
+
+{% block header %}
+  <h1>NHS Service Standard</h1>
+	<div class="nhsuk-reading-width">
+		<p class="nhsuk-body-l nhsuk-page-intro">The NHS service standard helps teams in the NHS make good quality products and services that work for their users.</p>
+
+        <p class="nhsuk-body-l nhsuk-page-intro">It's based on the <a href="#">Government Service Standard</a>, with additions for the health and care context.
+        </p>
+	</div>
+{% endblock %}
+
+{% block content %}
+
+<div class="nhsuk-o-grid">
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds">
+        <div class="nhsuk-page-content">
+										
+            <h2>A: Meeting users’ needs</h2>
+            
+            <h3>1. Understand users and their needs</h3>
+            <p>Develop a deep understanding of users and the problem you’re trying to solve for them. Look at the full context to understand what the user is trying to achieve, not just the part where they have to interact with government.
+            </p>
+            <br>
+            <a href="/examples/nhs-standard-v3/1-needs">More about point 1</a>
+            <br><br>
+
+            <h3>2. Solve a whole problem for users</h3>
+            <p>Work towards creating a service that solves one whole problem for users, collaborating across organisational boundaries where necessary.
+            </p>
+            <br>
+            <a href="/examples/nhs-standard-v3/2-whole-problem">More about point 2</a>
+            <br><br>
+
+            <h3>3. Provide a joined up experience across all channels</h3>
+            <p>Work towards creating a service that meets users’ needs across all channels, including online, phone, paper and face to face.
+            </p>
+            <br>
+            <a href="/examples/nhs-standard-v3/3-joined-up-experience">More about point 3</a>
+            <br><br>
+
+            <h3>4. Make the service simple to use</h3>
+            <p>Build a service that’s simple, intuitive and comprehensible. And test it with users to make sure it works for them.
+            </p>
+            <br>
+            <a href="/examples/nhs-standard-v3/4-simple-to-use">More about point 4</a>
+            <br><br>
+
+            <h3>5. Make sure everyone can use the service</h3>
+            <p>Provide a service that everyone can use, including people with disabilities or other legally protected characteristics. And people who don’t have access to the internet or lack the skills or confidence to use it.
+            </p>
+            <br>
+            <a href="/examples/nhs-standard/needs-v1">More about point 5</a>
+            <br><br>
+
+            <h2>B: Providing a service</h2>
+
+            <h3>6. Have a multidisciplinary team</h3>
+            <p>Put in place a multidisciplinary team that can create and operate the service in a sustainable way.
+            </p>
+            <br>
+            <a href="/examples/nhs-standard/needs-v1">More about point 5</a>
+            <br><br>
+
+            <h3>7. Use agile ways of working</h3>
+            <p>Put in place a multidisciplinary team that can create and operate the service in a sustainable way.
+            </p>
+            <br>
+            <a href="/examples/nhs-standard/needs-v1">More about point 5</a>
+            <br><br>
+
+            <h3>8. Iterate and improve frequently</h3>
+            <p>Make sure you have the capacity, resources and technical flexibility to iterate and improve the service frequently. Work with your organisation to make sure that you’re able to focus on improvements that have the most value.
+            </p>
+            <br>
+            <a href="/examples/nhs-standard/needs-v1">More about point 5</a>
+            <br><br>
+
+            <h3>9. Create a secure service which protects users’ privacy</h3>
+            <p>Evaluate what data the service will be collecting, storing and providing. Understand how government classifies that data, the organisation’s legal responsibilities, and security risks associated with the service. Consult experts where you need to.
+            </p>
+            <br>
+            <a href="/examples/nhs-standard/needs-v1">More about point 5</a>
+            <br><br>
+            
+            <h3>10. Define what success looks like and publish performance data</h3>
+            <p>Work out what success looks like for your service and identify metrics which will tell you what’s working and what can be improved, combined with user research.
+
+            Collect and use performance data from all channels, online and offline.
+                
+            Iterate and improve your metrics and data collection practices as you learn more about user needs.
+            </p>
+            <br>
+            <a href="/examples/nhs-standard/needs-v1">More about point 5</a>
+            <br><br>
+
+            <h2>C: Using the right technology</h2>
+
+            <h3>11. Choose the right tools and technology</h3>
+            <p>Choose tools and technology that let you create a high quality service in a cost effective way. Minimise the cost of changing direction in future.
+            </p>
+            <br>
+            <a href="/examples/nhs-standard/needs-v1">More about point 5</a>
+            <br><br>
+
+            <h3>12. Make new source code open</h3>
+            <p>Make all new source code open and reusable, and publish it under appropriate licences. Or if this isn’t possible, provide a convincing explanation of why this can’t be done for specific subsets of the source code.
+            </p>
+            <br>
+            <a href="/examples/nhs-standard/needs-v1">More about point 5</a>
+            <br><br>
+
+            <h3>13. Use and contribute to common standards, components and patterns</h3>
+            <p>Where possible, build on common standards, components and patterns from inside and outside government. If you develop your own patterns or components, share them publicly so others can use them.
+            </p>
+            <br>
+            <a href="/examples/nhs-standard/needs-v1">More about point 5</a>
+            <br><br>
+
+            <h3>14. Operate a reliable service</h3>
+            <p>Minimise service downtime and have a plan to deal with it when does happen.
+            </p>
+            <br>
+            <a href="/examples/nhs-standard/needs-v1">More about point 5</a>
+            <br><br>
+
+
+
+
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

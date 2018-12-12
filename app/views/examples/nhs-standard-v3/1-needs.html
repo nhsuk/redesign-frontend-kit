@@ -1,0 +1,51 @@
+{% set title = 'Frontend kit' %}
+{% set parent = '' %}
+{% set navigation = 'transactional' %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% extends "includes/templates/hub.html"%}
+
+{% block breadcrumb %}
+    {{ breadcrumbs('/examples/manual/', 'Home', '/examples/nhs-standard-v3/', 'NHS Service Standard') }}  
+{% endblock %}
+
+{% block header %}
+  <h1>1. Understand users and their needs</h1>
+	<div class="nhsuk-reading-width">
+	</div>
+{% endblock %}
+
+{% block content %}
+
+<div class="nhsuk-o-grid">
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds">
+        <div class="nhsuk-page-content">
+										
+            <h2>Why it's important</h2>
+            <p>Understanding as much of the context as possible gives you the best chance of meeting users’ needs in a simple and cost effective way.</p>
+
+            <p>Focusing on the user and the problem they’re trying to solve - rather than a particular solution - often means that you <a href="https://userresearch.blog.gov.uk/2018/06/12/how-were-using-contextual-research-to-improve-gov-uk-notify/">learn unexpected things about their needs</a>.</p>
+
+            <p>The real problem might not be the one you originally thought needed solving. Testing your assumptions early and often reduces the risk of building the wrong thing.</p>
+
+            <p><b>At the NHS</b>: Blurb here about how clinical and emotional can often be more relevant here than in other areas of the government.</p>
+
+            <h2>What it means</h2>
+            <p>Service teams should learn as much as possible about the problem users need them to solve by:</p>
+            <ul>
+                <li>doing user research to understand what users need - and, where relevant, secondary research and analysis</li>
+                <li>building quick, throwaway <a href="https://www.gov.uk/service-manual/design/making-prototypes">prototypes</a> to test their hypotheses</li>
+                <li>using <a href="https://gds.blog.gov.uk/2014/08/12/helping-government-find-user-needs-with-analytics/">web analytics</a> and other data that’s available (for example, from government call centres or <a href="https://gds.blog.gov.uk/2018/01/10/working-with-citizens-advice-and-its-amazing-data/">third party services</a> to enhance their understanding of the problem</li>
+            </ul>
+
+            <h2>Guidance</h2>
+            <ul>
+                <li><a href="">GDS - Guidance on example topic</a></li>
+                <li><a href="">GDS - Guidance on example topic</a></li>
+                <li><a href="">GDS - Guidance on example topic</a></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

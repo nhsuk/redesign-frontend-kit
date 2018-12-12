@@ -1,0 +1,54 @@
+{% set title = 'Frontend kit' %}
+{% set parent = '' %}
+{% set navigation = 'transactional' %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% extends "includes/templates/hub.html"%}
+
+{% block breadcrumb %}
+    {{ breadcrumbs('/examples/manual/', 'Home', '/examples/nhs-standard-v3/', 'NHS Service Standard') }}  
+{% endblock %}
+
+{% block header %}
+  <h1>4. Make the service simple to use</h1>
+	<div class="nhsuk-reading-width">
+	</div>
+{% endblock %}
+
+{% block content %}
+
+<div class="nhsuk-o-grid">
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds">
+        <div class="nhsuk-page-content">
+										
+            <h2>Why it's important</h2>
+            <p>People expect services to just work, and government services should be no exception.</p>
+
+            <p>It costs government time and money to deal with mistakes that happen when service don’t work well. And making things more complicated than they need to be undermines trust in government.</p>
+
+            <h2>What it means</h2>
+            <p>Service teams should be able to show that:</p>
+            <ul>
+                <li>make sure the service [helps the user to do the thing they need to do as simply as possible](https://www.gov.uk/service-manual/design/introduction-designing-government-services) - so that people succeed first time, with the minimum of help</li>
+                <li>test for usability frequently with actual and potential users, using appropriate [research techniques](https://www.gov.uk/service-manual/user-research)</li>
+                <li>test all the parts of the service that the user interacts with - online parts and offline parts (like letters)</li>
+                <li>design the service to work online <a href="https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices">with a range of devices that reflects users’ behaviour</a></li>
+            </ul>
+
+            <p>Services should also provide users with a consistent experience from start to finish. For GOV.UK services, this means:</p>
+            <ul>
+                <li><a href="https://www.gov.uk/service-manual/design/making-your-service-look-like-govuk">being consistent with the design of GOV.UK</a></li>
+                <li>following the <a href="https://www.gov.uk/guidance/style-guide">GOV.UK style guide</a> for all text, online and offline</li>
+            </ul>
+
+            <h2>Guidance</h2>
+            <ul>
+                <li><a href="">GDS - Guidance on example topic</a></li>
+                <li><a href="">GDS - Guidance on example topic</a></li>
+                <li><a href="">GDS - Guidance on example topic</a></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

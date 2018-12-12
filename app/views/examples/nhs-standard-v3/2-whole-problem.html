@@ -1,0 +1,56 @@
+{% set title = 'Frontend kit' %}
+{% set parent = '' %}
+{% set navigation = 'transactional' %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% extends "includes/templates/hub.html"%}
+
+{% block breadcrumb %}
+    {{ breadcrumbs('/examples/manual/', 'Home', '/examples/nhs-standard-v3/', 'NHS Service Standard') }}  
+{% endblock %}
+
+{% block header %}
+  <h1>2. Solve a whole problem for users</h1>
+	<div class="nhsuk-reading-width">
+	</div>
+{% endblock %}
+
+{% block content %}
+
+<div class="nhsuk-o-grid">
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds">
+        <div class="nhsuk-page-content">
+										
+            <h2>Why it's important</h2>
+            <p>Fragmented services are difficult to use, because users have to do the hard work to make sure they’re doing what’s expected of them. For example, working out which of several similar schemes they’re eligible for. Or choosing the right form to fill in out of several near-identical options.</p>
+
+            <p>That doesn’t mean building big, complicated transactions that aren’t intuitive to use because they try to do too much.</p>
+
+            <p>And it doesn’t mean trying to fix everything at once. Start small, and deliver value to users incrementally and frequently.</p>
+
+            <p>Just make sure the increments are part of a plan to bring related content and transactions together into a journey that makes sense to users, irrespective of which organisation they ‘belong’ to. Because users shouldn’t have to understand how government works in order to use public services.</p>
+
+            <h2>What it means</h2>
+            <p>Service teams should:</p>
+            <ul>
+                <li>consider alternatives to creating a service - for example publishing website content, running a campaign, partnering with a non-government organisation or making data or making an API available to third parties</li>
+                <li>understand any genuine constraints that affect the service - for example, legislative constraints - and work with policy professionals to solve any problems those constraints are causing</li>
+                <li>make sure services are [scoped according to how users think](https://www.gov.uk/service-manual/design/scoping-your-service) - not too narrow or too broad</li>
+                <li>be able to explain how the transaction they’re working on will join up with other things into a journey that solves a whole problem for users - like ‘[come to the UK to study](https://hodigital.blog.gov.uk/2018/06/07/creating-a-list-of-services/)’</li>
+                <li>take responsibility for agreeing how this user journey will work with organisations responsible for different parts of it - for example, with the GDS content team to join up ‘mainstream’ GOV.UK content with the transaction you’re working on</li>
+                <li>work in the open so that people outside the organisation know what they’re doing - increasing the potential for collaboration and reducing duplication of effort (for example by publishing business cases, mission statements, research findings, user experience maps, maps of existing services and product [roadmaps](https://www.gov.uk/service-manual/agile-delivery/developing-a-roadmap) showing plans to develop new features)</li>
+                <li>work towards minimising the number of times users are to provide the same information to government (while respecting users’ privacy)</li>
+                <li>[work across organisational boundaries](https://www.gov.uk/service-manual/agile-delivery/working-across-organisational-boundaries) where that’s necessary to solve a whole problem for users</li>
+            </ul>
+
+            <h2>Guidance</h2>
+            <ul>
+                <li><a href="">GDS - Guidance on example topic</a></li>
+                <li><a href="">GDS - Guidance on example topic</a></li>
+                <li><a href="">GDS - Guidance on example topic</a></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

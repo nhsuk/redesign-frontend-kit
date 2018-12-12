@@ -1,0 +1,56 @@
+{% set title = 'Frontend kit' %}
+{% set parent = '' %}
+{% set navigation = 'transactional' %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% extends "includes/templates/hub.html"%}
+
+{% block breadcrumb %}
+    {{ breadcrumbs('/examples/manual/', 'Home', '/examples/nhs-standard-v3/', 'NHS Service Standard') }}  
+{% endblock %}
+
+{% block header %}
+  <h1>3. Provide a joined up experience across all channels</h1>
+	<div class="nhsuk-reading-width">
+	</div>
+{% endblock %}
+
+{% block content %}
+
+<div class="nhsuk-o-grid">
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds">
+        <div class="nhsuk-page-content">
+										
+            <h2>Why it's important</h2>
+            <p>Bringing different channels together means you can design an experience that makes sense to the user, however they use the service. Users shouldn’t be excluded or have an inferior experience because they lack access to technology or the skills to use it.</p>
+
+            <p>People working on the service are empowered to fix problems in whatever channel they crop up, instead of having to create work-arounds. They can spend less time dealing with failure demand, and more time with users who need their help.</p>
+
+            <h2>What it means</h2>
+            <p>Service teams should be able to show that:</p>
+            <ul>
+                <li>the service team is empowered to find the best way of solving the problem</li>
+                <li>front line operations staff and policy people are invited to attend user research and to contribute to prioritisation decisions</li>
+                <li>designers and user researchers are working with front line operations staff</li>
+                <li>they are testing and can make changes to users’ experience of both online and offline channels (for example, call centre scripts and letters)</li>
+                <li>data and user research on the online part of the service is used to improve offline channels, <a href="https://mojdigital.blog.gov.uk/2015/07/29/helping-people-with-court-fees/">and the other way around</a></li>
+                <li>front line operations staff responsible for answering users’ questions know how the online service works, and there’s a process for keeping them up to date with changes</li>
+                <li>they’re working with colleagues in operations to understand how changes to the online part of the service will affect offline channels, and vice versa</li>
+                <li><a href="https://www.gov.uk/service-manual/helping-people-to-use-your-service/encouraging-people-to-use-your-digital-service">plans to increase digital take up</a> don’t involve making it more difficult to find details of phone, paper or face to face channels</li>
+            </ul>
+
+            <p>Service teams should be able to identify any problems with internal processes, systems or structures that make it more difficult than it needs to be to design and operate a joined up service.</p>
+
+            <p>And show that there’s a plan to fix them - for example, by having an agreed procedure for resolving issues with the online service that are causing problems for the offline channels. Or the other way around.</p>
+
+            <h2>Guidance</h2>
+            <ul>
+                <li><a href="">GDS - Guidance on example topic</a></li>
+                <li><a href="">GDS - Guidance on example topic</a></li>
+                <li><a href="">GDS - Guidance on example topic</a></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
